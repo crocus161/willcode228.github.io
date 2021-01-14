@@ -1,0 +1,87 @@
+.form{
+	width: 100%;
+	min-height: 500px;
+	padding: 50px 0;
+	background: url(../../img/photo/Layer_8.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.form__wrap{
+	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.form__note{
+	color: var(--main-white);
+}
+.form__input{
+	width: 250px;
+	color: var(--main-white);
+	border-bottom: 1px solid var(--main-white);
+	margin: 20px 0;
+}
+.form__textarea{
+	width: 90%;
+	background: none;
+	color: var(--main-white);
+	border: none;
+	border-bottom: 1px solid var(--main-white);
+	margin: 20px 0;
+}
+.form__btn{
+	width: 150px;
+	height: 45px;
+	position: relative;
+	text-align: center;
+	line-height: 45px;
+	color: var(--main-white);
+	border: 1px solid var(--main-white);
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1;
+}
+.form__btn::after,
+.form__btn::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	z-index: -1;
+	background: var(--main-white);
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.form__btn::before{
+	right: 100%;
+}
+.form__btn::after{
+	left: 100%;
+}
+
+.form__btn:hover::after{
+	left: 0;
+}
+.form__btn:hover::before{
+	right: 0;
+}
+.form__btn:hover{
+	color: var(--main-black);
+}
+@media screen and (max-width: 500px){
+	.form__wrap{
+		width: 90%;
+	}
+}
