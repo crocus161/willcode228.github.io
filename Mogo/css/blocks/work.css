@@ -1,0 +1,34 @@
+.work{
+	width: 100%;
+	min-height: 400px;
+	padding: 50px 0;
+	background: var(--main-white);
+}
+.work__wrap{
+	width: 98%;
+}
+.work__text{
+	margin-bottom: 60px;
+}
+.work__box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.work__box-img{
+	-o-object-position: center;
+	   object-position: center;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+@media screen and (max-width: 590px){
+	.work__box-img{
+		width: 200px;
+		height: 200px;
+	}
+}

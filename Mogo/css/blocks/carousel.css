@@ -1,0 +1,77 @@
+.carousel{
+	position: relative;
+}
+.carousel__btn{
+	position: absolute;
+	top: 50%;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--main-grey);
+	-webkit-animation: dots_anim 1s linear infinite alternate;
+	        animation: dots_anim 1s linear infinite alternate; 
+}
+@-webkit-keyframes dots_anim{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1
+	}
+}
+@keyframes dots_anim{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1
+	}
+}
+.prev__btn{
+	left: 30px;
+}
+.next__btn{
+	right: 30px;
+}
+.carousel__active.carousel__active{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -webkit-animation: show-hide 1s linear;
+          animation: show-hide 1s linear;
+}
+@-webkit-keyframes show-hide{
+	from{
+		opacity: 0;
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+@keyframes show-hide{
+	from{
+		opacity: 0;
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+	to{
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+@media screen and (max-width: 605px){
+	.prev__btn{
+		left: 35%;
+	}
+	.next__btn{
+		right: 35%;
+	}
+	.carousel__btn{
+		top: 105%;
+	}
+}

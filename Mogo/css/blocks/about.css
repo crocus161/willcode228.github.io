@@ -1,0 +1,34 @@
+.about{
+	width: 100%;
+	min-height: 500px;
+	padding: 50px 0;
+	background: var(--main-white);
+}
+.about__wrap{
+	width: 95%;
+}
+.about__imgroup{
+	width: 100%;
+	margin-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.about__imgroup-img:nth-child(1){
+	background: url(../../img/photo-img/Layer/Layer8.png);
+}	
+.about__imgroup-img:nth-child(2){
+	background: url(../../img/photo-img/Layer/Layer9.png);
+}	
+.about__imgroup-img:nth-child(3){
+	background: url(../../img/photo-img/Layer/Layer10.png);
+}	
+.about__imgroup-img{
+	width: 380px;
+	height: 250px; 
+	margin: 10px;
+}

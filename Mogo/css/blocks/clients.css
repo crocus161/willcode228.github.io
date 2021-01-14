@@ -1,0 +1,81 @@
+.clients{
+	width: 100%;
+	min-height: 200px;
+	padding: 50px 0;
+	background: url(../../img/background-img/Layer_53.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.clients__box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.clients__card{
+	margin: 30px 20px;
+	width: 400px;
+}
+.clients__card-box{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.clients__card-hgroup{
+	height: 110px;
+	margin-left: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.clients__card-title{
+	margin: 0;
+	font-size: 15px;
+	font-weight: 200;
+	color: var(--main-grey);
+}
+.clients__card-title::after{
+	margin: 10px 0;
+	padding: 0;
+	width: 35px;
+}
+
+.clients__card-text{
+	width: 85%;
+}
+@media screen and (max-width: 1190px){
+	.clients__wrap{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 930px){
+	.clients__card{
+		width: 320px;
+	}
+}
+@media screen and (max-width: 760px){
+	.clients__wrap{
+		width: 70%;
+	}
+	.clients__card{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 440px){
+	.clients__wrap{
+		width: 90%;
+	}
+}
