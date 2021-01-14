@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8e8e8;
+}
+.main__game-field{
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.score_result-box{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(133, 132, 132);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+}
+.high_score{
+    margin-right: 20px;
+}
+.road{
+    width: 900px;
+    height: 10px;
+    position: absolute;
+    bottom: 28px;
+    background-image: url('../img/Textures/Road.png');
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+.cactus{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+}
+.cactus img{
+    max-height: 50px;
+}
+.cloud__box{
+    width: 800px;
+    min-height: 140px;
+    position: relative;
+}
+.cloud{
+    width: 120px;
+    height: 40px;
+    background-image: url('../img/Textures/cloud.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.hero{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: 34px;
+    left: 20px;
+    z-index: 999;
+}
+.hero img{
+    width: 50px;
+    object-fit: cover;
+}
+.hero__jump{
+    animation: jump 0.5s linear 1;
+}
+@keyframes jump{
+    0%{
+        bottom: 34px;
+    }
+    25%{
+        bottom: 90px;
+    }
+    50%{
+        bottom: 130px;
+    }
+    75%{
+        bottom: 100px;
+    }
+    80%{
+        bottom: 80px;
+    }
+    90%{
+        bottom: 60px;
+    }
+    95%{
+        bottom: 40px;
+    }
+    100%{
+        bottom: 34px;
+    }
+}
