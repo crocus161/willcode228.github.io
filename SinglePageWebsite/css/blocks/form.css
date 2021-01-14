@@ -1,0 +1,34 @@
+.form{
+    width: 100%;
+    min-height: 100px;
+    padding: 30px 0;
+    background: var(--secondary-black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form__wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.form__title{
+    color: var(--main-white);
+    margin-bottom: 30px;
+}
+.form__input{
+    width: 250px;
+    height: 40px;
+    padding: 20px;
+    background: var(--main-white);
+    cursor: inherit;
+}
+@media screen and (max-width: 505px){
+    .form__input{
+        width: 160px;
+        padding: 10px;
+    }
+    .form__btn{
+        width: 80px;
+    }
+}

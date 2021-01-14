@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    background: url('../../img/bg/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__wrap{
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-white);
+}
+.header__title{
+    text-align: center;
+}
+.header__title-h1{
+    font-size: max(30px, min(60px, calc(100vw * 4 / 75)));
+    letter-spacing: 5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.header__title-subtitle{
+    font-size: max(15px, min(20px, calc(100vw * 4 / 75)));
+    font-weight: 400;
+}
+.header__btn-a{
+    padding: 10px;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+}
