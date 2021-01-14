@@ -1,0 +1,125 @@
+/*vars*/
+:root{
+	/*main colours*/
+	--main-white: #ffffff;
+	--main-black: #515769;
+	--main-grey: #a6a7aa;
+	--accent-clr: #17bed2;
+	/*secondary	colours*/
+	--secondary-grey: #fafafa;
+	/*main transition*/
+	--main-transition: 0.7s;
+	/*secondary	transition*/
+	--secondary-transition: 0.5s;
+}
+/*main settings*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: 'Hind' ,sans-serif;
+}
+*::-moz-selection{
+	color: var(--main-white);
+	background-color: var(--accent-clr);
+}
+*::selection{
+	color: var(--main-white);
+	background-color: var(--accent-clr);
+}
+body{
+	font-display: fallback;
+}
+.general__wrap{
+	max-width: 1920px;
+	margin: auto;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	color: var(--main-black);
+}
+p{
+	font-weight: 300;
+	font-size: 15px;
+	color: var(--main-grey);
+}
+a,input,button{
+	text-decoration: none;
+	border: none;
+	background: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	outline: none;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+a,button{
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+}
+/*main elem*/
+.main__wrap{
+	width: 80%;
+	margin: auto;
+}
+.main__hgroup{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.main__title{
+	font-size: 35px;
+}
+.main__subtitle{
+	font-size: 15px;
+	font-weight: 300;
+	color: var(--main-grey);
+	margin-bottom: 25px;
+	line-height: 1.4;
+}
+.main__overlay{
+	position: relative;
+	z-index: 1;
+}
+.main__overlay::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(81,87,105,0.4);
+	z-index: -1;
+}
+.main__link{
+	position: relative;
+}
+.main__link::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	background: var(--accent-clr);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-transition: var(--secondary-transition);
+	-o-transition: var(--secondary-transition);
+	transition: var(--secondary-transition);
+}
+.main__link:hover{
+	color: var(--accent-clr);
+}
+.main__link:hover::after{
+	opacity: 0;
+	right: 10px;
+}

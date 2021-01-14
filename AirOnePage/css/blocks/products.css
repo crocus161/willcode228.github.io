@@ -1,0 +1,101 @@
+.products__wrap{
+	width: 95%;
+	min-height: 400px;
+	padding: 70px 0;
+}
+.products__hgroup-title{
+	margin-bottom: 15px;
+}
+.products__hgroup-subtitle{
+	display: inline-block;
+	width: 60%;
+}
+.products__container{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.products__box{
+	width: 360px;
+	margin: 20px;
+}
+.products__box:hover .products__box-title{
+	color: var(--main-grey);
+}
+.products__box:hover .products__body-inform{
+	color: var(--main-black);
+}
+.products__box-img{
+	margin-bottom: 15px;
+}
+.products__img-img{
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.products__box-hgroup{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 15px;
+}
+.products__box-title{
+	margin: 0;
+	font-size: 20px;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.products__box-subtitle{
+	margin-left: 20px;
+	color: var(--main-grey);
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.products__body-inform{
+	margin-bottom: 15px;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.products__body-link{
+	color: var(--main-black);
+	text-transform: uppercase;
+	font-size: 12px;
+}
+@media screen and (max-width: 400px){
+	.products__box{
+		width: 290px;
+	}
+	.products__body-inform{
+		font-size: 12px;
+	}
+	.products__box-title,
+	.products__box-subtitle{
+		font-size: 15px
+	}
+	.products__box-subtitle{
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 600px){
+	.products__hgroup-title{
+		font-size: 30px;
+	}
+	.products__hgroup-subtitle{
+		width: 90%;
+	}
+}

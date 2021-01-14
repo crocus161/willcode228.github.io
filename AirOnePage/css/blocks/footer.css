@@ -1,0 +1,29 @@
+.contacts{
+	width: 100%;
+	min-height: 250px;
+	background: var(--main-white);
+	padding: 100px 20px;
+	padding-left: 120px;
+	border-bottom: 1px solid var(--main-grey);
+	border-top: 1px solid var(--main-grey);
+}
+.contacts__wrap{
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.contacts__list{
+	margin-top: 30px;
+	margin-right: 90px;
+}
+.contacts__list-item{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.contacts__list-item a{
+	color: var(--main-black);
+}
