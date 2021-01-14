@@ -1,0 +1,122 @@
+/*Vars*/
+:root{
+	/*main	colours*/
+	--main-black: #000000;
+	--accent-clr: #be1313;
+	--main-white: #ffffff;
+	--main-grey: #ebebeb;
+		/*secondary	colours*/
+		--secondary-grey: #bdbdbd;
+		--secondary-black: #222222;
+	/*main	transition*/
+		--main-transition: 0.7s;
+	/*main	shadow*/
+   --main-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+*::-moz-selection{
+	color: var(--main-white);
+	background-color: var(--accent-clr);
+}
+*::selection{
+	color: var(--main-white);
+	background-color: var(--accent-clr);
+}
+body{
+	font-display: fallback;
+}
+.general__wrap{
+	max-width: 1920px;
+	margin: auto;
+}
+.main__wrap{
+	width: 85%;
+	margin: auto;
+}
+/*Tegs settings*/
+a,input,button{
+	text-decoration: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	background: none;
+	border: none;
+	outline: none;
+}
+a{
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+ul{
+	list-style: none;
+}
+/*Text settings*/
+.main__h1{
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+}
+.main__h2{
+	font-weight: 300;
+}
+p{
+	font-weight: 400;
+	line-height: 25px;
+}
+.note__for__h{
+	font-weight: 400;
+	color: var(--secondary-grey);
+}
+.card__h::before{
+	content: '\2605';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background: var(--accent-clr);
+	line-height: 24px;
+	text-align: center;
+	color: var(--main-white);
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+/*Buttons settings*/
+.main__btn{
+	display: inline-block;
+	width: 160px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	border: 1px solid var(--main-white);
+	border-radius: 3px;
+	color: var(--main-white);
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.main__btn:hover{
+	background: var(--main-white);
+	color: var(--main-black);
+}
+@media screen and (max-width: 920px){
+	p{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 780px){
+	.main__btn{
+		width: 130px;
+	}
+	.main__h1{
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,63 @@
+.photo{
+	width: 100%;
+	min-height: 400px;
+	padding: 50px 0;
+	background: var(--main-white);
+}
+.photo__box{
+	margin: auto;
+	width: 100%;
+	min-height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+.photo__box-img{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+	z-index: 1;
+	cursor: pointer;
+}
+.photo__box-img-up,
+.photo__box-img-down,
+.photo__box-img-right,
+.photo__box-img-left{
+	opacity: 0;
+	pointer-events: none;
+}
+.photo__box-img-up{
+	top: -50vh;
+}
+.photo__box-img-down{
+	top: 150vh;
+}
+.photo__box-img-left{
+	left: -50vh;
+}
+.photo__box-img-right{
+	left: 400vh;
+}
+.photo__text{
+	margin: auto;
+	margin-top: 50px;
+	width: 70%;
+	text-align: center;
+}
+@media screen and (max-width: 730px){
+	.photo__text{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 500px){
+	.photo__box{
+		min-height: 250px;
+	}
+}

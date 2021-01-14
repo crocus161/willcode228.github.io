@@ -1,0 +1,195 @@
+.nav{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--secondary-black);
+	-webkit-box-shadow: var(--main-shadow);
+	        box-shadow: var(--main-shadow);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	z-index: 999;
+}
+/*fixed nav on scroll*/
+.header__nav-active{
+	position: fixed;
+	-webkit-animation: nav_to_active 0.5s linear 1;
+	        animation: nav_to_active 0.5s linear 1;
+	-webkit-box-shadow: var(--main-shadow);
+	        box-shadow: var(--main-shadow);
+}
+@-webkit-keyframes nav_to_active{
+	0%{
+		opacity: 0;
+		top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+		-webkit-box-shadow: var(--main-shadow);
+		        box-shadow: var(--main-shadow);
+	}
+}
+@keyframes nav_to_active{
+	0%{
+		opacity: 0;
+		top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+		-webkit-box-shadow: var(--main-shadow);
+		        box-shadow: var(--main-shadow);
+	}
+}
+/*fixed nav on scroll*/
+.nav__list{
+	width: 50%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.nav__li-a{
+	padding: 19px 25px;
+	color: var(--main-white);
+}
+.nav__li-a:hover{
+	background: var(--main-white);
+	color: var(--secondary-black);
+}
+
+.nav__logo{
+	width: 50%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.nav__logo--h1{
+	color: var(--main-white);
+}
+.nav__burger-btn{
+	display: none;
+	width: 35px;
+	height: 45px;
+	position: relative;
+	z-index: 9999;
+	cursor: pointer;
+/*	background: var(--main-white);*/
+}
+.nav__burger-line::after,
+.nav__burger-line::before{
+	content: "";
+	width: 100%;
+	height: 2px;
+	background: var(--main-white);
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.nav__burger-line::before{
+	top: 9px
+}
+.nav__burger-line::after{
+	bottom: 7px;
+}
+.nav__burger-line{
+	width: 100%;
+	height: 2px;
+	background: var(--main-white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1120px){
+	.nav__logo{
+		width: 25%;
+	}
+	.nav__list{
+		width: 75%;
+	}
+}
+@media screen and (max-width: 735px){
+	.nav{
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+	}
+	.nav__list{
+		position: fixed;
+		top: -100vh;
+		opacity: 0;
+		left: 0;
+		width: 100%;
+		min-height: 100vh;
+		background: var(--secondary-black);
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		z-index: 999;
+		-webkit-transition: var(--main-transition);
+		-o-transition: var(--main-transition);
+		transition: var(--main-transition);
+	}
+	.nav__list-active{
+		top: 0;
+		opacity: 1;
+	}
+	.nav__li-a::before{
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0%;
+		width: 100%;
+		height: 2px;
+		background: var(--main-white);
+		-webkit-transform: scaleX(0);
+		    -ms-transform: scaleX(0);
+		        transform: scaleX(0);
+		-webkit-transition: var(--main-transition);
+		-o-transition: var(--main-transition);
+		transition: var(--main-transition);
+	}
+	.nav__li-a{
+		padding: 0;
+		position: relative;
+	}
+	.nav__li{
+		margin: 20px 0;
+	}
+	.nav__li-a:hover::before{
+		-webkit-transform: scaleX(1);
+		    -ms-transform: scaleX(1);
+		        transform: scaleX(1);
+	}
+	.nav__li-a:hover{
+		background: none;
+		color: var(--main-white);
+		font-size: 25px;
+	}
+	.nav__burger-btn{
+		display: block;
+	}
+}

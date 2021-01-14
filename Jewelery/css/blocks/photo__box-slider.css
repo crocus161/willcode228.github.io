@@ -1,0 +1,20 @@
+.photoblog__box .photo__box-img{
+	width: 300px;
+	height: 200px;
+}
+.examples__box .photo__box-img{
+	width: 250px;
+	height: 250px;
+	-webkit-box-shadow: var(--main-shadow);
+	        box-shadow: var(--main-shadow);
+}
+@media screen and (max-width: 500px){
+	.examples__box .photo__box-img{
+		width: 150px;
+		height: 150px;
+	}
+	.photoblog__box .photo__box-img{
+		width: 175px;
+		height: 120px;
+	}
+}

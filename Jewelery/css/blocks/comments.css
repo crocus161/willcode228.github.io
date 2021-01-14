@@ -1,0 +1,9 @@
+.comments__card-h3{
+	margin-bottom: 10px;
+}
+.comments__card-h5::before{
+	width: 10px;
+	height: 10px;
+	background: none;
+	color: var(--main-black);
+}
