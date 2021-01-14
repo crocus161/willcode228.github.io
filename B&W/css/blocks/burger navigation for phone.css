@@ -1,0 +1,94 @@
+/*new burger menu for phone*/
+.header__nav-burger{
+	z-index: 11;
+	position: fixed;
+	top: -110vh;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: var(--main-black);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	opacity: 1;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+/*show menu on click on btn*/
+.header__nav-burger-active{
+	top: 0;
+	opacity: 1;
+}
+/*show menu on click on btn*/
+.header__nav-burger ul{
+	width: 100%;
+	min-height: 50vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.header__nav-burger a{
+	color: var(--main-white);
+}
+.header__nav-burger a:hover{
+	z-index: 1;
+	font-size: 40px;
+}
+.header__nav-burger-btn{
+	display: none;
+	width: 35px;
+	height: 35px;
+	position: relative;
+	border-radius: 50%;
+	margin-right: 20px;
+	z-index: 999;
+	cursor: pointer;
+	background: var(--main-white);
+}
+.header__nav-burger-line::after,
+.header__nav-burger-line::before{
+	content: "";
+	width: 50%;
+	height: 2px;
+	background: var(--main-black);
+	position: absolute;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.header__nav-burger-line::before{
+	top: 7px
+}
+.header__nav-burger-line::after{
+	bottom: 7px;
+}
+.header__nav-burger-line{
+	width: 90%;
+	height: 2px;
+	background: var(--main-black);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 620px){
+	.header__nav-burger-btn{
+		display: block;
+	}
+}

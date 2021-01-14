@@ -1,0 +1,93 @@
+.header__screen{
+	width: 100%;
+	background: var(--main-white);
+}
+.header__screen-wrap{
+	min-height: 100vh;
+	padding: 50px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: relative;
+}
+.header__screen-btn.main__btn{
+	margin: 50px 0;
+}
+.header__screen-btn.todown__btn{
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+.todown__btn-dot{
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px 0;
+	border-radius: 50%;
+	background: var(--main-white);
+	-webkit-animation: todown-anim 1s linear infinite alternate;
+	        animation: todown-anim 1s linear infinite alternate;
+}
+.todown__btn-dot:nth-child(1){
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
+}
+.todown__btn-dot:nth-child(2){
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
+}
+.todown__btn-dot:nth-child(3){
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+}
+@-webkit-keyframes todown-anim{
+	0%{
+		background: var(--main-white);
+	}
+	50%{
+		background: var(--main-grey);
+	}
+	100%{
+		background: var(--main-black);
+	}
+}
+@keyframes todown-anim{
+	0%{
+		background: var(--main-white);
+	}
+	50%{
+		background: var(--main-grey);
+	}
+	100%{
+		background: var(--main-black);
+	}
+}
+
+@media screen and (max-width: 620px){
+	.header__screen-wrap{
+		width: 95%;
+	}
+	.todown__btn-dot{
+		width: 7px;
+		height: 7px;
+	}
+}
+@media screen and (max-width: 340px){
+	.todown__btn-dot{
+		width: 5px;
+		height: 5px;
+	}
+}

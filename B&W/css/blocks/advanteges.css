@@ -1,0 +1,91 @@
+.advanteges{
+	width: 100%;
+	background: var(--main-black);
+	-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+					clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.advanteges__wrap{
+	width: 80%;
+	min-height: 800px;
+	padding: 150px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.advanteges__card{
+	width: 250px;
+	min-height: 350px;
+	background: var(--secondary-black);
+	padding: 40px 20px;
+	margin: 25px 40px;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.advanteges__card-subtitle{
+	color: var(--main-white);
+	margin-bottom: 20px;
+}
+.advanteges__card-btn{
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	margin-top: -20px;
+	opacity: 0;
+	pointer-events: none;
+	color: var(--main-white);
+	border-color: var(--main-white);
+}
+.advanteges__card-btn::before{
+	background: var(--main-white);
+}
+.advanteges__card-btn:hover{
+	color: var(--main-black);
+}
+.advanteges__card:hover .advanteges__card-btn{
+	margin-top: 20px;
+	opacity: 1;
+	pointer-events: inherit;
+}
+.advanteges__card::before{
+	content: '';
+	width: 125px;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--main-white);
+	opacity: 0.1;
+	pointer-events: none;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.advanteges__card:hover::before{
+	left: -200px;
+	opacity: 0;
+}
+@media screen and (max-width: 450px){
+	.advanteges__wrap{
+		width: 90%;
+	}
+	.advanteges__card-info{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 310px){
+	.advanteges__card-btn{
+		width: 100px;
+		font-size: 12px;
+	}
+}

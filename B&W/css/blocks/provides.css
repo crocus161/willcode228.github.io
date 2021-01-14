@@ -1,0 +1,106 @@
+.provides{
+	width: 100%;
+	min-height: 800px;
+	background: var(--main-black);
+	padding: 150px 0;
+	-webkit-clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+					clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.provides__wrap{
+	width: 95%;
+}
+.provides__hgroup{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.provides__hgroup-title{
+	color: var(--main-white);
+}
+.provides__wrap__for__box{
+	width: 100%;
+	min-height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.provides__box{
+	text-align: center;
+	margin: 20px;
+	-ms-flex-preferred-size: 25%;
+	    flex-basis: 25%
+}
+.provides__box-img{
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
+	border: 5px solid var(--main-white);
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.box__text-info{
+	display: inline-block;
+	width: 50%;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.box__text-subtitle{
+	color: var(--main-white);
+	margin: 10px 0;
+}
+@media screen and (max-width: 1220px){
+	.box__text-info{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 745px){
+	.provides__box{
+		-ms-flex-preferred-size: auto;
+		    flex-basis: auto;
+	}
+	.box__text-info{
+		font-size: 16px
+	}
+}
+.provides__btn{
+	text-align: center;
+}
+.provides_btn-btn{
+	color: var(--main-black);
+	border-color: var(--main-white);
+	margin-top: 50px;
+}
+.provides_btn-btn:hover{
+	color: var(--main-white);
+}
+.provides_btn-btn:hover::before{
+	height: 0;
+}
+.provides_btn-btn::before{
+	background: var(--main-white);
+	height: 200%;
+	z-index: -1;
+}
+@media screen and (max-width: 590px){
+	.box__text-info{
+		font-size: 14px
+	}
+}

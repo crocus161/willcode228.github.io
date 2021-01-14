@@ -1,0 +1,109 @@
+/*Navigation*/
+.header__nav{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: var(--main-white);
+	z-index: 10;
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+/*fixed nav on scroll*/
+.header__nav-active{
+	position: fixed;
+	-webkit-animation: nav_to_active 0.5s linear 1;
+	        animation: nav_to_active 0.5s linear 1;
+	-webkit-box-shadow: var(--main-shadow);
+	        box-shadow: var(--main-shadow);
+}
+@-webkit-keyframes nav_to_active{
+	0%{
+		opacity: 0;
+		top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+		-webkit-box-shadow: var(--main-shadow);
+		        box-shadow: var(--main-shadow);
+	}
+}
+@keyframes nav_to_active{
+	0%{
+		opacity: 0;
+		top: -100px;
+	}
+	100%{
+		opacity: 1;
+		top: 0;
+		-webkit-box-shadow: var(--main-shadow);
+		        box-shadow: var(--main-shadow);
+	}
+}
+/*fixed nav on scroll*/
+
+.header__nav-list{
+	width: 30%;
+	height: 100%;
+}
+.header__nav-list ul{
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header__nav-list a{
+	color: var(--main-black);
+}
+
+.header__nav-list:hover a{
+	color: var(--main-grey);
+}
+.header__nav-list ul a:hover{
+	color: var(--main-black);
+}
+.header__nav-logo{
+	-webkit-transition: var(--main-transition);
+	-o-transition: var(--main-transition);
+	transition: var(--main-transition);
+}
+.header__nav-logo:hover{
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-box-shadow: var(--main-shadow);
+	        box-shadow: var(--main-shadow);
+}
+@media screen and (max-width: 900px){
+	.header__nav-list{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 620px){
+	.remove{
+		display: none;
+	}
+	.header__nav{
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+}
