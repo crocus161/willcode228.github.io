@@ -1,0 +1,99 @@
+.service
+    width: 100%
+    min-height: 700px
+    padding: 100px 0px
+    background: $bg-gr-clr
+    &-hgroup
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        h1
+            font-weight: $h1-wght
+        &-h2
+            max-width: 400px
+            color: $h2-clr
+            h2
+                font-size: 18px
+                font-weight: $h2-wght
+    .card
+        margin: auto
+        width: 80%
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        &-wrap
+            margin: 20px 20px
+            display: flex
+            justify-content: center 
+            &__card
+                width: 200px
+                height: 200px
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+                position: relative
+                overflow: hidden
+                &::before
+                        content: ''
+                        color: #fff
+                        width: 200px
+                        height: 200px
+                        background: darken(rgba($accent-clr, 0.6), 5%)
+                        position: absolute
+                        top: 0
+                        right: 0px
+                        opacity: 0
+                        transition: all 0.9s ease
+                &:hover::before
+                    right: 0px
+                    opacity: 1
+                    transition: all 0.5s ease
+                h1
+                    font-size: 15px
+                    position: absolute
+                    top: 75%
+                    left: 10px
+                    color: $bg-clr
+                img
+                    width: 200px
+                    height: 200px
+@media screen and ( max-width:992px )
+    .service
+        &-hgroup
+            h1
+                font-size: 20px
+            &-h2
+                h2
+                    font-size: 12px
+        .card
+            width: 100%
+            &-wrap
+                &__card
+                    h1
+@media screen and ( max-width:768px )
+    .service
+        &-hgroup
+            h1
+                font-size: 20px
+            &-h2
+        .card
+            width: 100%
+            &-wrap
+                &__card
+                    h1 
+@media screen and ( max-width:576px )
+    .service
+        &-hgroup
+            h1
+                font-size: 20px
+            &-h2
+        .card
+            width: 100%
+            justify-content: center
+            &-wrap
+                justify-content: center
+                &__card
+                    h1
+         
+          
+

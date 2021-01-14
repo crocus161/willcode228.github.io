@@ -1,0 +1,40 @@
+.header
+    width: 100%
+    min-height: 100vh
+    background-image: url("../img/Rectangle.png")
+    background-repeat: no-repeat
+    background-size: cover
+    &-slider
+        width: 65%
+        margin: auto
+        .block
+            
+            &-hgroup
+                width: 650px
+                margin-bottom: 40px
+                h1
+                    color: $bg-clr
+                    font-size: 40px
+                    line-height: 66px
+
+@media screen and ( max-width:992px )
+    .header
+        &-slider
+            width: 90%
+@media screen and ( max-width:768px )
+    .header
+        &-slider
+            width: 90%
+            .block
+                &-hgroup
+                    width: 100%
+@media screen and ( max-width:576px )
+    .header
+        &-slider
+            width: 90%
+            .block
+                &-hgroup
+                    width: 100%
+                    h1
+                        font-size: 24px
+                        line-height: 46px                    

@@ -1,0 +1,77 @@
+.review
+    width: 100%
+    min-height: 500px
+    padding: 50px 0px
+    background: $bg-clr
+    &-hgroup
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        h2
+            font-weight: $h2-wght
+            color: $h2-clr
+            font-size: 18px
+    &-slick
+        width: 80%
+        margin: auto
+        background: $bg-gr-clr
+        .comments
+            padding: 20px
+            &-text
+                p
+            &-wrap
+                margin-top: 20px
+                &__ava
+                    display: inline-block
+                    img
+                        width: 100px
+                        height: 100px
+                        border-radius: 50%   
+                &__hgroup
+                    display: inline-block
+                    margin-left: 20px
+                    transform: translateY(-20px)
+                    h1
+                        font-size: 18px
+                    h2
+                        font-size: 12px
+                        font-weight: $h2-wght
+                        color: $h2-wght
+@media screen and ( max-width:992px )
+    .review
+        &-hgroup
+            h2
+        &-slick
+            .comments
+                &-text
+                    p
+                &-wrap
+                    &__ava
+                        img   
+                    &__hgroup
+                        h1
+                        h2
+@media screen and ( max-width:576px )
+    .review
+        &-hgroup
+            h2
+                font-size: 12px
+            h1
+                font-size: 20px
+        &-slick
+            width: 90%
+            .comments
+                &-text
+                    p
+                        font-size: 15px
+                        line-height: 25px
+                &-wrap
+                    &__ava
+                        img   
+                    &__hgroup
+                        margin-left: 0px
+                        transform: translateY(10px)
+                        h1
+                        h2

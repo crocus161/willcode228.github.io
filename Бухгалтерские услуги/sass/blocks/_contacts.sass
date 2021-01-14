@@ -1,0 +1,126 @@
+.contacts
+    width: 100%
+    min-height: 620px
+    background: url("../img/Rectangle.png")
+    background-repeat: no-repeat
+    background-size: cover
+    &-wrap
+        width: 90%
+        margin: auto
+        display: flex
+        &__text
+            width: 50%
+            height: 600px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            p
+                width: 80%
+                color: $bg-clr
+                text-align: center
+                span
+                    color: lighten($accent-clr, 20%)
+            &-contact
+                margin-top: 30px
+                .first
+                    margin-right: 80px
+                a
+                    color: $bg-clr
+                    transition: all 0.9s ease
+                    &:hover
+                        color: $accent-clr
+                        transition: all 0.5s ease
+                    i
+                        margin-right: 5px
+        &__form
+                width: 50% 
+                height: 600px
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                .authorization
+                    display: flex
+                    input
+                        margin-top: 10px
+                        background: transparent
+                        border: none
+                        border-bottom: 1px solid #BDBDBD
+                        color: #BDBDBD
+                        &:focus
+                            outline: none
+                    p
+                        color: $bg-clr
+                    .surname
+                        margin-left: 30px
+                .message
+                    margin-top: 40px
+                    textarea
+                        margin-top: 10px
+                        background: transparent
+                        border: none
+                        border-bottom: 1px solid #BDBDBD
+                        color: #BDBDBD
+                        &:focus
+                            outline: none
+
+                    p
+                        color: $bg-clr                  
+                .btn-general
+                    display: block
+                    margin-top: 50px
+@media screen and ( max-width:992px )
+    .contacts
+        &-wrap
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__text
+                width: 100%
+                height: 200px
+                p
+                span
+                &-contact
+                    .first
+                    a
+            &__form
+                width: 100%
+                height: 300px
+                .authorization
+                    input
+                    p
+                    .surname
+                .message
+                    textarea
+@media screen and ( max-width:576px )
+    .contacts
+        &-wrap
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__text
+                width: 100%
+                height: 200px
+                p
+                span
+                &-contact
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    flex-direction: column
+                    .first
+                        margin-bottom: 20px
+                    a
+            &__form
+                width: 100%
+                height: 300px
+                .authorization
+                    input
+                        width: 100%
+                    p
+                    .surname
+                .message
+                    textarea
+                        width: 100%
+          
