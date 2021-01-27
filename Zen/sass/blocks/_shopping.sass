@@ -1,0 +1,33 @@
+.shopping
+    &__link
+        display: inline-block
+        width: 80px
+        height: 40px
+        margin-right: 10px
+        margin-top: 15px
+        border: $border
+        border-radius: $secondary-radius
+        text-align: center
+        img
+            width: 20px
+        &-span
+            font-weight: bold
+            font-size: 20px
+            line-height: 40px
+    &__text
+        width: 60%
+        &-info
+            margin: 25px 0px
+    &__image
+        width: 40%
+
+@media screen and ( max-width: 992px )
+    .shopping
+        &__text
+            width: 80%
+@media screen and ( max-width: 576px )
+    .shopping
+        &__text
+            width: 100%
+            padding: 10px
+    

@@ -1,0 +1,39 @@
+.section
+    width: 100%
+    &__wrap
+        padding: 50px 0px
+        height: 100%
+        display: flex
+        justify-content: space-around
+        align-items: flex-end
+    &__text
+        width: 50%
+        padding: 50px
+        &-title
+            margin-bottom: 20px
+        &-info
+            margin: 10px 0px
+    &__image
+        width: 50%
+        img
+            width: 100%
+            object-fit: cover
+
+@media screen and ( max-width: 992px )
+    .section
+        &__wrap
+            justify-content: flex-end
+            align-items: center
+            flex-direction: column
+        &__text
+            width: 80%
+            
+@media screen and ( max-width: 576px )
+    .section
+        &__wrap
+            width: 95%
+        &__text
+            width: 100%
+            padding: 10px
+        &__image
+            width: 100%
