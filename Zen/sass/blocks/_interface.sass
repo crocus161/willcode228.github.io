@@ -16,6 +16,7 @@ a
     text-decoration: none
 ul
     list-style-type: none
+
 // MAIN CLASSES
 .title
     font-weight: 400
@@ -35,6 +36,16 @@ ul
     line-height: 40px
     text-align: center
     color: $black
+    transition: $transition
+    &:hover
+        color: $white
+        background: $black
+.link
+    transition: $transition
+    border-bottom: $border
+    border-bottom-color: transparent
+    &:hover
+        border-bottom-color: $black
 .wrap
     width: 80%
     margin: auto

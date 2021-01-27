@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zen</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
+    <div class="preloader">
+        <div class='sk-chasing-dots'>
+            <div class='sk-child sk-dot-1'></div>
+            <div class='sk-child sk-dot-2'></div>
+        </div>
+    </div>
 
     <div class="general__wrap">
 
@@ -18,9 +26,9 @@
                 <h3 class="nav__logo-title">Personal Business</h3>
             </div>
             <ul class="nav__menu">
-                <li><a href="#" class="nav__menu-link">Zenefits</a></li>
-                <li><a href="#" class="nav__menu-link">Features</a></li>
-                <li><a href="#" class="nav__menu-link">Pricing</a></li>
+                <li><a href="#zenefits" class="nav__menu-link link">Zenefits</a></li>
+                <li><a href="#features" class="nav__menu-link link">Features</a></li>
+                <li><a href="#pricing" class="nav__menu-link link">Pricing</a></li>
                 <li><a href="#" class="nav__menu-btn btn">Get App</a></li>
             </ul>
         </nav>
@@ -32,11 +40,12 @@
                 <div class="header__text section__text">
                     <h2 class="header__text-subtitle">In every beginning, there is chaos.</h2>
                     <h1 class="header__text-title section__text-title">Peaceful shopping.<br>Mindful money.</h1>
-                    <p class="header__text-info info section__text-info">See how we can help with making your shopping experience and money management more ZEN.</p>
-                    <a href="#" class="header__text-link link">
+                    <p class="header__text-info info section__text-info">See how we can help with making your shopping
+                        experience and money management more ZEN.</p>
+                    <a href="#" class="header__text-link">
                         <img src="img/Buttons/Button.png" alt="app store">
                     </a>
-                    <a href="#" class="header__text-link link">
+                    <a href="#" class="header__text-link">
                         <img src="img/Buttons/Button(1).png" alt="app store">
                     </a>
                 </div>
@@ -59,8 +68,12 @@
                     </div>
                     <div class="section__text">
                         <h2 class="section__text-title title">1-year warranty boost</h2>
-                        <p class="info section__text-info">ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.</p>
-                        <p class="info section__text-info">When you buy any electronics with your ZEN shopping Mastercard®, their warranty gets extended by one year. How does it work? It simply does. Automatically.</p>
+                        <p class="info section__text-info">ZEN cards have a very neat feature that will help you
+                            whenever your electronic devices start failing after the standard warranty ends, which is
+                            pretty common.</p>
+                        <p class="info section__text-info">When you buy any electronics with your ZEN shopping
+                            Mastercard®, their warranty gets extended by one year. How does it work? It simply does.
+                            Automatically.</p>
                     </div>
 
                 </div>
@@ -73,23 +86,32 @@
 
                     <div class="section__text">
                         <h2 class="section__text-title title">ZEN Care</h2>
-                        <p class="info section__text-info">Shopping online is usually a delightful experience. Until it's not.</p>
-                        <p class="info section__text-info">Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.</p>
-                        <p class="info section__text-info">But, here comes ZEN Care: a free, built-in shopping protection. You can rest assured we’ll handle all of the transaction-related problems faster and with higher success rates. Where lone consumers can be ignored or dumped by dishonest merchants, ZEN doesn't get discouraged. ZEN persists.</p>
+                        <p class="info section__text-info">Shopping online is usually a delightful experience. Until
+                            it's not.</p>
+                        <p class="info section__text-info">Until something you buy, proves to be faulty, missing or a
+                            totally wrong item, you’re in for long product return procedures.</p>
+                        <p class="info section__text-info">But, here comes ZEN Care: a free, built-in shopping
+                            protection. You can rest assured we’ll handle all of the transaction-related problems faster
+                            and with higher success rates. Where lone consumers can be ignored or dumped by dishonest
+                            merchants, ZEN doesn't get discouraged. ZEN persists.</p>
                     </div>
                     <div class="section__image">
                         <img src="img/Rectangles/Rectangle (2).png" alt="">
                     </div>
-                    
+
                 </div>
                 <!-- /.section__wrap wrap -->
             </div>
             <!-- /.section -->
 
-            <div class="cashback">
+            <div class="cashback" id="zenefits">
                 <div class="cashback__wrap wrap">
                     <h2 class="cashback__title title">and cashback!</h2>
-                    <p class="cashback__info info">It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it. We gave it a thought and made cashback way more friendly. Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase. It's like you haggled some cash, despite you didn't have to. Just don't forget to use in-app cashback link.</p>
+                    <p class="cashback__info info">It saves a little bit of money while you’re shopping, but in many
+                        cases it takes ages to get anything out of it. We gave it a thought and made cashback way more
+                        friendly. Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account
+                        right after the purchase. It's like you haggled some cash, despite you didn't have to. Just
+                        don't forget to use in-app cashback link.</p>
                 </div>
                 <!-- /.cashback__wrap wrap -->
             </div>
@@ -112,59 +134,29 @@
             </div>
             <!-- /.partners -->
 
-            <div class="section shopping">
+            <div class="section shopping" id="features">
                 <div class="section__wrap wrap shopping__wrap">
 
                     <div class="section__text shopping__text">
                         <h2 class="section__text-title title">ZEN shopping Mastercard</h2>
-                        <p class="info section__text-info shopping__text-info">You shouldn’t be bound to use one card at a time, especially when it has so many benefits! With ZEN, you can manage your shopping and finances with both physical and virtual cards. It’s convenient, streamlined, and works like a charm. You can have a shopping card, a subscription card, and whatever other cards that make sense to you.</p>
-                        <a href="#" class="shopping__link">
-                            <img src="img/Icons/apple.svg" alt="apple btn"> 
+                        <p class="info section__text-info shopping__text-info">You shouldn’t be bound to use one card at
+                            a time, especially when it has so many benefits! With ZEN, you can manage your shopping and
+                            finances with both physical and virtual cards. It’s convenient, streamlined, and works like
+                            a charm. You can have a shopping card, a subscription card, and whatever other cards that
+                            make sense to you.</p>
+                        <a href="#" class="shopping__link btn">
+                            <img src="img/Icons/apple.svg" alt="apple btn">
                             <span class="shopping__link-span">Pay</span>
                         </a>
-                        <a href="#" class="shopping__link">
+                        <a href="#" class="shopping__link btn">
                             <img src="img/Icons/google.svg" alt="apple btn">
                             <span class="shopping__link-span">Pay</span>
                         </a>
                     </div>
                     <div class="section__image">
-                        <img src="img/Rectangles/Rectangle (3).png" alt=""> 
+                        <img src="img/Rectangles/Rectangle (3).png" alt="">
                     </div>
-                    
-                </div>
-                <!-- /.section__wrap wrap -->
-            </div>
-            <!-- /.section -->
-            
-            <div class="section">
-                <div class="section__wrap wrap">
-                    
-                    <div class="section__image">
-                        <img src="img/Rectangles/Rectangle (4).png" alt="">
-                    </div>
-                    <div class="section__text">
-                        <h2 class="section__text-title title">Shopping with no fees</h2>
-                        <p class="info section__text-info">Online shopping is flawed with all kind of fees. Currency exchange fees, processing fees and even fees for having multiple fees. Getting rid of them became our hobby. Same goes for ATM withdrawal fees.</p>
-                        <p class="info section__text-info">Enjoy your money globally. Every uncut part of it. Keep reading. ZEN goes beyond shopping with a fully functional account.</p>
-                    </div>
-                    
-                </div>
-                <!-- /.section__wrap wrap -->
-            </div>
-            <!-- /.section -->
-            
-            <div class="section">
-                <div class="section__wrap wrap">
-                    
-                    <div class="section__text">
-                        <h2 class="section__text-title title">One app, one account, many currencies</h2>
-                        <p class="info section__text-info">ZEN Mastercard® was made for spending money. ZEN account is here to store and manage it peacefully, from the inside of your pocket.</p>
-                        <p class="info section__text-info">You can use it just like a regular account, as it has its own IBAN and works just the way any bank account would — but better. Store up to 30 currencies and transfer them easily in many ways.</p>
-                    </div>
-                    <div class="section__image">
-                        <img src="img/Rectangles/Rectangle (5).png" alt="">
-                    </div>
-                    
+
                 </div>
                 <!-- /.section__wrap wrap -->
             </div>
@@ -172,16 +164,59 @@
 
             <div class="section">
                 <div class="section__wrap wrap">
-                    
+
+                    <div class="section__image">
+                        <img src="img/Rectangles/Rectangle (4).png" alt="">
+                    </div>
+                    <div class="section__text">
+                        <h2 class="section__text-title title">Shopping with no fees</h2>
+                        <p class="info section__text-info">Online shopping is flawed with all kind of fees. Currency
+                            exchange fees, processing fees and even fees for having multiple fees. Getting rid of them
+                            became our hobby. Same goes for ATM withdrawal fees.</p>
+                        <p class="info section__text-info">Enjoy your money globally. Every uncut part of it. Keep
+                            reading. ZEN goes beyond shopping with a fully functional account.</p>
+                    </div>
+
+                </div>
+                <!-- /.section__wrap wrap -->
+            </div>
+            <!-- /.section -->
+
+            <div class="section" id="pricing">
+                <div class="section__wrap wrap">
+
+                    <div class="section__text">
+                        <h2 class="section__text-title title">One app, one account, many currencies</h2>
+                        <p class="info section__text-info">ZEN Mastercard® was made for spending money. ZEN account is
+                            here to store and manage it peacefully, from the inside of your pocket.</p>
+                        <p class="info section__text-info">You can use it just like a regular account, as it has its own
+                            IBAN and works just the way any bank account would — but better. Store up to 30 currencies
+                            and transfer them easily in many ways.</p>
+                    </div>
+                    <div class="section__image">
+                        <img src="img/Rectangles/Rectangle (5).png" alt="">
+                    </div>
+
+                </div>
+                <!-- /.section__wrap wrap -->
+            </div>
+            <!-- /.section -->
+
+            <div class="section">
+                <div class="section__wrap wrap">
+
                     <div class="section__image">
                         <img src="img/Rectangles/Rectangle (6).png" alt="">
                     </div>
                     <div class="section__text">
                         <h2 class="section__text-title title">Quick and easy account creation</h2>
-                        <p class="info section__text-info">Now, you might be thinking that it’s just like any other account creation… Long, tiresome and full of endless blanks to fill in. Well, it’s not.</p>
-                        <p class="info section__text-info">We have designed the whole process to make it the simplest and the shortest one ever conceived for a personal account. Download the app and see for yourself!</p>
+                        <p class="info section__text-info">Now, you might be thinking that it’s just like any other
+                            account creation… Long, tiresome and full of endless blanks to fill in. Well, it’s not.</p>
+                        <p class="info section__text-info">We have designed the whole process to make it the simplest
+                            and the shortest one ever conceived for a personal account. Download the app and see for
+                            yourself!</p>
                     </div>
-                    
+
                 </div>
                 <!-- /.section__wrap wrap -->
             </div>
@@ -227,4 +262,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  z-index: 9999;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sk-chasing-dots {
+  width: 4em;
+  height: 4em;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  -webkit-animation: sk-chasing-dots-rotate 2s infinite linear;
+          animation: sk-chasing-dots-rotate 2s infinite linear;
+}
+
+.sk-chasing-dots .sk-child {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #222222;
+  border-radius: 100%;
+  -webkit-animation: sk-chasing-dots-bounce 2s infinite ease-in-out;
+          animation: sk-chasing-dots-bounce 2s infinite ease-in-out;
+}
+
+.sk-chasing-dots .sk-dot-2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-chasing-dots-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes sk-chasing-dots-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes sk-chasing-dots-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-chasing-dots-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +124,24 @@ ul {
   line-height: 40px;
   text-align: center;
   color: #222222;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background: #222222;
+}
+
+.link {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid #222222;
+  border-bottom-color: transparent;
+}
+
+.link:hover {
+  border-bottom-color: #222222;
 }
 
 .wrap {
@@ -363,24 +461,36 @@ ul {
 }
 
 .shopping__link {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80px;
   height: 40px;
   margin-right: 10px;
   margin-top: 15px;
   border: 1px solid #222222;
   border-radius: 6px;
-  text-align: center;
+}
+
+.shopping__link:hover span {
+  color: #ffffff;
 }
 
 .shopping__link img {
   width: 20px;
+  height: 20px;
 }
 
 .shopping__link-span {
   font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 .shopping__text {
