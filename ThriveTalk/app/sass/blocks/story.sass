@@ -1,0 +1,51 @@
+.story
+    width: 100%
+    min-height: 400px
+    padding: 50px 0
+    color: $secondary-accent
+    &__wrap
+        display: flex
+    &__hgroup
+        width: 30%
+        &-title
+            font-size: 16px
+            text-transform: uppercase
+    &__text
+        width: 70%
+        &-info
+            width: 80%
+            font-size: 24px;
+            line-height: 34px
+    &__note
+        margin-top: 100px
+        text-align: center
+        font-size: 16px
+        color: $light-main-accent
+        text-transform: uppercase
+        font-weight: 300
+
+@media screen and ( max-width: 1200px )
+    .story
+        &__text
+            &-info
+                font-size: 20px
+                line-height: 24px
+@media screen and ( max-width: 992px )
+    .story
+        &__text
+            &-info
+                width: 100%
+@media screen and ( max-width: 768px )
+    .story
+        &__wrap
+            flex-wrap: wrap
+        &__text,&__hgroup
+            width: 100%
+        &__hgroup
+            margin-bottom: 20px
+
+@media screen and ( max-width: 576px )
+    .story
+        &__text
+            &-info
+                font-size: 16px
