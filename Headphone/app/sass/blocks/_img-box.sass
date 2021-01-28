@@ -1,0 +1,38 @@
+.img__box // wow block with one img and beautiful animation
+    width: 100%
+    min-height: 500px
+    padding: 100px 0
+    background: $main-black
+    display: flex
+    justify-content: center
+    align-items: center
+    .wrap__img__box
+        position: relative
+    &-img
+        width: 200px
+        filter: drop-shadow(0px 0px 20px $main-blue)
+    &-soundwave
+        position: absolute
+        top: 0
+        display: block
+        width: 100px
+        height: 50px
+        background: url('../img/dest/gif/soundwave.gif')
+        background-size: cover
+    &-soundwave1 // animation styles for img (it block is gif)
+        right: -83px
+    &-soundwave2 // animation styles for img (it block is gif)
+        left: -83px
+@media screen and ( max-width: 470px )
+    .img__box
+        .wrap__img__box
+        &-img
+            width: 125px
+        &-soundwave
+            width: 80px
+            height: 50px
+        &-soundwave1
+            right: -73px
+        &-soundwave2
+            left: -73px
+            

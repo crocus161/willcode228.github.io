@@ -1,0 +1,38 @@
+.footer // footer block (contacts, adress, map)
+    width: 100%
+    min-height: 400px
+    background: url('../img/dest/Bg/footer_bg.png')
+    background-color: $secondary-black
+    background-blend-mode: multiply
+    position: relative
+    padding: 50px 0
+    color: $main-white
+    .contacts
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &__box
+            margin: 20px
+            &-hgroup
+                margin-bottom: 20px
+                .contacts__box-title
+                    color: $main-white
+            &-info
+                li
+                    margin-bottom: 10px
+                    a
+                        color: $main-white
+                        text-decoration: underline
+//map setting
+#gmap_canvas
+    width: 100%
+    min-height: 500px
+
+@media screen and ( max-width: 494px )
+    .footer
+        .contacts
+            justify-content: flex-start
+            margin-left: 3%
+
+
+    

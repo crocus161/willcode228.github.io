@@ -1,0 +1,110 @@
+.productList // block with list of our products
+    width: 100%
+    min-height: 800px
+    padding: 100px 0
+    background: $main-white
+    .productList__hgroup
+        margin-bottom: 50px
+    &__slider-wrap
+        min-width: 0
+        display: flex
+        justify-content: center
+        flex-direction: column
+        ul.slick-dots
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            li
+	            margin: 0px 10px
+            button
+                font-size: 0
+                width: 10px
+                height: 10px
+                background-color: $secondary-black
+                border-radius: 50%
+            li.slick-active button
+                background-color: transparent
+                border: 1px solid $main-black
+        .slick-slide
+            min-width: 0
+            min-height: 650px
+            margin: 80px
+            display: flex
+            justify-content: center
+            align-items: center
+            outline: none
+            .products__item-wrap
+                min-width: 300px
+                min-height: 400px
+                position: relative
+                box-shadow: $main-shadow
+                .products__item-icon
+                    position: absolute
+                    top: 20px
+                    right: 20px
+                    width: 35px
+                    height: 35px
+                    text-align: center
+                    line-height: 50px
+                    border-radius: 50%
+                    background: $main-white
+                    transition: $main-transition
+                    &:hover
+                        box-shadow: $main-shadow
+                    .products__icon-favourite
+                        .favourite__svg
+                            width: 25px
+                            color: $main-black
+                            &:hover
+                                color: $main-blue
+                .productList__img
+                    height: 220px
+                    background: $main-grey
+                    img
+                        width: 300px
+                        height: 240px
+                        object-fit: cover
+                .productList__info
+                    min-height: 300px
+                    padding: 25px
+                    .productList__info-btn
+                        margin-left: 20px
+                        width: 100px
+                        height: 30px
+                    .productList__info-title
+                        margin-top: 10px
+                    .productList__item-description
+                        margin: 15px 0
+                    .productList__item-type
+                        color: $secondary-accent
+                        margin-bottom: 20px
+                    .productList__item-price
+                        display: inline-block
+                        s
+                            color: $main-accent
+
+@media screen and ( max-width: 2560px )
+    .productList
+        .slick-slide
+            .products__item-wrap
+                width: 300px
+                .productList__img
+                    width: 100%
+                    img
+                        width: 100%
+
+@media screen and ( max-width: 360px )
+    .productList
+        &__slider-wrap
+            .slick-slide
+                .products__item-wrap
+                    min-width: 250px
+                    .productList__info
+                        .productList__info-btn
+                            display: block
+                            margin-left: 0
+                            margin-top: 10px
+        
+
+

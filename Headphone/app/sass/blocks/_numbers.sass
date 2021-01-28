@@ -1,0 +1,41 @@
+.numbers // numbers block
+    width: 100%
+    min-height: 250px
+    padding: 50px 0
+    &:hover
+        .numbers__yellow
+            text-shadow: $main-yellow 0 0 5px, $main-yellow 3px 3px 10px
+        .numbers__blue
+            text-shadow: $main-blue 0 0 5px, $main-blue 3px 3px 10px
+        .numbers__accent
+            text-shadow: $secondary-accent 0 0 5px, $secondary-accent 3px 3px 10px
+        .numbers__red
+            text-shadow: $main-accent 0 0 5px, $main-accent 3px 3px 10px
+    .numbers__wrap
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        .numbers__item
+            margin: 35px
+            text-align: center
+            .numbers__item-h2
+                font-size: 80px
+        .numbers__yellow, .numbers__blue, .numbers__red, .numbers__accent // differen colors for every number in this block
+            transition: $main-transition
+        .numbers__yellow
+            color: $main-yellow
+        .numbers__blue
+            color: $main-blue
+        .numbers__red
+            color: $main-accent
+        .numbers__accent
+            color: $secondary-accent
+@media screen and ( max-width: 820px )
+    .numbers
+        .numbers__wrap
+            h2
+                font-size: 60px
+@media screen and ( max-width: 435px )
+     .numbers
+        .numbers__wrap
+            flex-direction: column

@@ -1,0 +1,28 @@
+.shoping // block about comfortable work with our company
+    width: 100%
+    min-height: 600px
+    padding: 50px 0
+    background: $secondary-black
+    display: flex
+    justify-content: center
+    align-items: center
+    &__hgroup-title
+        color: $main-white
+        line-height: inherit
+        .shoping__hgroup-span
+            text-transform: uppercase
+        .main__span
+            display: inline-block
+            color: $main-blue
+        h2
+            margin-top: -30px
+@media screen and ( max-width: 650px )
+    .shoping
+        background: url('../img/dest/Bg/shoping_mobile_bg.jpg')
+        background-size: cover
+        background-position: top center
+        background-repeat: no-repeat
+        background-color: $secondary-black
+        background-blend-mode: darken
+    .shoping__speakingMan-bg
+        display: none

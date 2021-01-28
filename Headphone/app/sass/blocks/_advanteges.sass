@@ -1,0 +1,33 @@
+.advanteges // advanteges of our company block
+    width: 100%
+    min-height: 600px
+    background: url('../img/dest/Bg/features_bg.png')
+    background-size: cover
+    background-position: center center
+    padding: 120px 0
+    display: flex
+    justify-content: center
+    flex-direction: column
+    &:hover
+        img
+            transform: scale(1.1)
+            filter: drop-shadow(1px 10px 17px $secondary-black)
+    &__hgroup
+        margin-bottom: 80px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &-card
+            width: 280px
+            margin: 20px
+            text-align: center
+            .advanteges__card-title
+                margin-top: 20px
+                margin-bottom: 15px
+            img
+                transition: $main-transition
+
+@media screen and ( max-width: 800px )
+    .advanteges__hgroup
+        margin-bottom: 30px

@@ -1,0 +1,84 @@
+.header__nav // navbar block
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 70px
+    background: transparent
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $secondary-grey
+    z-index: 9
+    transition: $main-transition
+    .nav__logo
+        width: 150px
+        margin-left: 20px
+        .nav__logo-svg
+            fill: $main-white //logo is svg
+    .nav__btn //setting of nav burger btn
+        width: 35px
+        height: 35px
+        margin-right: 50px
+        border-radius: 50%
+        text-align: center
+        line-height: 37px
+        transition: $main-transition
+        &-burger
+            font-size: 20px
+            color: $main-white
+            transition: $main-transition
+            &:hover
+                color: $main-blue
+                text-shadow: $main-blue 0 0 5px, $main-blue 4px 4px 12px, 
+    .nav__menu //default styles of menu list
+        width: 300px
+        min-height: 100vh
+        background: $main-white
+        position: fixed
+        top: 0
+        right: -150%
+        z-index: 99
+        display: flex
+        padding: 0 50px
+        transition: $main-transition
+        &-list
+            width: 300px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            flex-direction: column
+            .nav__menu-item
+                font-size: 18px
+                color: $secondary-black
+                transition: $main-transition
+                &:hover
+                    color: $main-black
+                    font-size: 22px
+            .close__burger-btn
+                &:hover
+                    color: $main-blue
+.nav__active // active styles of menu list
+    box-shadow: $main-shadow
+    background: $main-white
+    border: none
+    .nav__logo
+        .nav__logo-svg
+            fill: $main-black
+    .nav__btn
+        transition: $main-transition
+        &:hover
+            background: $main-blue  
+        &-burger
+            font-size: 20px
+            color: $main-black
+            &:hover
+                color: $main-white
+                text-shadow: none
+
+@media screen and ( max-width: 600px )
+    .header__nav
+        border: none
+    .nav__menu
+        max-width: 100%
+    

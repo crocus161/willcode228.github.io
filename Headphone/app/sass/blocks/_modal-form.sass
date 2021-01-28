@@ -1,0 +1,59 @@
+.modal__form // default styles of modal form
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 100vh
+    background: $secondary-black
+    opacity: 0
+    transition: $main-transition
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: -999
+    pointer-events: none
+    visibility: hidden
+    .wrap__modal-form
+        min-width: 300px
+        min-height: 300px
+        border-radius: 20px
+        padding: 50px
+        background: $main-white
+        position: relative
+        text-align: center
+        .modal__form-close // styles of close modal form btn
+            position: absolute
+            top: 20px
+            right: 20px
+            font-size: 20px
+            transition: $main-transition
+            color: $main-black 
+            z-index: 999
+            &:hover
+                color: $main-blue
+            &:focus
+                color: $main-blue
+    .form__item
+        margin-bottom: 20px
+        .form__title
+            color: $secondary-accent
+            margin-bottom: 10px
+    input, textarea
+        width: 200px
+        text-align: center
+        padding: 5px
+        border: 1px solid $secondary-black
+        border-radius: 20px
+
+.modal__form.modal__form-active // active styles for modal form
+    pointer-events: inherit
+    visibility: visible
+    opacity: 1
+    z-index: 99999
+
+@media screen and ( max-width: 400px )
+    .modal__form
+        .wrap__modal-form
+            min-width: 250px
+            padding: 20px
+    

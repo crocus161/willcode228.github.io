@@ -1,0 +1,118 @@
+.header__body // first screen block without nav
+    width: 100%
+    min-height: 100vh
+    background: $secondary-black
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    transition: $main-transition
+    &-img
+        margin: 25px
+        img
+            width: 300px
+            transition: $main-transition
+            &:hover
+                transform: scale(1.2)
+    &-text
+        margin: 25px
+        color: $main-white
+        text-align: center
+        .header__body-title
+            font-size: 150px 
+            color: $main-white
+            margin: 0
+        .header__body-subtitle
+            span
+                display: inline-block
+
+@media screen and ( max-height: 550px )
+    .header__body-img
+        margin: 0
+        img
+            width: 250px
+@media screen and ( max-width: 820px )
+    .header__body-text
+        .header__body-title
+            font-size: 100px
+        .header__body-subtitle
+            font-size: 15px
+    .header__body-img
+        margin: 0
+        img
+            width: 250px
+@media screen and ( max-width: 765px )
+    .header__body-img
+        img
+            width: 200px  
+@media screen and ( max-width: 650px )
+    .header__body
+        background: url(../img/dest/Bg/header_mobile_bg.jpg) //turn on background photo for mobile device 
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        background-color: $secondary-black
+        background-blend-mode: darken
+    .header__airpods-bg
+        display: none //turn of background vide for mobile device
+    .header__body-text
+        .header__body-title
+            font-size: 80px
+    .header__body-img
+        margin-top: 50px
+        position: relative
+        //animation settings for img
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            display: block
+            width: 220px
+            height: 220px
+            border-radius: 50%
+            background: linear-gradient(darken($main-blue, 20%), transparent)
+            transform: translate(-50%, -50%)
+            animation: scaling 1s linear infinite alternate
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            display: block
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            background: linear-gradient(transparent, rgba(darken($main-blue, 5%), 0.5))
+            transform: translate(-50%, -50%)
+            animation: scaling 1s linear 0.5s infinite alternate
+        img
+            position: relative
+            width: 150px
+            z-index: 1
+
+@keyframes scaling
+    0%
+        width: 100px
+        height: 100px
+    100%
+        width: 240px 
+        height: 240px
+        
+@media screen and ( max-width: 470px )
+    .header__body
+        flex-direction: column-reverse // img would be last ellement in the header
+        justify-content: center
+        align-items: center
+@media screen and ( max-width: 420px )
+    .header__body-img
+        img
+            width: 150px
+@media screen and ( max-width: 300px )
+    .header__body-img
+        img
+            width: 120px
+
+
+
+    

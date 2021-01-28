@@ -1,0 +1,34 @@
+.comments // comments about our products block
+    width: 100%
+    min-height: 500px
+    background: $secondary-grey
+    padding: 100px 0
+    &__hgroup
+        margin-bottom: 50px
+        &-info.main__notes
+            color: $secondary-black
+    &__slider-wrap
+        .slider__item
+            min-width: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            padding: 40px
+            text-align: center
+            opacity: 0.4
+            transform: scale(0.8)
+            transition: $main-transition
+            .comments__img
+                margin-bottom: 20px
+                transition: $main-transition
+            .comments__info
+                width: 99%
+        .slider__item.slick-current
+            opacity: 1
+            transform: scale(1.2)
+//main settings styles for slick slider
+.slick-track
+    display: flex
+.slick-list
+    overflow: hidden

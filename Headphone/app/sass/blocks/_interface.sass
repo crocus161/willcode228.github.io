@@ -1,0 +1,140 @@
+// main default styles of all ellement and main classes
+//vars
+//main colours
+$main-black: #000000
+$main-white: #ffffff
+$main-grey: #282828
+$main-accent: #ff6d6d
+$main-yellow: #fc0
+$main-blue: #0af
+//secondary colours
+$secondary-black: rgba($main-black, 0.6)
+$secondary-grey: #f6f5f3
+$secondary-accent: #323969
+//transtition
+$main-transition: 0.5s
+//shadow
+$main-shadow: 0px 5px 10px 3px $secondary-black
+//vars
+
+//interface  
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Arial', sans-serif
+    &::selection
+        background: $main-blue
+        color: $main-white
+body
+    scroll-behavior: smooth
+    overflow-x: hidden
+
+//scrollbar style
+body::-webkit-scrollbar
+    width: 10px
+    background: $secondary-black
+body::-webkit-scrollbar-track
+    border-radius: 5px
+body::-webkit-scrollbar-thumb
+    border-radius: 5px
+    background: darken($main-blue, 10%)
+body::-webkit-scrollbar-thumb:hover
+    background: $main-blue
+//scrollbar style
+
+//main reset styles of different tags
+h1,h2,h3,h4,h5,h6
+    margin: 0
+button,input,textarea
+    border: none
+    background: none
+    box-shadow: none
+    outline: none
+button
+    cursor: pointer
+a 
+    text-decoration: none
+    outline: none
+    cursor: pointer
+li
+    list-style-type: none
+//main reset styles of different tags
+
+//styles of main classes
+
+//wrapper for all content in the page
+.general__wrap
+    max-width: 2560px
+    margin: auto
+//wrapper for all content in the page
+
+.main__span
+    display: block
+
+//wrapper in blocks
+.main__wrap
+    width: 80%
+    margin: auto
+//wrapper in blocks
+
+//different texts styles    
+.main__hgroup
+    text-align: center
+.main__title
+    font-size: 45px
+    font-weight: 400
+    line-height: 25px
+    margin-bottom: 15px
+    transition: $main-transition
+.main__note
+    font-size: 20px
+    letter-spacing: 1.5px
+    color: $secondary-black
+.main__info
+    font-size: 16px
+    color: $secondary-black
+//different texts styles  
+
+.main__link
+    &:hover
+        color: $main-blue
+.main__link
+    position: relative
+    transition: $main-transition
+    &::before
+        content: ''
+        position: absolute
+        top: 100%
+        display: block
+        width: 100%   
+        height: 1px
+        background: $main-blue
+        transform: scaleX(0)
+        transition: $main-transition
+    &:hover::before
+        transform: scaleX(1)
+
+.main__btn
+    display: inline-block
+    width: 200px
+    height: 40px
+    border-radius: 20px
+    color: $main-white
+    background: $secondary-accent
+    transition: $main-transition
+    &:hover
+        background: $main-blue
+        
+//styles of main classes
+
+@media screen and ( max-width: 820px )
+    .main__title
+        font-size: 35px
+    .main__note
+        font-size: 15px
+    .main__info
+        font-size: 12px
+@media screen and ( max-width: 590px )
+     .main__title
+        font-size: 20px

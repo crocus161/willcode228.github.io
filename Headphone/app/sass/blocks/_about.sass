@@ -1,0 +1,42 @@
+.about // about our company block
+    width: 100%
+    min-height: 500px
+    background: $secondary-grey
+    padding: 150px 0
+    position: relative
+    overflow: hidden
+    &:hover
+        .about__headphone-img-1,.about__headphone-img-2
+            filter: drop-shadow(1px 10px 10px $secondary-accent)
+    &__hgroup
+        margin-bottom: 30px
+    &__info
+        text-align: center
+    .about__headphone-img-1, .about__headphone-img-2
+        position: absolute
+        bottom: -50px
+        transition: $main-transition
+        img
+            width: 100px
+    &__headphone-img-1
+        left: 0
+        img
+            transform: rotate(35deg)
+    &__headphone-img-2
+        right: 0
+        img
+            transform: rotate(-35deg)
+
+@media screen and ( max-width: 1000px )
+    .about
+        .about__headphone-img-1, .about__headphone-img-2
+            img
+                width: 70px
+                filter: drop-shadow(1px 10px 10px $secondary-accent)
+@media screen and ( max-width: 480px )
+    .about
+        padding-top: 80px
+        .main__wrap
+            width: 95%
+            .main__info
+                font-size: 16px
