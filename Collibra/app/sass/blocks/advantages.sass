@@ -1,0 +1,73 @@
+.advantages
+    width: 100%
+    min-height: 500px
+    padding: 200px 0px 50px 0px
+    background: $secondary-grey
+    &:hover
+        .advantages__card
+            opacity: 0.5
+            transform: scale(0.8)
+    .advantages__card
+        &:hover
+            opacity: 1
+            transform: scale(1)
+            .advantages__hgroup-title
+                color: $secondary-accent
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+    &__card
+        width: 295px
+        min-height: 360px
+        margin: 20px
+        padding: 25px
+        background: $white
+        transition: $medium-transition
+    &__text
+        &-info
+            margin: 15px 0px
+    &__hgroup
+        display: flex
+        align-items: flex-end
+        margin-bottom: 10px
+        &-title
+            margin-left: 10px
+            font-weight: bold
+            font-size: 28px
+            color: $accent
+            transition: $medium-transition
+
+@media screen and ( max-width: 1400px )
+    .advantages
+        &__hgroup
+            &-title
+                font-size: 26px
+@media screen and ( max-width: 1200px )
+    .advantages
+        &__hgroup
+            &-title
+                font-size: 24px
+@media screen and ( max-width: 992px )
+    .advantages
+        &__hgroup
+            &-title
+                font-size: 22px
+@media screen and ( max-width: 768px )
+    .advantages
+        &__hgroup
+            &-title
+                font-size: 20px
+@media screen and ( max-width: 576px )
+    .advantages
+        &__wrapper
+            width: 90%
+        &__hgroup
+            &-title
+                font-size: 18px
+@media screen and ( max-width: 320px )
+    .advantages
+        &__hgroup
+            &-title
+                font-size: 16px

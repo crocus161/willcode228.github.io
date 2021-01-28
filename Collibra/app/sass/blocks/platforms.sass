@@ -1,0 +1,75 @@
+.platforms
+    width: 100%
+    min-height: 800px
+    padding: 80px 0px
+    background: $black
+    color: $white
+    display: flex
+    align-items: center
+    flex-direction: column
+    &:hover
+        .platforms__app img
+            box-shadow: $shadow
+            transform: scale(1.1) rotate(-1deg)
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        margin-bottom: 50px
+    &__text
+        margin-top: 100px
+        width: 50%
+        &-title
+            margin-bottom: 10px
+    &__image
+        width: 500px
+        img
+            width: 100%
+            object-fit: cover
+    &__app
+        margin-bottom: -150px
+        img
+            width: 100%
+            object-fit: cover
+            transition: $low-transition
+
+@media screen and ( max-width: 1400px )
+    .platforms
+        &__app
+            width: 1000px
+@media screen and ( max-width: 1200px )
+    .platforms
+        &__image
+            width: 400px
+        &__app
+            width: 800px
+@media screen and ( max-width: 992px )
+    .platforms
+        &__image
+            width: 300px
+        &__app
+            width: 700px
+@media screen and ( max-width: 768px )
+    .platforms
+        &__text
+            width: 100%
+            margin-bottom: 50px
+            margin-top: 0
+        &__wrapper
+            margin-top: 0px
+            flex-direction: column
+            align-items: center
+        &__app
+            width: 550px
+@media screen and ( max-width: 576px )
+    .platforms
+        &__app
+            width: 300px
+@media screen and ( max-width: 320px )
+    .platforms
+        min-height: 700px
+        &__image
+            width: 260px
+        &__app
+            width: 260px
+    
+                

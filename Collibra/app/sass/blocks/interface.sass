@@ -1,0 +1,130 @@
+//******** FONTS *********//
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Gothic+A1&display=swap');
+
+//******** CLASSES *********//
+.info
+    font-size: 18px
+    line-height: 27px
+
+.title
+    font-size: 36px
+    line-height: 32px
+    span
+        font-family: 'Gothic A1', sans-serif
+
+
+.subtitle
+    font-size: 12px
+
+.link
+    color: $black
+    font-family: 'Gothic A1', sans-serif
+    font-size: 15px
+    line-height: 24px
+    text-decoration: none
+    position: relative
+    transition: $medium-transition
+    &:hover
+        color: $accent
+        &::after,
+        &::before
+            width: 50%
+            background: $accent
+    &::after,
+    &::before
+        content: ''
+        position: absolute
+        bottom: -3px
+        width: 50%
+        height: 1px
+        background: $white
+        transition: $medium-transition
+        width: 0
+    &::before
+        left: 0
+    &::after
+        right: 0
+
+.btn
+    display: block
+    width: 180px
+    height: 40px
+    font-family: 'Gothic A1', sans-serif
+    font-size: 12px
+    line-height: 40px
+    text-align: center
+    background: $secondary-accent
+    transition: $medium-transition
+    &:hover
+        background: $accent
+        color: $white
+
+.wrapper
+    width: 80%
+    margin: auto
+
+.general__wrap
+    max-width: 1440px
+    margin: auto
+
+    
+//******** TAGS *********//
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Amiri', serif
+
+h1,h2,h3,h4,h5,h6
+    font-weight: 400
+    font-family: 'Gothic A1', sans-serif
+button
+    border: none
+    outline: none
+    cursor: pointer
+
+
+
+
+
+
+//******** Queries *********//
+
+@media screen and ( max-width: 1400px )
+    .info
+        font-size: 18px
+    .title
+        font-size: 34px
+        line-height: 38px
+@media screen and ( max-width: 1200px )
+    .info
+        font-size: 17px
+    .title
+        font-size: 30px
+        line-height: 34px
+@media screen and ( max-width: 992px )
+    .info
+        font-size: 16px
+    .title
+        font-size: 28px
+        line-height: 32px
+@media screen and ( max-width: 768px )
+    .info
+        font-size: 15px
+    .title
+        font-size: 26px
+        line-height: 30px
+@media screen and ( max-width: 576px )
+    .info
+        font-size: 14px
+    .title
+        font-size: 24px
+        line-height: 28px
+@media screen and ( max-width: 320px )
+    .link
+        font-size: 14px
+    .info
+        font-size: 13px
+    .title
+        font-size: 16px
+        line-height: 24px

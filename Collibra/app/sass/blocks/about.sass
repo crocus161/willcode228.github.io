@@ -1,0 +1,49 @@
+.about
+    width: 100%
+    min-height: 400px
+    padding: 50px 0px
+    &:hover
+        .about__image img
+            transform: rotate(-3deg)
+    &__wrapper
+        width: 100%
+        display: flex
+        align-items: center
+    &__image
+        img
+            width: 100%
+            object-fit: cover
+            filter: drop-shadow(3px 3px 20px $black)
+            transition: $fast-transition
+    &__text
+        display: flex
+        justify-content: center
+        align-items: start
+        flex-direction: column
+        padding: 50px
+        color: $black
+        &-title
+            width: 80%
+            margin-top: 10px
+        &-subtitle
+            color: $grey
+            line-height: 12px
+        &-info
+            margin: 20px 0px
+    
+@media screen and ( max-width: 1400px )
+    .about
+        &__text
+            &-title
+                width: 100%
+
+@media screen and ( max-width: 992px )
+    .about
+        &__wrapper
+            width: 80%
+            flex-direction: column
+
+@media screen and ( max-width: 768px )
+    .about
+        &__text
+            padding: 25px 0px

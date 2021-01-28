@@ -1,0 +1,46 @@
+.innovation
+    width: 100%
+    min-height: 400px
+    padding: 50px 0px
+    &:hover
+        .innovation__hgroup-title   span
+            color: $secondary-accent
+    &__hgroup
+        width: 75%
+        margin-bottom: 50px
+        &-title
+            span
+                color: $accent
+                transition: $low-transition
+    &__box
+        width: 100%
+        margin: auto
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        &:hover
+            .innovation__box-card
+                opacity: 0.5
+                &:hover
+                    opacity: 1
+    &__card
+        width: 220px
+        margin: 30px
+        position: relative
+        transition: $fast-transition
+        &-img
+            position: absolute
+            top: -20px
+            left: -70px
+        &-info
+            margin: 15px 0px
+        
+@media screen and ( max-width: 992px )
+    .innovation
+        &__hgroup
+            width: 100%
+@media screen and ( max-width: 320px )
+    .innovation
+        &__box
+            width: 80%
