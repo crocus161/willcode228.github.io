@@ -1,8 +1,12 @@
 # willcode228.github.io
-Всем привет, здесь, в основном, будут храниться проекты по верстке.
-Представленные в этом репозитории проекты - лендинги.
+Всем привет, здесь, в основном, будут храниться проекты по верстке. 
+И некоторые проекты на JavaScript (Документация к ним будет написана в самих проектах).
+Представленные в этом репозитории проекты по верстке - лендинги.
 
-Данные проекты представленные в троих различных файловых структурах, о которых я сейчас расскажу.
+
+                                Документация к проектам по верстке
+                                
+Данные лендинги представленные в троих различных файловых структурах, о которых я сейчас расскажу.
 
 Первая структура(самая легкая) - использовал я ее для простеньких однодневных проектов.
 
@@ -90,5 +94,26 @@
 
  
 
+Здесь я оставлю ссылочки на каждый лендинг:
 
-
+        Древние проекты:
+        -https://willcode228.github.io/AirOnePage/
+        -https://willcode228.github.io/B&W/
+        -https://willcode228.github.io/Creatives/
+        -https://willcode228.github.io/Jewelery/
+        -https://willcode228.github.io/Mogo/
+        -https://willcode228.github.io/Бухгалтерские%20услуги/
+        
+        Новые пректы
+        -https://willcode228.github.io/Collibra/dist/
+        -https://willcode228.github.io/New%20Providence/
+        -https://willcode228.github.io/Headphone/dist/
+        -https://willcode228.github.io/SinglePageWebsite/
+        -https://willcode228.github.io/Zen/
+        -https://willcode228.github.io/ThriveTalk/dist/
+        
+ А здесь на JS проекты:
+ 
+        -https://willcode228.github.io/Dino/
+        -https://willcode228.github.io/HTML5%20Geolocation/
+        -https://willcode228.github.io/Native%20JS%20APP/
