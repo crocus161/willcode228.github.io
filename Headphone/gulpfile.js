@@ -33,7 +33,7 @@ function browsersync() {
 //format scripts
 function scripts() {
     return src([
-        'app/js/main.js'
+        'app/js/*.js'
     ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
@@ -76,9 +76,11 @@ function startWatch() {
 function buildcopy() {
 	return src([ 
 		'app/css/**/*.min.css',
-		'app/js/**/*.min.js',
+		'app/js/**/*.js',
 		'app/img/dest/**/*',
+		'app/libs/**/*',
 		'app/**/*.html',
+		'app/favicon.ico',
 		], { base: 'app' }) 
 	.pipe(dest('dist'))
 }
