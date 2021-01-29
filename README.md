@@ -79,6 +79,33 @@
   -Именование переменных css происходит с помощью разделения значений на главную(main) ветку и второстепенную(secondary),
   или к главной ветке не добавляется определяющий префикс, а к второстепенной добавляется;
   
+  Например:
+  
+      //******** COLOURS *********//
+
+      //main
+      $white: #FFFFFF
+      $black: #002B40
+      $grey: #5E7177
+      $accent: #00755F
+
+      //secondary
+      $secondary-black: #032736
+      $secondary-grey: #EFF2F3
+      $secondary-accent: #72BF00
+
+      //******** COLOURS *********//
+
+      //******** TRANSITIONS *********//
+      $fast-transition: 0.3s
+      $medium-transition: 0.5s
+      $low-transition: 0.7s
+      //******** TRANSITIONS *********//
+
+      //******** SHADOWS *********//
+      $shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+      $secondary-shadow: 3px 3px 20px $black
+      //******** SHADOWS *********//
 
   -Одинаково именовались некоторые html элементы проектов:
   
