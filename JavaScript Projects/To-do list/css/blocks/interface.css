@@ -63,4 +63,7 @@ button{
 		background: var(--brand-white);
 		color: var(--brand-black);
 	}
+	.main:hover{
+		box-shadow: none;
+	}
 }

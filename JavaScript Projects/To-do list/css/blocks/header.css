@@ -75,13 +75,15 @@
 	}
 	.header__hgroup{
 		margin: 0px 0px;
+		margin-bottom: 30px;
 	}
 	.header__hgroup,
 	.header__meta{
 		text-align: center;
 	}
-	.header__title{
-		margin-bottom: 10px;
+	.header__title,
+	.header__meta-date{
+		margin-bottom: 5px;
 	}
 	.header__subtitle{
 		color: var(--brand-white);
@@ -89,6 +91,11 @@
 	.header__subtitle span{
 		padding: 2px 2px;
 		background-color: var(--brand-white);
+	}
+	.header__meta-date{
+		padding: 5px;
+		color: var(--brand-accent);
+		background-color: var(--brand-white); 
 	}
 
 }
