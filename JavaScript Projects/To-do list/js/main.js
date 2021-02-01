@@ -155,6 +155,7 @@ window.addEventListener('load', () => {
         if(task_quantity == 0) completed_percent = 100;
 
         if (completed_percent == 100) progress_title.innerText = 'Wow! You have done all tasks!!!';
+        else if(completed_percent == 0) progress_title.innerText = 'Completed 0.0% ¯\\_(ツ)_/¯';
         else progress_title.innerText = `You have done ${completed_percent}% of all tasks`;
 
         progress.setAttribute('value', completed_percent);

@@ -31,6 +31,7 @@
 .main__form-btn{
 	min-width: 40px;
 	min-height: 40px;
+	font-size: 14px;
 	color: var(--brand-white);
 	border: var(--border);
 	border-color: var(--brand-white);
