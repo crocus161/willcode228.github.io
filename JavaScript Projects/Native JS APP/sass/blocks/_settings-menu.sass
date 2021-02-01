@@ -1,0 +1,54 @@
+.setting-menu
+    width: 35px
+    min-height: 200px
+    background: #333333
+    position: absolute
+    top: 85px
+    right: -50px
+    box-shadow: $shadow
+    border-radius: 30px
+    display: none
+    .tools
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &-item
+            border: none
+            background: transparent
+            color: lighten($black, 30%)
+            margin: 7px 0px
+            transition: 0.4s
+            font-size: 15px
+            &:hover
+                cursor: pointer
+                color: #000000
+                transform: scale(1.6)
+    .hgroup
+        transform: rotate(90deg) translateX(27px) translateY(-25px)
+        h4
+            display: flex
+            letter-spacing: 10px
+            span
+                font-family: 'Sigmar One', cursive
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.6)
+                    color: #000000
+.set-active
+    right: 30px
+    display: block
+    animation: anim .3s linear alternate
+@keyframes anim
+    0%
+        right: -50px
+        opacity: 0
+    100%
+        right: 32px
+        opacity: 1
+
+@media screen and ( max-width:850px )
+    .setting-menu
+        top: 125px
+
+    

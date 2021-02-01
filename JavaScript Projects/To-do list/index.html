@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="loader__wrap">
+		<div class="loader">
+			<div class="loader__circle-1 loader__item"></div>
+			<div class="loader__circle-2 loader__item"></div>
+			<div class="loader__circle-3 loader__item"></div>
+			<div class="loader__circle-4 loader__item"></div>
+			<div class="loader__circle-5 loader__item"></div>
+		</div>
+	</div>
+
+	<div class="wrap-box">
+
+		<header class="header">
+
+			<div class="header__hgroup">
+				<h1 class="header__title">Hello,</h1>
+				<!-- /.header__title -->
+				<h2 class="header__subtitle">You have <span class="header__task-counter"></span> for today</h2>
+				<!-- /.header__subtitle -->
+			</div>
+			<!-- block for greeting and tasks counter -->
+
+			<div class="header__meta">
+				<h2 class="header__meta-date"></h2>
+				<div class="header__meta-progress">
+					<progress class="header-progress" value="" max="100"></progress>
+					<h6 class="header__progress-title"></h6>
+				</div>
+			</div>
+			<!-- block for progress counting of competed task and this value in percent -->
+
+		</header>
+		<!-- /.header -->
+
+		<main class="main">
+
+			<div class="main__form">
+				<input type="text" class="main__form-input main-input">
+				<button class="main__form-btn main-btn">Add</button>
+			</div>
+			<!-- /.main__form -->
+
+			<div class="main__body">
+				<ul class="main__body-list body__list">
+
+				</ul>
+			</div>
+			<!-- /.main__body -->
+
+		</main>
+		<!-- /.main -->
+
+	</div>
+	<!-- /.wrap-box -->
+
+	<script src="js/time.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

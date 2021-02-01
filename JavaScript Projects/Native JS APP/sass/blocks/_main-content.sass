@@ -1,0 +1,28 @@
+.container
+    width: 100%
+    &-wrap
+        width: 70%
+        min-height: 500px
+        margin: auto
+        margin-top: 10px
+        display: flex
+        justify-content: center
+        align-items: center 
+        flex-wrap: wrap
+        button
+            width: 100px
+            height: 100px
+            margin: 10px 0px
+            border: none
+            color: $white
+            font-size: 18px
+            font-weight: 800
+            background: $black
+            transition: 0.5s
+
+.move
+    &:hover
+        box-shadow: $shadow
+        background: lighten($black, 10%)
+        transform: scale(1.2)
+        cursor: pointer

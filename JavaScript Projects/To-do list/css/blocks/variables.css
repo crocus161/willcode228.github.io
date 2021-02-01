@@ -1,0 +1,56 @@
+/* VARIABLES */
+:root{
+
+    /* COLOURS */
+    
+		/* main */
+		--brand-black: #333333;
+		--brand-white: #ffffff;
+        --brand-accent: rgba(83, 202, 19, 0.8);
+        --brand-red: rgb(220, 0, 0);
+        --brand-yellow: rgb(32, 105, 81);
+        --brand-grey: rgb(192, 190, 190);
+        
+    /* COLOURS */
+    
+
+
+    /* TRANSITIONS */
+
+    --low-transition: 0.7s;
+    --transition: 0.5s;
+
+    /* TRANSITIONS */
+
+
+
+    /* SHADOW */
+
+    --shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    /* SHADOW */
+
+
+
+    /* BORDER SETTINGS */
+
+    --radius: 20px;
+    --secondary-radius: 50%;
+
+    --border: 1px solid var(--brand-black);
+
+    /* BORDER SETTINGS */
+
+    
+
+    /* FONT SIZES*/
+
+    --large: max(16px, min(40px, calc(100vw * 4 / 75)));
+    --average: max(14px, min(20px, calc(100vw * 4 / 75)));
+
+    /* FONT SIZES*/
+
+
+    
+}
+/* VARIABLES */

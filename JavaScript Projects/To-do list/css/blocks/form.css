@@ -1,0 +1,57 @@
+/* wrapper style for main input and btn */
+.main__form{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+/* wrapper style for main input and btn */
+
+/* main input style */
+.main__form-input{
+	width: 280px;
+	padding: 15px;
+    font-size: var(--average);
+    transition: var(--transition);
+}
+.main__form-input:focus,
+.main__form-input:hover{
+	box-shadow: var(--shadow);
+}
+.main__form-input:hover{
+	width: 300px;
+}
+.main__form-input:focus{
+	width: 350px;
+}
+/* main input style */
+
+/* add task btn style */
+.main__form-btn{
+	min-width: 40px;
+	min-height: 40px;
+	color: var(--brand-white);
+	border: var(--border);
+	border-color: var(--brand-white);
+	border-radius: var(--secondary-radius);
+	background: var(--brand-black);
+    transition: var(--transition);
+}
+.main__form-btn:hover{
+	color: var(--brand-black);
+	background: var(--brand-white);
+}
+/* add task btn style */
+
+
+@media screen and ( max-width: 576px ){
+    .main__form-input{
+		width: 180px;
+		border: var(--border);
+		border-color: var(--brand-grey);
+	}
+	.main__form-input:focus{
+		width: 200px;
+	}
+}

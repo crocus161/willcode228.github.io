@@ -1,0 +1,105 @@
+.box
+    max-width: 1720px
+    margin: auto
+    .header
+        width: 100%
+        text-align: center
+        padding-top: 60px
+        h1
+            font-size: 3vw
+        .setting
+            display: flex
+            justify-content: center
+            align-items: center
+            .wrap-btn
+                position: absolute
+                top: 25px
+                right: 25px
+                .menu-btn 
+                    display: block
+                    width: 50px
+                    height: 50px
+                    background-color: $black
+                    outline: none
+                    border: none
+                    border-radius: 50%
+                    position: relative
+                    transition: 0.5s
+                    &:hover
+                        box-shadow: $shadow
+                        cursor: pointer
+                        background: lighten($black, 10%)
+                    span, 
+                    span::before, 
+                    span::after
+                        position: absolute
+                        top: 50% 
+                        margin-top: -1px
+                        left: 50% 
+                        margin-left: -10px
+                        width: 20px
+                        height: 2px
+                        background-color: $white
+                    span::before, 
+                    span::after 
+                        content: ''
+                        display: block
+                        transition: 0.2s
+                    span::before 
+                        transform: translateY(-5px)
+                    span::after 
+                        transform: translateY(5px)
+                .men-active 
+                    span::before 
+                        transform: rotate(-35deg)
+                        width: 10px
+                        transform-origin: left bottom
+                    span::after 
+                        transform: rotate(35deg)
+                        width: 10px
+                        transform-origin: left top 
+            h5
+                letter-spacing: 1px
+            .check
+                position: relative
+                width: 50px
+                margin: 0 10px
+                &:hover
+                    cursor: pointer
+                &::after
+                    content: ''
+                    transition: 0.5s
+                    width: 60px
+                    height: 25px
+                    border-radius: 25px
+                    background: $black
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &:checked::after
+                    background: $white
+                    border: 1px solid $black
+                &::before
+                    content: ''
+                    transition: 0.5s
+                    width: 25px
+                    height: 25px
+                    border-radius: 50%
+                    background: white
+                    position: absolute
+                    top: 50%
+                    left: 8px
+                    transform: translate(-50%, -50%)
+                    z-index: 9
+                &:checked::before
+                    left: 43px
+                    background: $black
+
+@media screen and ( max-width:850px )
+    .box
+        .header
+            h1
+                font-size: 5vw
+    
+        

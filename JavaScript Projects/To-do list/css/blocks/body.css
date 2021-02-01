@@ -1,0 +1,162 @@
+/* tasks wrapper styles*/
+.main__body-list{
+	width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+	flex-direction: column;
+	list-style-type: none;
+}
+/* tasks wrapper styles*/
+
+
+
+/* tasks styles */
+.body__list-item{
+	width: 80%;
+    min-height: 40px;
+	position: relative;
+	margin: 20px 0px;
+	border: var(--border);
+	border-color: var(--brand-white);
+	border-radius: var(--radius);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition);
+}
+
+/* change styles and animations after delete the task*/
+.body__list-item.completed{
+	opacity: 0.4;
+	border-color: var(--brand-accent);
+}
+.body__list-item.completed .dell__task-btn{
+	opacity: 1;
+	background: var(--brand-accent);
+	color: var(--brand-white);
+}
+.body__list-item.completed:hover{
+	box-shadow: none;
+	border-color: var(--brand-accent);
+}
+.body__list-item.completed span{
+	text-decoration: line-through;
+	color: var(--brand-accent);
+}
+/* change styles and animations after delete the task*/
+
+.body__list-item .yellow:first-letter,
+.body__list-item .red:first-letter{
+	text-transform: uppercase;
+}
+.body__list-item:hover{
+	box-shadow: var(--shadow);
+	border-color: var(--brand-accent);
+}
+.body__list-item:hover span{
+	color: var(--brand-accent);
+}
+.body__list-item:hover .dell__task-btn{
+	opacity: 1;
+}
+/* tasks styles */
+
+
+
+/* delete task btn styles */
+.dell__task-btn{
+	display: block;
+	min-width: 24px;
+	min-height: 24px;
+	position: absolute;
+	top: 50%;
+	right: 1%;
+	opacity: 0;
+
+	color: var(--brand-accent);
+	border-radius: var(--secondary-radius);
+	background: var(--brand-white);
+	transition: var(--transition);
+	transform: translate(-50%, -50%);
+}
+.dell__task-btn:hover{
+	background: var(--brand-accent);
+	color: var(--brand-white);
+}
+.dell__task-btn:hover + span{
+	text-decoration: line-through;
+}
+.dell__task-btn::after{
+	content: '\2714';
+	font-size: 15px;
+}
+/* delete task btn styles */
+
+
+/* special classes of span */
+.red{
+	color: var(--brand-red);
+}
+.yellow{
+	color: var(--brand-yellow);
+	font-style: italic;
+}
+.red, 
+.yellow{
+	font-weight: bold;
+}
+.red, 
+.yellow,
+.link{
+	transition: var(--transition);
+}
+/* special classes of span */
+
+
+/* change styles and animations on phone */
+@media screen and ( max-width: 576px ){
+	
+	.body__list-item,
+	.main__body-list{
+        width: 100%;
+	}
+
+	.body__list-item{
+		width: 100%;
+		border-radius: 0px;
+		border: none;
+		margin: 5px 0px;
+		padding: 25px 10px;
+		position: relative;
+	}
+	.body__list-item::after{
+		content: '';
+		position: absolute;
+		width: 90%;
+		height: 1px;
+		background: var(--brand-grey);
+		left: 50%;
+		bottom: 0px;
+		transform: translate(-50%, -50%);
+		transform-origin: center;
+		transition: var(--low-transition);
+	}
+
+	.body__list-item.completed{
+		opacity: 0.4;
+		border-color: var(--brand-white);
+	}
+	.body__list-item.completed:hover::after{
+		width: 90%;
+	}
+
+	.body__list-item:hover{
+		border: none;
+	}
+	.body__list-item:hover::after{
+		width: 0;
+	}
+
+
+}
