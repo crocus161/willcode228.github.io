@@ -67,6 +67,7 @@
 	.header{
 		width: 100%;
 		min-height: 50vh;
+		justify-content: center;
 		background: url('../../img/image.jpg');
 		background-color: var(--brand-black);
 		background-blend-mode: difference;
