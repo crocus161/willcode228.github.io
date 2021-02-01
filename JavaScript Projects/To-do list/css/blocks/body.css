@@ -106,6 +106,9 @@
 .yellow{
 	font-weight: bold;
 }
+.link a{
+	color: var(--brand-white);
+}
 .red, 
 .yellow,
 .link{
