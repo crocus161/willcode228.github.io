@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #333;
+}
+.box{
+	width: 270px;
+	height: 270px;
+	background: #fff;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+}
+.inBox{
+	width: 90px;
+	height: 90px;
+	font-size: 60px;
+	font-family: consolas;
+	line-height: 90px;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid #333;
+}
