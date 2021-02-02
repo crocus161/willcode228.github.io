@@ -14,15 +14,23 @@
 /* tasks styles */
 .body__list-item{
 	width: 80%;
-    min-height: 40px;
+	min-height: 40px;
+
+	word-wrap: normal;
+	text-align: center;
 	position: relative;
+
 	margin: 20px 0px;
+	padding: 10px 40px;
+
 	border: var(--border);
 	border-color: var(--brand-white);
 	border-radius: var(--radius);
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	transition: var(--transition);
 }
 
@@ -37,7 +45,6 @@
 	color: var(--brand-white);
 }
 .body__list-item.completed:hover{
-	box-shadow: none;
 	border-color: var(--brand-accent);
 }
 .body__list-item.completed span{
@@ -46,12 +53,11 @@
 }
 /* change styles and animations after delete the task*/
 
-.body__list-item .yellow:first-letter,
-.body__list-item .red:first-letter{
+.body__list-item .important:first-letter,
+.body__list-item .question:first-letter{
 	text-transform: uppercase;
 }
 .body__list-item:hover{
-	box-shadow: var(--shadow);
 	border-color: var(--brand-accent);
 }
 .body__list-item:hover span{
@@ -95,22 +101,22 @@
 
 
 /* special classes of span */
-.red{
-	color: var(--brand-red);
-}
-.yellow{
+.important{
 	color: var(--brand-yellow);
+}
+.question{
+	color: var(--brand-blue);
 	font-style: italic;
 }
-.red, 
-.yellow{
+.important, 
+.question{
 	font-weight: bold;
 }
 .link a{
-	color: var(--brand-white);
+	color: var(--brand-blue);
 }
-.red, 
-.yellow,
+.important, 
+.question,
 .link{
 	transition: var(--transition);
 }
@@ -126,11 +132,11 @@
 	}
 
 	.body__list-item{
-		width: 100%;
+		word-wrap: wrap;
 		border-radius: 0px;
 		border: none;
-		margin: 5px 0px;
-		padding: 25px 10px;
+		margin: 10px 0px;
+		padding: 15px 40px;
 		position: relative;
 	}
 	.body__list-item::after{
@@ -138,7 +144,7 @@
 		position: absolute;
 		width: 90%;
 		height: 1px;
-		background: var(--brand-grey);
+		background: var(--secondary-grey);
 		left: 50%;
 		bottom: 0px;
 		transform: translate(-50%, -50%);
@@ -146,20 +152,31 @@
 		transition: var(--low-transition);
 	}
 
-	.body__list-item.completed{
-		opacity: 0.4;
-		border-color: var(--brand-white);
-	}
-	.body__list-item.completed:hover::after{
-		width: 90%;
-	}
-
 	.body__list-item:hover{
 		border: none;
+		box-shadow: var(--shadow);
 	}
 	.body__list-item:hover::after{
 		width: 0;
 	}
 
+	.body__list-item.completed{
+		opacity: 0.4;
+		border-color: var(--brand-white);
+		box-shadow: none;
+	}
+	.body__list-item.completed:hover{
+		box-shadow: none;
+	}
+	.body__list-item.completed:hover::after{
+		width: 90%;
+	}
+	.link a{
+		color: var(--brand-black);
+	}
 
+	.dell__task-btn{
+		border: var(--border);
+		border-color: var(--brand-accent);
+	}
 }

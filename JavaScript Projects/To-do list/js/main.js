@@ -112,13 +112,13 @@ window.addEventListener('load', () => {
         //added yellow colour and replace all ? prefix
         if (question_text.test(task)) {
             task = task.replace(question_text, '');
-            result = `<span class="yellow">${task}</span>`;
+            result = `<span class="question">${task}</span>`;
         }
 
         //added red colour and replace all ! prefix
         if (important_text.test(task)) {
             task = task.replace(important_text, '');
-            result = `<span class="red">${task}</span>`;
+            result = `<span class="important">${task}</span>`;
         }
 
         //if the text will be a link we added a tag with href

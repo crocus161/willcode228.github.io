@@ -6,10 +6,14 @@
 		/* main */
 		--brand-black: #333333;
 		--brand-white: #ffffff;
-        --brand-accent: rgba(83, 202, 19, 0.8);
-        --brand-red: rgb(245, 110, 110);
-        --brand-yellow: rgb(114, 182, 159);
-        --brand-grey: rgb(192, 190, 190);
+        --brand-accent: #64CB34;;
+        --brand-yellow: #EBBB3F;
+        --brand-blue: #5A9EC5;
+        --brand-grey: rgba(0,0,0, 60%);
+
+        /* secondary */
+        --secondary-black: #1F1E1E;
+        --secondary-grey: #e0e0e0;
         
     /* COLOURS */
     
@@ -26,7 +30,7 @@
 
     /* SHADOW */
 
-    --shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --shadow:-2px 7px 6px rgba(0, 0, 0, 0.25);
 
     /* SHADOW */
 

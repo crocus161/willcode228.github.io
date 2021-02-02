@@ -22,7 +22,7 @@
     left: 25%;
     width: 50%;
     height: 50%;
-    border: 2px solid var(--brand-yellow);
+    border: 2px solid var(--brand-blue);
     border-radius: 50%;
     animation: circlePulse 1s ease infinite; 
 }

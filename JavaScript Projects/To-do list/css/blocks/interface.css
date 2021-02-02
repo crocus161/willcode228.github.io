@@ -1,16 +1,16 @@
 /* INTERFACE */
-@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Arial", sans-serif;
-	font-family: 'Commissioner', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 body{
 	max-width: 1440px;
     min-height: 100vh;
 	margin: auto;
+	overflow-x: hidden;
 }
 button,
 input{
@@ -41,7 +41,7 @@ button{
 	padding: 50px;
 	color: var(--brand-white);
 	border-radius: var(--radius);
-	background: var(--brand-black);
+	background: var(--secondary-black);
 	transition: var(--low-transition);
 	transform: rotateX(25deg);
 }
@@ -64,6 +64,7 @@ button{
 		border-radius: 0px;
 		background: var(--brand-white);
 		color: var(--brand-black);
+		transform: rotateX(0);
 	}
 	.main:hover{
 		box-shadow: none;

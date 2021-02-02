@@ -10,19 +10,23 @@
 .header__hgroup,
 .header__meta{
 	margin: 10px 20px;
+	text-align: center;
 }
 
-.header__hgroup{
-	text-align: start;
-}
-.header-meta{
-	text-align: end;
+.header__title{
+	margin-bottom: 10px;
 }
 
 .header__title,
+.header__meta-weekName{
+	font-size: var(--large);
+}
+
 .header__meta-date{
-	margin-bottom: 10px;
-    font-size: var(--large);
+	margin-top: -5px;
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 16px;
 }
 
 .header__subtitle,
@@ -41,7 +45,8 @@
     text-align: center;
 }
 .header-progress{
-    height: 10px;
+	height: 10px;
+	margin-bottom: 5px;
     background: var(--brand-white);
     border: none;
     border-radius: 5px;
@@ -66,11 +71,9 @@
 @media screen and (max-width: 576px){
 	.header{
 		width: 100%;
-		min-height: 50vh;
+		min-height: 30vh;
 		justify-content: center;
-		background: url('../../img/image.jpg');
-		background-color: var(--brand-black);
-		background-blend-mode: difference;
+		background: url('../../img/image.png');
 		background-size: cover;
 		color: var(--brand-white)
 	}
@@ -82,21 +85,21 @@
 	.header__meta{
 		text-align: center;
 	}
+	.header__meta{
+		padding: 10px;
+		color: var(--brand-black);
+		border-radius: var(--radius);
+		background-color: var(--brand-white);
+	}
 	.header__title,
 	.header__meta-date{
 		margin-bottom: 5px;
 	}
+	.header__meta-date{
+		margin-top: 3px;
+	}
 	.header__subtitle{
 		color: var(--brand-white);
-	}
-	.header__subtitle span{
-		padding: 2px 2px;
-		background-color: var(--brand-white);
-	}
-	.header__meta-date{
-		padding: 5px;
-		color: var(--brand-accent);
-		background-color: var(--brand-white); 
 	}
 
 }
