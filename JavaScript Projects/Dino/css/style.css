@@ -11,6 +11,8 @@ body{
     align-items: center;
     background: #e8e8e8;
 }
+
+
 .main__game-field{
     width: 800px;
     height: 300px;
@@ -20,6 +22,8 @@ body{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+
+/* score styles */
 .score_result-box{
     position: absolute;
     top: 10px;
@@ -32,6 +36,10 @@ body{
 .high_score{
     margin-right: 20px;
 }
+/* score styles */
+
+
+/* road styles */
 .road{
     width: 900px;
     height: 10px;
@@ -41,6 +49,10 @@ body{
     background-repeat: repeat-x;
     background-size: cover;
 }
+/* road styles */
+
+
+/* evil styles */
 .cactus{
     position: absolute;
     bottom: 30px;
@@ -51,11 +63,16 @@ body{
 .cactus img{
     max-height: 50px;
 }
+/* evil styles */
+
+
+/* wrapper box for all clouds */
 .cloud__box{
     width: 800px;
     min-height: 140px;
     position: relative;
 }
+/* cloud */
 .cloud{
     width: 120px;
     height: 40px;
@@ -64,6 +81,9 @@ body{
     background-size: cover;
     position: absolute;
 }
+
+
+/* hero box */
 .hero{
     width: 50px;
     height: 50px;
@@ -75,13 +95,18 @@ body{
     left: 20px;
     z-index: 999;
 }
+/* hero pictures styles */
 .hero img{
     width: 50px;
     object-fit: cover;
 }
+
+
+/* jump class */
 .hero__jump{
     animation: jump 0.5s linear 1;
 }
+/* jump dino animation */
 @keyframes jump{
     0%{
         bottom: 34px;
