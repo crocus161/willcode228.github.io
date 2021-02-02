@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint in canvas js</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="nav nav-tools">
+
+		<button class="btnToOpenCanvas button btn-tools">Canvas tools</button>
+		<div class="canvasTools">
+			<ul class="ul">
+				<li>Background-color: <input class="bg-clr" type="color"></li>
+				<li>Border-color: <input class="bordr-clr" type="color"></li>
+				<li>Border-radius: <input class="bordr-r"  min="1" max="100" value="10" step="1" type="range"></li>
+				<li><button class="button closeForTools closeForCanvasTools">&#10008;</button></li>
+			</ul>
+		</div>
+
+		<button class="btnToOpenPaint button btn-tools">Paint tools</button>
+		<div class="paintTools">
+			<ul class="ul">
+				<li><input class="color" type="color"></li>
+				<li><input min="1" max="100" value="10" step="1" class="range" type="range"></li>
+				<li><select class="select">
+					<option>Square</option>
+					<option selected>Circle</option>
+				</select></li>
+				<li><button class="button clear-btn">Clear</button></li>
+				<li><button class="button closeForTools closeForPaintTools">&#10008;</button></li>
+			</ul>
+		</div>
+	</div>
+
+	<canvas id="cv" width="1000" height="500"></canvas>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
