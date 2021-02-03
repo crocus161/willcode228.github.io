@@ -1,0 +1,42 @@
+.module__window{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    overflow-y: auto;
+    background: var(--white);
+    padding: 60px;
+    transition: var(--transition);
+}
+ul{
+    padding: 40px;
+}
+h2{
+    margin: 20px 0px;
+}
+p{
+    margin: 20px 0px;
+}
+.close{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    background: var(--brand-blue);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: none;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.module-active{
+    opacity: 1;
+    visibility: visible;
+}

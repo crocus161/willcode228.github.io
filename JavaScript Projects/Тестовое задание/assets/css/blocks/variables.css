@@ -1,0 +1,26 @@
+/****** VARS ******/
+:root{
+    /* Colours */
+
+    /* main */
+    --white: #fff;
+    --black: #363636;
+    --brand-red: #F01A18;
+    --brand-blue: rgb(23, 121, 186);
+
+    /* secondary */
+    --secondary-black: rgb(10, 10, 10);
+    --secondary-white: rgba(255, 255, 255, 0.7);
+    /* Colours */
+
+
+    /* Border */
+    --border: 2px solid var(--white);
+    --radius: 14px;
+    /* Border */
+
+    /* Transition */
+    --transition: 0.5s;
+    /* Transition */
+
+}

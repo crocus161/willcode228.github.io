@@ -1,0 +1,8 @@
+@import 'blocks/variables.css';
+@import 'blocks/interface.css';
+@import 'blocks/body.css';
+@import 'blocks/container__header.css';
+@import 'blocks/container__form.css';
+@import 'blocks/footer.css';
+@import 'blocks/module.css';
+@import 'blocks/preloader.css';

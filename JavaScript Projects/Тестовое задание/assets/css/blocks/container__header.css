@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__header{
+    width: 100%;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    background: var(--brand-red);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.container-title{
+    font-family: 'Baloo Bhai', cursive;
+    font-style: italic;
+    font-size: 27px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--white);
+    padding: 10px 0px 20px 0px;
+}
+.container__image{
+    width: 80%;
+}
+.container__image img{
+    width: 100%;
+    object-fit: cover;
+}
