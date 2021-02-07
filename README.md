@@ -147,4 +147,10 @@
  
   -https://willcode228.github.io/Dino/
   -https://willcode228.github.io/HTML5%20Geolocation/
-  -https://willcode228.github.io/Native%20JS%20APP/
+  -https://willcode228.github.io/JavaScript%20Projects/Paint/
+  -https://willcode228.github.io/JavaScript%20Projects/Quize/
+  -https://willcode228.github.io/JavaScript%20Projects/To-do%20list/
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0/
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D0%BD%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8/
+
