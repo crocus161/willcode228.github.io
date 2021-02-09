@@ -50,7 +50,7 @@
     /* FONT SIZES*/
 
     --large: max(25px, min(40px, calc(100vw * 4 / 75)));
-    --average: max(14px, min(20px, calc(100vw * 4 / 75)));
+    --average: max(12px, min(20px, calc(100vw * 4 / 75)));
 
     /* FONT SIZES*/
 

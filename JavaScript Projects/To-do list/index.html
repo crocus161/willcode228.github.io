@@ -4,9 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
 	<title>Todo</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!-- normalize -->
 	<link rel="stylesheet" href="css/normalize.css">
+	<!-- aos library -->
+	<link rel="stylesheet" href="libs/aos/aos.css">
 </head>
 
 <body>
@@ -70,9 +74,11 @@
 	</div>
 	<!-- /.wrap-box -->
 
-	<script src="js/time.js"></script>
+	<script src="libs/aos/aos.js"></script>
 	<script src="js/main.js"></script>
-
+	<script src="js/time.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
-
 </html>

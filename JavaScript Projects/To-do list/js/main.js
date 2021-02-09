@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
 
             //set counter value and text to the new task
             //check prefix value with function check_prefix
-            const task_html = `<li class="body__list-item" data-task-counter="${todos.length}">
+            const task_html = `<li class="body__list-item" data-aos="zoom-in" data-task-counter="${todos.length}">
                             <button class="dell__task-btn main__task-btn">&#10004;</button>
                             <button class="change__task-btn main__task-btn">&#9998;</button>
                             ${check_prefix(task_text)}  

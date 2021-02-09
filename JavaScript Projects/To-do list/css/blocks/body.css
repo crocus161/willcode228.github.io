@@ -34,6 +34,10 @@
 	transition: var(--transition);
 }
 
+.body__list-item span{
+	font-size: var(--average);
+}
+
 /* change styles and animations after delete the task*/
 .body__list-item.completed{
 	opacity: 0.4;
