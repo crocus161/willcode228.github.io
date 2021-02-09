@@ -39,17 +39,23 @@
 	opacity: 0.4;
 	border-color: var(--brand-accent);
 }
-.body__list-item.completed .dell__task-btn{
+.body__list-item.completed .main__task-btn{
 	opacity: 1;
 	background: var(--brand-accent);
 	color: var(--brand-white);
 }
 .body__list-item.completed:hover{
 	border-color: var(--brand-accent);
+	opacity: 0.6;
 }
 .body__list-item.completed span{
 	text-decoration: line-through;
 	color: var(--brand-accent);
+}
+.body__list-item.completed .main__task-btn:hover{
+	background: var(--brand-white);
+	color: var(--brand-accent);
+	opacity: 1;
 }
 /* change styles and animations after delete the task*/
 
@@ -63,7 +69,7 @@
 .body__list-item:hover span{
 	color: var(--brand-accent);
 }
-.body__list-item:hover .dell__task-btn{
+.body__list-item:hover .main__task-btn{
 	opacity: 1;
 }
 /* tasks styles */
@@ -71,31 +77,37 @@
 
 
 /* delete task btn styles */
-.dell__task-btn{
+.main__task-btn{
 	display: block;
 	min-width: 24px;
 	min-height: 24px;
 	position: absolute;
 	top: 50%;
-	right: 1%;
 	opacity: 0;
 
+	font-size: 15px;
+	text-align: center;
+	line-height: 12px;
+
 	color: var(--brand-accent);
-	border-radius: var(--secondary-radius);
 	background: var(--brand-white);
-	transition: var(--transition);
 	transform: translate(-50%, -50%);
+	border-radius: var(--secondary-radius);
+	transition: var(--transition);
 }
-.dell__task-btn:hover{
+.main__task-btn:hover{
 	background: var(--brand-accent);
 	color: var(--brand-white);
 }
+.change__task-btn{
+	left: 1%;
+	transform: translate(50%, -50%);
+}
+.dell__task-btn{
+	right: 1%;
+}
 .dell__task-btn:hover + span{
 	text-decoration: line-through;
-}
-.dell__task-btn::after{
-	content: '\2714';
-	font-size: 15px;
 }
 /* delete task btn styles */
 
@@ -175,7 +187,7 @@
 		color: var(--brand-black);
 	}
 
-	.dell__task-btn{
+	.main__task-btn{
 		border: var(--border);
 		border-color: var(--brand-accent);
 	}

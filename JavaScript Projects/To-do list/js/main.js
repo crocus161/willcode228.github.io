@@ -48,7 +48,8 @@ window.addEventListener('load', () => {
             //set counter value and text to the new task
             //check prefix value with function check_prefix
             const task_html = `<li class="body__list-item" data-task-counter="${todos.length}">
-                            <button class="dell__task-btn"></button>
+                            <button class="dell__task-btn main__task-btn">&#10004;</button>
+                            <button class="change__task-btn main__task-btn">&#9998;</button>
                             ${check_prefix(task_text)}  
                         </li>`;
 
@@ -64,17 +65,65 @@ window.addEventListener('load', () => {
     }
     //function to create new task
 
-
-
-    //delete task function
+    
+    
+    //settings of the buttons of task
     tasks_list.addEventListener('click', (e) => {
-        if (e.target.className == 'dell__task-btn') {
+
+        //if you click on the any button of the task
+        if(e.target.classList.contains('main__task-btn')){
+
             //get body__list-item parent of this btn
             let task_element = e.target.parentNode;
-            task_element.classList.add('completed');
-
+            //get body__list-item parent index of this btn
             let task_index = task_element.getAttribute('data-task-counter');
-            todos[task_index - 1] = null;
+
+            //if you click on delete button
+            if (e.target.classList.contains('dell__task-btn')) {
+    
+                //if button element was clicked and task classes has complete class
+                //we change status this task to active and renewing his text in todos data
+                if(task_element.classList.contains('completed')){
+
+                    task_element.classList.remove('completed');
+
+                    //return back the text of task
+                    todos[task_index - 1] = task_element.querySelector('span').innerText;
+
+                    //change the sceen of the button
+                    e.target.innerHTML = '&#10004;';
+                }else{
+
+                    //else we change status of this task to complete and overwrite task text in todos data
+                    task_element.classList.add('completed');
+                    todos[task_index - 1] = null;
+
+                    //change the sceen of the button
+                    e.target.innerHTML = '&#8635;';
+                }
+    
+            }
+    
+            //if you click on change text button
+            if (e.target.classList.contains('change__task-btn')) {
+
+                //new text of the class
+                let new_task_text = prompt('Rewrite your task here', );
+
+                //check the emptiness of the text
+                if(!new_task_text) return false
+                
+                //rewrite the last task text
+                todos[task_index - 1] = new_task_text;
+
+                //delete last task text
+                task_element.querySelector('span').remove();
+
+                //add new task text
+                task_element.innerHTML += check_prefix(new_task_text);
+
+            }
+
             //update local storage
             update_data();
             //update tasks counter
@@ -82,6 +131,9 @@ window.addEventListener('load', () => {
             //update progress value
             update_progress();
         }
+        
+
+
     });
 
 
