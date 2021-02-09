@@ -7,9 +7,6 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body{
-	max-width: 1440px;
-    min-height: 100vh;
-	margin: auto;
 	overflow-x: hidden;
 }
 button,
@@ -27,6 +24,7 @@ button{
 	margin: auto;
 	perspective: 500px;
 	transform-style: flat;
+	margin: auto;
 }
 .main-input, 
 .main-btn{
