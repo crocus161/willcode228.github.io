@@ -1,0 +1,39 @@
+.section__cards
+    margin-top: 60px
+    display: flex
+    flex-wrap: wrap
+    gap: $gap
+    .section-title,
+    .section-info
+        margin: 20px 0px
+    &-box
+        min-height: 600px
+        padding: 20px
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        flex-basis: 480px
+        flex-grow: 1
+        flex-direction: column
+        border-radius: $secondary-radius
+        background: $secondary-black
+        transition: $fast-transition
+        &:hover
+            background: $secondary-grey
+    &-img
+        width: 70%
+        align-self: center
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+        justify-content: center
+        margin: 20px 0px
+        svg
+            margin: 10px 
+@media screen and ( max-width: 320px )
+    .section__cards
+        .section-title,
+        .section-info
+            margin: 10px 0px
+        &-img
+            width: 40%
+            margin: 10px 0px

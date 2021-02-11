@@ -1,0 +1,233 @@
+//FONT CONNECTED
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+
+
+body
+    max-width: 1440px
+    margin: auto
+    background: $brand-black
+
+*::selection
+        color: $brand-white
+        background-color: $brand-purple
+
+button,
+input
+    background: none
+    border: none
+    outline: none
+    cursor: pointer
+input
+    cursor: inherit
+//MAIN CLASSES
+.main-sprite
+    display: none
+
+.wrapper
+    width: 80%
+    margin: auto    
+
+//p tag classes
+.main-info,
+.secondary-info
+    color: $secondary-white
+
+.main-info
+    font-size: 32px
+    line-height: 40px
+.secondary-info
+    font-size: 15px
+    line-height: 22px
+
+
+//titles classes
+.main-title,
+.secondary-title
+    color: $brand-white
+
+.secondary-title,
+.subtitle
+    font-size: 32px
+    line-height: 40px
+
+.main-title
+    font-size: 96px
+    line-height: 96px
+.subtitle
+    color: $secondary-white
+.accent
+    background-color: $brand-purple
+    color: $brand-white
+    padding: 2px
+    
+//a tag link
+.link
+    display: inline-block
+    color: $secondary-white
+    text-decoration: none
+    position: relative
+    transition: $fast-transition
+    z-index: 1
+    &:hover
+        color: $brand-white
+        &::before
+            height: 100%
+            z-index: -1
+    &::before
+        content: ''
+        position: absolute
+        bottom: -1px
+        left: 50%
+        width: 100%
+        height: 1px
+        background: $secondary-white
+        transform: translateX(-50%)
+        transition: $fast-transition
+//main button
+.button
+    display: block
+    width: 100px
+    height: 35px
+    position: relative
+    overflow: hidden
+    text-align: center
+    line-height: 17px
+    color: $brand-black
+    background: $secondary-white
+    border-radius: $main-radius
+    z-index: 1
+    transition: $fast-transition
+    &:hover
+        color: $brand-white
+        &::before
+            right: 0%
+            left: auto
+            width: 100%
+    &::before
+        display: block
+        position: absolute
+        top: 0px
+        left: 0px
+        height: 100%
+        width: 0px
+        z-index: -1
+        content: ''
+        color: $brand-black !important
+        background: $brand-purple
+        transition: $fast-transition cubic-bezier(0.42, 0, 0.58, 1)
+
+//main form
+.main__form
+    display: flex
+.main__form-input
+    width: 400px
+    height: 50px
+    padding: 20px
+    color: $brand-white
+    background: $secondary-grey
+    border-radius: $secondary-radius
+.main__form-button
+    width: 80px
+    height: 50px
+    background: $secondary-white
+    border-top-left-radius: 0px
+    border-bottom-left-radius: 0px
+    border-top-right-radius: $secondary-radius
+    border-bottom-right-radius: $secondary-radius
+    margin-left: -60px
+
+.section
+    width: 100%
+    min-height: 300px
+    padding: 50px 0px
+
+//queries
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 85%
+    .main__form-input
+        width: 380px
+    .main-title
+        font-size: 76px
+        line-height: inherit
+    .secondary-title,
+    .subtitle
+        font-size: 28px
+        line-height: inherit
+    .main-info
+        font-size: 30px
+        line-height: inherit
+
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 87%
+    .main__form-input
+        width: 360px
+    .main-title
+        font-size: 66px
+    .secondary-title,
+    .subtitle
+        font-size: 26px
+    .main-info
+        font-size: 28px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 89%
+    .main__form-input
+        width: 340px
+    .main-title
+        font-size: 56px
+    .secondary-title,
+    .subtitle
+        font-size: 24px
+    .main-info
+        font-size: 26px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 91%
+    .main__form-input
+        width: 320px
+    .main-title
+        font-size: 46px
+    .secondary-title,
+    .subtitle
+        font-size: 22px
+    .main-info
+        font-size: 24px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 93%
+    .main__form-input
+        width: 280px
+        height: 40px
+    .main__form-button
+        height: 40px
+        line-height: 20px
+    .main-title
+        font-size: 36px
+    .secondary-title,
+    .subtitle
+        font-size: 20px
+    .main-info
+        font-size: 16px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 95%
+    .main__form-input
+        width: 230px
+    .main-title
+        font-size: 24px
+    .secondary-title,
+    .subtitle
+        font-size: 18px
+    .main-info
+        font-size: 14px
+    button
+        width: 90px

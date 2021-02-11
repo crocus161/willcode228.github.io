@@ -1,0 +1,25 @@
+.header
+    width: 100%
+    min-height: 100vh
+    padding: 100px 0px 50px 0px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    .form__wrapper
+        margin: 30px 0px
+        &-note
+            font-size: 12px
+            margin: 8px 10px
+    &-note
+        margin: 20px 0px
+        text-align: center
+        justify-self: flex-end
+        .note
+            font-size: 8px
+            padding: 6px 10px
+            display: inline
+            background-color: $secondary-white
+            border-radius: $main-radius
+@media screen and ( max-width: 576px )
+    .header
+        align-items: center
