@@ -142,6 +142,7 @@
   -https://willcode228.github.io/SinglePageWebsite/
   -https://willcode228.github.io/Zen/
   -https://willcode228.github.io/ThriveTalk/dist/
+  -https://willcode228.github.io/Next%20Generation/
         
  А здесь на JS проекты:
  
