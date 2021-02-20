@@ -1,0 +1,56 @@
+.preloader
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $secondary-white
+    z-index: 9999
+    transition: $low-transition
+    .sk-cube-grid 
+        $delayRange: 0.4s
+        $spinkit-size: 4em !default
+        $spinkit-spinner-color: $main-accent 
+        width: $spinkit-size
+        height: $spinkit-size
+        margin: auto
+        .sk-cube 
+            width: 33%
+            height: 33%
+            background-color: $spinkit-spinner-color
+            float: left
+            animation: sk-cube-grid-scale-delay 1.3s infinite ease-in-out
+        .sk-cube-1
+            animation-delay: ($delayRange * 0.50)
+        .sk-cube-2 
+            animation-delay: ($delayRange * 0.75)
+        .sk-cube-3 
+            animation-delay: $delayRange
+        .sk-cube-4 
+            animation-delay: ($delayRange * 0.25)
+        .sk-cube-5 
+            animation-delay: ($delayRange * 0.50)
+        .sk-cube-6 
+            animation-delay: ($delayRange * 0.75)
+        .sk-cube-7 
+            animation-delay: 0s
+        .sk-cube-8 
+            animation-delay: ($delayRange * 0.25)
+        .sk-cube-9 
+            animation-delay: ($delayRange * 0.50)
+  
+
+
+@keyframes sk-cube-grid-scale-delay 
+  0%, 70%, 100% 
+    transform: scale3D(1,1,1)
+  
+  35%           
+    transform: scale3D(0,0,1)
+  
+
+
+

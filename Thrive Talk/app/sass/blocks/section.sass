@@ -1,0 +1,43 @@
+.section
+    width: 100%
+    min-height: 700px
+    background: $main-accent
+    display: flex
+    justify-content: center
+    align-items: center
+    &__image
+        width: 40vw
+        min-height: 700px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+    &__text
+        width: 60vw
+        min-height: 700px
+        padding: 100px
+
+@media screen and ( max-width: 1200px )
+    .section
+        &__image,&__text
+            width: 50vw
+        &__text
+            padding: 80px
+@media screen and ( max-width: 992px )
+    .section
+        &__text
+            padding: 50px
+@media screen and ( max-width: 768px )
+    .section
+        flex-wrap: wrap
+        &__image,
+        &__text
+            width: 100vw
+        &__text
+            min-height: 400px
+            padding: 50px
+        &__image
+            min-height: 400px
+@media screen and ( max-width: 576px )
+    .section
+        &__text
+            padding: 25px

@@ -1,0 +1,71 @@
+.header
+    width: 100%
+    background: $secondary-white
+    position: relative
+    &__wrap
+        min-height: 100vh
+        padding: 50px 0
+        display: flex
+        align-items: center
+    &__text
+        width: 60%
+        &-title
+            font-size: 48px;
+            text-transform: uppercase
+            letter-spacing: -0.035em;
+            color: $secondary-accent
+        &-info
+            font-size: 24px
+            color: $secondary-accent
+            margin: 20px 0
+        &-btn
+            display: inline-block
+            margin-right: 80px
+    &__image
+        img
+            width: 600px
+            position: absolute
+            top: 0
+            right: 0
+
+@media screen and ( max-width: 1200px )
+    .header
+        &__image
+            img
+                width: 480px
+        &__text
+            &-title
+                font-size: 36px
+            &-info
+                font-size: 20px
+@media screen and ( max-width: 992px )
+    .header
+        &__image
+            img
+                width: 380px
+                top: 15%
+        &__text
+            &-title
+                font-size: 24px
+            &-info
+                font-size: 16px
+            &-btn
+                margin-bottom: 25px
+                
+@media screen and ( max-width: 768px )
+    .header
+        &__image
+            img
+                width: 300px
+        &__text
+            width: 50%
+@media screen and ( max-width: 576px )
+    .header
+        &__image
+            display: none
+        &__text
+            width: 80%
+@media screen and ( max-width: 320px )
+    .header
+        &__text
+            width: 100%

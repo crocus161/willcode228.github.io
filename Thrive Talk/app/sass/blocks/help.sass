@@ -1,0 +1,45 @@
+.help
+    background: $main-white
+    &__image
+        background-image: url('../img/dest/section2.png')
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        color: $secondary-accent
+        &-note
+            text-transform: uppercase
+            font-size: 16px
+            font-weight: 300
+        &-info
+            font-size: 36px
+            line-height: 53px
+            .logo
+                font-size: 36px
+
+@media screen and ( max-width: 1200px )
+    .help
+        &__text
+            &-info
+                font-size: 28px
+                line-height: 40px
+                .logo
+                    font-size: 30px
+@media screen and ( max-width: 992px )
+    .help
+        &__text
+            &-info
+                font-size: 24px
+                .logo
+                    font-size: 28px
+@media screen and ( max-width: 768px )
+    .help
+        &__text
+            // min-height: 400px
+            &-note
+                font-size: 14px
+            &-info
+                font-size: 20px
+                .logo
+                    font-size: 24px
+    
