@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>BlackSmith Shop</title>
+    <!-- main.css -->
     <link rel="stylesheet" href="css/app.min.css">
+    <!-- normalize css -->
     <link rel="stylesheet" href="libs/normalize.css">
+    <!-- scroll animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="wrap__loader">
+    <!-- <div class="wrap__loader">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
 
     <div class="general__wrap">
@@ -100,11 +103,11 @@
         <section class="about" id="about">
             <div class="about__wrap main__wrap">
                 <div class="main__hgroup about__hgroup">
-                    <h2 class="about__hgroup-h1 main__title">О компании</h2>
-                    <h4 class="about__hgroup-info main__note">Узнайте, немного о нас</h4>
+                    <h2 class="about__hgroup-h1 main__title" data-aos="fade-up"data-aos-delay="100">О компании</h2>
+                    <h4 class="about__hgroup-info main__note" data-aos="fade-up" data-aos-delay="200">Узнайте, немного о нас</h4>
                 </div>
                 <div class="about__info">
-                    <p class="about__info-p main__info">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p class="about__info-p main__info" data-aos="fade-up" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Quibusdam consectetur enim odio nobis veniam! Sequi quod nostrum quia culpa ipsa maiores
                         mollitia voluptatibus aliquid repudiandae ratione saepe deserunt tempora, vel dolores ut
                         blanditiis fugiat, repellat totam libero enim odit quis? Lorem ipsum dolor sit amet consectetur
@@ -125,20 +128,20 @@
         <section class="numbers">
             <div class="numbers__wrap main__wrap">
                 <div class="numbers__blue numbers__item">
-                    <h2 class="numbers__item-h2-1 numbers__item-h2" data-max="350">0</h2>
-                    <span class="numbers__info main__info main__span">Довольных клиентов</span>
+                    <h2 class="numbers__item-h2-1 numbers__item-h2" data-max="350" data-aos="fade-up" data-aos-delay="200">0</h2>
+                    <span class="numbers__info main__info main__span" data-aos="fade-up" data-aos-delay="200">Довольных клиентов</span>
                 </div>
                 <div class="numbers__yellow numbers__item">
-                    <h2 class="numbers__item-h2-2 numbers__item-h2" data-max="840">0</h2>
-                    <span class="numbers__info main__info main__span">Принятых заказов</span>
+                    <h2 class="numbers__item-h2-2 numbers__item-h2" data-max="840" data-aos="fade-up" data-aos-delay="200">0</h2>
+                    <span class="numbers__info main__info main__span" data-aos="fade-up" data-aos-delay="200">Принятых заказов</span>
                 </div>
                 <div class="numbers__accent numbers__item">
-                    <h2 class="numbers__item-h2-3 numbers__item-h2" data-max="690">0</h2>
-                    <span class="numbers__info main__info main__span">Хороших отзывов</span>
+                    <h2 class="numbers__item-h2-3 numbers__item-h2" data-max="690" data-aos="fade-up" data-aos-delay="200">0</h2>
+                    <span class="numbers__info main__info main__span" data-aos="fade-up" data-aos-delay="200">Хороших отзывов</span>
                 </div>
                 <div class="numbers__red numbers__item">
-                    <h2 class="numbers__item-h2-4 numbers__item-h2" data-max="1">0</h2>
-                    <span class="numbers__info main__info main__span">Возвратов</span>
+                    <h2 class="numbers__item-h2-4 numbers__item-h2" data-max="1" data-aos="fade-up" data-aos-delay="200">0</h2>
+                    <span class="numbers__info main__info main__span" data-aos="fade-up" data-aos-delay="200">Возвратов</span>
                 </div>
             </div>
         </section>
@@ -146,23 +149,23 @@
         <section class="advanteges" id="advanteges">
             <div class="advanteges__wrap main__wrap">
                 <div class="advanteges__hgroup main__hgroup">
-                    <h2 class="advanteges__hgroup-title main__title">Наши преимущества</h2>
-                    <h4 class="advanteges__hgroup-info main__note">Новые бонусы для вас</h4>
+                    <h2 class="advanteges__hgroup-title main__title" data-aos="fade-up" data-aos-delay="200">Наши преимущества</h2>
+                    <h4 class="advanteges__hgroup-info main__note" data-aos="fade-up" data-aos-delay="200">Новые бонусы для вас</h4>
                 </div>
                 <div class="advanteges__box">
-                    <div class="advanteges__box-card">
+                    <div class="advanteges__box-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="img/dest/icons/picture.png" alt="">
                         <h2 class="advanteges__card-title">Заголовок1</h2>
                         <p class="advanteges__card-info main__info">Donec sed odio dui. Aenean lacinia bibendum nulla
                             sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
                     </div>
-                    <div class="advanteges__box-card">
+                    <div class="advanteges__box-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="img/dest/icons/airplane.png" alt="">
                         <h2 class="advanteges__card-title">Заголовок2</h2>
                         <p class="advanteges__card-info main__info">Donec sed odio dui. Aenean lacinia bibendum nulla
                             sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
                     </div>
-                    <div class="advanteges__box-card">
+                    <div class="advanteges__box-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="img/dest/icons/bulb.png" alt="">
                         <h2 class="advanteges__card-title">Заголовок3</h2>
                         <p class="advanteges__card-info main__info">Donec sed odio dui. Aenean lacinia bibendum nulla
@@ -175,26 +178,26 @@
         <section class="product">
             <div class="product__wrap main__wrap">
                 <div class="product__hgroup main__hgroup">
-                    <h2 class="product__hgroup-title main__title">Немного о наших продуктах</h2>
-                    <h4 class="product__hgroup-info main__note">Совсем чуть-чуть</h4>
+                    <h2 class="product__hgroup-title main__title" data-aos="fade-up" data-aos-delay="200">Немного о наших продуктах</h2>
+                    <h4 class="product__hgroup-info main__note" data-aos="fade-up" data-aos-delay="200">Совсем чуть-чуть</h4>
                 </div>
                 <div class="product__body">
                     <div class="product__body-box">
-                        <p class="product__body-p main__info">И в отличие от привычных AirPods в форм-факторе вкладышей,
+                        <p class="product__body-p main__info" data-aos="fade-up" data-aos-delay="200">И в отличие от привычных AirPods в форм-факторе вкладышей,
                             новая модель внутриканальная с другой формой излучателей и более короткими «ножками», в
                             которых находятся микрофоны.</p>
-                        <p class="product__body-p main__info">Компания Apple опубликовала у себя на сайте информацию о
+                        <p class="product__body-p main__info" data-aos="fade-up" data-aos-delay="200">Компания Apple опубликовала у себя на сайте информацию о
                             новых полностью беспроводных наушниках AirPods Pro, которые получили поддержку системы
                             активного шумоподавления.</p>
                     </div>
                     <div class="product__body-box product__body-box-img">
-                        <img src="img/dest/gif/ekvalayze.gif" alt="">
+                        <img src="img/dest/gif/ekvalayze.gif" data-aos="fade-up" data-aos-delay="200" alt="">
                     </div>
                     <div class="product__body-box">
-                        <p class="product__body-p main__info">Компания Apple опубликовала у себя на сайте информацию о
+                        <p class="product__body-p main__info" data-aos="fade-up" data-aos-delay="200">Компания Apple опубликовала у себя на сайте информацию о
                             новых полностью беспроводных наушниках AirPods Pro, которые получили поддержку системы
                             активного шумоподавления.</p>
-                        <p class="product__body-p main__info">Компания Apple опубликовала у себя на сайте информацию о
+                        <p class="product__body-p main__info" data-aos="fade-up" data-aos-delay="200">Компания Apple опубликовала у себя на сайте информацию о
                             новых полностью беспроводных наушниках AirPods Pro, которые получили поддержку системы
                             активного шумоподавления.</p>
                     </div>
@@ -205,8 +208,8 @@
         <section class="comments" id="comments">
             <div class="comments__main__wrap main__wrap">
                 <div class="comments__hgroup main__hgroup">
-                    <h2 class="comments__hgroup-title main__title">Коментарии</h2>
-                    <h4 class="comments__hgroup-info main__notes">Отзывы наших любимых покупателей</h4>
+                    <h2 class="comments__hgroup-title main__title" data-aos="fade-up" data-aos-delay="200">Коментарии</h2>
+                    <h4 class="comments__hgroup-info main__notes" data-aos="fade-up" data-aos-delay="200">Отзывы наших любимых покупателей</h4>
                 </div>
             </div>
             <div class="comments__wrap comments__slider-wrap">
@@ -271,12 +274,12 @@
         <section class="shoping" id="shoping">
             <div class="shoping__wrap main__wrap">
                 <div class="shoping__hgroup main__hgroup">
-                    <h2 class="shoping__hgroup-title main__title">
+                    <h2 class="shoping__hgroup-title main__title" data-aos="fade-up" data-aos-delay="200">
                         Познайте
                         <span class="main__span">удобство</span><br> и
                         <span class="main__span">легкость</span> в использовании
                     </h2>
-                    <h2 class="shoping__hgroup-title">Вместе с нашим магазином <span
+                    <h2 class="shoping__hgroup-title" data-aos="fade-up" data-aos-delay="200">Вместе с нашим магазином <span
                             class="shoping__hgroup-span main__span">BlackSmith</span></h2>
                 </div>
             </div>
@@ -285,7 +288,7 @@
         <section class="productList" id="productList">
             <div class="productList__main__wrap main__wrap">
                 <div class="productList__hgroup main__hgroup">
-                    <h2 class="productList__hgroup-title main__title">Нашы продукты</h2>
+                    <h2 class="productList__hgroup-title main__title" data-aos="fade-up" data-aos-delay="200">Нашы продукты</h2>
                 </div>
             </div>
             <div class="productList__wrap productList__slider-wrap">
@@ -296,7 +299,7 @@
                                 <svg class="favourite__svg" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <div class="productList__img">
@@ -320,7 +323,7 @@
                                 <svg class="favourite__svg" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <div class="productList__img">
@@ -344,7 +347,7 @@
                                 <svg class="favourite__svg" width="20" height="20" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <div class="productList__img">
@@ -369,7 +372,7 @@
                                 <svg class="favourite__svg" width="20" height="20" viewBox="0 0 512 512">
                                     <path fill="currentColor"
                                         d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z" />
-                                    </svg>
+                                </svg>
                             </a>
                         </div>
                         <div class="productList__img">
@@ -402,25 +405,25 @@
             <div class="contacts">
                 <div class="contacts__box contacts__box1">
                     <div class="contacts__box-hgroup">
-                        <img src="img/dest/icons/picture.png" alt="" class="contacts__box-hgroup-logo">
-                        <h3 class="contacts__box-title">Контакты</h3>
+                        <img src="img/dest/icons/picture.png" data-aos="fade-up" data-aos-delay="200" alt="" class="contacts__box-hgroup-logo">
+                        <h3 class="contacts__box-title" data-aos="fade-up" data-aos-delay="200">Контакты</h3>
                     </div>
                     <div class="contacts__box-info">
                         <ul>
-                            <li class="main__link">Номер: <a href="tel:+380966139191">+380966139191</a></li>
-                            <li class="main__link">ФИО:<span> Ковальчук А.М.</span></li>
+                            <li class="main__link" data-aos="fade-up" data-aos-delay="200">Номер: <a href="tel:+380966139191">+380966139191</a></li>
+                            <li class="main__link" data-aos="fade-up" data-aos-delay="200">ФИО:<span> Ковальчук А.М.</span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="contacts__box contacts__box2">
                     <div class="contacts__box-hgroup">
-                        <img src="img/dest/icons/picture.png" alt="" class="contacts__box-hgroup-logo">
-                        <h3 class="contacts__box-title">Помощь</h3>
+                        <img src="img/dest/icons/picture.png" alt="" data-aos="fade-up" data-aos-delay="200" class="contacts__box-hgroup-logo">
+                        <h3 class="contacts__box-title" data-aos="fade-up" data-aos-delay="200">Помощь</h3>
                     </div>
                     <div class="contacts__box-info">
                         <ul>
-                            <li class="main__link">Номер: <a href="tel:++380977834343">+380977834343</a></li>
-                            <li class="main__link">Email: <a
+                            <li class="main__link" data-aos="fade-up" data-aos-delay="200">Номер: <a href="tel:++380977834343">+380977834343</a></li>
+                            <li class="main__link" data-aos="fade-up" data-aos-delay="200">Email: <a
                                     href="mailto:blacksmith7ya@gmail.com">blacksmith7ya@gmail.com</a></li>
                         </ul>
                     </div>
@@ -435,15 +438,15 @@
                 <form class="form__body">
                     <div class="name form__item">
                         <h3 class="form__name__title form__title">ФИО</h3>
-                        <input class="form__name" name="name" placeholder="Имя" type="text">
+                        <input class="form__name" name="name" placeholder="Имя" type="text" required>
                     </div>
                     <div class="number form__item">
                         <h3 class="form__number__title form__title">Номер телефона</h3>
-                        <input class="form__number" name="phone" placeholder="+380 00 000 00 00" type="text">
+                        <input class="form__number main__form-input" name="phone" placeholder="+380 00 000 00 00" type="text" required pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
                     </div>
                     <div class="email form__item">
                         <h3 class="form__email__title form__title">Ваш email</h3>
-                        <input class="form__email" name="email" placeholder="Не обязательно" type="text">
+                        <input class="form__email main__form-input" name="email" placeholder="Не обязательно" type="text" pattern="\S+@\S+\.\S+|">
                     </div>
                     <button class="form__submit main__btn">Отправить</button>
                 </form>
@@ -455,13 +458,18 @@
 
     </div>
 
+    <!-- jquery -->
     <script src="libs/jquery.min.js"></script>
+    <!-- carousel -->
     <script src="libs/slick.min.js"></script>
+    <!-- background video -->
     <script src="libs/jquery.vide.min.js"></script>
+    <!-- scroll animation library cdn-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- libs initialize in this js -->
     <script src="js/libs_settings.js"></script>
+    <!-- general simple js -->
     <script src="js/main.js"></script>
 
-
 </body>
-
 </html>

@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
         });
     }
     //buy btn setting
-    //close modal btn setting
+
     close_modal_form.addEventListener('click', () => {
         close_modal_form.style.transform = 'rotate(360deg)';
         setTimeout(() => {
@@ -58,7 +58,6 @@ window.addEventListener('load', () => {
     });
     //close modal btn setting
 
-
     // settings of number animation
     setNumAnim('numbers__item-h2-1')
     setNumAnim('numbers__item-h2-2')
@@ -66,14 +65,15 @@ window.addEventListener('load', () => {
     setNumAnim('numbers__item-h2-4')
     
     function setNumAnim(elem){
-        var number = document.querySelector(`.${elem}`),
-        numberTop = number.getBoundingClientRect().top,
-        start = +number.innerHTML, end = +number.dataset.max;
+        let number = document.querySelector(`.${elem}`),
+            numberTop = number.getBoundingClientRect().top,
+            start = +number.innerHTML, 
+            end = +number.dataset.max;
 
         window.addEventListener('scroll', function onScroll() {
             if(window.pageYOffset > numberTop - window.innerHeight / 1.5) {
                 this.removeEventListener('scroll', onScroll);
-                var interval = setInterval(function() {
+                let interval = setInterval(() => {
                     number.innerHTML = ++start;
                     if(start == end) {
                         clearInterval(interval);

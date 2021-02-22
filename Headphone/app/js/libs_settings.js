@@ -99,4 +99,6 @@ $('.comments__slider-wrap').slick({
         }
     ]
   });
+
+  AOS.init();
 });
