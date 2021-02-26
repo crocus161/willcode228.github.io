@@ -1,0 +1,46 @@
+.nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 999
+    &__wrap
+        height: 72px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .burger-btn
+        width: 25px
+        height: 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: flex-end
+        span
+            display: block
+            width: 100%
+            height: 2px
+            background: $brand-black
+            &:nth-child(2)
+                width: 70%
+            &:nth-child(3)
+                width: 30%
+    &-logo
+        &__title
+            font-size: 24px
+            line-height: 32px
+            letter-spacing: 0.1px
+    &__menu
+        position: fixed
+        top: 0
+        right: -600px
+        width: 280px
+        height: 100vh
+        display: flex
+        flex-direction: column
+        background: $brand-white
+        list-style-type: none   
+        z-index: 99
+        &-item
+            color: $brand-black
+            padding: 20px

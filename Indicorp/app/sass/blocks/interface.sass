@@ -1,0 +1,103 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+
+html
+    color: $brand-black
+p
+    color: $secondary-black
+a
+    text-decoration: none
+button
+    all: unset
+    cursor: pointer
+//MAIN CLASSES
+.wrap
+    width: 85%
+    margin: auto
+.main-sprite
+    display: none
+.title
+    font-weight: 800
+    font-size: 40px
+    line-height: 57px
+    letter-spacing: 0.2px
+    text-transform: uppercase
+    margin: 0
+    padding: 0
+.info
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $secondary-black
+.secondary-title
+    font-weight: bold
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: 0.1px
+.main-btn
+    display: block
+    width: 185px
+    height: 48px
+    text-align: center
+    line-height: 48px
+    background: $secondary-accent
+    border-radius: 38px
+    color: $brand-white
+.yellow-bg
+    background: $brand-yellow
+
+.hgroup
+    text-align: center
+    .title
+        margin-bottom: 10px
+    .info
+        display: inline-block
+        width: 60%
+
+@media screen and ( max-width: 1200px )
+    .wrap
+        width: 87%
+    .title
+        font-size: 34px
+        line-height: 48px
+    .main-btn
+        width: 180px
+        height: 45px
+        line-height: 45px
+@media screen and ( max-width: 992px )
+    .wrap
+        width: 89%
+    .title
+        font-size: 30px
+        line-height: 44px
+    .main-btn
+        width: 175px
+@media screen and ( max-width: 768px )
+    .wrap
+        width: 92%
+    .title
+        font-size: 28px
+        line-height: 40px
+    .main-btn
+        width: 175px
+        height: 40px
+        line-height: 40px
+@media screen and ( max-width: 576px )
+    .wrap
+        width: 92%
+    .title
+        font-size: 26px
+        line-height: 38px
+    .main-btn
+        width: 165px
+@media screen and ( max-width: 319px )
+    .title
+        font-size: 24px
+        line-height: 34px
+    .main-btn
+        width: 160px
