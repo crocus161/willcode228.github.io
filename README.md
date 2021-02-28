@@ -128,7 +128,7 @@
 Здесь я оставлю ссылочки на каждый лендинг:
 
   Древние проекты:
-  -https://willcode228.github.io/AirOnePage/
+  -https://willcode228.github.io/Air%20One%20Page/
   -https://willcode228.github.io/B&W/
   -https://willcode228.github.io/Creatives/
   -https://willcode228.github.io/Jewelery/
@@ -139,9 +139,9 @@
   -https://willcode228.github.io/Collibra/dist/
   -https://willcode228.github.io/New%20Providence/
   -https://willcode228.github.io/Headphone/dist/
-  -https://willcode228.github.io/SinglePageWebsite/
+  -https://willcode228.github.io/Single%Page%Website/
   -https://willcode228.github.io/Zen/
-  -https://willcode228.github.io/ThriveTalk/dist/
+  -https://willcode228.github.io/Thrive%Talk/dist/
   -https://willcode228.github.io/Next%20Generation/
   -https://willcode228.github.io/Indicorp/app/
         
