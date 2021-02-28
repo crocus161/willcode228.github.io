@@ -141,7 +141,7 @@
   -https://willcode228.github.io/Headphone/dist/
   -https://willcode228.github.io/Single%20Page/
   -https://willcode228.github.io/Zen/
-  -https://willcode228.github.io/Thrive%20Talk/app/
+  -https://willcode228.github.io/Thrive%20Talk/dist/
   -https://willcode228.github.io/Next%20Generation/
   -https://willcode228.github.io/Indicorp/dist/
         
