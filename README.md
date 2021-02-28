@@ -143,6 +143,7 @@
   -https://willcode228.github.io/Zen/
   -https://willcode228.github.io/ThriveTalk/dist/
   -https://willcode228.github.io/Next%20Generation/
+  -https://willcode228.github.io/Indicorp/app/
         
  А здесь на JS проекты:
  
