@@ -244,7 +244,7 @@ p{
 	-webkit-animation: show__anim 1s linear 1;
 	        animation: show__anim 1s linear 1;
 }
-@keyfarmes show__anim{
+@keyframes show__anim{
 	from{
 		opacity: 0;
 	}
