@@ -1,0 +1,54 @@
+.service
+    &__wrap
+        padding: 50px 0px
+        min-height: 500px
+    &__hgroup
+        margin-bottom: 50px
+    &__body
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &-text
+            padding: 30px
+            width: 50%
+        &-img
+            width: 45%
+            img
+                width: 100%
+                object-fit: cover
+    &__text
+        width: 50%
+        &-info
+            margin: 30px 0px
+        &-box
+            margin-bottom: 30px
+            text-align: center
+        &-box-info
+            text-align: start
+            margin-left: 45px
+        &-box-hgroup
+            display: flex
+            align-items: center
+            img
+                margin-right: 10px
+@media screen and ( max-width: 1200px )
+    .service
+        &__body
+            justify-content: center
+            &-text
+                text-align: center
+                width: 70%
+            &-img
+                width: 80%
+        &__text-box-hgroup
+            justify-content: center
+        &__text-box-info
+            text-align: center
+@media screen and ( max-width: 576px )
+    .service
+        &__body
+            &-text
+                width: 100%
+            &-img
+                width: 100%
+

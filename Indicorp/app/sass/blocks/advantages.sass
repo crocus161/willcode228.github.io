@@ -1,0 +1,36 @@
+.advantages
+    width: 100%
+    &__wrap
+        padding: 100px 0px 50px
+    &__box
+        margin-top: 50px
+        min-height: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        perspective: 500
+    &__card
+        width: 230px
+        min-height: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: 10px
+        transition: $fast-transition
+        transform: rotateX(15deg)
+        &:hover
+            box-shadow: $main-shadow
+            transform: rotateX(0deg) scale(1.1) translateY(-25px)
+        &-info
+            text-transform: uppercase
+        svg
+            width: 48px
+            height: 48px
+            fill: $accent
+
+@media screen and ( max-width: 1200px )
+    .advantages
+        &__card
+            transform: rotateX(0)

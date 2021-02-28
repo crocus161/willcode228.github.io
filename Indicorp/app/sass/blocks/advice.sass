@@ -1,0 +1,40 @@
+.advice
+    width: 100%
+    background: $secondary-white
+    &__wrap
+        width: 90%
+        padding: 100px 0px
+    &__hgroup
+        margin-bottom: 45px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        width: 230px
+        min-height: 340px
+        margin: 20px
+        background: $brand-white
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        box-shadow: $main-shadow
+        &:hover
+            .advice__image
+                img
+                    transform: scale(1.2)
+    &__image
+        overflow: hidden
+        height: 145px
+        &:hover
+            img
+                transform: scale(1.2)
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: $transition
+    &__text
+        padding: 30px
+        &-info
+            margin: 10px 0px

@@ -1,0 +1,87 @@
+.form
+    width: 100%
+    height: 80px
+    background: $brand-black
+    position: relative
+    &__wrap
+        padding: 40px
+        position: absolute
+        bottom: -50px
+        left: 50%
+        min-height: 125px
+
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        background: $secondary-accent
+        transform: translate(-50%, -50%)
+    &__title
+        display: block
+        width: 25%
+        font-size: 24px
+        line-height: 32px
+        letter-spacing: 0.1px
+        color: $brand-white
+        margin-right: 5px
+form
+    input
+        width: 450px
+        height: 60px
+        border: none
+        border-radius: 5px
+        padding: 10px
+        outline: none
+    button
+        height: 50px
+        padding: 6px
+        margin-left: -15px
+        background: $brand-yellow
+        color: $brand-white
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+
+@media screen and ( max-width: 1200px )
+    .form
+        min-height: 400px
+        &__wrap
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        &__title
+            text-align: center
+            width: 100%
+            margin-bottom: 20px
+    form
+        input
+            width: 350px
+@media screen and ( max-width: 576px )
+    .form
+        &__wrap
+            width: 100%
+    form
+        input
+            width: 250px
+@media screen and ( max-width: 430px )
+    .form
+        &__wrap
+            width: 100%
+    form
+        input
+            width: 150px
+@media screen and ( max-width: 321px )
+    .form
+        &__wrap
+            width: 100%
+    form
+        input
+            width: 140px
+@media screen and ( max-width: 319px )
+    .form
+        &__wrap
+            width: 100%
+    form
+        input
+            width: 128px
+
+

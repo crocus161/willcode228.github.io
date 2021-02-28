@@ -1,0 +1,33 @@
+.preloader
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $brand-white
+    z-index: 999
+    transition: $transition
+    .circle
+        width: 260px
+        height: 260px
+        border-radius: 50%
+        background-image: linear-gradient(180deg, #dcffb8 0, #c7ffba 16.67%, #b1ffba 33.33%, #9df2b9 50%, #8be4b7 66.67%, #7cd7b5 83.33%, #70ccb4 100%)
+        display: flex
+        justify-content: center
+        align-items: center
+        animation: rotate 1s linear infinite
+        .small-circle
+            width: 200px
+            height: 200px
+            border-radius: 50%
+            background: $brand-white
+
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+        

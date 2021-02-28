@@ -1,0 +1,75 @@
+.contacts
+    width: 100%
+    padding: 100px 0px
+    background: $secondary-white
+    &__wrap
+        width: 99%
+    &__hgroup
+        margin-bottom: 75px
+    &__body
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+    &__card
+        width: 300px
+        margin: 20px 0px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        min-height: 330px
+        background: $brand-white
+        transition: $transition
+        &:hover
+            background: $accent
+            a.main-btn,a,svg,h3
+                transition: $transition
+            a.main-btn
+                border: 1px solid $brand-white
+                color: $brand-white
+            a
+                color: $brand-white
+                &:hover
+                    background: $brand-white
+                    color: $accent
+            svg
+                fill: $brand-white
+            h3
+                color: $brand-white
+        &-btn
+            color: $brand-yellow
+            border-radius: 0px
+            border: 1px solid $brand-yellow
+            background: transparent
+        &-title
+            margin: 15px 0px
+        &-link
+            color: $brand-black
+            margin: 5px 0px
+        svg
+            fill: $accent
+            width: 80px
+        &:nth-child(2)  
+            min-height: 360px
+            background: $brand-black
+            color: $brand-white
+            a
+                color: $brand-white
+                &:hover
+                    background: $brand-white
+                    color: $brand-black
+            svg
+                fill: $brand-white
+            a.main-btn
+                border: 1px solid $brand-white
+            
+@media screen and ( max-width: 1200px )
+    .contacts
+        &__body
+            flex-direction: column
+@media screen and ( max-width: 319px )
+    .contacts
+        &__card
+            width: 250px
+

@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif
     font-size: 14px
 
+*::selection
+    color: $brand-white
+    background-color: $brand-yellow
+
 html
     color: $brand-black
 p
@@ -14,6 +18,10 @@ a
 button
     all: unset
     cursor: pointer
+
+.general-wrap
+    max-width: 1800px
+    margin: auto
 //MAIN CLASSES
 .wrap
     width: 85%
@@ -48,9 +56,16 @@ button
     background: $secondary-accent
     border-radius: 38px
     color: $brand-white
+    transition: $fast-transition
 .yellow-bg
     background: $brand-yellow
-
+    
+.main-btn
+    &:hover
+        background: $accent
+.main-btn.yellow-bg
+    &:hover
+        background: darken($brand-yellow, 10%)
 .hgroup
     text-align: center
     .title
@@ -58,7 +73,22 @@ button
     .info
         display: inline-block
         width: 60%
-
+.main-link
+    position: relative
+    &:hover
+        &::after
+            width: 100%
+    &::after
+        content: ''
+        position: absolute
+        bottom: 5px
+        left: 50%
+        width: 0%
+        height: 1px
+        background: $brand-white
+        transition: $fast-transition
+        transform: translate(-50%, -50%)
+        
 @media screen and ( max-width: 1200px )
     .wrap
         width: 87%
@@ -95,9 +125,15 @@ button
         line-height: 38px
     .main-btn
         width: 165px
+    .hgroup
+        .info
+            width: 80%
 @media screen and ( max-width: 319px )
     .title
         font-size: 24px
         line-height: 34px
     .main-btn
         width: 160px
+    .hgroup
+        .info
+            width: 90%
