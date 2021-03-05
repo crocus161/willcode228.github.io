@@ -134,7 +134,6 @@ ul {
 }
 
 .link {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-bottom: 1px solid #222222;
   border-bottom-color: transparent;
