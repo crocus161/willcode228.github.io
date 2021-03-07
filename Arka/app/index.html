@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,23 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/app.min.css">
 </head>
+
 <body>
 
     <svg class="svg-sprite">
-        <symbol viewBox="0 0 512 512" id="sequins" >
-            <path d="m497 353.671875c-30.4375 0-59.023438-11.742187-80.5-33.066406-21.46875-21.3125-33.289062-49.699219-33.289062-79.929688 0-8.285156-6.71875-15-15-15-8.285157 0-15 6.714844-15 15 0 30.230469-11.824219 58.617188-33.292969 79.929688-21.476563 21.324219-50.0625 33.066406-80.5 33.066406-8.285157 0-15 6.714844-15 15s6.714843 15 15 15c62.742187 0 113.792969 50.839844 113.792969 113.328125 0 8.285156 6.714843 15 15 15 8.28125 0 15-6.714844 15-15 0-62.488281 51.046874-113.328125 113.789062-113.328125 8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0"/><path d="m205.234375 236.386719c-44.175781 0-80.117187-35.675781-80.117187-79.53125 0-8.28125-6.714844-15-15-15-8.285157 0-15 6.71875-15 15 0 43.855469-35.941407 79.53125-80.117188 79.53125-8.285156 0-15 6.71875-15 15 0 8.285156 6.714844 15 15 15 44.175781 0 80.117188 35.789062 80.117188 79.777343 0 8.28125 6.714843 15 15 15 8.285156 0 15-6.71875 15-15 0-43.988281 35.941406-79.777343 80.117187-79.777343 8.285156 0 15-6.714844 15-15 0-8.28125-6.714844-15-15-15zm0 0"/><path d="m229.636719 103.65625c32.488281 0 58.921875 26.230469 58.921875 58.46875 0 8.28125 6.714844 15 15 15s15-6.71875 15-15c0-32.34375 26.433594-58.65625 58.921875-58.65625 8.285156 0 15-6.71875 15-15 0-8.285156-6.714844-15-15-15-32.488281 0-58.921875-26.230469-58.921875-58.46875 0-8.285156-6.714844-15-15-15s-15 6.714844-15 15c0 32.34375-26.433594 58.65625-58.921875 58.65625-8.285157 0-15 6.714844-15 15s6.714843 15 15 15zm0 0"/>
+        <symbol viewBox="0 0 512 512" id="sequins">
+            <path
+                d="m497 353.671875c-30.4375 0-59.023438-11.742187-80.5-33.066406-21.46875-21.3125-33.289062-49.699219-33.289062-79.929688 0-8.285156-6.71875-15-15-15-8.285157 0-15 6.714844-15 15 0 30.230469-11.824219 58.617188-33.292969 79.929688-21.476563 21.324219-50.0625 33.066406-80.5 33.066406-8.285157 0-15 6.714844-15 15s6.714843 15 15 15c62.742187 0 113.792969 50.839844 113.792969 113.328125 0 8.285156 6.714843 15 15 15 8.28125 0 15-6.714844 15-15 0-62.488281 51.046874-113.328125 113.789062-113.328125 8.285156 0 15-6.714844 15-15s-6.714844-15-15-15zm0 0" />
+            <path
+                d="m205.234375 236.386719c-44.175781 0-80.117187-35.675781-80.117187-79.53125 0-8.28125-6.714844-15-15-15-8.285157 0-15 6.71875-15 15 0 43.855469-35.941407 79.53125-80.117188 79.53125-8.285156 0-15 6.71875-15 15 0 8.285156 6.714844 15 15 15 44.175781 0 80.117188 35.789062 80.117188 79.777343 0 8.28125 6.714843 15 15 15 8.285156 0 15-6.71875 15-15 0-43.988281 35.941406-79.777343 80.117187-79.777343 8.285156 0 15-6.714844 15-15 0-8.28125-6.714844-15-15-15zm0 0" />
+            <path
+                d="m229.636719 103.65625c32.488281 0 58.921875 26.230469 58.921875 58.46875 0 8.28125 6.714844 15 15 15s15-6.71875 15-15c0-32.34375 26.433594-58.65625 58.921875-58.65625 8.285156 0 15-6.71875 15-15 0-8.285156-6.714844-15-15-15-32.488281 0-58.921875-26.230469-58.921875-58.46875 0-8.285156-6.714844-15-15-15s-15 6.714844-15 15c0 32.34375-26.433594 58.65625-58.921875 58.65625-8.285157 0-15 6.714844-15 15s6.714843 15 15 15zm0 0" />
         </symbol>
         <symbol viewBox="0 0 47.154 47.154" id="cart">
-            <path d="M17.207,26.989c0.391,1.199,1.509,2.01,2.769,2.01h20.487c1.309,0,2.457-0.873,2.807-2.135l3.778-13.629    c0.243-0.877,0.063-1.817-0.488-2.542c-0.551-0.724-1.407-1.149-2.317-1.149H13.974l-2.735-3.809    c-1.438-2-3.749-3.187-6.213-3.187H2.158C0.968,2.548,0,3.506,0,4.698C0,5.89,0.968,6.847,2.158,6.847h2.404    c1.362,0,2.641,0.66,3.43,1.771l3.854,5.428v16.957c0,2.756,2.234,4.99,4.989,4.99h23.083c1.191,0,2.156-0.958,2.156-2.149    c0-1.19-0.965-2.149-2.156-2.149H17.407c-0.656,0-1.188-0.531-1.188-1.188V23.96L17.207,26.989z"/>
-            <circle cx="16.463" cy="41.359" r="3.247"/>
-            <circle cx="37.484" cy="41.359" r="3.247"/>
+            <path
+                d="M17.207,26.989c0.391,1.199,1.509,2.01,2.769,2.01h20.487c1.309,0,2.457-0.873,2.807-2.135l3.778-13.629    c0.243-0.877,0.063-1.817-0.488-2.542c-0.551-0.724-1.407-1.149-2.317-1.149H13.974l-2.735-3.809    c-1.438-2-3.749-3.187-6.213-3.187H2.158C0.968,2.548,0,3.506,0,4.698C0,5.89,0.968,6.847,2.158,6.847h2.404    c1.362,0,2.641,0.66,3.43,1.771l3.854,5.428v16.957c0,2.756,2.234,4.99,4.989,4.99h23.083c1.191,0,2.156-0.958,2.156-2.149    c0-1.19-0.965-2.149-2.156-2.149H17.407c-0.656,0-1.188-0.531-1.188-1.188V23.96L17.207,26.989z" />
+            <circle cx="16.463" cy="41.359" r="3.247" />
+            <circle cx="37.484" cy="41.359" r="3.247" />
         </symbol>
     </svg>
     <!-- /.svg-sprite -->
@@ -32,16 +40,24 @@
 
             <ul class="nav__menu">
                 <li>
-                    <a class="nav__link" href="#"><svg><use xlink:href="#sequins"></use></svg>Start your design</a>
+                    <a class="nav__link" href="#"><svg>
+                            <use xlink:href="#sequins"></use>
+                        </svg>Start your design</a>
                 </li>
                 <li><a class="nav__link" href="#">
-                    <svg><use xlink:href="#sequins"></use></svg>All products</a>
+                        <svg>
+                            <use xlink:href="#sequins"></use>
+                        </svg>All products</a>
                 </li>
                 <li><a class="nav__link" href="#">
-                    <svg><use xlink:href="#sequins"></use></svg>Inspiration</a>
+                        <svg>
+                            <use xlink:href="#sequins"></use>
+                        </svg>Inspiration</a>
                 </li>
                 <li><a class="nav__link" href="#">
-                    <svg><use xlink:href="#sequins"></use></svg>About</a>
+                        <svg>
+                            <use xlink:href="#sequins"></use>
+                        </svg>About</a>
                 </li>
             </ul>
 
@@ -49,8 +65,10 @@
             <ul class="nav__meta">
                 <li><a class="nav__account" href="#">Account</a></li>
                 <li><a class="nav__shopping" href="#">
-                    <svg><use xlink:href="#cart"></use></svg>
-                </a></li>
+                        <svg>
+                            <use xlink:href="#cart"></use>
+                        </svg>
+                    </a></li>
             </ul>
             <!-- /.nav__meta -->
 
@@ -59,7 +77,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-            </button> 
+            </button>
             <!-- /.nav__burger-btn -->
         </nav>
         <!-- /.nav -->
@@ -70,7 +88,8 @@
 
                 <div class="header__text">
                     <h1 class="header__title">Fast and easy custom<wbr> boxes your customers<wbr> will love</h1>
-                    <p class="header__info">Fastest turnaround.<wbr> Best prices instantly.<wbr> Dieline design help available.</p>
+                    <p class="header__info">Fastest
+                        turnaround.<wbr> Best prices instantly.<wbr> Dieline design help available.</p>
                     <a class="header__btn main-btn" href="#">Start your design</a>
                 </div>
                 <!-- /.header__text -->
@@ -125,159 +144,165 @@
                     <div class="products__container">
 
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-1.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Carton Boxes</h2>
-                                    <p class="products__text-info info">Create a clean brand presentation with this custom carton box.</p>
+                                    <p class="products__text-info info">Create a clean brand presentation with this
+                                        custom carton box.</p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $10.44/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-2.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Poly Mailers</h2>
-                                    <p class="products__text-info info">A fully custom high quality self sealing poly mailer.</p>
+                                    <p class="products__text-info info">A fully custom high quality self sealing poly
+                                        mailer.</p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $10.44/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-3.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Stickers</h2>
-                                    <p class="products__text-info info">Add personality to your packages with custom stickers.</p>
+                                    <p class="products__text-info info">Add personality to your packages with custom
+                                        stickers.</p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $0.41/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-4.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Boxes</h2>
-                                    <p class="products__text-info info">A stylish and strong corrugated cardboard box.</p>
+                                    <p class="products__text-info info">A stylish and strong corrugated cardboard box.
+                                    </p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $10.44/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-5.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Tissue Paper</h2>
-                                    <p class="products__text-info info">The perfect addition to branding your package.</p>
+                                    <p class="products__text-info info">The perfect addition to branding your package.
+                                    </p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $6.54/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
                         <div class="products__box">
-    
+
                             <div class="products__box-image">
                                 <img src="img/dest/products/Rectangle-6.png" alt="">
                             </div>
-    
+
                             <!-- /.products__box-image -->
-    
+
                             <div class="products__box-text products__text">
-    
+
                                 <div class="products__text-description">
                                     <h2 class="products__text-title card-title">Custom Tape</h2>
-                                    <p class="products__text-info info">High quality custom tape to seal your shipping boxes during delivery.</p>
+                                    <p class="products__text-info info">High quality custom tape to seal your shipping
+                                        boxes during delivery.</p>
                                 </div>
                                 <!-- /.products__text-description -->
-    
+
                                 <div class="products__text-prices">
                                     <p class="products__text-price info">Starting at:<wbr> $12.16/unit</p>
                                 </div>
                                 <!-- /.products__text-prices -->
-    
+
                             </div>
                             <!-- /.products__box-text -->
-    
+
                         </div>
                         <!-- /.products__box -->
 
@@ -299,26 +324,27 @@
                 <div class="services__wrapper wrapper">
 
                     <div class="services__hgroup">
-                        <h2 class="services__hgroup-title title">Fast and easy custom boxes your customers will love</h2>
+                        <h2 class="services__hgroup-title title">Fast and easy custom boxes your customers will love
+                        </h2>
                     </div>
                     <!-- /.services__hgroup -->
 
                     <div class="services__box">
 
                         <div class="services__card">
-                            <img class="services__card-img" src="img/dest/services/Rectangle-1.png" alt="" >
+                            <img class="services__card-img" src="img/dest/services/Rectangle-1.png" alt="">
                             <h3 class="services__card-title card-title">You Order</h3>
                             <p class="services__card-info info">Design and order boxes in a few clicks.</p>
                         </div>
                         <!-- /.services__card -->
                         <div class="services__card">
-                            <img class="services__card-img" src="img/dest/services/Rectangle-2.png" alt="" >
+                            <img class="services__card-img" src="img/dest/services/Rectangle-2.png" alt="">
                             <h3 class="services__card-title card-title">We Proof</h3>
                             <p class="services__card-info info">Approve your designs before production.</p>
                         </div>
                         <!-- /.services__card -->
                         <div class="services__card">
-                            <img class="services__card-img" src="img/dest/services/Rectangle-3.png" alt="" >
+                            <img class="services__card-img" src="img/dest/services/Rectangle-3.png" alt="">
                             <h3 class="services__card-title card-title">We Print & Ship</h3>
                             <p class="services__card-info info">Your order gets printed and shipped with tracking.</p>
                         </div>
@@ -350,19 +376,22 @@
                         <div class="advantages__card">
                             <img src="img/dest/advantages/Rectangle-1.png" alt="">
                             <h3 class="advantages__card-title card-title">Eco-Friendly Material</h3>
-                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums in the industry at the best prices.</p>
+                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums
+                                in the industry at the best prices.</p>
                         </div>
                         <!-- /.advantages__card -->
                         <div class="advantages__card">
                             <img src="img/dest/advantages/Rectangle-2.png" alt="">
                             <h3 class="advantages__card-title card-title">Eco-Friendly Material</h3>
-                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums in the industry at the best prices.</p>
+                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums
+                                in the industry at the best prices.</p>
                         </div>
                         <!-- /.advantages__card -->
                         <div class="advantages__card">
                             <img src="img/dest/advantages/Rectangle-3.png" alt="">
                             <h3 class="advantages__card-title card-title">Eco-Friendly Material</h3>
-                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums in the industry at the best prices.</p>
+                            <p class="advantages__card-info info">Order as little as 10, giving you the lowest minimums
+                                in the industry at the best prices.</p>
                         </div>
                         <!-- /.advantages__card -->
 
@@ -382,7 +411,8 @@
 
                         <img src="img/dest/recommendation/Rectangle-1.png" alt="">
                         <h3 class="recommendation__card-title title">Couldn't find a size you need?</h3>
-                        <p class="recommendation__card-info info">We’ll work directly with you to create a fully branded packaging system.</p>
+                        <p class="recommendation__card-info info">We’ll work directly with you to create a fully branded
+                            packaging system.</p>
                         <a class="recommendation__card-btn main-btn white" href="#">Request a quote</a>
 
                     </div>
@@ -391,7 +421,8 @@
 
                         <img src="img/dest/recommendation/Rectangle-2.png" alt="">
                         <h3 class="recommendation__card-title title">Need a free dieline template?</h3>
-                        <p class="recommendation__card-info info">Let us know what size you need and we'll email an Adobe Illustrator dieline to you within 3-4 business days.</p>
+                        <p class="recommendation__card-info info">Let us know what size you need and we'll email an
+                            Adobe Illustrator dieline to you within 3-4 business days.</p>
                         <a class="recommendation__card-btn main-btn white" href="#">Request dieline</a>
 
                     </div>
@@ -406,102 +437,141 @@
             <div class="reviews">
                 <div class="reviews__wrapper wrapper">
 
-                    <div class="reviews__box">
-                        <img src="img/dest/reviews/Rectangle-1.png" alt="">
-                        <img src="img/dest/reviews/Rectangle-2.png" alt="">
+                    <div class="reviews__hgroup">
+                        <h2 class="reviews__hgroup-title title">Merchants love Arka</h2>
                     </div>
-                    
-                    <div class="reviews__box">
+                    <!-- /.reviews__hgroup -->
 
-                        <div class="reviews__box-img">
-                            <img src="img/dest/reviews/Rectangle-3.png" alt="">
-                            <img src="img/dest/reviews/Rectangle-4.png" alt="">
+                    <div class="reviews__container">
+
+                        <div class="reviews__box">
+                            <img src="img/dest/reviews/Rectangle-1.png" alt="">
+                            <img src="img/dest/reviews/Rectangle-2.png" alt="">
                         </div>
-                        <!-- /.review__box-img -->
+                        <!-- /.review__box -->
 
-                        <div class="reviews__box-text">
+                        <div class="reviews__box">
 
-                            <p class="reviews__box-info">Arka’s team is super fast, knowledgeable, and easy to work with - highly recommended!</p>
-
-                            <div class="reviews__box-user">
-                                <img src="img/dest/ava/Rectangle-1.png" alt="ava">
-                                <div class="reviews__box-meta">
-                                    <h3 class="reviews__box-name">Jesse</h3>
-                                    <h3 class="reviews__box-job">Subscription Catalyst</h3>
-                                </div>
-                                <a class="reviews__box-btn main-btn grey" href="#">Their story</a>
+                            <div class="reviews__box-img">
+                                <img src="img/dest/reviews/Rectangle-3.png" alt="">
+                                <img src="img/dest/reviews/Rectangle-4.png" alt="">
                             </div>
+                            <!-- /.review__box-img -->
 
-                        </div>
-                        <!-- /.review__box-text -->
+                            <div class="reviews__box-text">
 
-                    </div>
-                    <!-- /.review__box -->
+                                <p class="reviews__box-info">Arka’s team is super fast, knowledgeable, and easy to work
+                                    with - highly recommended!</p>
 
-                    <div class="reviews__box">
-                        
-                        
-                        <div class="reviews__box-text">
-                            
-                            <p class="reviews__box-info">I really like Arka because it’s a really nice box, I’ve gotten a lot of compliments on it.</p>
-                            
-                            <div class="reviews__box-user">
-                                <img src="img/dest/ava/Rectangle-2.png" alt="ava">
-                                <div class="reviews__box-meta">
-                                    <h3 class="reviews__box-name">Leslie</h3>
-                                    <h3 class="reviews__box-job">Burgundy Fox</h3>
+                                <div class="reviews__box-user">
+                                    <img src="img/dest/ava/Rectangle-1.png" alt="ava">
+                                    <div class="reviews__box-meta">
+                                        <h3 class="reviews__box-name">Jesse</h3>
+                                        <h3 class="reviews__box-job">Subscription Catalyst</h3>
+                                    </div>
+                                    <a class="reviews__box-btn main-btn grey" href="#">Their story</a>
                                 </div>
-                                <a class="reviews__box-btn main-btn grey" href="#">Their story</a>
+
                             </div>
-                            
+                            <!-- /.review__box-text -->
+
                         </div>
-                        <!-- /.review__box-text -->
-                        
-                        <div class="reviews__box-img">
-                            <img src="img/dest/reviews/Rectangle-5.png" alt="">
-                            <img src="img/dest/reviews/Rectangle-6.png" alt="">
-                        </div>
-                        <!-- /.review__box-img -->
+                        <!-- /.review__box -->
 
-                    </div>
-                    <!-- /.review__box -->
+                        <div class="reviews__box">
 
-                    <div class="reviews__box">
 
-                        <div class="reviews__box-img">
-                            <img src="img/dest/reviews/Rectangle-7.png" alt="">
-                            <img src="img/dest/reviews/Rectangle-8.png" alt="">
-                        </div>
-                        <!-- /.review__box-img -->
+                            <div class="reviews__box-text">
 
-                        <div class="reviews__box-text">
+                                <p class="reviews__box-info">I really like Arka because it’s a really nice box, I’ve
+                                    gotten a lot of compliments on it.</p>
 
-                            <p class="reviews__box-info">I love how easily it was to customize the box, and you guys were more affordable.</p>
-
-                            <div class="reviews__box-user">
-                                <img src="img/dest/ava/Rectangle-3.png" alt="ava">
-                                <div class="reviews__box-meta">
-                                    <h3 class="reviews__box-name">Anthony</h3>
-                                    <h3 class="reviews__box-job">Subscription Catalyst</h3>
+                                <div class="reviews__box-user">
+                                    <img src="img/dest/ava/Rectangle-2.png" alt="ava">
+                                    <div class="reviews__box-meta">
+                                        <h3 class="reviews__box-name">Leslie</h3>
+                                        <h3 class="reviews__box-job">Burgundy Fox</h3>
+                                    </div>
+                                    <a class="reviews__box-btn main-btn grey" href="#">Their story</a>
                                 </div>
-                                <a class="reviews__box-btn main-btn grey" href="#">Lipstick Junkie</a>
+
                             </div>
+                            <!-- /.review__box-text -->
+
+                            <div class="reviews__box-img">
+                                <img src="img/dest/reviews/Rectangle-5.png" alt="">
+                                <img src="img/dest/reviews/Rectangle-6.png" alt="">
+                            </div>
+                            <!-- /.review__box-img -->
 
                         </div>
-                        <!-- /.review__box-text -->
+                        <!-- /.review__box -->
+
+                        <div class="reviews__box">
+
+                            <div class="reviews__box-img">
+                                <img src="img/dest/reviews/Rectangle-7.png" alt="">
+                                <img src="img/dest/reviews/Rectangle-8.png" alt="">
+                            </div>
+                            <!-- /.review__box-img -->
+
+                            <div class="reviews__box-text">
+
+                                <p class="reviews__box-info">I love how easily it was to customize the box, and you guys
+                                    were more affordable.</p>
+
+                                <div class="reviews__box-user">
+                                    <img src="img/dest/ava/Rectangle-3.png" alt="ava">
+                                    <div class="reviews__box-meta">
+                                        <h3 class="reviews__box-name">Anthony</h3>
+                                        <h3 class="reviews__box-job">Subscription Catalyst</h3>
+                                    </div>
+                                    <a class="reviews__box-btn main-btn grey" href="#">Their story</a>
+                                </div>
+
+                            </div>
+                            <!-- /.review__box-text -->
+
+                        </div>
+                        <!-- /.review__box -->
 
                     </div>
-                    <!-- /.review__box -->
-                    
+                    <!-- /.reviews__container -->
+
                 </div>
+                <!-- /.reviews__wrapper wrapper -->
             </div>
+            <!-- /.reviews -->
+
+            <div class="appeal">
+                <div class="appeal__wrapper wrapper">
+
+                    <div class="appeal__hgroup">
+                        <h2 class="appeal__hgroup-title title">Let`s get to it</h2>
+                    </div>
+                    <!-- /.appeal__hgroup -->
+
+                    <div class="appeal__btngroup">
+                        <a class="appeal__btn main-btn" href="#">Start your design</a>
+                        <a class="appeal__btn main-btn white" href="#">Browse all products</a>
+                    </div>
+                    <!-- /.appeal__btngroup -->
+
+                </div>
+                <!-- /.appeal__wrapper wrapper -->
+            </div>
+            <!-- /.appeal -->
+
         </main>
         <!-- /.main -->
+
         <footer class="footer"></footer>
         <!-- /.footer -->
+
     </div>
     <!-- /.container -->
 
     <script src="js/app.min.js"></script>
 </body>
+
 </html>
