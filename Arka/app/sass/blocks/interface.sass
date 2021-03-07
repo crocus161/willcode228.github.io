@@ -52,12 +52,22 @@ button
     font-size: 14px
     letter-spacing: 1.96px
     text-transform: uppercase
+    transition: $transition
+    &:hover
+        color: $accent
+        background: $brand-white
 .main-btn.white
     background: $brand-white
     color: $brand-black
+    &:hover
+        color: $brand-white
+        background: $brand-black
 .main-btn.grey
     background: $grey-btn-bg
     color: $accent
+    &:hover
+        color: $grey-btn-bg
+        background: $accent
 
 @media screen and ( max-width: 1400px )
     .wrapper

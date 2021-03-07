@@ -24,13 +24,19 @@
         line-height: 18px
         letter-spacing: 1.96px
         text-transform: uppercase
-        transition: $transition
+        transition: $fast-transition
         &:hover
             color: $accent
     &__shopping
+        &:hover
+            svg
+                fill: $brand-black
         svg
             width: 24px
             height: 24px
+            fill: $brand-white
+            stroke: $brand-black
+            transition: $transition
     &__link
         display: flex
         align-items: center
