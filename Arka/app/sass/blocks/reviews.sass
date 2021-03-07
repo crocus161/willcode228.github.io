@@ -1,0 +1,68 @@
+.reviews
+    width: 100%
+    background: $grey-bg
+    padding: $section-gap
+    &__wrapper
+        background: $brand-white
+        box-shadow: $shadow
+        padding: 0px 0px
+    &__box
+        display: flex
+        justify-content: space-around
+        overflow: hidden
+        margin: 30px 0px
+        &:first-child
+            margin: 60px 0px
+            img
+                object-fit: scale-down
+                margin-top: 80px
+        &-img
+            display: flex
+            img
+                flex: 0 0 50%
+        &-text
+            padding: 50px
+        &-info
+            font-size: 24px
+            line-height: 32px
+            margin-bottom: 12px
+            &::before
+                content: '“'
+            &::after
+                content: '”' 
+        &-user
+            display: flex
+            align-items: center
+        &-btn
+            padding: 15px 20px
+        &-meta
+            margin: 0px 20px
+        &-name
+            font-size: 18px
+            line-height: 22px
+        &-job
+            font-size: 15px
+            line-height: 24px
+            color: $grey-font
+
+@media screen and ( max-width: 1200px )
+    .reviews
+        &__box
+            flex-direction: column
+            &:nth-child(3)
+                flex-direction: column-reverse
+@media screen and ( max-width: 576px )
+    .reviews
+        &__box
+            &-img
+                flex-direction: column
+                img
+                    flex: 0 0 100%
+            &-text
+                padding: 40px
+            &-meta
+                margin: 20px 0px
+            &-user
+                flex-direction: column
+                align-items: flex-start
+                
