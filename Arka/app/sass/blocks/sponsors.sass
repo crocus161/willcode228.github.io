@@ -1,0 +1,20 @@
+.sponsors
+    width: 100%
+    background: $brand-white
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__box
+        margin: 20px
+        display: flex
+        align-items: center
+        &-title
+            font-size: 15px
+            line-height: 19px
+            letter-spacing: 0.6px
+            color: $grey-font
+@media screen and ( max-width: 768px )
+    .sponsors
+        &__wrapper
+            justify-content: space-around
