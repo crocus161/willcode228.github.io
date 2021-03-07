@@ -11,6 +11,7 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             if(e.target.classList.contains('nav__link')){
                 menu.classList.remove('nav__menu-active');
+                burger.classList.remove('burger-active');
             }
         }, 300);
     });
