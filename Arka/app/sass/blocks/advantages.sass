@@ -1,0 +1,28 @@
+.advantages
+    width: 100%
+    background: $grey-bg
+    &__hgroup
+        margin-bottom: 84px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        flex: 0 0 32%
+        text-align: center
+        &-img
+            margin-bottom: 54px
+        &-title
+            margin-bottom: 12px
+        &-info
+            display: inline-block
+            width: 80%
+
+@media screen and ( max-width: 992px )
+    .advantages
+        &__card
+            flex: 0 1 50%
+@media screen and ( max-width: 768px )
+    .advantages
+        &__card
+            flex: 0 1 100%

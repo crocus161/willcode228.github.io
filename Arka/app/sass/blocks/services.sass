@@ -16,6 +16,7 @@
         margin: 20px
         text-align: center
         &-img
+            max-width: 100%
             margin-bottom: 45px
         &-title
             margin-bottom: 10px
@@ -26,3 +27,11 @@
     &__btn
         text-align: center
         margin-top: 75px
+
+@media screen and ( max-width: 576px )
+    .services
+        &__card
+            &-img
+                margin-bottom: 25px
+            &-info
+                width: 90%
