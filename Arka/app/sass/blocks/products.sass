@@ -1,0 +1,75 @@
+.products
+    width: 100%
+    background: $grey-bg
+    &__hgroup
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 64px
+        &-title
+            margin-right: 20px
+    &__footer
+        margin-top: 76px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        &-title
+            margin-right: 16px
+            font-weight: bold
+            font-size: 15px
+            line-height: 24px
+            color: $grey-font
+    &__container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 1px
+    &__box
+        flex: 0 0 33%
+        display: flex
+        flex-direction: column
+        background: $brand-white
+        &-image
+            padding: 10px
+            img
+                width: 100%
+                object-fit: cover
+    &__text
+        flex-grow: 1
+        display: flex
+        align-items: center
+        padding: 20px
+        &-prices
+            text-align: right
+            align-self: flex-end
+        &-title
+            margin-bottom: 8px
+        &-price
+            color: $grey-font
+
+@media screen and ( max-width: 1200px )
+    .products
+        &__text
+            flex-wrap: wrap
+            &-prices
+                text-align: left
+                margin-top: 10px
+@media screen and ( max-width: 768px )
+    .products
+        &__box
+            flex: 0 0 44%
+@media screen and ( max-width: 576px )
+    .products
+        &__hgroup
+            &-btn
+                margin-top: 20px
+        &__footer
+            &-btn
+                margin-top: 25px
+        &__box
+            flex: 0 0 100%
+
+

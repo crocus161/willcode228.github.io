@@ -7,6 +7,8 @@
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
     color: $brand-black
+h1,h2,h3,h4,h5,h6
+    font-weight: 400
 ul
     list-style-type: none
 a
@@ -26,44 +28,74 @@ button
     padding: $section-gap
     margin: auto
 
+.card-title
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.36px
+
+.title
+    font-size: 32px
+    line-height: 37px
+
+.info
+    font-size: 15px
+    line-height: 24px
+
+
 .main-btn
-    display: block
-    width: 230px
-    height: 56px
+    display: inline-block
+    padding: 20px 30px
     background: $accent
     border-radius: 44px
 
     color: $brand-white
-    text-align: center
-    line-height: 56px
     font-size: 14px
     letter-spacing: 1.96px
     text-transform: uppercase
+.main-btn.white
+    background: $brand-white
+    color: $brand-black
+.main-btn.grey
+    background: $grey-btn-bg
+    color: $accent
 
 @media screen and ( max-width: 1400px )
     .wrapper
         width: 1170px
+    .title
+        font-size: 30px
+        line-height: 34px
 @media screen and ( max-width: 1200px )
     .wrapper
         width: 950px
+    .title
+        font-size: 28px
+        line-height: 32px
 @media screen and ( max-width: 992px )
     .wrapper
         width: 730px
     .main-btn
-        width: 200px
-        height: 50px
-        line-height: 50px
+        padding: 15px 25px
+    .title
+        font-size: 26px
+        line-height: 30px
 @media screen and ( max-width: 768px )
     .wrapper
         width: 550px
     .main-btn
-        width: 180px
-        height: 40px
-        line-height: 40px
         text-transform: inherit
+    .title
+        font-size: 24px
+        line-height: 30px
 @media screen and ( max-width: 576px )
     .wrapper
         width: 300px
+    .title
+        font-size: 22px
+        line-height: 28px
 @media screen and ( max-width: 319px )
     .wrapper
         width: 95%
+    .title
+        font-size: 20px
+        line-height: 26px
