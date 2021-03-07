@@ -1,0 +1,43 @@
+.footer
+    width: 100%
+    min-height: 365px
+    background: $footer-bg
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__list
+        margin: 20px
+        li
+            margin-bottom: 17px
+        &-link
+            color: $accent
+            font-size: 15px
+            line-height: 18px
+    .form
+        margin: 20px
+        display: flex
+        flex-direction: column
+        &__title
+            font-size: 15px
+            line-height: 18px
+        input
+            outline: none
+            border: none
+            padding: 20px
+            color: rgba($accent, 0.5)
+            height: 36px
+            border-radius: 34px
+            font-style: italic
+            margin: 13px 0px
+        &__submit
+            text-align: center
+            padding: 12px 15px
+            cursor: pointer
+            color: $brand-white
+
+@media screen and ( max-width: 1200px )
+    .footer
+        &__wrapper
+            flex-wrap: wrap
+        &__logo
+            display: none
