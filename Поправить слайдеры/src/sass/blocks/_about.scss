@@ -1,0 +1,19 @@
+.about {
+    padding-top: 120px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        margin-top: -7px;
+    }
+    &__text {
+        margin-top: 23px;
+        width: 568px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,98 @@
+.examples {
+    padding-top: 150px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 64px;
+        letter-spacing: -0.24px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    span.green {
+        color: #3F8C59;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 64px;
+        letter-spacing: -0.24px;
+    }
+
+    &__item {
+        min-width: 0;
+        width: 328px;
+        min-height: 430px;
+        margin-top: 24px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 40px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+    &__number {
+        margin-top: 210px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 24px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &__text {
+        flex-wrap: wrap;
+        color: #fff;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 24px;
+        // width: 277px;
+        margin-top: auto;
+    }
+
+    .item_1 {
+        background: url(../img/examples/1.png) center center no-repeat;
+        // background-size: 100% 100%;
+    }
+    .item_2 {
+        background: url(../img/examples/2.png) center center no-repeat;
+        // background-size: 100% 100%;
+    }
+    .item_3 {
+        background: url(../img/examples/3.png) center center no-repeat;
+        // background-size: 100% 100%;
+    }
+    .item_4 {
+        background: url(../img/examples/4.png) center center no-repeat;
+        // background-size: 100% 100%;
+    }
+    .item_5 {
+        background: url(../img/examples/5.png) center center no-repeat;
+        // background-size: 100% 100%;
+    }
+    .item_6 {
+        background: url(../img/examples/6.png) center center no-repeat;
+        height: 430px;
+        width: 326px;
+        padding-top: 30px;
+        padding-left: 40px;
+    }
+    &__subheader {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #354052;
+        width: 230px;
+        margin-bottom: 25px;
+    }
+    .list_2 {
+        display: none;
+    }
+}
+.examples__list.examples__list_3 {
+    display: none;
+}

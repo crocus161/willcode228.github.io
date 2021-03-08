@@ -1,0 +1,35 @@
+@import "libs/fonts";
+@import "libs/mynormalize";
+@import "libs/bg";
+@import "libs/titles";
+@import "libs/btn";
+@import "libs/form";
+@import "libs/span";
+
+* {
+    font-family: "Proxima", sans-serif;
+    font-weight: normal;
+    color: #000;
+}
+body {
+  background: #F7F2EE;
+  position: relative;
+}
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/creature";
+@import "blocks/but";
+@import "blocks/invite";
+@import "blocks/cooperation";
+@import "blocks/use";
+@import "blocks/examples";
+@import "blocks/introduction";
+@import "blocks/team";
+@import "blocks/footer";
+@import "blocks/media";
+

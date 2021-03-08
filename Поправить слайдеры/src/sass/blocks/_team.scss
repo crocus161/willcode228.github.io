@@ -1,0 +1,43 @@
+.team {
+    background: #4B79EA;
+    padding: 50px 0;
+    margin-top: 200px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__title {
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.24px;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+    &__decoration_circle {
+        position: absolute; 
+        left: 362px;
+        top: 16px;
+    }
+    &__decoration_arrow {
+        position: absolute; 
+        left: 523px;
+        top: 13px;
+    }
+    &__btn {
+        margin-left: 0;
+        margin-right: 0;
+        background: #FFFFFF;
+        border-radius: 14px;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 23px;
+        color: #111111;
+        outline: none;
+        border: none;
+    }
+}
