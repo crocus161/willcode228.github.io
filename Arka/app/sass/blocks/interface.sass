@@ -69,6 +69,23 @@ button
         color: $grey-btn-bg
         background: $accent
 
+.main-link
+    position: relative
+    &:hover
+        &::after
+            width: 100%
+    &::after
+        content: ''
+        position: absolute
+        bottom: -1px
+        left: 50%
+        width: 0
+        height: 1px
+        background: $accent
+        transform-origin: center
+        transform: translateX(-50%)
+        transition: $transition
+
 @media screen and ( max-width: 1400px )
     .wrapper
         width: 1170px
