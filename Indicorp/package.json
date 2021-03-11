@@ -29,6 +29,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "normalize.css": "^8.0.1"
   }
 }

@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/willcode228/Gulp#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.13",
+    "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -29,6 +29,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "normalize.css": "^8.0.1"
   }
 }

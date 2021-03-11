@@ -18,6 +18,19 @@ const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 //require del
 const del = require('del');
+//require htmlmin
+const htmlmin = require('gulp-htmlmin');
+
+
+
+//format html
+function htmlMin() {
+    return src([
+        'app/*.html'
+    ])
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(dest('dist'));
+}
 
 
 //general browserSync logic
@@ -79,7 +92,6 @@ function buildcopy() {
 		'app/js/**/*.js',
 		'app/img/dest/**/*',
 		'app/libs/**/*',
-		'app/**/*.html',
 		'app/favicon.ico',
 		], { base: 'app' }) 
 	.pipe(dest('dist'))
@@ -99,6 +111,6 @@ exports.images = images;
 exports.cleanimg = cleanimg;
 
 //****************build task*****************
-exports.build = series(style, scripts, images, buildcopy);
+exports.build = series(htmlMin, style, scripts, images, buildcopy);
 
 exports.default = parallel(style, scripts, images,  browsersync, startWatch);
