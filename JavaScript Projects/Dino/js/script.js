@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
             }
 
             //randomly choose type of the cactus
-            evil_type = evil_type.sort((a, b) => Math.random() - 0.5);
+            evil_type = evil_type.sort(() => Math.random() - 0.5);
             let random_evil_type = evil_type[get_random(0, evil_type.length - 1)];
 
             //set cactus to the dom

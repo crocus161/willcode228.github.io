@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
                     task_element.classList.remove('completed');
 
                     //return back the text of task
-                    todos[task_index - 1] = task_element.querySelector('span').innerText;
+                    todos[task_index - 1] = task_element.getAttribute('data-text');
 
                     //change the sceen of the button
                     e.target.innerHTML = '&#10004;';
@@ -96,6 +96,10 @@ window.addEventListener('load', () => {
 
                     //else we change status of this task to complete and overwrite task text in todos data
                     task_element.classList.add('completed');
+
+                    //save task text if you will renewing the task
+                    task_element.setAttribute('data-text', todos[task_index - 1]);
+
                     todos[task_index - 1] = null;
 
                     //change the sceen of the button
