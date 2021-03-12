@@ -144,6 +144,7 @@
   -https://willcode228.github.io/Thrive%20Talk/dist/
   -https://willcode228.github.io/Next%20Generation/
   -https://willcode228.github.io/Indicorp/dist/
+  -https://willcode228.github.io/Arka/dist/
         
  А здесь на JS проекты:
  
