@@ -1,0 +1,39 @@
+.nav
+    width: 100%
+    padding: 30px 10px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    border-bottom: $border
+    background: $brand-white
+    z-index: 999
+    &__logo
+        margin: 30px 0px
+        img
+            width: 100%
+            object-fit: cover
+    &__menu
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        &-link
+            padding: 10px
+            font-size: 16px
+            line-height: 32px
+            color: $brand-black
+        li
+            margin-right: 65px
+
+
+@media screen and ( max-width: 992px )
+    .nav
+        &__menu
+            width: 80%
+            justify-content: space-around
+            flex-wrap: wrap
+            li
+                margin: 10px 0px
+                
+                    

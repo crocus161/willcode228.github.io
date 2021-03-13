@@ -1,0 +1,213 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-family: 'Poppins', sans-serif
+body
+    background: url('../img/background-lines.png')
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+
+h1,h2,h3,h4,h5,h6
+    font-family: 'Playfair Display', serif
+    margin: 0
+    padding: 0
+
+button
+    all: unset
+a
+    text-decoration: none
+ul
+    list-style-type: none
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container
+    max-width: 1440px
+    margin: auto
+//*****CONTAINER OF BLOCK*****//
+.wrapper
+    width: 1200px
+    margin: auto
+//*****SVG SPRITE*****//
+.svg-sprite
+    display: none
+//*****MAIN BLOCK STYLES*****//
+.section
+    padding: 100px 0px
+//*****MAIN TITLE*****//
+.title
+    font-weight: bold
+    font-size: 102px
+    line-height: 110px
+//*****MAIN SUBTITLE*****//
+.subtitle
+    font-family: 'Poppins', sans-serif
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    color: $info-grey
+//*****CARD TITLE*****//
+.card-title
+    color: $card-title-black
+    font-style: italic
+    font-weight: 400
+    font-size: 38px
+    line-height: 51px
+.decoration
+    position: relative
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -20px
+        top: 50%
+        width: 10px
+        height: 10px
+        background: url('../img/icons/title-decoration.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        transform: translateY(-50%)
+//*****MAIN INFO*****//
+.info
+    color: $info-grey
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+//*****MAIN BUTTON*****//
+.button
+    display: block
+    width: 185px
+    height: 61px
+
+    border: $border
+    border-radius: $radius
+
+    color: $secondary-accent
+    font-size: 16px
+    text-align: center
+    line-height: 61px
+
+    box-shadow: $shadow
+    background: $brand-white
+
+    cursor: pointer
+    transition: $mid-transition
+    &:hover
+        background: $secondary-accent
+        color: $brand-white
+    
+//*****MAIN LINK*****//
+.link
+    position: relative
+    z-index: 1
+    transition: $mid-transition
+    &::before
+        content: ''
+        width: 0
+        height: 0
+        position: absolute
+        top: 0
+        left: 0
+        background: $secondary-accent
+        z-index: -1
+        transition: $mid-transition
+    &:hover
+        color: $brand-white
+        &::before
+            width: 100%
+            height: 100%
+//*****MEIDA QUERIES*****//
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 1100px
+    .section
+        padding: 90px 0px
+    .title
+        font-size: 92px
+        line-height: 100px
+    .card-title
+        font-size: 34px
+        line-height: 48px
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 900px
+    .section
+        padding: 80px 0px
+    .title
+        font-weight: bold
+        font-size: 82px
+        line-height: 90px
+    .card-title
+        font-size: 30px
+        line-height: 44px
+    .button
+        width: 180px
+        height: 50px
+        line-height: 50px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 740px
+    .section
+        padding: 70px 0px
+    .title
+        font-size: 72px
+        line-height: 80px
+    .card-title
+        font-size: 28px
+        line-height: 40px
+    .button
+        width: 150px
+        height: 40px
+        line-height: 40px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 530px
+    .section
+        padding: 60px 0px
+    .title
+        font-weight: bold
+        font-size: 62px
+        line-height: 70px
+    .card-title
+        font-size: 24px
+        line-height: 26px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 295px
+    .section
+        padding: 50px 0px
+    .title
+        font-weight: bold
+        font-size: 42px
+        line-height: 60px
+    .card-title
+        font-size: 22px
+        line-height: 24px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 270px
+    .section
+        padding: 40px 0px
+    .title
+        font-weight: bold
+        font-size: 32px
+        line-height: 50px
+    .card-title
+        font-size: 20px
+        line-height: 22px
+    .info
+        font-size: 14px
+    .button
+        font-size: 14px
+    .decoration
+        &::before
+            display: none

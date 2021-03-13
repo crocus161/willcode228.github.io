@@ -1,0 +1,30 @@
+.headwear
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &__img 
+        min-width: 590px 
+        img
+            width: 100%
+            object-fit: cover
+    &__text
+        margin-left: 80px
+        &-subtitle
+            margin-bottom: 10px
+        &-title
+            margin-bottom: 35px
+
+@media screen and ( max-width: 1200px )
+    .headwear
+        &__img
+            min-width: 450px
+@media screen and ( max-width: 992px )
+    .headwear
+        &__wrapper
+            flex-wrap: wrap
+        &__img
+            min-width: 100%
+            margin-bottom: 50px
+        &__text
+            margin-left: 0

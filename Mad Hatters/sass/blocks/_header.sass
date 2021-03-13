@@ -1,0 +1,45 @@
+.header
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+    &__img
+        width: 300px
+        min-height: 300px
+        position: relative
+        img
+            position: absolute
+            width: 200px
+            &:nth-child(1)
+                top: 20%
+                right: 0%
+            &:nth-child(2)
+                top: -10%
+                left: 0%
+            &:nth-child(3)
+                width: 450px
+                top: -20%
+                right: 30%
+                z-index: -1
+    &__title
+        margin-bottom: 20px
+        span
+            font-size: 48px
+            font-weight: bold
+    &__subtitle
+        margin-bottom: 10px
+
+
+
+@media screen and ( max-width: 992px )
+    .header
+        &__wrapper
+            justify-content: start
+        &__img
+            display: none
+@media screen and ( max-width: 576px )
+    .header
+        &__title
+            span
+                font-size: 24px
