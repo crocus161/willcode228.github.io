@@ -11,6 +11,12 @@
 </head>
 <body>
 
+    <svg class="svg-sprite">
+        <symbol id="button-arrow">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.207.793l13 13-1.414 1.414-13-13L2.207.793z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 13.5v-6h2v8h-8v-2h6z" />
+        </symbol>
+    </svg>
+
     <div class="container">
 
         <nav class="nav">
@@ -41,19 +47,23 @@
         <!-- /.nav -->
 
         <header class="header">
-            <div class="header__wrapper wrapper section">
+            <div class="header__wrapper wrapper section__wrapper section">
 
-                <div class="header__text">
+                <div class="header__text section__text">
                     <h2 class="header__text-subtitle subtitle">The most private, non-custodial Ethereum wallet</h2>
                     <h1 class="header__text-title title title__el">Reclaim privacy on your Ethereum transfers</h1>
                     <p class="header__text-info info">Blank hides your financial data by mixing transfers with the pool of funds within Blank, ensuring that outward transfers remain anonymous. Your privacy level only goes up with each additional transfer inside.</p>
+
                     <div class="header__btngroup">
-                        <a href="#">Request Early Access</a>
-                        <a href="#">Whitepaper</a>
+                        <a href="#" class="button">Request Early Access
+                            <svg><use xlink:href="#button-arrow"></use></svg>
+                        </a>
+                        <a href="#" class="button empty">Whitepaper<svg><use xlink:href="#button-arrow"></use></svg></a>
                     </div>
+
                 </div>
                 <!-- /.header__text -->
-                <div class="header__img">
+                <div class="header__img section__img">
                     <img src="img/dest/header/Frame(1).png" alt="">
                 </div>
                 <!-- /.header__img -->
@@ -68,7 +78,31 @@
         </header>
         <!-- /.header -->
 
-        <main class="main"></main>
+        <main class="main">
+
+            <div class="about section">
+                <div class="about__wrapper wrapper section__wrapper">
+
+                    <div class="section__text">
+                        <h3 class="subtitle">Why go blank</h3>
+                        <h2 class="title title__el">You’re not anonymous, even on blockchain.</h2>
+                        <p class="info">Even before you connect your wallet, your IP is exposed. Once you connect, your wallet address is exposed. If anyone wants to trace you, they can see the decentralized apps you used, the transfers you made, and the amount of crypto $$$ you hold in your account.</p>
+                    </div>
+                    <!-- /.section__text -->
+
+                    <div class="section__img">
+                        <img src="img/dest/about/Frame.png" alt="">
+                    </div>
+                    <!-- /.section__img -->
+
+                </div>
+                <!-- /.about__wrapper wrapper section__wrapper -->
+            </div>
+            <!-- /.about section -->
+
+           
+
+        </main>
         <!-- /.main -->
 
         <footer class="footer"></footer>

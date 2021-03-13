@@ -21,7 +21,8 @@ ul
     list-style-type: none
 
 //*****MAIN CLASSES*****//
-
+.svg-sprite
+    display: none
 //*****CONTAINER OF ALL CONTENT*****//
 .container
     max-width: 1440px
@@ -56,7 +57,27 @@ ul
     font-weight: normal
 //*****MAIN BUTTON*****//
 .button
+    display: inline-flex
+    padding: 20px 30px
     background: #1673FF
+    color: $brand-white
+    border: $border
+    font-family: Inter
+    font-size: 12px
+    line-height: 24px
+    letter-spacing: 0.6px
+    text-transform: uppercase
+    svg
+        width: 16px
+        height: 16px
+        fill: $brand-white
+        margin-left: $mid-gap
+.button.empty
+    background: transparent
+    border-color: $brand-black
+    color: $brand-black
+    svg
+        fill: $brand-black
     
 //*****MAIN LINK*****//
 .link

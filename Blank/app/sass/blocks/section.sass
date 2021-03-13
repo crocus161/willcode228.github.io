@@ -1,0 +1,32 @@
+.section
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__img,
+    &__text
+        margin: 0px 20px
+    &__img
+        min-width: 500px
+        img
+            width: 100%
+            object-fit: cover
+    &__text
+        p
+            padding: 0px 60px 0px 0px
+            margin-bottom: $mid-gap
+
+@media screen and ( max-width: 992px )
+    .section
+        &__wrapper
+            flex-direction: column
+            align-items: center
+        &__img,
+        &__text
+            margin: 0px 0px
+        &__img
+            min-width: 70%
+            margin-top: $hg-gap
+        &__text
+            p
+                padding: 0px 0px 0px 0px
