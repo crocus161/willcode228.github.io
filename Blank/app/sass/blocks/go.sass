@@ -1,0 +1,25 @@
+.go
+    width: 100%
+    background: $secondary-accent
+    &__hgroup
+        text-align: center
+        margin-bottom: $sm-gap
+        &-title
+            color: $brand-white
+    &__btngroup
+        text-align: center
+        .button
+            margin: 20px
+            color: $brand-white
+            border-color: $brand-white
+            svg
+                fill: $brand-white
+        .button.fill
+            background: $brand-black
+            border-color: $brand-black
+
+@media screen and ( max-width: 576px )
+    .go
+        &__btngroup
+            .button
+                margin: 20px 0px

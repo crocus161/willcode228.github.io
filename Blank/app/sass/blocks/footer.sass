@@ -1,1 +1,39 @@
 .footer
+    background: $brand-black
+    color: $brand-white
+    &__wrapper
+        min-height: 300px
+        display: flex
+        justify-content: space-around
+    &__lists
+        display: flex
+        flex-wrap: wrap
+    &__list
+        margin: 20px 30px
+        &-title
+            color: $secondary-accent
+        li
+            margin-bottom: 25px
+        &-link
+            padding: 10px
+            color: $brand-white
+
+    &__meta
+        display: flex
+        flex-direction: column
+        margin-bottom: 40px
+        &-logo
+            width: 100px
+            margin-bottom: 45px
+        &-info
+            display: block
+            width: 50%
+            padding-right: 50px
+
+@media screen and ( max-width: 768px )
+    .footer
+        &__wrapper
+            flex-direction: column
+        &__meta
+            &-info
+                width: 100%
