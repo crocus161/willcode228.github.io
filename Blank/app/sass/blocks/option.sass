@@ -1,0 +1,23 @@
+.option
+    width: 100%
+    background: $brand-black
+    &__hgroup
+        text-align: center
+        margin-bottom: 67px
+        &-title,
+        &-subtitle
+            color: $brand-white
+    &__btngroup
+        text-align: center
+        .button
+            margin: 20px
+        &-empty.button.empty
+            border-color: $brand-grey
+            color: $brand-grey
+            svg
+                fill: $brand-grey
+@media screen and ( max-width: 576px )
+    .option
+        &__btngroup
+            .button
+                margin: 20px 0px
