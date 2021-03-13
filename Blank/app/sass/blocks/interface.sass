@@ -1,15 +1,20 @@
 //*****MAIN INTERFACE STYLES*****//
 
 //*****FONTS CONNECTING*****//
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 //*****RESET UNUSABLE DEFAULT STYLES*****//
 *
     margin: 0
     padding: 0
     box-sizing: border-box
     font-size: 16px
+    font-family: 'Inter', sans-serif
+    color: $brand-black
+h1,h2,h3,h4,h5,h6
+    font-family: 'Roboto', sans-serif
 button
     all: unset
+    cursor: pointer
 a
     text-decoration: none
 ul
@@ -19,18 +24,40 @@ ul
 
 //*****CONTAINER OF ALL CONTENT*****//
 .container
+    max-width: 1440px
+    margin: auto
 //*****CONTAINER OF BLOCK*****//
 .wrapper
+    max-width: 1200px
+    margin: auto
 //*****MAIN BLOCK STYLES*****//
 .section
+    padding: 80px 0px
 //*****MAIN TITLE*****//
 .title
+    font-weight: normal
+    font-size: 72px
+    line-height: 76px
+.title__el
+    margin-top: $sm-gap
+    margin-bottom: $mid-gap
 //*****MAIN SUBTITLE*****//
 .subtitle
+    font-weight: normal
+    font-size: 12px
+    line-height: 24px
+    letter-spacing: 1.2px
+    text-transform: uppercase
 //*****MAIN INFO*****//
 .info
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $brand-grey
 //*****MAIN BUTTON*****//
 .button
+    background: #1673FF
+    
 //*****MAIN LINK*****//
 .link
 

@@ -1,1 +1,85 @@
 .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 72px
+    padding: 0px $mid-gap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: transparent
+    z-index: 999
+    &__menu
+        height: 100%
+        display: flex
+        align-items: center
+    &__link
+        margin-right: $mid-gap
+        font-size: 12px
+        letter-spacing: 0.6px
+        text-transform: uppercase
+    &__button
+        display: inline-block
+        padding: 15px 30px
+        background: rgba(10, 18, 30, 0.7)
+        border-radius: $radius
+        color: $brand-white
+    &__burger
+        display: none
+        width: 30px
+        height: 20px
+        position: relative
+        span
+            position: absolute
+            width: 100%
+            height: 2px
+            background: $brand-black
+            transform: translateY(-50%)
+            transition: $transition
+            &:nth-child(1)
+                top: 1px
+            &:nth-child(4)
+                bottom: 0
+            &:nth-child(2),
+            &:nth-child(3)
+                top: 50%
+
+    
+// active settings
+.nav
+    .burger-active
+        span
+            &:nth-child(1),
+            &:nth-child(4)
+                opacity: 0
+            &:nth-child(2)
+                transform: rotate(-45deg) translateY(-50%)
+            &:nth-child(3)
+                transform: rotate(45deg) translateY(-50%)
+    .nav__menu-active
+        top: 0
+        opacity: 1
+        pointer-events: inherit
+
+@media screen and ( max-width: 992px )
+    .nav
+        &__menu
+            position: fixed
+            top: -100vh
+            left: 0
+            right: 0
+            opacity: 0
+            height: 100vh
+            background: $brand-white
+            justify-content: center
+            flex-direction: column
+            pointer-events: none
+            transition: $slow-transition
+            li
+                margin-bottom: 20px
+        &__link
+            padding: 10px
+            margin-right: 0px
+        &__burger
+            display: block
