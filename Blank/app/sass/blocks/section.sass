@@ -1,13 +1,14 @@
 .section
-    &__wrapper
+    &__wrapper,
+    &__wrapper-reverse
         display: flex
         align-items: center
         justify-content: space-between
     &__img,
     &__text
-        margin: 0px 20px
+        margin: 0px 50px
     &__img
-        min-width: 500px
+        min-width: 400px
         img
             width: 100%
             object-fit: cover
@@ -18,12 +19,14 @@
 
 @media screen and ( max-width: 992px )
     .section
+        &__wrapper-reverse
+            flex-direction: column-reverse
         &__wrapper
             flex-direction: column
             align-items: center
         &__img,
         &__text
-            margin: 0px 0px
+            margin: $mid-gap 0px
         &__img
             min-width: 70%
             margin-top: $hg-gap
