@@ -1,0 +1,41 @@
+.team
+    width: 100%
+    background: $secondary-grey
+    &__hgroup
+        width: 70%
+        margin: auto
+        text-align: center
+        margin-bottom: $mid-gap
+    &__box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__card
+        width: 275px
+        margin: 20px
+        &-subtitle
+            color: $secondary-accent
+            margin-bottom: 7px
+        &-name
+            font-family: Roboto, sans-serif
+            font-size: 18px
+            line-height: 24px
+        &-job
+            font-size: 12px
+            line-height: 21px
+            color: $brand-grey
+        &-img
+            margin-bottom: 24px
+            img
+                width: 100%
+                object-fit: cover
+@media screen and ( max-width: 768px )
+    .team
+        &__box
+            justify-content: center
+
+@media screen and ( max-width: 576px )
+    .team
+        &__hgroup
+            width: 100%
+

@@ -1,6 +1,6 @@
 .privacy__img,
 .secure__img
-    min-width: 300px
+    flex-basis: 30%
     filter: $filter
 .privacy__included,
 .secure__included
@@ -9,10 +9,21 @@
         height: 13px
         margin-right: 10px
         fill: $secondary-accent
+@media screen and ( max-width: 992px )
+    .privacy__img,
+    .secure__img
+        min-width: 340px
+@media screen and ( max-width: 768px )
+    .privacy__img,
+    .secure__img
+        min-width: 300px
 @media screen and ( max-width: 576px )
     .privacy__included,
     .secure__included
         font-size: 12px
+    .privacy__img,
+    .secure__img
+        min-width: 280px
 @media screen and ( max-width: 319px )
     .privacy__img,
     .secure__img

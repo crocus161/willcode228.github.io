@@ -1,0 +1,23 @@
+.secondary__section
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-box,
+    &-hgroup
+        flex-basis: 45%
+    &-box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-card
+        width: 180px
+        margin: $sm-gap
+
+@media screen and ( max-width: 992px )
+    .secondary__section
+        &-hgroup
+            margin-bottom: $mid-gap
+        &-box,
+        &-hgroup
+            flex-basis: 100%
