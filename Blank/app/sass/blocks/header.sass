@@ -4,6 +4,18 @@
     &__wrapper
         min-height: 100vh
         padding-top: 100px
+    &__icons
+        position: absolute
+        top: 50%
+        left: 10px
+        display: flex
+        flex-direction: column
+        transform: translateY(-50%)
+        a
+            display: inline-block
+            margin-bottom: $mid-gap
+            img
+                width: 30px
     &__decoration
         position: absolute
         bottom: 0
@@ -12,10 +24,17 @@
             width: 100%
             object-fit: cover
     &__btngroup
+        a.empty
+            &:hover
+                outline-color: $brand-black
         a
             &:first-child
                 margin-bottom: $sm-gap
                 margin-right: $mid-gap
+@media screen and ( max-width: 1200px )
+    .header
+        &__icons
+            display: none
 @media screen and ( max-width: 576px )
     .header
         &__decoration

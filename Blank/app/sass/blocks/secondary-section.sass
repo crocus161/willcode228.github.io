@@ -13,6 +13,14 @@
     &-card
         width: 180px
         margin: $sm-gap
+        p,img
+            transition: $transition
+        &:hover
+            img,p
+                transform: translateY(-5px)
+            img
+                transform: translateY(-5px) rotate(10deg) scale(1.1)
+
 
 @media screen and ( max-width: 992px )
     .secondary__section

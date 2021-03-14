@@ -13,6 +13,12 @@
     &__card
         width: 275px
         margin: 20px
+        &:hover
+            .team__card-img
+                img
+                    transform: scale(1.2)
+            .team__card-job
+                color: $secondary-accent
         &-subtitle
             color: $secondary-accent
             margin-bottom: 7px
@@ -27,11 +33,14 @@
             font-size: 12px
             line-height: 21px
             color: $brand-grey
+            transition: $transition
         &-img
             margin-bottom: 24px
+            overflow: hidden
             img
                 width: 100%
                 object-fit: cover
+                transition: $transition
 @media screen and ( max-width: 768px )
     .team
         &__box

@@ -67,11 +67,16 @@ ul
     line-height: 24px
     letter-spacing: 0.6px
     text-transform: uppercase
+    transition: $transition
+    outline: 2px solid transparent
     svg
         width: 16px
         height: 16px
         fill: $brand-white
         margin-left: $mid-gap
+    &:hover
+        outline-offset: -10px
+        outline-color: $brand-white
 .button.empty
     background: transparent
     border-color: $brand-black
@@ -81,7 +86,26 @@ ul
     
 //*****MAIN LINK*****//
 .link
-
+    position: relative
+    z-index: 1
+    transition: $fast-transition
+    &::before
+        content: ''
+        width: 0
+        height: 0
+        position: absolute
+        top: 50%
+        left: 50%
+        background: $secondary-accent
+        z-index: -1
+        transition: $fast-transition
+        transform-origin: center
+        transform: translate(-50%, -50%)
+    &:hover
+        color: $brand-white
+        &::before
+            width: 100%
+            height: 100%
 //*****MEIDA QUERIES*****//
 @media screen and ( max-width: 1400px )
     .info

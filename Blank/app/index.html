@@ -18,22 +18,35 @@
         <symbol width="15" height="13" id="check-mark">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.073 2.19L5.41 12.823l-5.49-5.49L1.333 5.92l3.924 3.924L12.523.927l1.55 1.263z"/>
         </symbol>
+        <symbol viewBox="0 0 102 27" id="logo">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM21 6H6V21H21V6Z"/>
+            <path d="M34 23.7301V4.07969H40.8241C43.188 4.07969 44.981 4.53856 46.2031 5.4563C47.4252 6.36504 48.0362 7.70116 48.0362 9.46465C48.0362 10.4274 47.7909 11.2776 47.3003 12.0154C46.8097 12.7442 46.1272 13.2796 45.253 13.6215C46.2521 13.8734 47.0371 14.3817 47.608 15.1465C48.1879 15.9113 48.4778 16.847 48.4778 17.9537C48.4778 19.8432 47.8801 21.2738 46.6848 22.2455C45.4894 23.2172 43.7856 23.7121 41.5734 23.7301H34ZM38.0142 15.1735V20.4775H41.453C42.3985 20.4775 43.1345 20.2526 43.6608 19.8027C44.196 19.3438 44.4636 18.714 44.4636 17.9132C44.4636 16.1138 43.5403 15.2005 41.6938 15.1735H38.0142ZM38.0142 12.3123H40.9847C43.0096 12.2763 44.022 11.4621 44.022 9.86954C44.022 8.97879 43.7633 8.33997 43.246 7.95308C42.7375 7.5572 41.9302 7.35925 40.8241 7.35925H38.0142V12.3123Z"/>
+            <path d="M55.3286 23.7301H51.4482V3H55.3286V23.7301Z"/>
+            <path d="M66.9162 23.7301C66.7378 23.3792 66.6084 22.9428 66.5281 22.4209C65.5915 23.4736 64.3739 24 62.8752 24C61.4569 24 60.2794 23.5861 59.3428 22.7584C58.4151 21.9306 57.9512 20.8869 57.9512 19.6272C57.9512 18.0797 58.5176 16.892 59.6505 16.0643C60.7923 15.2365 62.4381 14.8181 64.588 14.8091H66.3676V13.9724C66.3676 13.2976 66.1936 12.7577 65.8457 12.3528C65.5068 11.9479 64.9671 11.7455 64.2267 11.7455C63.5755 11.7455 63.0626 11.903 62.6879 12.2179C62.3222 12.5328 62.1393 12.9647 62.1393 13.5135H58.2723C58.2723 12.6677 58.531 11.885 59.0484 11.1652C59.5658 10.4454 60.2973 9.88303 61.2428 9.47815C62.1884 9.06427 63.2499 8.85733 64.4274 8.85733C66.2115 8.85733 67.6253 9.3117 68.669 10.2204C69.7216 11.1202 70.2479 12.3888 70.2479 14.0263V20.356C70.2569 21.7416 70.4486 22.7898 70.8233 23.5006V23.7301H66.9162ZM63.7182 21.0174C64.2891 21.0174 64.8154 20.8914 65.2971 20.6395C65.7788 20.3785 66.1356 20.0321 66.3676 19.6003V17.09H64.9225C62.9867 17.09 61.9564 17.7648 61.8316 19.1144L61.8182 19.3438C61.8182 19.8297 61.9877 20.2301 62.3266 20.545C62.6656 20.8599 63.1295 21.0174 63.7182 21.0174Z"/>
+            <path d="M76.7776 9.12725L76.8981 10.8143C77.9328 9.50964 79.32 8.85733 81.0594 8.85733C82.5937 8.85733 83.7355 9.3117 84.4848 10.2204C85.2342 11.1292 85.6177 12.4878 85.6356 14.2963V23.7301H81.7686V14.3907C81.7686 13.563 81.5902 12.9647 81.2334 12.5958C80.8766 12.2179 80.2834 12.0289 79.4538 12.0289C78.3655 12.0289 77.5493 12.4968 77.0051 13.4325V23.7301H73.1381V9.12725H76.7776Z"/>
+            <path d="M93.8379 17.8728L92.4463 19.2764V23.7301H88.5793V3H92.4463V14.4852L93.1956 13.5135L96.902 9.12725H101.545L96.3133 15.214L102 23.7301H97.5577L93.8379 17.8728Z"/>
+        </symbol>
     </svg>
+
+
+    <div class="preloader">
+        <div class='sk-spinner sk-spinner-pulse'></div>     
+    </div>
 
     <div class="container">
 
         <nav class="nav">
 
             <div class="nav__logo">
-                <img src="img/dest/general/logo.svg" alt="logo">
+                <svg><use xlink:href="#logo"></use></svg>
             </div>
             <!-- /.nav__logo -->
 
             <ul class="nav__menu">
-                <li><a class="nav__link" href="#start">Why blank</a></li>
-                <li><a class="nav__link" href="#start">What blank offers</a></li>
-                <li><a class="nav__link" href="#start">How it works</a></li>
-                <li><a class="nav__link" href="#start">Blank token</a></li>
+                <li><a class="nav__link link" href="#why">Why blank</a></li>
+                <li><a class="nav__link link" href="#offers">What blank offers</a></li>
+                <li><a class="nav__link link" href="#work">How it works</a></li>
+                <li><a class="nav__link link" href="#token">Blank token</a></li>
                 <li><a href="#" class="nav__link nav__button">Token Metrics</a></li>
             </ul>
             <!-- /.nav__menu -->
@@ -78,12 +91,20 @@
                 <img src="img/dest/header/Frame(2).png" alt="">
             </div>
 
+            <div class="header__icons">
+                <a href="#"><img src="img/dest/social-icons/github.svg" alt=""></a>
+                <a href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a>
+                <a href="#"><img src="img/dest/social-icons/medium.svg" alt=""></a>               
+                <a href="#"><img src="img/dest/social-icons/telegram.svg" alt=""></a>
+                <a href="#"><img src="img/dest/social-icons/twitter.svg" alt=""></a>
+            </div>
+
         </header>
         <!-- /.header -->
 
         <main class="main">
 
-            <div class="about section">
+            <div class="about section" id="why">
                 <div class="about__wrapper wrapper section__wrapper">
 
                     <div class="section__text">
@@ -103,7 +124,7 @@
             </div>
             <!-- /.about section -->
 
-            <div class="advantages section">
+            <div class="advantages section" id="offers">
                 <div class="advantages__wrapper wrapper">
 
                     <div class="advantages__hgroup">
@@ -118,6 +139,9 @@
                             <img src="img/dest/advantages/vector(1).svg" alt="">
                             <h3 class="advantages__card-title">Conceal your wealth</h3>
                             <p class="advantages__card-info info">Only you can see, access, and manage your funds. We group your wealth with other individuals’ under a smart contract, so no one can track capital ownership but you.</p>
+                            <div class="advantages__card-decorator1"></div>
+                            <div class="advantages__card-decorator2"></div>
+                            <div class="advantages__card-decorator3"></div>
                         </div>
                         <!-- /.advantages__card -->
 
@@ -125,6 +149,9 @@
                             <img src="img/dest/advantages/vector(2).svg" alt="">
                             <h3 class="advantages__card-title">Hide origins of your wealth</h3>
                             <p class="advantages__card-info info">Information about how you acquired your wealth should stay with you. We give you the option to hide or show your wealth origins.</p>
+                            <div class="advantages__card-decorator1"></div>
+                            <div class="advantages__card-decorator2"></div>
+                            <div class="advantages__card-decorator3"></div>
                         </div>
                         <!-- /.advantages__card -->
 
@@ -132,6 +159,9 @@
                             <img src="img/dest/advantages/vector(3).svg" alt="">
                             <h3 class="advantages__card-title">Cover your trading activity</h3>
                             <p class="advantages__card-info info">No KYC. Maximum privacy. Each time you make a withdrawal or a new trade, you start on a blank piece of paper -- a new wallet with no previous activity history.</p>
+                            <div class="advantages__card-decorator1"></div>
+                            <div class="advantages__card-decorator2"></div>
+                            <div class="advantages__card-decorator3"></div>
                         </div>
                         <!-- /.advantages__card -->
 
@@ -143,7 +173,7 @@
             </div>
             <!-- /.advantages section -->
 
-            <div class="section">
+            <div class="section" id="work">
                 <div class="wrapper section__wrapper">
                     
                     <div class="section__img">
@@ -236,7 +266,7 @@
             <!-- /.option section -->
 
 
-            <div class="secondary__section section">
+            <div class="secondary__section section" id="token">
                 <div class="secondary__section-wrapper wrapper">
 
                     <div class="secondary__section-hgroup">
@@ -476,7 +506,7 @@
             <div class="footer__wrapper wrapper">
 
                 <div class="footer__meta">
-                    <img class="footer__meta-logo" src="img/dest/general/logo.svg" alt="">
+                    <svg class="footer__meta-logo"><use xlink:href="#logo"></use></svg>
                     <p class="footer__meta-info info">Privacy shouldn’t be an “opt-in.” Rather, it must be something you could occasionally “opt-out” of on Free Will.</p>
                 </div>
                 <!-- /.footer__meta -->

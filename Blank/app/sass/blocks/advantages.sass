@@ -20,14 +20,43 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        text-align: center
+        text-align: center  
+        &:hover
+            img
+                transform: rotate(10deg) translateY(-20px)
+            .advantages__card-decorator1,
+            .advantages__card-decorator2,
+            .advantages__card-decorator3,
+                width: 0px
+                height: 0px
+        &-decorator1,
+        &-decorator2,
+        &-decorator3
+            position: absolute
+            width: 27px
+            height: 27px
+            background: $brand-white
+            transition: $transition
+            transform-origin: center center
+        &-decorator1
+            left: 0px
+            bottom: 27px
+        &-decorator2
+            bottom: 0px
+            left: 27px
+        &-decorator3
+            top: 0px
+            right: 0px
         img
             width: 100px
+            transition: $transition
         &-title
             margin-top: $mid-gap
             margin-bottom: $sm-gap
             font-size: 20px
             line-height: 32px
+            transition: $transition
+
 
 
             
