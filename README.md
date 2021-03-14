@@ -146,6 +146,7 @@
   -https://willcode228.github.io/Indicorp/dist/
   -https://willcode228.github.io/Arka/dist/
   -https://willcode228.github.io/Mad%20Hatters/
+  -https://willcode228.github.io/Blank/dist/
         
  А здесь на JS проекты:
  
