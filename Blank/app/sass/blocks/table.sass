@@ -1,0 +1,48 @@
+.table
+    &__wrapper
+    &__hgroup
+        margin: auto
+        width: 80%
+        text-align: center
+        margin-bottom: $hg-gap
+    &__box
+        table
+            width: 100%
+            border-collapse: collapse
+            border: $table-border
+            td:not(:last-child)
+                border-right: $table-border
+        thead
+            th
+                width: 275px
+                height: 135px
+                border-bottom: $table-border
+            th:not(:last-child)
+                border-right: $table-border
+        tbody
+            tr:nth-child(odd),
+            tr:nth-child(even)
+                &:hover
+                    td
+                        background: $brand-grey
+                        color: $brand-white
+                        svg
+                            fill: $brand-white
+            tr:nth-child(odd)
+                td
+                    background: $brand-accent
+            td
+                width: 275px
+                height: 80px
+                text-align: center
+                line-height: 40px
+                padding: $sm-gap
+                transition: $transition
+                svg 
+                   width: 15px
+                   height: 13px
+                   fill: $secondary-accent
+
+@media screen and ( max-width: 576px )
+    .table
+        display: none

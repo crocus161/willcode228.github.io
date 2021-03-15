@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,46 @@
     <!-- MAIN MINIMIZATION STYLES -->
     <link rel="stylesheet" href="css/app.min.css">
 </head>
+
 <body>
 
     <svg class="svg-sprite">
         <symbol id="button-arrow">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.207.793l13 13-1.414 1.414-13-13L2.207.793z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 13.5v-6h2v8h-8v-2h6z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.207.793l13 13-1.414 1.414-13-13L2.207.793z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 13.5v-6h2v8h-8v-2h6z" />
         </symbol>
         <symbol width="15" height="13" id="check-mark">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.073 2.19L5.41 12.823l-5.49-5.49L1.333 5.92l3.924 3.924L12.523.927l1.55 1.263z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.073 2.19L5.41 12.823l-5.49-5.49L1.333 5.92l3.924 3.924L12.523.927l1.55 1.263z" />
         </symbol>
         <symbol viewBox="0 0 102 27" id="logo">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM21 6H6V21H21V6Z"/>
-            <path d="M34 23.7301V4.07969H40.8241C43.188 4.07969 44.981 4.53856 46.2031 5.4563C47.4252 6.36504 48.0362 7.70116 48.0362 9.46465C48.0362 10.4274 47.7909 11.2776 47.3003 12.0154C46.8097 12.7442 46.1272 13.2796 45.253 13.6215C46.2521 13.8734 47.0371 14.3817 47.608 15.1465C48.1879 15.9113 48.4778 16.847 48.4778 17.9537C48.4778 19.8432 47.8801 21.2738 46.6848 22.2455C45.4894 23.2172 43.7856 23.7121 41.5734 23.7301H34ZM38.0142 15.1735V20.4775H41.453C42.3985 20.4775 43.1345 20.2526 43.6608 19.8027C44.196 19.3438 44.4636 18.714 44.4636 17.9132C44.4636 16.1138 43.5403 15.2005 41.6938 15.1735H38.0142ZM38.0142 12.3123H40.9847C43.0096 12.2763 44.022 11.4621 44.022 9.86954C44.022 8.97879 43.7633 8.33997 43.246 7.95308C42.7375 7.5572 41.9302 7.35925 40.8241 7.35925H38.0142V12.3123Z"/>
-            <path d="M55.3286 23.7301H51.4482V3H55.3286V23.7301Z"/>
-            <path d="M66.9162 23.7301C66.7378 23.3792 66.6084 22.9428 66.5281 22.4209C65.5915 23.4736 64.3739 24 62.8752 24C61.4569 24 60.2794 23.5861 59.3428 22.7584C58.4151 21.9306 57.9512 20.8869 57.9512 19.6272C57.9512 18.0797 58.5176 16.892 59.6505 16.0643C60.7923 15.2365 62.4381 14.8181 64.588 14.8091H66.3676V13.9724C66.3676 13.2976 66.1936 12.7577 65.8457 12.3528C65.5068 11.9479 64.9671 11.7455 64.2267 11.7455C63.5755 11.7455 63.0626 11.903 62.6879 12.2179C62.3222 12.5328 62.1393 12.9647 62.1393 13.5135H58.2723C58.2723 12.6677 58.531 11.885 59.0484 11.1652C59.5658 10.4454 60.2973 9.88303 61.2428 9.47815C62.1884 9.06427 63.2499 8.85733 64.4274 8.85733C66.2115 8.85733 67.6253 9.3117 68.669 10.2204C69.7216 11.1202 70.2479 12.3888 70.2479 14.0263V20.356C70.2569 21.7416 70.4486 22.7898 70.8233 23.5006V23.7301H66.9162ZM63.7182 21.0174C64.2891 21.0174 64.8154 20.8914 65.2971 20.6395C65.7788 20.3785 66.1356 20.0321 66.3676 19.6003V17.09H64.9225C62.9867 17.09 61.9564 17.7648 61.8316 19.1144L61.8182 19.3438C61.8182 19.8297 61.9877 20.2301 62.3266 20.545C62.6656 20.8599 63.1295 21.0174 63.7182 21.0174Z"/>
-            <path d="M76.7776 9.12725L76.8981 10.8143C77.9328 9.50964 79.32 8.85733 81.0594 8.85733C82.5937 8.85733 83.7355 9.3117 84.4848 10.2204C85.2342 11.1292 85.6177 12.4878 85.6356 14.2963V23.7301H81.7686V14.3907C81.7686 13.563 81.5902 12.9647 81.2334 12.5958C80.8766 12.2179 80.2834 12.0289 79.4538 12.0289C78.3655 12.0289 77.5493 12.4968 77.0051 13.4325V23.7301H73.1381V9.12725H76.7776Z"/>
-            <path d="M93.8379 17.8728L92.4463 19.2764V23.7301H88.5793V3H92.4463V14.4852L93.1956 13.5135L96.902 9.12725H101.545L96.3133 15.214L102 23.7301H97.5577L93.8379 17.8728Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.5 27C20.9558 27 27 20.9558 27 13.5C27 6.04416 20.9558 0 13.5 0C6.04416 0 0 6.04416 0 13.5C0 20.9558 6.04416 27 13.5 27ZM21 6H6V21H21V6Z" />
+            <path
+                d="M34 23.7301V4.07969H40.8241C43.188 4.07969 44.981 4.53856 46.2031 5.4563C47.4252 6.36504 48.0362 7.70116 48.0362 9.46465C48.0362 10.4274 47.7909 11.2776 47.3003 12.0154C46.8097 12.7442 46.1272 13.2796 45.253 13.6215C46.2521 13.8734 47.0371 14.3817 47.608 15.1465C48.1879 15.9113 48.4778 16.847 48.4778 17.9537C48.4778 19.8432 47.8801 21.2738 46.6848 22.2455C45.4894 23.2172 43.7856 23.7121 41.5734 23.7301H34ZM38.0142 15.1735V20.4775H41.453C42.3985 20.4775 43.1345 20.2526 43.6608 19.8027C44.196 19.3438 44.4636 18.714 44.4636 17.9132C44.4636 16.1138 43.5403 15.2005 41.6938 15.1735H38.0142ZM38.0142 12.3123H40.9847C43.0096 12.2763 44.022 11.4621 44.022 9.86954C44.022 8.97879 43.7633 8.33997 43.246 7.95308C42.7375 7.5572 41.9302 7.35925 40.8241 7.35925H38.0142V12.3123Z" />
+            <path d="M55.3286 23.7301H51.4482V3H55.3286V23.7301Z" />
+            <path
+                d="M66.9162 23.7301C66.7378 23.3792 66.6084 22.9428 66.5281 22.4209C65.5915 23.4736 64.3739 24 62.8752 24C61.4569 24 60.2794 23.5861 59.3428 22.7584C58.4151 21.9306 57.9512 20.8869 57.9512 19.6272C57.9512 18.0797 58.5176 16.892 59.6505 16.0643C60.7923 15.2365 62.4381 14.8181 64.588 14.8091H66.3676V13.9724C66.3676 13.2976 66.1936 12.7577 65.8457 12.3528C65.5068 11.9479 64.9671 11.7455 64.2267 11.7455C63.5755 11.7455 63.0626 11.903 62.6879 12.2179C62.3222 12.5328 62.1393 12.9647 62.1393 13.5135H58.2723C58.2723 12.6677 58.531 11.885 59.0484 11.1652C59.5658 10.4454 60.2973 9.88303 61.2428 9.47815C62.1884 9.06427 63.2499 8.85733 64.4274 8.85733C66.2115 8.85733 67.6253 9.3117 68.669 10.2204C69.7216 11.1202 70.2479 12.3888 70.2479 14.0263V20.356C70.2569 21.7416 70.4486 22.7898 70.8233 23.5006V23.7301H66.9162ZM63.7182 21.0174C64.2891 21.0174 64.8154 20.8914 65.2971 20.6395C65.7788 20.3785 66.1356 20.0321 66.3676 19.6003V17.09H64.9225C62.9867 17.09 61.9564 17.7648 61.8316 19.1144L61.8182 19.3438C61.8182 19.8297 61.9877 20.2301 62.3266 20.545C62.6656 20.8599 63.1295 21.0174 63.7182 21.0174Z" />
+            <path
+                d="M76.7776 9.12725L76.8981 10.8143C77.9328 9.50964 79.32 8.85733 81.0594 8.85733C82.5937 8.85733 83.7355 9.3117 84.4848 10.2204C85.2342 11.1292 85.6177 12.4878 85.6356 14.2963V23.7301H81.7686V14.3907C81.7686 13.563 81.5902 12.9647 81.2334 12.5958C80.8766 12.2179 80.2834 12.0289 79.4538 12.0289C78.3655 12.0289 77.5493 12.4968 77.0051 13.4325V23.7301H73.1381V9.12725H76.7776Z" />
+            <path
+                d="M93.8379 17.8728L92.4463 19.2764V23.7301H88.5793V3H92.4463V14.4852L93.1956 13.5135L96.902 9.12725H101.545L96.3133 15.214L102 23.7301H97.5577L93.8379 17.8728Z" />
         </symbol>
     </svg>
 
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class='sk-spinner sk-spinner-pulse'></div>     
-    </div>
+    </div> -->
 
     <div class="container">
 
         <nav class="nav">
 
             <div class="nav__logo">
-                <svg><use xlink:href="#logo"></use></svg>
+                <svg>
+                    <use xlink:href="#logo"></use>
+                </svg>
             </div>
             <!-- /.nav__logo -->
 
@@ -68,13 +79,19 @@
                 <div class="header__text section__text">
                     <h2 class="header__text-subtitle subtitle">The most private, non-custodial Ethereum wallet</h2>
                     <h1 class="header__text-title title title__el">Reclaim privacy on your Ethereum transfers</h1>
-                    <p class="header__text-info info">Blank hides your financial data by mixing transfers with the pool of funds within Blank, ensuring that outward transfers remain anonymous. Your privacy level only goes up with each additional transfer inside.</p>
+                    <p class="header__text-info info">Blank hides your financial data by mixing transfers with the pool
+                        of funds within Blank, ensuring that outward transfers remain anonymous. Your privacy level only
+                        goes up with each additional transfer inside.</p>
 
                     <div class="header__btngroup">
                         <a href="#" class="button">Request Early Access
-                            <svg><use xlink:href="#button-arrow"></use></svg>
+                            <svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg>
                         </a>
-                        <a href="#" class="button empty">Whitepaper<svg><use xlink:href="#button-arrow"></use></svg></a>
+                        <a href="#" class="button empty">Whitepaper<svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg></a>
                     </div>
 
                 </div>
@@ -94,7 +111,7 @@
             <div class="header__icons">
                 <a href="#"><img src="img/dest/social-icons/github.svg" alt=""></a>
                 <a href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a>
-                <a href="#"><img src="img/dest/social-icons/medium.svg" alt=""></a>               
+                <a href="#"><img src="img/dest/social-icons/medium.svg" alt=""></a>
                 <a href="#"><img src="img/dest/social-icons/telegram.svg" alt=""></a>
                 <a href="#"><img src="img/dest/social-icons/twitter.svg" alt=""></a>
             </div>
@@ -110,7 +127,9 @@
                     <div class="section__text">
                         <h3 class="subtitle">Why go blank</h3>
                         <h2 class="title title__el">You’re not anonymous, even on blockchain.</h2>
-                        <p class="info">Even before you connect your wallet, your IP is exposed. Once you connect, your wallet address is exposed. If anyone wants to trace you, they can see the decentralized apps you used, the transfers you made, and the amount of crypto $$$ you hold in your account.</p>
+                        <p class="info">Even before you connect your wallet, your IP is exposed. Once you connect, your
+                            wallet address is exposed. If anyone wants to trace you, they can see the decentralized apps
+                            you used, the transfers you made, and the amount of crypto $$$ you hold in your account.</p>
                     </div>
                     <!-- /.section__text -->
 
@@ -138,7 +157,9 @@
                         <div class="advantages__card">
                             <img src="img/dest/advantages/vector(1).svg" alt="">
                             <h3 class="advantages__card-title">Conceal your wealth</h3>
-                            <p class="advantages__card-info info">Only you can see, access, and manage your funds. We group your wealth with other individuals’ under a smart contract, so no one can track capital ownership but you.</p>
+                            <p class="advantages__card-info info">Only you can see, access, and manage your funds. We
+                                group your wealth with other individuals’ under a smart contract, so no one can track
+                                capital ownership but you.</p>
                             <div class="advantages__card-decorator1"></div>
                             <div class="advantages__card-decorator2"></div>
                             <div class="advantages__card-decorator3"></div>
@@ -148,7 +169,8 @@
                         <div class="advantages__card">
                             <img src="img/dest/advantages/vector(2).svg" alt="">
                             <h3 class="advantages__card-title">Hide origins of your wealth</h3>
-                            <p class="advantages__card-info info">Information about how you acquired your wealth should stay with you. We give you the option to hide or show your wealth origins.</p>
+                            <p class="advantages__card-info info">Information about how you acquired your wealth should
+                                stay with you. We give you the option to hide or show your wealth origins.</p>
                             <div class="advantages__card-decorator1"></div>
                             <div class="advantages__card-decorator2"></div>
                             <div class="advantages__card-decorator3"></div>
@@ -158,7 +180,9 @@
                         <div class="advantages__card">
                             <img src="img/dest/advantages/vector(3).svg" alt="">
                             <h3 class="advantages__card-title">Cover your trading activity</h3>
-                            <p class="advantages__card-info info">No KYC. Maximum privacy. Each time you make a withdrawal or a new trade, you start on a blank piece of paper -- a new wallet with no previous activity history.</p>
+                            <p class="advantages__card-info info">No KYC. Maximum privacy. Each time you make a
+                                withdrawal or a new trade, you start on a blank piece of paper -- a new wallet with no
+                                previous activity history.</p>
                             <div class="advantages__card-decorator1"></div>
                             <div class="advantages__card-decorator2"></div>
                             <div class="advantages__card-decorator3"></div>
@@ -175,7 +199,7 @@
 
             <div class="section" id="work">
                 <div class="wrapper section__wrapper">
-                    
+
                     <div class="section__img">
                         <img src="img/dest/sections/Frame(1).png" alt="">
                     </div>
@@ -183,9 +207,13 @@
 
                     <div class="section__text">
                         <h3 class="subtitle">How does it work?</h3>
-                        <h2 class="title title__el">The first-ever Chrome extension that gives you an untraceable identity.</h2>
-                        <p class="info">Create a wallet, receive a backup seed key, deposit your crypto $$$ and let automation do the rest - we'll mix your funds with the pool of coins in Blank to hide their origin.</p>
-                        <p class="info">Each time you want to make a withdrawal, Blank will create a new wallet address for you with the amount of crypto $$$ that you requested.</p>
+                        <h2 class="title title__el">The first-ever Chrome extension that gives you an untraceable
+                            identity.</h2>
+                        <p class="info">Create a wallet, receive a backup seed key, deposit your crypto $$$ and let
+                            automation do the rest - we'll mix your funds with the pool of coins in Blank to hide their
+                            origin.</p>
+                        <p class="info">Each time you want to make a withdrawal, Blank will create a new wallet address
+                            for you with the amount of crypto $$$ that you requested.</p>
                     </div>
                     <!-- /.section__text -->
 
@@ -196,17 +224,27 @@
 
             <div class="privacy section">
                 <div class="wrapper section__wrapper-reverse">
-                    
+
                     <div class="section__text">
                         <h3 class="subtitle">Privacy by design</h3>
                         <h2 class="title title__el">Metamask x Tornado Cash</h2>
-                        <p class="info">Your funds go into the smart contract as yours but they exit named Blank. We use cryptographic proofs to guarantee that no one can link your withdrawals to deposits, unless you want them to. In technical language, we use the zkSnark technology to do it. Only the user gets the secret to a given deposit, which allows to withdraw the correlating funds from Blank under a new address.</p>
-                        <p class="privacy__included"><svg><use xlink:href="#check-mark"></use></svg> ETH, WBTC and all ERC-20 support</p>
-                        <p class="privacy__included"><svg><use xlink:href="#check-mark"></use></svg> Automatic Deposits</p>
-                        <p class="privacy__included"><svg><use xlink:href="#check-mark"></use></svg> Partial Withdraw</p>
+                        <p class="info">Your funds go into the smart contract as yours but they exit named Blank. We use
+                            cryptographic proofs to guarantee that no one can link your withdrawals to deposits, unless
+                            you want them to. In technical language, we use the zkSnark technology to do it. Only the
+                            user gets the secret to a given deposit, which allows to withdraw the correlating funds from
+                            Blank under a new address.</p>
+                        <p class="privacy__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> ETH, WBTC and all ERC-20 support</p>
+                        <p class="privacy__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> Automatic Deposits</p>
+                        <p class="privacy__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> Partial Withdraw</p>
                     </div>
                     <!-- /.section__text -->
-                    
+
                     <div class="privacy__img section__img">
                         <img src="img/dest/sections/Frame(2).png" alt="">
                     </div>
@@ -219,7 +257,7 @@
 
             <div class="secure section">
                 <div class="wrapper section__wrapper">
-                    
+
                     <div class="secure__img section__img">
                         <img src="img/dest/sections/Frame(3).png" alt="">
                     </div>
@@ -228,10 +266,19 @@
                     <div class="section__text">
                         <h3 class="subtitle">100% secure</h3>
                         <h2 class="title title__el">Protected by smart contracts that only you have the access to.</h2>
-                        <p class="info">Independent auditors audit Blank’s smart contracts before every release. Once the code is live, it remains fixed. No intruder can manipulate it, change it, nor twist it anyhow. We put our money where our mouths are, so we will provide initial liquidity in Blank smart contracts to provide privacy coverage for your transfers.</p>
-                        <p class="secure__included"><svg><use xlink:href="#check-mark"></use></svg> Hierarchical Deterministic Seed Key</p>
-                        <p class="secure__included"><svg><use xlink:href="#check-mark"></use></svg> Open Source</p>
-                        <p class="secure__included"><svg><use xlink:href="#check-mark"></use></svg> Secured with audits and bug bounties</p>
+                        <p class="info">Independent auditors audit Blank’s smart contracts before every release. Once
+                            the code is live, it remains fixed. No intruder can manipulate it, change it, nor twist it
+                            anyhow. We put our money where our mouths are, so we will provide initial liquidity in Blank
+                            smart contracts to provide privacy coverage for your transfers.</p>
+                        <p class="secure__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> Hierarchical Deterministic Seed Key</p>
+                        <p class="secure__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> Open Source</p>
+                        <p class="secure__included"><svg>
+                                <use xlink:href="#check-mark"></use>
+                            </svg> Secured with audits and bug bounties</p>
                     </div>
                     <!-- /.section__text -->
 
@@ -242,20 +289,26 @@
 
             <div class="option section">
                 <div class="option__wrapper wrapper">
-                    
+
                     <div class="option__hgroup">
                         <h3 class="option__hgroup-subtitle subtitle">Your option to go blank</h3>
-                        <h2 class="option__hgroup-title title title__el">If given a choice: do you reveal your identity or remain anonymous?</h2>
-                        <p class="option__hgroup-info info">Because privacy shouldn’t be an “opt-in.” With Blank, it’s something you could occasionally “opt-out” of with</p>
+                        <h2 class="option__hgroup-title title title__el">If given a choice: do you reveal your identity
+                            or remain anonymous?</h2>
+                        <p class="option__hgroup-info info">Because privacy shouldn’t be an “opt-in.” With Blank, it’s
+                            something you could occasionally “opt-out” of with</p>
                     </div>
                     <!-- /.option__hgroup -->
 
                     <div class="option__btngroup">
                         <a href="#" class="option__btngroup-fill button">Request Early Access
-                            <svg><use xlink:href="#button-arrow"></use></svg>
+                            <svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg>
                         </a>
                         <a href="#" class="option__btngroup-empty button empty">Whitepaper
-                            <svg><use xlink:href="#button-arrow"></use></svg>
+                            <svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg>
                         </a>
                     </div>
                     <!-- /.option__btngroup -->
@@ -315,12 +368,122 @@
             </div>
             <!-- /.secondary__section -->
 
+            <div class="table section">
+                <div class="table__wrapper wrapper">
+
+                    <div class="table__hgroup">
+                        <h3 class="table__hgroup-subtitle subtitle">Innovating decentralized finance</h3>
+                        <h2 class="table__hgroup-title title title__el">We’re taking the best that exists, and making it better.</h2>
+                    </div>
+                    <!-- /.table__hgroup -->
+
+                    <div class="table__box">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>See why Blank is better than others.</th>
+                                    <th>Blank</th>
+                                    <th>Metamask</th>
+                                    <th>Tornado.Cash</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hidden History</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                </tr>
+                                <tr>
+                                    <td>0 User Tracking</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                </tr>
+                                <tr>
+                                    <td>Browser Extension Wallet</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Web3 ready for all DeFi applications</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ERC-20 Support</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                </tr>
+                                <tr>
+                                    <td>Partial Withdraw</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Referral system</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Revenue Sharing</td>
+                                    <td><svg>
+                                        <use xlink:href="#check-mark"></use>
+                                    </svg></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table__box -->
+
+                </div>
+                <!-- /.table__wrapper wrapper -->
+            </div>
+            <!-- /.table section -->
+
             <div class="secondary__section section">
                 <div class="secondary__section-wrapper wrapper">
 
                     <div class="secondary__section-hgroup">
                         <h3 class="subtitle">Market</h3>
-                        <h2 class="title title__el">We’ve eliminated friction to guarantee successful market entrance.</h2>
+                        <h2 class="title title__el">We’ve eliminated friction to guarantee successful market entrance.
+                        </h2>
                     </div>
                     <!-- /.secondary__section-hgroup -->
 
@@ -369,7 +532,8 @@
 
                     <div class="team__hgroup">
                         <h3 class="team__hgroup-subtitle subtitle">Team</h3>
-                        <h2 class="team__hgroup-title title title__el">We choose to reveal our identities so you can maintain anonymity.</h2>
+                        <h2 class="team__hgroup-title title title__el">We choose to reveal our identities so you can
+                            maintain anonymity.</h2>
                     </div>
                     <!-- /.team__hgroup -->
 
@@ -382,7 +546,8 @@
                             <!-- /.team__card-img -->
                             <div class="team__card-text">
                                 <h3 class="team__card-subtitle subtitle">Operations Lead</h3>
-                                <h3 class="team__card-name">Aleksandras Gaska <a class="team__card-link" href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
+                                <h3 class="team__card-name">Aleksandras Gaska <a class="team__card-link" href="#"><img
+                                            src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
                                 <p class="team__card-job info">Former carVertical</p>
                             </div>
                             <!-- /.team__card-text -->
@@ -395,7 +560,8 @@
                             <!-- /.team__card-img -->
                             <div class="team__card-text">
                                 <h3 class="team__card-subtitle subtitle">Technical Lead</h3>
-                                <h3 class="team__card-name">Iman Hossini <a class="team__card-link" href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
+                                <h3 class="team__card-name">Iman Hossini <a class="team__card-link" href="#"><img
+                                            src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
                                 <p class="team__card-job info">Former Wandse Consulting</p>
                             </div>
                             <!-- /.team__card-text -->
@@ -408,7 +574,8 @@
                             <!-- /.team__card-img -->
                             <div class="team__card-text">
                                 <h3 class="team__card-subtitle subtitle">Development</h3>
-                                <h3 class="team__card-name">Ulysse Ramage <a class="team__card-link" href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
+                                <h3 class="team__card-name">Ulysse Ramage <a class="team__card-link" href="#"><img
+                                            src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
                                 <p class="team__card-job info">Software Engineer at Amazon</p>
                             </div>
                             <!-- /.team__card-text -->
@@ -421,7 +588,8 @@
                             <!-- /.team__card-img -->
                             <div class="team__card-text">
                                 <h3 class="team__card-subtitle subtitle">Development</h3>
-                                <h3 class="team__card-name">Alejandro Acero <a class="team__card-link" href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
+                                <h3 class="team__card-name">Alejandro Acero <a class="team__card-link" href="#"><img
+                                            src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
                                 <p class="team__card-job info">Former Nomads</p>
                             </div>
                             <!-- /.team__card-text -->
@@ -434,7 +602,8 @@
                             <!-- /.team__card-img -->
                             <div class="team__card-text">
                                 <h3 class="team__card-subtitle subtitle">Development</h3>
-                                <h3 class="team__card-name">Kshamenk Nehuen Gil <a class="team__card-link" href="#"><img src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
+                                <h3 class="team__card-name">Kshamenk Nehuen Gil <a class="team__card-link" href="#"><img
+                                            src="img/dest/social-icons/linkedIn.svg" alt=""></a></h3>
                                 <p class="team__card-job info">Former JP Morgan</p>
                             </div>
                             <!-- /.team__card-text -->
@@ -486,12 +655,17 @@
                 <div class="go__wrapper wrapper">
 
                     <div class="go__hgroup">
-                        <h2 class="go__hgroup-title title">Break free from government & big tech overwatch. Go Blank.</h2>
+                        <h2 class="go__hgroup-title title">Break free from government & big tech overwatch. Go Blank.
+                        </h2>
                     </div>
                     <!-- /.go__hgroup -->
                     <div class="go__btngroup">
-                        <a href="#" class="button fill">Request Early Access<svg><use xlink:href="#button-arrow"></use></svg></a>
-                        <a href="#" class="button empty">Whitepaper<svg><use xlink:href="#button-arrow"></use></svg></a>
+                        <a href="#" class="button fill">Request Early Access<svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg></a>
+                        <a href="#" class="button empty">Whitepaper<svg>
+                                <use xlink:href="#button-arrow"></use>
+                            </svg></a>
                     </div>
 
                 </div>
@@ -506,8 +680,11 @@
             <div class="footer__wrapper wrapper">
 
                 <div class="footer__meta">
-                    <svg class="footer__meta-logo"><use xlink:href="#logo"></use></svg>
-                    <p class="footer__meta-info info">Privacy shouldn’t be an “opt-in.” Rather, it must be something you could occasionally “opt-out” of on Free Will.</p>
+                    <svg class="footer__meta-logo">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <p class="footer__meta-info info">Privacy shouldn’t be an “opt-in.” Rather, it must be something you
+                        could occasionally “opt-out” of on Free Will.</p>
                 </div>
                 <!-- /.footer__meta -->
 
@@ -552,4 +729,5 @@
     <script src="js/app.min.js"></script>
 
 </body>
+
 </html>
