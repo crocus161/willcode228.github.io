@@ -20,10 +20,18 @@ const newer = require('gulp-newer');
 const del = require('del');
 //require htmlmin
 const htmlmin = require('gulp-htmlmin');
+//require pug
+const pug = require('gulp-pug');
 
-
-
-
+function pugCompiler(){
+    return src([
+        'app/pug/index.pug'
+    ])
+    .pipe(pug())
+    .pipe(concat('index.html'))
+    .pipe(dest('app/'))
+    .pipe(browserSync.stream())
+}
 
 //general browserSync logic
 function browsersync() {
@@ -107,6 +115,7 @@ function startWatch() {
     watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
     watch('app/sass/**/*.sass', style);
     watch('app/*.html').on('change', browserSync.reload);
+    watch('app/pug/*.pug', pugCompiler);
     watch('app/img/src/**/*', images);
 }
 
@@ -133,9 +142,11 @@ exports.images = images;
 
 exports.cleanimg = cleanimg;
 
+exports.pugCompiler = pugCompiler;
+
 //****************default task*****************
 // exports.default = parallel(style, libs_css, libs_js, scripts, images, browsersync, startWatch);
-exports.default = parallel(style, libs_css, libs_js, scripts, browsersync, startWatch);
+exports.default = parallel(pugCompiler, style, libs_css, libs_js, scripts, browsersync, startWatch);
 
 //****************build task*****************
 // exports.build = series(htmlMin, style, scripts, images, buildcopy);
