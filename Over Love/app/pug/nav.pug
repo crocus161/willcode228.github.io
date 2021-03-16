@@ -1,0 +1,21 @@
+block vars
+    -var menu_list = ['How it Works', 'Features', 'Pricing', 'Help', 'Blog', 'Log In'];
+
+
+nav.nav
+    .nav__logo
+        img(src="img/dest/logo.svg", alt="logo")
+    ul.nav__menu
+        each value in menu_list
+            li
+                a.nav__link(href="#") #{value}
+        li
+            a(href="#").nav__button.button.empty 
+                | Sign Up
+                svg
+                    use(xlink:href="img/src/sprite.svg#energy")
+    button.nav__burger
+        span
+        span
+        span
+        span

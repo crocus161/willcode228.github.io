@@ -17,7 +17,7 @@ a
     text-decoration: none
 ul
     list-style-type: none
-
+    
 //*****MAIN CLASSES*****//
 
 //*****CONTAINER OF ALL CONTENT*****//
@@ -49,16 +49,30 @@ ul
     letter-spacing: 0.1px
 //*****MAIN BUTTON*****//
 .button
+    display: flex
+    align-items: center
+    justify-content: center
     width: 158px
     height: 48px
-    text-align: center
-    line-height: 48px
     color: $button-font
-    font-size: 14px
+    font-size: 16px
     text-transform: uppercase
     background: $brand-yellow
+    transition: $transition
     svg
+        width: 13px
         fill: $button-font
+        transition: $transition
+
+.button.empty
+    border: $border
+    border-radius: $radius
+    background: transparent
+    &:hover
+        color: $brand-white
+        background: $brand-yellow
+        svg
+            fill: $brand-white
 //*****MAIN LINK*****//
 .link
     font-size: 12px
@@ -123,9 +137,7 @@ ul
         font-size: 14px
         line-height: 20px
     .button
-        width: 130px
-        height: 40px
-        line-height: 44px
+        font-size: 14px
 @media screen and ( max-width: 319px )
     .wrapper
         max-width: 260px

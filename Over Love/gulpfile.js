@@ -116,7 +116,7 @@ function startWatch() {
     watch('app/sass/**/*.sass', style);
     watch('app/*.html').on('change', browserSync.reload);
     watch('app/pug/*.pug', pugCompiler);
-    watch('app/img/src/**/*', images);
+    // watch('app/img/src/**/*', images);
 }
 
 //build function

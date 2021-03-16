@@ -1,1 +1,125 @@
 .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 72px
+    padding: 10px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background: transparent
+    z-index: 999
+    transition: $transition
+    &__logo
+        img
+            width: 128px
+            object-fit: cover
+    &__menu
+        height: 100%
+        display: flex
+        align-items: center
+    &__link
+        padding: 10px
+        margin-right: 72px
+        color: $brand-white
+    &__button
+        color: $brand-yellow
+        svg
+            margin-left: 13px
+            width: 15px
+            height: 22px
+            fill: none
+            stroke: $brand-yellow
+    &__burger
+        display: none
+        width: 30px
+        height: 20px
+        position: relative
+        span
+            position: absolute
+            width: 100%
+            height: 2px
+            background: $brand-black
+            transform: translateY(-50%)
+            transition: $transition
+            &:nth-child(1)
+                top: 1px
+            &:nth-child(4)
+                bottom: 0
+            &:nth-child(2),
+            &:nth-child(3)
+                top: 50%
+
+// .nav-active
+//     background: $brand-white
+//     box-shadow: $shadow
+    
+// active settings
+.nav
+    .burger-active
+        span
+            &:nth-child(1),
+            &:nth-child(4)
+                opacity: 0
+            &:nth-child(2)
+                transform: rotate(-45deg) translateY(-50%)
+            &:nth-child(3)
+                transform: rotate(45deg) translateY(-50%)
+    .nav__menu-active
+        right: 0
+        opacity: 1
+        pointer-events: inherit
+
+@media screen and ( max-width: 1440px )
+    .nav
+        &__menu
+            position: fixed
+            top: 0
+            right: -200vh
+            opacity: 0
+            width: 400px
+            min-height: 100vh
+            background: $brand-white
+            justify-content: center
+            flex-direction: column
+            pointer-events: none
+            transition: $md-transition
+        &__link
+            padding: 10px
+            margin-right: 0px
+            color: $brand-black
+        &__burger
+            display: block
+            span
+                background: $brand-black
+
+@media screen and ( max-width: 768px )
+    .nav
+        &__menu
+            width: 100%
+            top: -110vh
+            right: 0
+            left: 0
+        .nav__menu-active
+            top: 0
+@media screen and ( min-height: 280px )
+    .nav
+        &__menu
+            li
+                margin-bottom: 5px
+@media screen and ( min-height: 440px )
+    .nav
+        &__menu
+            li
+                margin-bottom: 10px
+@media screen and ( min-height: 540px )
+    .nav
+        &__menu
+            li
+                margin-bottom: 20px
+@media screen and ( min-height: 600px )
+    .nav
+        &__menu
+            li
+                margin-bottom: 40px
