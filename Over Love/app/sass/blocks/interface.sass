@@ -31,6 +31,9 @@ ul
 //*****MAIN BLOCK STYLES*****//
 .section
     padding: 140px 0px
+//*****MAIN SPRITE*****//
+.main-sprite
+    display: none
 //*****MAIN TITLE*****//
 .title
     font-weight: normal
@@ -44,29 +47,31 @@ ul
     letter-spacing: 0.25px
 //*****MAIN INFO*****//
 .info
-    font-size: 16px
-    line-height: 24px
+    font-size: 24px
+    line-height: 36px
     letter-spacing: 0.1px
 //*****MAIN BUTTON*****//
 .button
+    width: 190px
     display: flex
-    align-items: center
     justify-content: center
-    width: 158px
-    height: 48px
+    align-items: center
+    padding: 10px 25px
     color: $button-font
     font-size: 16px
     text-transform: uppercase
     background: $brand-yellow
     transition: $transition
+    border-radius: $radius
     svg
-        width: 13px
+        margin-left: 13px
+        width: 35px
+        height: 35px
         fill: $button-font
         transition: $transition
 
 .button.empty
     border: $border
-    border-radius: $radius
     background: transparent
     &:hover
         color: $brand-white

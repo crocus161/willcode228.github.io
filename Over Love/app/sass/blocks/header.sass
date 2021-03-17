@@ -1,1 +1,63 @@
 .header
+    background: url('../img/src/header/header-bg.png')
+    background-color: rgba($brand-black, 0.3)
+    background-size: cover
+    background-repeat: no-repeat
+    background-blend-mode: darken
+    background-position: center right
+    &__box
+        min-height: 100vh
+        padding: 80px 0px
+        display: flex
+        align-items: center
+    &__text,
+    &__img
+        padding: 0px 20px
+    &__text
+        &-title
+            font-weight: normal
+            font-size: 106px
+            color: $secondary-white
+        &-info
+            margin-top: 24px
+            margin-bottom: 72px
+            color: $secondary-blue
+    &__img
+        width: 80%
+        img
+            width: 100%
+            object-fit: cover
+
+
+@media screen and ( max-width: 1400px )
+    .header
+        &__text
+            &-title
+                font-size: 70px
+@media screen and ( max-width: 1200px )
+    .header
+        &__text
+            &-title
+                font-size: 65px
+@media screen and ( max-width: 992px )
+    .header
+        &__img
+            display: none
+        &__text
+            &-title
+                font-size: 60px
+@media screen and ( max-width: 768px )
+    .header
+        &__text
+            &-title
+                font-size: 50px
+@media screen and ( max-width: 576px )
+    .header
+        &__text
+            &-title
+                font-size: 40px
+@media screen and ( max-width: 319px )
+    .header
+        &__text
+            &-title
+                font-size: 30px

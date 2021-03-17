@@ -3,17 +3,18 @@
     top: 0
     left: 0
     width: 100%
-    min-height: 72px
+    height: 72px
     padding: 10px
-    display: flex
-    justify-content: space-around
-    align-items: center
     background: transparent
     z-index: 999
     transition: $transition
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
     &__logo
         img
-            width: 128px
+            width: 110px
             object-fit: cover
     &__menu
         height: 100%
@@ -26,9 +27,8 @@
     &__button
         color: $brand-yellow
         svg
-            margin-left: 13px
-            width: 15px
-            height: 22px
+            width: 20px
+            height: 20px
             fill: none
             stroke: $brand-yellow
     &__burger
@@ -103,22 +103,23 @@
             left: 0
         .nav__menu-active
             top: 0
-@media screen and ( min-height: 280px )
+            
+@media screen and ( min-height: 280px) and (max-width: 1440px )
     .nav
         &__menu
             li
-                margin-bottom: 5px
-@media screen and ( min-height: 440px )
-    .nav
-        &__menu
-            li
-                margin-bottom: 10px
-@media screen and ( min-height: 540px )
+                margin-bottom: 15px
+@media screen and ( min-height: 440px) and (max-width: 1440px )
     .nav
         &__menu
             li
                 margin-bottom: 20px
-@media screen and ( min-height: 600px )
+@media screen and ( min-height: 540px) and (max-width: 1440px )
+    .nav
+        &__menu
+            li
+                margin-bottom: 30px
+@media screen and ( min-height: 600px) and (max-width: 1440px )
     .nav
         &__menu
             li
