@@ -1,3 +1,22 @@
+-
+    var header_cards = [
+        {
+            img: "img/dest/about/icon(1).svg", 
+            title: "Read it",
+            info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+        {
+            img: "img/dest/about/icon(2).svg", 
+            title: "Apply",
+            info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+        {
+            img: "img/dest/about/icon(3).svg", 
+            title: "Multiply",
+            info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+        },
+    ]
+
 header.header
     .header__wrapper.wrapper
         .header__box
@@ -11,4 +30,12 @@ header.header
             .header__img
                 a(href="#")
                     img(src="img/src/header/play-video.png", alt="")
-        .header__cards
+        .header__cards.section
+            .header__cards-hgroup.main__hgroup
+                h2.header__hgroup-title.title How it works? 
+            .header__cards-box
+                each value in header_cards
+                    .header__card
+                        img(src=value.img, alt="")
+                        h3.header__card-title.card-title #{value.title}
+                        p.header__card-info.info #{value.info}
