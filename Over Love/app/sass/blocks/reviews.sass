@@ -1,0 +1,30 @@
+.reviews
+    &__hgroup
+        margin-bottom: 80px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        width: 480px
+        padding: 10px
+        margin: 20px 10px
+        &-meta
+            &-job
+                color: $brand-blue
+                font-weight: 400
+        &-hgroup
+            display: flex
+            align-items: center
+            margin-bottom: 27px
+            img
+                width: 67px
+                height: 67px
+                margin-right: 26px
+
+
+@media screen and ( max-width: 320px )
+    .reviews
+        &__hgroup
+            margin-bottom: 30px
+        

@@ -1,0 +1,15 @@
+.form.section
+    .form__wrapper.wrapper
+        .form__hgroup
+            h2.form__hgroup-title.title Download the future
+            p.form__hgroup-info.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.
+        form.form__body
+            input(type="email", placeholder="Your email...", name="email")
+            button(type="submit").button.empty
+                | Subscribe
+                svg
+                    use(xlink:href="#energy")
+        ul.social
+            +svgLink('instagram')
+            +svgLink('linkedIn')
+            +svgLink('telegram')

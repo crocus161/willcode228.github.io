@@ -1,0 +1,35 @@
+-
+    var reviews_card = [
+        {
+            img: "img/src/reviews/ava(1).png",
+            name: "Sean Farmer",
+            job: "Ceo",
+            info: "Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor."
+        },
+        {
+            img: "img/src/reviews/ava(2).png",
+            name: "Nick Parker",
+            job: "Wed-Designer",
+            info: "Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor."
+        },
+        {
+            img: "img/src/reviews/ava(3).png",
+            name: "Mishel Latuale",
+            job: "Project Manager",
+            info: "Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor."
+        }
+    ]
+
+.reviews.section
+    .reviews__wrapper.wrapper
+        .reviews__hgroup.main__hgroup
+            h2.reviews__hgroup-title.title Why you'll love it
+        .reviews__box
+            each value in reviews_card
+                .reviews__card
+                    .reviews__card-hgroup
+                        img(src=value.img, alt="")
+                        .reviews__card-hgroup-meta
+                            h4.reviews__card-meta-name.card-title #{value.name}
+                            h4.reviews__card-meta-job #{value.job}
+                    p.reviews__card-info.info #{value.info}

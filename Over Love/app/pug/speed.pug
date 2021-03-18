@@ -1,0 +1,45 @@
+-
+    var speed_card = [
+        {
+            img: "img/src/advantages/icon(1).svg",
+            title: "Auto Layout",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+        {
+            img: "img/src/advantages/icon(2).svg",
+            title: "Variant",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+        {
+            img: "img/src/advantages/icon(3).svg",
+            title: "Components",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+        {
+            img: "img/src/advantages/icon(4).svg",
+            title: "Atomic Design",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+        {
+            img: "img/src/advantages/icon(5).svg",
+            title: "Animated",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+        {
+            img: "img/src/advantages/icon(6).svg",
+            title: "Responsive",
+            info: "Sed do eiusmod tempor incididunt ut consectetur adipisicing elit,do eiusmod tempor incididunt ut labore et dolore"
+        },
+    ]
+.speed.section
+    .speed__wrapper.wrapper
+        .speed__hgroup
+            h2.speed__hgroup-title.title Speed up your design process
+        .speed__box
+            each value in speed_card
+                .speed__card
+                    .speed__img
+                        img(src=value.img, alt="")
+                    .speed__text
+                        h4.speed__card-title.card-title #{value.title} 
+                        p.speed__card-info.info #{value.info}

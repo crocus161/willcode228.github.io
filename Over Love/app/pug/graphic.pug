@@ -1,0 +1,20 @@
+-
+    var graphic_img = [
+        "img/src/graphic/Frame(1).png",
+        "img/src/graphic/Frame(2).png",
+        "img/src/graphic/Frame(3).png",
+        "img/src/graphic/Frame(4).png",
+        "img/src/graphic/Frame(5).png",
+    ]
+
+.graphic.section
+    .graphic__wrapper.wrapper
+        .graphic__hgroup.main__hgroup
+            h2.graphic__hgroup-title.title Unsplash graphic
+            p.graphic__hgroup-info.info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.
+        .graphic__images
+            each value in graphic_img
+                .graphic__images-img
+                    img(src=value, alt="")
+    .graphic__decorate
+        img(src="img/src/graphic/Decoration-shape.svg", alt="")

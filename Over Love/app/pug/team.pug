@@ -1,0 +1,46 @@
+-
+    var team_card = [
+        {
+            img: "img/src/team/ava(1).png",
+            name: "Pieter Omvlee",
+            job: "Designer"
+        },
+        {
+            img: "img/src/team/ava(2).png",
+            name: "Loyd Maywe",
+            job: "Php developer"
+        },
+        {
+            img: "img/src/team/ava(3).png",
+            name: "Latte Macchiato",
+            job: "CEO Company"
+        },
+        {
+            img: "img/src/team/ava(4).png",
+            name: "Cheese Cake",
+            job: "Art Director"
+        },
+    ]
+.team.section
+    .team__wrapper.wrapper
+        .team__hgroup
+            .team__hgroup-text
+                h2.team__hgroup-title.title Project's team
+                p.team__hgroup-info.info Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor.Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+            a(href="#").team__hgroup-btn.button 
+                | Join our team
+                svg
+                    use(xlink:href="#file")
+        .team__box
+            each value in team_card
+                .team__card
+                    .team__card-img
+                        img(src=value.img, alt="")
+                    .team__card-meta
+                        h4.team__meta-name #{value.name}
+                        p.team__meta-job.info #{value.job}
+                        ul
+                            +svgLink('instagram')
+                            +svgLink('linkedIn')
+                            +svgLink('telegram')
+

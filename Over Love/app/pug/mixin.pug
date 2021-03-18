@@ -1,0 +1,5 @@
+mixin svgLink(svgName)
+  li
+    a(href="#").link #{text}
+        svg
+            use(xlink:href="#" + svgName)

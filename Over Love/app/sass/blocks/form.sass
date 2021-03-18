@@ -1,0 +1,61 @@
+.form
+    background: url('../img/src/header/header-bg.png')
+    background-color: rgba($brand-black, 0.3)
+    background-size: cover
+    background-repeat: no-repeat
+    background-blend-mode: darken
+    background-position: center right
+    &__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+    &__hgroup
+        text-align: center
+        &-title,
+        &-info
+            color: $brand-white
+        &-info
+            display: inline-block
+            width: 70%
+            margin: 16px 0px 32px 0px
+    .social
+        display: flex
+        li
+            margin: 0px 8px
+        svg
+            width: 46px
+            height: 46px
+            fill: $brand-white
+    &__body
+        margin-bottom: 40px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        input
+            width: 312px
+            height: 50px
+            padding: 16px 34px
+            border: 1px solid $secondary-blue
+            border-radius: 2000px
+            margin-right: 16px
+            outline: none
+        button.button.empty
+            color: $brand-white
+            border: 1px solid $brand-white
+            svg
+                stroke: $brand-white
+            &:hover
+                border-color: $brand-yellow
+
+@media screen and ( max-width: 768px )
+    .form
+        &__hgroup
+            &-info
+                width: 100%
+        &__body
+            input
+                width: 270px
+                margin-bottom: 10px
+                margin-right: 0

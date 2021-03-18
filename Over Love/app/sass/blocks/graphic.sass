@@ -1,0 +1,42 @@
+.graphic
+    position: relative
+    z-index: 1
+    &__decorate
+        position: absolute
+        top: 45%
+        right: 20px
+        transform: translate(-50%, -50%)
+        z-index: -1
+        img
+            opacity: 0.2
+    &__hgroup
+        margin-bottom: 53px
+        &-title
+            margin-bottom: 18px
+        &-info
+            display: inline-block
+            width: 40%
+    &__images
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        &-img
+            width: 280px
+            margin: 20px 5px
+            img
+                width: 100%
+                object-fit: cover
+        
+@media screen and ( max-width: 1620px )
+    .graphic
+        &__images
+            &-img
+                width: 340px
+                margin: 20px 15px
+        &__decorate
+            display: none
+@media screen and ( max-width: 992px )
+    .graphic
+        &__hgroup
+            &-info
+                width: 80%
