@@ -1,5 +1,15 @@
-mixin svgLink(svgName)
+
+mixin svgLink(svgName, href, text, className)
   li
-    a(href="#").link #{text}
+    a(href=href, class=className) #{text}
         svg
             use(xlink:href="#" + svgName)
+
+mixin btn(svgName, href, text, className)
+  a(href=href, class=className) #{text}
+    svg
+        use(xlink:href="#" +svgName)
+
+mixin li(href, text, className)
+  li
+    a(href=href class="link " + className) #{text}

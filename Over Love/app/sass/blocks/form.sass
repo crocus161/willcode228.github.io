@@ -1,5 +1,5 @@
 .form
-    background: url('../img/src/header/header-bg.png')
+    background: url('..img/dest/header/header-bg.png')
     background-color: rgba($brand-black, 0.3)
     background-size: cover
     background-repeat: no-repeat
@@ -28,6 +28,12 @@
             width: 46px
             height: 46px
             fill: $brand-white
+    &__social-link
+        svg
+            transition: $transition
+        &:hover
+            svg
+                fill: $brand-yellow
     &__body
         margin-bottom: 40px
         display: flex

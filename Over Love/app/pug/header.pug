@@ -23,19 +23,16 @@ header.header
             .header__text
                 h1.header__text-title Listen To<wbr> The Beat Of The Web
                 p.header__text-info.info First template from series templates to design web pages, using components system
-                a(href="#").header__text-button.button 
-                    | Let’s Go
-                    svg
-                        use(xlink:href="#file")
+                +btn('file', '#', 'Let\'s go', 'header__text-button button')
             .header__img
                 a(href="#")
-                    img(src="img/src/header/play-video.png", alt="")
-        .header__cards.section
+                    img(src="img/dest/header/play-video.png", alt="")
+        .header__cards.section#about
             .header__cards-hgroup.main__hgroup
                 h2.header__hgroup-title.title How it works? 
             .header__cards-box
                 each value in header_cards
-                    .header__card
+                    .header__card.blur-block
                         img(src=value.img, alt="")
                         h3.header__card-title.card-title #{value.title}
                         p.header__card-info.info #{value.info}

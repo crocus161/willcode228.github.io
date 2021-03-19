@@ -1,0 +1,33 @@
+.preloader
+    width: 100%
+    min-height: 100vh
+    background: $brand-white
+    position: fixed
+    top: 0
+    left: 0
+    display: grid
+    place-items: center
+    z-index: 9999
+    transition: $transition
+    
+.preloader__circle                                   
+    width: 250px
+    height: 250px
+    border-radius: 50%
+    background: $brand-blue
+    animation: preloader-anim 1s linear infinite
+
+@keyframes preloader-anim
+	0%
+        opacity: 1
+        transform: scale(0)
+	100%
+        opacity: 0
+        transform: scale(1)
+	
+
+@media screen and (max-width: 992px)
+	.preloader__circle
+		width: 150px
+		height: 150px
+	

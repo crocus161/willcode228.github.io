@@ -1,11 +1,96 @@
 -
-    var footer_list_products = ["Product", "How it works","Features","Pricing","Testimonials"];
-    var footer_list_about =  ["About form", "Our team","Careers","Press","Stores"];
-    var footer_list_connect =  ["Connect", "Facebook", "Twitter","Instagram","Linkedin"];
-    var footer_list_contact = ["Contact", "info@gmail.com","000-000-0000","0000 Willa River Suite 000"];
-    
+    var footer_list_products = [
+            {
+                title: 'Product', 
+                href: '#product'
+            },
+            {
+                title: 'How it works',
+                href: '#about'
+            },
+            {
+                title: 'Pricing',
+                href: '#price'
+            },
+            {
+                title: 'Testimonials',
+                href: '#help'
+            }
+        ];
+    var footer_list_about = [
+            {
+                title: 'About form', 
+                href: ''
+            },
+            {
+                title: 'Our team',
+                href: '#team'
+            },
+            {
+                title: 'Careers',
+                href: '#career'
+            },
+            {
+                title: 'Press',
+                href: '#help'
+            },
+            {
+                title: 'Store',
+                href: '#help'
+            }
+        ];
+    var footer_list_connect = [
+            {
+                title: 'Connect', 
+                href: ''
+            },
+            {
+                title: 'Facebook',
+                href: '#'
+            },
+            {
+                title: 'Twitter',
+                href: '#'
+            },
+            {
+                title: 'Instagram',
+                href: '#'
+            },
+            {
+                title: 'Linkedin',
+                href: '#'
+            }
+        ];
+    var footer_list_contact = [
+            {
+                title: 'Contact', 
+                href: ''
+            },
+            {
+                title: 'info@gmail.com',
+                href: 'mailto:info@gmail.com'
+            },
+            {
+                title: '000-000-0000',
+                href: 'tel: 000-000-0000'
+            },
+            {
+                title: '0000 Willa River Suite 000',
+                href: ''
+            }
+        ];
 
-.footer.section
+.footer.section#help
     .footer__wrapper.wrapper
         ul.footer__list
-            each value in footer_list
+            each value in footer_list_products
+                +li(value.href, value.title)
+        ul.footer__list
+            each value in footer_list_about
+                +li(value.href, value.title)
+        ul.footer__list
+            each value in footer_list_connect
+                +li(value.href, value.title)
+        ul.footer__list
+            each value in footer_list_contact
+                +li(value.href, value.title)

@@ -1,1 +1,21 @@
 .footer
+    background: $footer-bg
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        ul
+            margin: 20px 10px
+            li
+                margin-bottom: 18px
+                a
+                    color: $secondary-blue
+            li:first-child
+                margin-bottom: 16px
+                a
+                    font-size: 18px
+                    color: $brand-white
+@media screen and ( max-width: 576px)
+    .footer
+        &__wrapper
+            flex-direction: column

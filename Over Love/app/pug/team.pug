@@ -1,46 +1,43 @@
 -
     var team_card = [
         {
-            img: "img/src/team/ava(1).png",
+            img: "img/dest/team/ava(1).png",
             name: "Pieter Omvlee",
             job: "Designer"
         },
         {
-            img: "img/src/team/ava(2).png",
+            img: "img/dest/team/ava(2).png",
             name: "Loyd Maywe",
             job: "Php developer"
         },
         {
-            img: "img/src/team/ava(3).png",
+            img: "img/dest/team/ava(3).png",
             name: "Latte Macchiato",
             job: "CEO Company"
         },
         {
-            img: "img/src/team/ava(4).png",
+            img: "img/dest/team/ava(4).png",
             name: "Cheese Cake",
             job: "Art Director"
         },
     ]
-.team.section
+.team.section#team
     .team__wrapper.wrapper
         .team__hgroup
             .team__hgroup-text
                 h2.team__hgroup-title.title Project's team
                 p.team__hgroup-info.info Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam lorem ipsum dolor.Sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-            a(href="#").team__hgroup-btn.button 
-                | Join our team
-                svg
-                    use(xlink:href="#file")
+            +btn('file', '#', 'Join our team', 'team__hgroup-btn button')
         .team__box
             each value in team_card
                 .team__card
                     .team__card-img
                         img(src=value.img, alt="")
-                    .team__card-meta
+                    .team__card-meta.blur-block
                         h4.team__meta-name #{value.name}
                         p.team__meta-job.info #{value.job}
                         ul
-                            +svgLink('instagram')
-                            +svgLink('linkedIn')
-                            +svgLink('telegram')
+                            +svgLink('instagram', '#', '', 'team__social-link')
+                            +svgLink('linkedIn', '#', '', 'team__social-link')
+                            +svgLink('telegram', '#', '', 'team__social-link')
 

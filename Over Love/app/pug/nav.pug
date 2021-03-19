@@ -1,20 +1,42 @@
 block vars
-    -var menu_list = ['How it Works', 'Features', 'Pricing', 'Help', 'Blog', 'Log In'];
+    -
+        var menu_list = [
+            {
+                title: 'How it Works', 
+                href: '#about'
+            },
+            {
+                title: 'Features',
+                href: '#features'
+            },
+            {
+                title: 'Team',
+                href: '#team'
+            },
+            {
+                title: 'Help',
+                href: '#help'
+            },
+            {
+                title: 'Blog',
+                href: '#blog'
+            },
+            {
+                title: 'Log in',
+                href: '#logIn'
+            }
+        ]
 
 
 nav.nav
     .nav__wrapper.wrapper
         .nav__logo
-            img(src="img/dest/logo.svg", alt="logo")
+            svg
+                use(xlink:href="#logo")
         ul.nav__menu
             each value in menu_list
-                li
-                    a.nav__link(href="#") #{value}
-            li
-                a(href="#").nav__button.button.empty 
-                    | Sign Up
-                    svg
-                        use(xlink:href="#energy")
+                +li(value.href, value.title, 'nav__link')
+            +svgLink('energy', '#', 'Sign Up', 'nav__button button empty')
         button.nav__burger
             span
             span

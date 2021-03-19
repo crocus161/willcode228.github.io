@@ -1,0 +1,33 @@
+-
+    var products_slider = [
+        {
+            title: 'Enjoy this product',
+            info: 'This project required a huge amount of hours but  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.',
+            href: '#'
+        },
+        {
+            title: 'Product 1',
+            info: 'This project required a huge amount of hours but  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.',
+            href: '#'
+        },
+        {
+            title: 'Product 2',
+            info: 'This project required a huge amount of hours but  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.',
+            href: '#'
+        },
+        {
+            title: 'Product 3',
+            info: 'This project required a huge amount of hours but  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim.',
+            href: '#'
+        },
+    ]
+.products.section
+    .products__wrapper.wrapper
+        .products__image
+            img(src="img/dest/products/Frame(1).png", alt="")
+        .products__slider.blur-block
+            each value in products_slider
+                .products__slider-card
+                    h2.products__card-title.title #{value.title}
+                    p.products__card-info.info #{value.info}
+                    +btn('energy', value.href, 'Learn', 'products__card-btn button')

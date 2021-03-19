@@ -1,68 +1,43 @@
-window.addEventListener('load', () => {
+$(document).ready(function(){
 
     //preloader settings
-
-    // const preloader = document.querySelector('.preloader');
-    // setTimeout(() => {
-    //     preloader.style.opacity = 0;
-    //     setTimeout(() => {
-    //         preloader.style.display = 'none';
-    //     }, 1000);
-    // }, 3000);
-
+    const $loader = $('.preloader');
+    setTimeout(function() {
+        $loader.hide(2000);
+    }, 2000);
     //preloader settings
 
     //active navigation on scroll
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-        nav.classList.toggle('nav-active', scrollY > 0);
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1) {
+            $('.nav').addClass('nav-active');
+        } else {
+            $('.nav').removeClass('nav-active');
+        }
     });
     //active navigation on scroll
 
-
     //navigation settings
-    const burger = document.querySelector('.nav__burger'),
-        menu = document.querySelector('.nav__menu');
+    const $menu = $('.nav__menu'),
+        $burger = $('.nav__burger');
 
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('burger-active');
-        menu.classList.toggle('nav__menu-active');
+    $burger.on('click', function() {
+        $(this).toggleClass('burger-active');
+        $menu.toggleClass('nav__menu-active');
     });
 
-    menu.addEventListener('click', (e) => {
-        setTimeout(() => {
-            if (e.target.classList.contains('nav__link')) {
-                menu.classList.remove('nav__menu-active');
-                burger.classList.remove('burger-active');
-            }
-        }, 300);
+    $menu.on('click', function(e) {
+        if($(e.target).is('a')){
+            setTimeout(function() {
+                $menu.removeClass('nav__menu-active');
+                $burger.removeClass('burger-active');
+            }, 300);
+        }
     });
     //navigation settings
-
-    //smooth scroll
-    // let linkNav = document.querySelectorAll('[href^="#"]'),
-    //     V = 0.4;
-    // for (let i = 0; i < linkNav.length; i++) {
-    //     linkNav[i].addEventListener('click', function (e) {
-    //         e.preventDefault();
-    //         let w = window.pageYOffset,
-    //             hash = this.href.replace(/[^#]*(.*)/, '$1');
-    //         t = document.querySelector(hash).getBoundingClientRect().top,
-    //             start = null;
-    //         requestAnimationFrame(step);
-    //         function step(time) {
-    //             if (start === null) start = time;
-    //             let progress = time - start,
-    //                 r = (t < 0 ? Math.max(w - progress / V, w + t) : Math.min(w + progress / V, w + t));
-    //             window.scrollTo(0, r);
-    //             if (r != w + t) {
-    //                 requestAnimationFrame(step);
-    //             } else {
-    //                 location.hash = hash;
-    //             }
-    //         }
-    //     }, false);
-    // }
-    //smooth scroll
-
+    $('.products__slider').slick({
+          prevArrow: '<button class="slick-prev"><img src="img/src/button-icons/prev-arrow.svg"></button>',
+          nextArrow: '<button class="slick-next"><img src="img/src/button-icons/next-arrow.svg"></button>',
+          fade: true
+    });
 });

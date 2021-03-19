@@ -1,4 +1,4 @@
-.form.section
+.form.section#logIn
     .form__wrapper.wrapper
         .form__hgroup
             h2.form__hgroup-title.title Download the future
@@ -10,6 +10,6 @@
                 svg
                     use(xlink:href="#energy")
         ul.social
-            +svgLink('instagram')
-            +svgLink('linkedIn')
-            +svgLink('telegram')
+            +svgLink('instagram', '#', '', 'form__social-link')
+            +svgLink('linkedIn', '#', '', 'form__social-link')
+            +svgLink('telegram', '#', '', 'form__social-link')

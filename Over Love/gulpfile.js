@@ -18,8 +18,6 @@ const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 //require del
 const del = require('del');
-//require htmlmin
-const htmlmin = require('gulp-htmlmin');
 //require pug
 const pug = require('gulp-pug');
 
@@ -40,15 +38,6 @@ function browsersync() {
         notify: false,
         online: true
     });
-}
-
-//format html
-function htmlMin() {
-    return src([
-        'app/*.html'
-    ])
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(dest('dist'));
 }
 
 //format style
@@ -125,6 +114,7 @@ function buildcopy() {
 		'app/css/**/*.min.css',
 		'app/js/**/*.min.js',
 		'app/img/dest/**/*',
+		'app/*.html',
 		], { base: 'app' }) 
 	.pipe(dest('dist'))
 }
@@ -145,9 +135,7 @@ exports.cleanimg = cleanimg;
 exports.pugCompiler = pugCompiler;
 
 //****************default task*****************
-// exports.default = parallel(style, libs_css, libs_js, scripts, images, browsersync, startWatch);
-exports.default = parallel(pugCompiler, style, libs_css, libs_js, scripts, browsersync, startWatch);
+exports.default = parallel(pugCompiler, style, libs_css, libs_js, scripts, images, browsersync, startWatch);
 
 //****************build task*****************
-// exports.build = series(htmlMin, style, scripts, images, buildcopy);
-exports.build = series(htmlMin, style, scripts, buildcopy);
+exports.build = series(style, scripts, images, buildcopy);

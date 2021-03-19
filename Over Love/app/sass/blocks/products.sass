@@ -1,0 +1,75 @@
+.products
+    &__wrapper
+        position: relative
+        min-height: 900px
+    &__image
+        width: 100%
+        img
+            width: 100%
+            object-fit: cover
+    &__slider
+        width: 80%
+        min-height: 320px
+        padding: 32px 64px
+        position: absolute
+        left: 32px
+        bottom: 400px
+        display: flex
+        min-width: 0
+        .slick-prev,
+        .slick-next
+            z-index: 9
+            position: absolute
+            bottom: 50px
+        .slick-prev
+            right: 160px
+        .slick-next
+            right: 64px
+    &__slider-card
+        flex-grow: 1
+        margin: 10px
+    &__card
+        &-info
+            display: inline-block
+            width: 70%
+            margin: 15px 0px 36px 0px
+        &-btn
+            svg
+                width: 20px
+                height: 20px
+
+@media screen and ( max-width: 992px )
+    .products
+        &__slider
+            width: 100%
+            padding: 15px 30px
+            left: 0
+            bottom: 0
+            .slick-prev,
+            .slick-next
+                bottom: 10px
+            .slick-prev
+                left: 64px
+            .slick-next
+                left: 160px
+        &__card
+            &-info
+                width: 100%
+            
+@media screen and ( max-width: 576px )
+    .products
+        &__slider
+            &-card
+                text-align: center
+                margin: 0px 0px
+                padding: 10px
+            .slick-prev,
+            .slick-next
+                bottom: -5px
+            .slick-prev
+                left: 25%
+            .slick-next
+                left: 70%
+        &__card
+            &-btn
+                margin: auto

@@ -66,12 +66,19 @@ ul
     background: $brand-yellow
     transition: $transition
     border-radius: $radius
+    border: $border
     svg
         margin-left: 13px
         width: 35px
         height: 35px
         fill: $button-font
         transition: $transition
+    &:hover
+        background: $brand-white
+        color: $brand-yellow
+        svg
+            fill: $brand-yellow
+            transform: scale(1.1) translateX(10px)
 
 .button.empty
     border: $border
@@ -89,11 +96,29 @@ ul
             fill: $brand-white
 //*****MAIN LINK*****//
 .link
+    padding: 10px
     font-size: 12px
     line-height: 18px
     letter-spacing: 0.75px
     text-transform: uppercase
-
+    position: relative
+    z-index: 1
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 50%
+        height: 100%
+        width: 0%
+        background: $brand-blue
+        transform: translateX(-50%)
+        transition: $transition
+        z-index: -1
+        pointer-events: none
+    &:hover
+        color: $brand-white
+        &::after
+            width: 100%
 //*****MEIDA QUERIES*****//
 @media screen and ( max-width: 1620px )
     .wrapper
