@@ -26,13 +26,13 @@ header.header
                 +btn('file', '#', 'Let\'s go', 'header__text-button button')
             .header__img
                 a(href="#")
-                    img(src="img/dest/header/play-video.png", alt="")
+                    img(src="img/dest/header/play-video.png", alt="video-link")
         .header__cards.section#about
             .header__cards-hgroup.main__hgroup
                 h2.header__hgroup-title.title How it works? 
             .header__cards-box
                 each value in header_cards
                     .header__card.blur-block
-                        img(src=value.img, alt="")
+                        img(src=value.img, alt="icon")
                         h3.header__card-title.card-title #{value.title}
                         p.header__card-info.info #{value.info}
