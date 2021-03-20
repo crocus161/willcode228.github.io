@@ -18,9 +18,18 @@
         padding: 32px 64px
         .slick-prev,
         .slick-next
+            padding: 10px
             z-index: 9
             position: absolute
-            bottom: 50px
+            bottom: 40px
+            svg
+                width: 15px
+                height: 24px
+                fill: $brand-grey
+                transition: $fst-transition
+            &:hover
+                svg
+                    fill: $brand-yellow
         .slick-prev
             right: 160px
         .slick-next
@@ -70,7 +79,7 @@
             .slick-prev
                 left: 25%
             .slick-next
-                left: 70%
+                left: 65%
         &__card
             &-btn
                 margin: auto

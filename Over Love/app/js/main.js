@@ -36,8 +36,8 @@ $(document).ready(function(){
     });
     //navigation settings
     $('.products__slider').slick({
-          prevArrow: '<button class="slick-prev"><img src="img/dest/button-icons/prev-arrow.svg"></button>',
-          nextArrow: '<button class="slick-next"><img src="img/dest/button-icons/next-arrow.svg"></button>',
+          prevArrow: `<button class="slick-prev"><svg><use xlink:href="#prev-arrow"></use></svg></button>`,
+          nextArrow: '<button class="slick-next"><svg><use xlink:href="#next-arrow"></use></svg></button>',
           fade: true
     });
 });
