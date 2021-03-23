@@ -1,0 +1,36 @@
+.numbers
+    &__box
+        padding: 30px 0px
+        display: flex
+        box-shadow: 0px 15px 30px rgba($brand-black, 0.1)
+    &__card
+        flex-grow: 1
+        min-height: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:not(:last-child)
+            border-right: 1px solid $secondary-grey
+        &-img
+            width: 55px
+            height: 55px
+            background: $secondary-accent
+            border-radius: 50%
+            display: grid
+            place-items: center
+            margin-right: 36px
+    
+@media screen and ( max-width: 992px )
+    .numbers
+        &__box
+            padding: 0px 40px
+            flex-direction: column
+        &__card
+            &:not(:last-child)
+                border-right: 0px solid $secondary-grey
+                border-bottom: 1px solid $secondary-grey
+@media screen and ( max-width: 319px )
+    .numbers
+        &__box
+            padding: 0px 10px
+            flex-direction: column

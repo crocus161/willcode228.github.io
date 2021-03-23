@@ -1,0 +1,30 @@
+-
+    var numbers_card = [
+        {
+            svg: 'img/dest/numbers/user.svg',
+            number: '90k+',
+            title: 'Users'
+        },
+        {
+            svg: 'img/dest/numbers/location.svg',
+            number: '30k+',
+            title: 'Locations'
+        },
+        {
+            svg: 'img/dest/numbers/check-box.svg',
+            number: '50k+',
+            title: 'Servers'
+        },
+    ]
+
+.numbers.section
+    .numbers__wrapper.wrapper
+        .numbers__box
+            each value in numbers_card
+                .numbers__card
+                    .numbers__card-img
+                        img(src=value.svg, alt="")
+                    .numbers__card-text
+                        h2.card-title #{value.number}
+                        h3.subtitle #{value.title}
+
