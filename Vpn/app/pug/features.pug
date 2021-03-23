@@ -1,0 +1,16 @@
+- 
+    var features_list =  ['Powerfull online protection.', 'Internet without borders.', 'Supercharged VPN', 'No specific time limits.']
+
+.features.section
+    .features__wrapper.wrapper.section__wrapper
+        .features__image.section__image
+            img(src="img/dest/features.svg", alt="")
+        .features__text.section__text
+            h1.features__text-title We Provide Many Features You Can Use
+            h2.features__text-subtitle.subtitle You can explore the features that we provide with fun and have their own functions each feature.
+            ul.features__list
+                each value in features_list
+                    li
+                        span 
+                            +svg('check-mark')  
+                        | #{value}

@@ -27,8 +27,7 @@ block vars
 nav.nav
     .nav__wrapper.wrapper
         .nav__logo
-            svg
-                use(xlink:href="#logo")
+            +svg('logo')
         ul.nav__menu
             each value in menu_list
                 +li(value.href, value.title, 'nav__menu-item')
