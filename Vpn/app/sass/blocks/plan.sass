@@ -1,11 +1,15 @@
 .plan
-    background: $secondary-white
+    background: linear-gradient(to bottom, $secondary-white, $brand-white)
     &__hgroup
         margin-bottom: 60px
+        &-title
+            margin-bottom: 20px
     &__box
         display: flex
+        flex-wrap: wrap
         justify-content: space-around
     &__card
+        margin: 30px 10px
         width: 330px
         min-height: 760px
         background: $brand-white
@@ -14,10 +18,13 @@
         flex-direction: column
         align-items: center
         text-align: center
+        border-radius: $radius
+        border: 2px solid $secondary-grey
+        transition: $transition
+        &:hover
+            border-color: $brand-accent
         &-price
             margin-bottom: 20px
-            font-size: 25px
-            line-height: 30px
         &-title
             margin: 30px 0px
         &-notes
@@ -33,3 +40,11 @@
                     width: 13px
                     height: 10px
                     fill: $brand-green
+
+@media screen and ( max-width: 768px )
+    .plan
+        &__card
+            min-height: 700px
+            flex-grow: 1
+            padding: 20px 30px
+

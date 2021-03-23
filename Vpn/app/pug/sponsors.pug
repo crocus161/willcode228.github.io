@@ -1,0 +1,28 @@
+-
+    var sponsors_logo = [
+        {
+            img: 'img/dest/sponsors/amazon.png',
+            alt: 'Amazon'
+        },
+        {
+            img: 'img/dest/sponsors/discord.png',
+            alt: 'Discord'
+        },
+        {
+            img: 'img/dest/sponsors/netflix.png',
+            alt: 'Netflix'
+        },
+        {
+            img: 'img/dest/sponsors/reddit.png',
+            alt: 'Reddit'
+        },
+        {
+            img: 'img/dest/sponsors/spotify.png',
+            alt: 'Spotify'
+        }
+    ]
+.sponsors.section
+    .sponsors__wrapper.wrapper
+        each value in sponsors_logo
+            .sponsors__image
+                img(src=value.img, alt=value.alt)
