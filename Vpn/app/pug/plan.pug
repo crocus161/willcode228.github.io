@@ -1,0 +1,40 @@
+-
+    var plan_box = [
+        {
+            img: 'img/dest/plans/Free.svg',
+            title: 'Free Plan',
+            notes: ['Unlimited Bandwidth', 'Encrypted Connection', 'No Traffic Logs', 'Works on All Devices'],
+            price: 'Free'
+        },
+        {
+            img: 'img/dest/plans/Standard.svg',
+            title: 'Standard Plan',
+            notes: ['Unlimited Bandwidth', 'Encrypted Connection', 'Yes Traffic Logs', 'Works on All Devices', 'Connect Anywhere'],
+            price: '$9 / mo'
+        },
+        {
+            img: 'img/dest/plans/Premium.svg',
+            title: 'Premium Plan',
+            notes: ['Unlimited Bandwidth', 'Encrypted Connection', 'Yes Traffic Logs', 'Works on All Devices', 'Connect Anywhere', 'Get New Features'],
+            price: '$12 / mo'
+        },
+    ]
+.plan.section
+    .plan__wrapper.wrapper
+        .plan__hgroup.hgroup
+            h2.plan__hgroup-title.title Choose Your Plan
+            h3.plan__hgroup-subtitle.subtitle Let's choose the package that is best for you and explore it happily and cheerfully.
+        .plan__box
+            each value in plan_box
+                .plan__card
+                    img(src=value.img, alt="")
+                    h3.plan__card-title.card-title #{value.title}
+                    ul.plan__card-notes
+                        each note in value.notes
+                            li
+                                span 
+                                    +svg('check-mark')  
+                                | #{note}
+                    h4.plan__card-price #{value.price}
+                    a(href="#").secondary-button Select
+
