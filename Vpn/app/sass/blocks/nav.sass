@@ -1,1 +1,95 @@
 .nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 72px
+    z-index: 999
+    transition: $transition
+    &__wrapper
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        svg
+            width: 150px
+            height: 37px
+    &__meta,
+    &__menu
+        display: flex
+        justify-content: center
+        align-items: center
+        &-item
+            color: $brand-black
+            font-size: 16px
+        li:not(:last-child)
+            margin: 0px 30px 0px 0px
+    &__menu
+        &-item
+            color: $brand-grey
+            padding: 10px
+    &__meta
+        &-item
+            font-weight: 500
+    &__burger
+        display: none
+        width: 30px
+        height: 20px
+        position: relative
+        span
+            position: absolute
+            width: 100%
+            height: 2px
+            background: $brand-black
+            transform: translateY(-50%)
+            transition: $transition
+            &:nth-child(1)
+                top: 1px
+            &:nth-child(4)
+                bottom: 0
+            &:nth-child(2),
+            &:nth-child(3)
+                top: 50%
+
+.burger-active
+    span
+        &:nth-child(1),
+        &:nth-child(4)
+            opacity: 0
+        &:nth-child(2)
+            transform: rotate(-45deg) translateY(-50%)
+        &:nth-child(3)
+            transform: rotate(45deg) translateY(-50%)
+
+@media screen and ( max-width: 1200px )
+    .nav
+        &__meta
+            display: none
+
+@media screen and ( max-width: 768px )
+    .nav
+        &__menu
+            position: fixed
+            top: -100vh
+            right: 0
+            opacity: 0
+            width: 100%
+            min-height: 100vh
+            background: $brand-white
+            justify-content: center
+            flex-direction: column
+            transition: $md-transition
+            &-active
+                top: 0
+                opacity: 1
+            li:not(:last-child)
+                margin: 20px 0px
+            li:last-child
+                margin: 20px 0px
+            &-item
+                font-size: 20px
+                padding: 20px
+                text-transform: uppercase
+        &__burger
+            display: block

@@ -22,28 +22,110 @@ ul
 
 //*****CONTAINER OF ALL CONTENT*****//
 .container
+    max-width: 1440px
+    margin: auto
 //*****CONTAINER OF BLOCK*****//
 .wrapper
+    width: 1200px
+    margin: auto
 //*****MAIN BLOCK STYLES*****//
 .section
+    padding: 75px 0px
 //*****MAIN SPRITE*****//
 .main-sprite
     display: none
 //*****MAIN TITLE*****//
 .title
+    font-size: 35px
+    font-weight: 500
+    line-height: 50px
 //*****MAIN SUBTITLE*****//
 .subtitle
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+    color: $brand-grey
 //*****MAIN INFO*****//
 .info
+    font-size: 16px
+    line-height: 30px
 //*****MAIN BUTTON*****//
 .button
+    display: block
+    width: 250px
+    height: 60px
+    border-radius: $radius
+
+    color: $brand-white
+    font-weight: 700
+    font-size: 16px
+    text-align: center
+    line-height: 60px
+    background: $brand-accent
+.secondary-button
+    display: block
+    width: 150px
+    height: 45px
+    border: 1px solid $brand-accent
+    border-radius: 50px
+
+    text-align: center
+    line-height: 43px
+    font-size: 16px
+    font-weight: 500
+    color: $brand-accent
+    
 //*****MAIN LINK*****//
 .link
 
 //*****MEIDA QUERIES*****//
-// @media screen and ( max-width: 1400px )
-// @media screen and ( max-width: 1200px )
-// @media screen and ( max-width: 992px )
-// @media screen and ( max-width: 768px )
-// @media screen and ( max-width: 576px )
-// @media screen and ( max-width: 319px )
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 1150px
+    .title
+        font-size: 33px
+        line-height: 43px
+    .subtitle,
+    .info
+        line-height: 28px
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 950px
+    .title
+        font-size: 30px
+        line-height: 40px
+    .subtitle,
+    .info
+        line-height: 24px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 720px
+    .title
+        font-size: 27px
+        line-height: 37px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 525px
+    .title
+        font-size: 24px
+        line-height: 34px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 290px
+    .title
+        font-size: 20px
+        line-height: 30px
+    .button
+        width: 180px
+        height: 50px
+        line-height: 50px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 260px
+    .title
+        font-size: 18px
+        line-height: 28px
+    .subtitle,
+    .info
+        font-size: 14px
+        line-height: 18px

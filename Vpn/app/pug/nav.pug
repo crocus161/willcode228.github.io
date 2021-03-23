@@ -1,44 +1,45 @@
-//- block vars
-//-     -
-//-         var menu_list = [
-//-             {
-//-                 title: 'How it Works', 
-//-                 href: '#about'
-//-             },
-//-             {
-//-                 title: 'Features',
-//-                 href: '#features'
-//-             },
-//-             {
-//-                 title: 'Team',
-//-                 href: '#team'
-//-             },
-//-             {
-//-                 title: 'Help',
-//-                 href: '#help'
-//-             },
-//-             {
-//-                 title: 'Blog',
-//-                 href: '#blog'
-//-             },
-//-             {
-//-                 title: 'Log in',
-//-                 href: '#logIn'
-//-             }
-//-         ]
+block vars
+    -
+        var menu_list = [
+            {
+                title: 'About', 
+                href: '#about'
+            },
+            {
+                title: 'Features',
+                href: '#features'
+            },
+            {
+                title: 'Pricing',
+                href: '#team'
+            },
+            {
+                title: 'Testimonials',
+                href: '#testimonials'
+            },
+            {
+                title: 'Help',
+                href: '#help'
+            }
+        ]
 
 
-//- nav.nav
-//-     .nav__wrapper.wrapper
-//-         .nav__logo
-//-             svg
-//-                 use(xlink:href="#logo")
-//-         ul.nav__menu
-//-             each value in menu_list
-//-                 +li(value.href, value.title, 'nav__link')
-//-             +svgLink('energy', '#', 'Sign Up', 'nav__button button empty')
-//-         button.nav__burger
-//-             span
-//-             span
-//-             span
-//-             span
+nav.nav
+    .nav__wrapper.wrapper
+        .nav__logo
+            svg
+                use(xlink:href="#logo")
+        ul.nav__menu
+            each value in menu_list
+                +li(value.href, value.title, 'nav__menu-item')
+        ul.nav__meta
+            li
+                a(href="#").nav__meta-item Sign In
+            li
+                a(href="#").secondary-button Sign Up
+             
+        button.nav__burger
+            span
+            span
+            span
+            span

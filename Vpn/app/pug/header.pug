@@ -1,38 +1,8 @@
-//- -
-//-     var header_cards = [
-//-         {
-//-             img: "img/dest/about/icon(1).svg", 
-//-             title: "Read it",
-//-             info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-//-         },
-//-         {
-//-             img: "img/dest/about/icon(2).svg", 
-//-             title: "Apply",
-//-             info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-//-         },
-//-         {
-//-             img: "img/dest/about/icon(3).svg", 
-//-             title: "Multiply",
-//-             info: "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
-//-         },
-//-     ]
-
-//- header.header
-//-     .header__wrapper.wrapper
-//-         .header__box
-//-             .header__text
-//-                 h1.header__text-title Listen To<wbr> The Beat Of The Web
-//-                 p.header__text-info.info First template from series templates to design web pages, using components system
-//-                 +btn('file', '#', 'Let\'s go', 'header__text-button button')
-//-             .header__img
-//-                 a(href="#")
-//-                     img(src="img/dest/header/play-video.png", alt="video-link")
-//-         .header__cards.section#about
-//-             .header__cards-hgroup.main__hgroup
-//-                 h2.header__hgroup-title.title How it works? 
-//-             .header__cards-box
-//-                 each value in header_cards
-//-                     .header__card.blur-block
-//-                         img(src=value.img, alt="icon")
-//-                         h3.header__card-title.card-title #{value.title}
-//-                         p.header__card-info.info #{value.info}
+header.header
+    .header__wrapper.wrapper.section.section__wrapper
+        .header__text.section__text
+            h1.header__text-title Want anything to be easy with <span>LaslesVPN</span>.
+            h2.header__text-subtitle.subtitle Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.
+            a(href="#").header__text-btn.button Get Started
+        .header__image.section__image
+            img(src="../img/dest/header.svg", alt="img")
