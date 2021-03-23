@@ -25,13 +25,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "jquery": "^3.3.1"
+    "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
     "gulp-imagemin": "^7.1.0",
     "gulp-pug": "^4.0.1",
-    "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "normalize.css": "^8.0.1"
   }
 }

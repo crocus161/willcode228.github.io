@@ -1,0 +1,11 @@
+=font-face($family, $path, $svg, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}.eot')
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
++font-face('Rubic', '../fonts/Rubic-Regular', 'RubicRegular', 400)
++font-face('Rubic', '../fonts/Rubic-Medium', 'RubicMedium', 500)
++font-face('Rubic', '../fonts/Rubic-Bold', 'RubicBold', 700)

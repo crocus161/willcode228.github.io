@@ -67,24 +67,12 @@ function scripts() {
 function libs_css(){
     return src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/slick-carousel/slick/slick.css'
     ])
     .pipe(concat('libs.min.css'))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
     .pipe(cleancss({level: {1: {specialComments: 0}}}))
     .pipe(dest('app/css/'))
     .pipe(browserSync.reload({stream: true}))
-}
-
-function libs_js(){
-    return src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/slick-carousel/slick/slick.js'
-    ])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(dest('app/js/'))
-    .pipe(browserSync.stream())
 }
 
 //format img
@@ -135,7 +123,7 @@ exports.cleanimg = cleanimg;
 exports.pugCompiler = pugCompiler;
 
 //****************default task*****************
-exports.default = parallel(pugCompiler, style, libs_css, libs_js, scripts, images, browsersync, startWatch);
+exports.default = parallel(pugCompiler, style, libs_css, scripts, images, browsersync, startWatch);
 
 //****************build task*****************
 exports.build = series(style, scripts, images, buildcopy);
