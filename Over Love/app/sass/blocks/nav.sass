@@ -48,6 +48,8 @@
 .nav-active
     background: $brand-white
     box-shadow: 3px 3px 10px rgba($brand-black, 0.3)
+    .nav__link
+        color: $brand-black
     .nav__logo
         svg
             fill: $brand-black
@@ -87,6 +89,8 @@
             margin-right: 0px
             color: $brand-black
             transition: $transition
+            &:hover
+                color: $brand-white
         &__burger
             display: block
             span
@@ -106,19 +110,19 @@
     .nav
         &__menu
             li
-                margin-bottom: 15px
+                margin-bottom: 5px
 @media screen and ( min-height: 440px) and (max-width: 1440px )
     .nav
         &__menu
             li
-                margin-bottom: 20px
+                margin-bottom: 10px
 @media screen and ( min-height: 540px) and (max-width: 1440px )
     .nav
         &__menu
             li
-                margin-bottom: 30px
+                margin-bottom: 20px
 @media screen and ( min-height: 600px) and (max-width: 1440px )
     .nav
         &__menu
             li
-                margin-bottom: 40px
+                margin-bottom: 30px

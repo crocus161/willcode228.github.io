@@ -123,6 +123,7 @@ ul {
 }
 
 .link {
+  display: inline-block;
   position: relative;
   z-index: 1;
   -webkit-transition: 0.3s;
@@ -328,7 +329,7 @@ ul {
 }
 
 .nav__menu li {
-  margin-right: 65px;
+  margin-right: 50px;
 }
 
 @media screen and (max-width: 992px) {
@@ -791,7 +792,7 @@ ul {
 }
 
 .footer__list li {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .footer__list-link {
