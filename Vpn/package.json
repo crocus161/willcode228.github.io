@@ -25,7 +25,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0"
+    "gulp-uglify-es": "^2.0.0",
+    "swiper": "^6.5.0"
   },
   "dependencies": {
     "gulp-imagemin": "^7.1.0",

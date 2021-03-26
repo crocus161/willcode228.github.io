@@ -63,16 +63,27 @@ function scripts() {
 }
 
 
-
+//libs functions
 function libs_css(){
     return src([
         'node_modules/normalize.css/normalize.css',
+        'node_modules/swiper/swiper-bundle.min.css'
     ])
     .pipe(concat('libs.min.css'))
     .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
     .pipe(cleancss({level: {1: {specialComments: 0}}}))
     .pipe(dest('app/css/'))
     .pipe(browserSync.reload({stream: true}))
+}
+
+function libs_js(){
+    return src([
+        'node_modules/swiper/swiper-bundle.min.js'
+    ])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js/'))
+    .pipe(browserSync.stream())
 }
 
 //format img
@@ -93,7 +104,7 @@ function startWatch() {
     watch('app/sass/**/*.sass', style);
     watch('app/*.html').on('change', browserSync.reload);
     watch('app/pug/*.pug', pugCompiler);
-    // watch('app/img/src/**/*', images);
+    watch('app/img/src/**/*', images);
 }
 
 //build function
@@ -123,7 +134,7 @@ exports.cleanimg = cleanimg;
 exports.pugCompiler = pugCompiler;
 
 //****************default task*****************
-exports.default = parallel(pugCompiler, style, libs_css, scripts, images, browsersync, startWatch);
+exports.default = parallel(pugCompiler, style, libs_css, libs_js, scripts, images, browsersync, startWatch);
 
 //****************build task*****************
 exports.build = series(style, scripts, images, buildcopy);

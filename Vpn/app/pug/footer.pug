@@ -1,96 +1,106 @@
-//- -
-//-     var footer_list_products = [
-//-             {
-//-                 title: 'Product', 
-//-                 href: '#product'
-//-             },
-//-             {
-//-                 title: 'How it works',
-//-                 href: '#about'
-//-             },
-//-             {
-//-                 title: 'Pricing',
-//-                 href: '#price'
-//-             },
-//-             {
-//-                 title: 'Testimonials',
-//-                 href: '#help'
-//-             }
-//-         ];
-//-     var footer_list_about = [
-//-             {
-//-                 title: 'About form', 
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'Our team',
-//-                 href: '#team'
-//-             },
-//-             {
-//-                 title: 'Careers',
-//-                 href: '#career'
-//-             },
-//-             {
-//-                 title: 'Press',
-//-                 href: '#help'
-//-             },
-//-             {
-//-                 title: 'Store',
-//-                 href: '#help'
-//-             }
-//-         ];
-//-     var footer_list_connect = [
-//-             {
-//-                 title: 'Connect', 
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'Facebook',
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'Twitter',
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'Instagram',
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'Linkedin',
-//-                 href: '#'
-//-             }
-//-         ];
-//-     var footer_list_contact = [
-//-             {
-//-                 title: 'Contact', 
-//-                 href: '#'
-//-             },
-//-             {
-//-                 title: 'info@gmail.com',
-//-                 href: 'mailto:info@gmail.com'
-//-             },
-//-             {
-//-                 title: '000-000-0000',
-//-                 href: 'tel:000-000-0000'
-//-             },
-//-             {
-//-                 title: '0000 Willa River Suite 000',
-//-                 href: '#'
-//-             }
-//-         ];
+-
+    var footer_list_products = [
+            {
+                title: 'Product', 
+                href: '#product'
+            },
+            {
+                title: 'Download',
+                href: '#download'
+            },
+            {
+                title: 'Pricing',
+                href: '#price'
+            },
+            {
+                title: 'Locations',
+                href: '#locations'
+            },
+            {
+                title: 'Servers',
+                href: '#servers'
+            },
+            {
+                title: 'Countries',
+                href: '#countries'
+            },
+            {
+                title: 'Blog',
+                href: '#blog'
+            }
+        ];
+    var footer_list_engage = [
+            {
+                title: 'Engage', 
+                href: '#'
+            },
+            {
+                title: 'LaslesVPN ?',
+                href: '#lasles'
+            },
+            {
+                title: 'Faq',
+                href: '#faq'
+            },
+            {
+                title: 'Tutorials',
+                href: '#tutorials'
+            },
+            {
+                title: 'About us',
+                href: '#about'
+            },
+            {
+                title: 'Privacy Policy',
+                href: '#policy'
+            },
+            {
+                title: 'Terms of Service',
+                href: '#service'
+            }
+        ];
+    var footer_list_earn = [
+            {
+                title: 'Earn money', 
+                href: '#'
+            },
+            {
+                title: 'Affiliate',
+                href: '#'
+            },
+            {
+                title: 'Become Partner',
+                href: '#'
+            },
+        ];
 
-//- .footer.section#help
-//-     .footer__wrapper.wrapper
-//-         ul.footer__list
-//-             each value in footer_list_products
-//-                 +li(value.href, value.title)
-//-         ul.footer__list
-//-             each value in footer_list_about
-//-                 +li(value.href, value.title)
-//-         ul.footer__list
-//-             each value in footer_list_connect
-//-                 +li(value.href, value.title)
-//-         ul.footer__list
-//-             each value in footer_list_contact
-//-                 +li(value.href, value.title)
+.footer#help
+    .footer__wrapper.wrapper
+        .footer__subscribe
+            .footer__subscribe-hgroup
+                h2.footer__subscribe-title.title Subscribe Now for Get Special Features!
+                h3.footer__subscribe-subtitle.subtitle Let's subscribe with us and find the fun.
+            button.footer__popup-open.button Subscribe Now
+        .footer__box
+            .footer__meta
+                +svg('logo')
+                p.footer__meta-info.info LaslesVPN is a private virtual network that has unique features and has high security.
+                ul.footer__meta-social
+                    li
+                        a(href="#")   
+                            img(src="img/dest/social-icons/facebook.svg", alt="facebook")
+                    li
+                        a(href="#")  
+                            img(src="img/dest/social-icons/instagram.svg", alt="instagram")
+                    li
+                        a(href="#")  
+                            img(src="img/dest/social-icons/twitter.svg", alt="twitter")
+            ul.footer__list
+                each value in footer_list_products
+                    +li(value.href, value.title)
+            ul.footer__list
+                each value in footer_list_engage
+                    +li(value.href, value.title)
+            ul.footer__list
+                each value in footer_list_earn
+                    +li(value.href, value.title)

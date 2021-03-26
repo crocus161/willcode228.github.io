@@ -19,7 +19,7 @@
             price: '$12 / mo'
         },
     ]
-.plan.section
+.plan.section#pricing
     .plan__wrapper.wrapper
         .plan__hgroup.hgroup
             h2.plan__hgroup-title.title Choose Your Plan
@@ -36,5 +36,5 @@
                                     +svg('check-mark')  
                                 | #{note}
                     h4.plan__card-price.card-title #{value.price}
-                    a(href="#").secondary-button Select
+                    a(href="#").plan__card-button.secondary-button Select
 

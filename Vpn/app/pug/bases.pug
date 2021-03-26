@@ -1,5 +1,5 @@
 -
-    var lang = "zxx";
+    var lang = "en";
     var titlePage = "LaslesVpn";
 
 <!DOCTYPE html>
@@ -11,9 +11,11 @@ html(lang=lang)
         title #{titlePage}
         //-MAIN MINIMIZATION STYLES
         link(rel="stylesheet", href="css/app.min.css")
-        //- NORMALIZE AND SLICK STYLES CONNECTING 
+        //- NORMALIZE AND SWIPER STYLES CONNECTING 
         link(rel="stylesheet", href="css/libs.min.css")
     body
         block content
+        //- SWIPER SCRIPTS CONNECTING
+        script(src="js/libs.min.js")
         //- MAIN MINIMIZATION SCRIPTS
         script(src="js/app.min.js")

@@ -1,0 +1,67 @@
+-
+    var reviews_card = [
+        {
+            ava: 'img/dest/reviews/reviews(1).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'This is very unusual for my business that currently requires a virtual private network that has high security.'
+        },
+        {
+            ava: 'img/dest/reviews/reviews(2).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.'
+        },
+        {
+            ava: 'img/dest/reviews/reviews(3).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'I like it because I like to travel far and still can connect with high speed.'
+        },
+        {
+            ava: 'img/dest/reviews/reviews(1).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'This is very unusual for my business that currently requires a virtual private network that has high security.'
+        },
+        {
+            ava: 'img/dest/reviews/reviews(2).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.'
+        },
+        {
+            ava: 'img/dest/reviews/reviews(3).png',
+            name: 'Viezh Robert',
+            from: 'Warsaw, Poland',
+            mark: '4.5',
+            info: 'I like it because I like to travel far and still can connect with high speed.'
+        },
+    ]
+.reviews.section#testimonials
+    .reviews__hgroup.hgroup.wrapper
+        h2.reviews__hgroup-title.title Trusted by Thousands of Happy Customer
+        h3.reviews__hgroup-subtitle.subtitle These are the stories of our customers who have joined us with great pleasure when using this crazy feature.
+    .reviews__wrapper.wrapper
+        .reviews__box.swiper-container
+            .swiper-wrapper
+                each value in reviews_card
+                    .reviews__card.swiper-slide
+                        .reviews__card-meta
+                            .previews__card-ava
+                                img(src=value.ava, alt="ava")
+                            .reviews__card-personal
+                                h3.reviews__card-name #{value.name}
+                                h4.reviews__card-from.subtitle #{value.from}
+                            p.reviews__card-mark
+                                | #{value.mark}
+                                img(src="img/dest/general/star.svg", alt="star")
+                        p.reviews__card-info.info #{value.info}
+            //- pagination
+            .swiper-pagination
+
