@@ -1,0 +1,170 @@
+.header
+    min-height: 530px
+    background: $brand-black
+    padding-bottom: 50px
+    &__wrapper
+        position: relative
+    &__recommends
+        position: absolute
+        margin-top: 20px
+        width: 100%
+        border-radius: $radius
+        overflow: hidden
+        display: flex
+        &-meta
+            position: absolute
+            top: 55px
+            left: 55px
+            display: flex
+            align-items: center
+            &__ava
+                margin-right: 10px
+            &__hgroup
+                &-title
+                    @include sm-size
+                    color: $brand-white
+                &-subtitle
+                    color: rgba($brand-white, 0.4)
+        &-body
+            position: relative
+            z-index: 1
+            overflow: hidden
+            &__info
+                padding: 250px 0px 100px 55px 
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: flex-end
+            &__subtitle
+                color: $brand-blue
+                margin-bottom: 25px
+            &__title
+                display: inline-block
+                width: 70%
+                color: $brand-white
+                margin-bottom: 45px
+            &__btngroup
+                display: flex
+                flex-wrap: wrap
+                &-btn
+                    margin-right: 30px
+                    img
+                        margin-left: 8px
+                        width: 15px
+                        height: 7px
+                &-play
+                    display: flex
+                    align-items: center
+                &-link
+                    width: 50px
+                    height: 50px
+                    display: grid
+                    place-items: center
+                    border: 1px solid $brand-white
+                    border-radius: 50%
+                    margin-right: 10px
+                &-title,
+                &-subtitle
+                    color: rgba($brand-white, 0.7)
+        &-bg
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: -1
+        &-tabs
+            flex-grow: 1
+            width: 275px
+            background: $brand-blue
+    &__articles
+        background: $secondary-black
+        border-radius: $radius
+        display: flex
+        justify-content: center
+        padding: 25px 0px
+        &-link
+            flex: 0 1 300px
+            min-height: 130px
+            padding: 0px 25px
+            display: inline-flex
+            align-items: center
+            justify-content: center
+        &-link:not(:last-child)
+            border-right: 1px solid $secondary-grey
+        &-title
+            font-weight: 700
+            color: $brand-white
+        &-img
+            margin-left: 15px
+            min-width: 65px
+            height: 65px
+            img
+                object-fit: cover
+                width: 100%
+                height: 100%
+    &__menu
+        width: 100%
+        padding: 17px 0px
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &-link
+            margin-top: 10px
+            color: $brand-white
+            text-transform: uppercase
+        li:not(:last-child)
+            margin-right: 25px
+
+@media screen and ( max-width: 992px )
+    .header
+        &__menu
+            &-link
+                margin: 10px
+            li:not(:last-child)
+                margin-right: 0px
+        &__articles
+            width: 100%
+            margin: auto
+            flex-wrap: wrap
+            &-link
+                flex: 0 0 40%
+                height: 80px
+            &-link:not(:last-child)
+                border-right: 0px
+        &__recommends
+            &-meta
+                top: 50px
+                left: 25px
+                &__ava
+                &__hgroup
+                    &-title
+                    &-subtitle
+            &-body
+                &__info
+                    padding: 100px  0px 50px 25px 
+                &__btngroup
+                    &-btn
+                        margin-bottom: 20px
+
+@media screen and ( max-width: 768px )
+    .header
+        &__articles
+            width: 100%
+            &-link
+                flex: 0 0 100%
+            &-link:not(:last-child)
+                border-right: 0px
+                border-bottom: 1px solid $secondary-grey
+
+@media screen and ( max-width: 576px )
+    .header
+        &__recommends
+            flex-direction: column
+            &-tabs
+                width: 100%
+                min-height: 200px

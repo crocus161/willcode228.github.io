@@ -1,0 +1,44 @@
+.subnav
+    &__wrapper,
+    &__hgroup,
+    &__meta,
+    &__place
+        display: flex
+        align-items: center
+    &__hgroup
+        justify-content: center
+        flex: 0 0 40%
+    &__meta,
+    &__place
+        flex: 0 0 30%
+        height: 84px
+    &__meta
+        justify-content: flex-end
+    &__place
+        justify-content: flex-start
+        img
+            margin-right: 15px
+    &__date
+        margin-right: 24px
+    &__date,
+    &__weather,
+    &__info
+        color: $secondary-grey
+
+@media screen and ( max-width: 992px )
+    .subnav
+        &__meta
+            display: none
+        &__place,
+        &__hgroup
+            flex: 0 0 50%
+@media screen and ( max-width: 576px )
+    .subnav
+        &__wrapper
+            flex-wrap: wrap
+            width: 95%
+        &__hgroup
+            display: none
+        &__place
+            flex: 0 0 100%
+            justify-content: center
