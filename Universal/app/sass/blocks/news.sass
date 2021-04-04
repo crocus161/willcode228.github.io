@@ -1,0 +1,42 @@
+.news
+    min-height: 530px
+    background: $brand-grey
+    &__wrapper
+    &__aside
+        width: 265px
+        background: $brand-blue
+        border-radius: $radius
+        &-title
+            color: $brand-white
+        &-item
+            display: block
+            padding: 45px 0px
+            &__title
+                margin-bottom: 15px
+                color: $brand-white
+                position: relative
+                z-index: 1
+                &::before
+                    content: '"'
+                    position: absolute
+                    top: 30px
+                    left: 0
+                    font-size: 150px
+                    color: rgba($brand-white, 0.4)
+                    z-index: -1
+        &-meta
+            display: flex
+            align-items: center
+            &__name,
+            &__job
+                color: rgba($brand-white, 0.4)
+            &__name
+                @include sm-size
+            &__ava
+                margin-right: 10px
+                width: 45px
+                height: 45px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover

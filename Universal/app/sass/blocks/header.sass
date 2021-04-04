@@ -1,10 +1,25 @@
 .header
     min-height: 530px
-    background: $brand-black
     padding-bottom: 50px
+    position: relative
+    z-index: 1
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+        z-index: -1
+    &::before
+        top: 0 
+        height: 75%
+        background: $brand-black
+    &::after
+        bottom: 0
+        height: 26%
+        background: $brand-grey
     &__recommends
         margin-top: 20px
-        margin-bottom: -50%
         width: 100%
         border-radius: $radius
         overflow: hidden
@@ -24,6 +39,7 @@
             &__hgroup
                 min-height: 50px
             &__item
+                display: block
                 flex-grow: 1
                 min-height: 100px
                 &-subtitle
@@ -170,7 +186,6 @@
 @media screen and ( max-width: 768px )
     .header
         &__articles
-            width: 100%
             &-link
                 flex: 0 0 100%
             &-link:not(:last-child)
@@ -179,8 +194,9 @@
 
 @media screen and ( max-width: 576px )
     .header
+        &::after
+            background: $brand-black
         &__recommends
-            margin-bottom: 0
             flex-direction: column
             &-tabs
                 width: 100%
