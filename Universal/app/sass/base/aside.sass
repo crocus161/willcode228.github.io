@@ -1,5 +1,7 @@
 .aside
     border-radius: $radius
+    display: flex
+    flex-direction: column
     &__hgroup
         &-title
             @include sm-size
@@ -13,6 +15,11 @@
             text-align: center
             border-top: 1px solid rgba($brand-white, 0.5)
     &__wrapper
+        display: flex
+        flex-direction: column
+        flex-grow: 1
         padding: 0px 25px
+    &__item
+        flex-grow: 1
     &__item:not(:last-child)
         border-bottom: 1px solid rgba($brand-white, 0.5)
