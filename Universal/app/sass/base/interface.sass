@@ -33,6 +33,9 @@ ul
 .section
     width: 100%
     padding: 60px 0px
+//*****MAIN SPRITE*****//
+.main-sprite
+    display: none
 //*****MAIN TITLES*****//
 .title,
 .lg-title,
@@ -52,6 +55,7 @@ ul
     letter-spacing: 0.5px
     text-transform: uppercase
 .lg-card-title
+    font-weight: 700
     font-size: 16px
     line-height: 25px
 //*****MAIN SUBTITLE*****//
@@ -63,6 +67,8 @@ ul
 //*****MAIN INFO*****//
 .info
     @include sm-size
+    line-height: 20px
+    font-weight: 400
 //*****MAIN BUTTON*****//
 .button
     display: inline-flex
@@ -79,6 +85,11 @@ ul
     display: inline-block
     letter-spacing: 0.5px
     @include sm-size
+//*****MAIN DATE*****//
+.date
+    @include sm-size
+    color: $brand-grey
+
 
 //*****MEIDA QUERIES*****//
 @media screen and ( max-width: 1400px )
@@ -107,8 +118,12 @@ ul
         line-height: 35px
     .title
         font-size: 18px
+    .subtitle
+        font-size: 10px
     .lg-card-title
         font-size: 14px
+    .card-title
+        font-size: 12px
 @media screen and ( max-width: 319px )
     .wrapper
         width: 270px

@@ -11,6 +11,15 @@
 </head>
 <body>
 
+    <svg class="main-sprite">
+        <symbol viewBox="0 0 15 14" id="messages">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.135 11v3L8.36 11H2.25a1.5 1.5 0 01-1.5-1.5V2A1.5 1.5 0 012.25.5h10.5a1.5 1.5 0 011.5 1.5v7.5a1.5 1.5 0 01-1.5 1.5h-1.615z"/>
+        </symbol>
+        <symbol viewBox="0 0 13 13" id="heart">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.84 1.96C11.17 1.212 10.28.8 9.334.8c-.947 0-1.74.412-2.41 1.16l-.425.68-.425-.68C5.406 1.212 4.612.8 3.665.8c-.945 0-1.835.412-2.504 1.16-1.381 1.546-1.381 4.06 0 5.604l4.949 4.757a.523.523 0 00.393.179c.14 0 .28-.06.387-.18l4.95-4.756c1.38-1.544 1.38-4.058 0-5.604z"/>
+        </symbol>
+    </svg>
+
     <div class="container">
 
         <nav class="nav">
@@ -166,14 +175,14 @@
         </header>
         <!-- /.header -->
 
-        <main class="main" style="height: 5000px;">
+        <main class="main">
         
             <div class="news section">
                 <div class="news__wrapper wrapper">
 
                     <div class="news__body">
 
-                        <div class="news__body-item cars">
+                        <a href="#" class="news__body-item cars">
 
                             <div class="news__body-item__top cars__top">
 
@@ -194,13 +203,13 @@
                                 <img class="cars__bottom-ava" src="img/dest/news/body/cars/ava.png" alt="ava">
                                 <h5 class="cars__bottom-name">Jessica Miller:</h5>
                                 <p class="cars__bottom-info info">Even as the ride-hailing service’s future remem…</p>
-                                <img class="cars__bottom-comments__icon" src="img/dest/general/comment.svg" alt="comments">
+                                <svg class="cars__bottom-comments__icon"><use xlink:href="#messages"></use></svg>
                                 <p class="cars__bottom-comments__info info">435</p>
                             </div>
                             <!-- /.news__body-item__bottom  -->
 
-                        </div>
-                        <div class="news__body-item tattoo">
+                        </a>
+                        <a href="#" class="news__body-item tattoo">
                             <h4 class="tattoo__subtitle subtitle">Art & Design</h4>
                             <h3 class="tattoo__title lg-card-title">Invisible ink: the weird world of tattoo removal – in pictures</h3>
 
@@ -212,15 +221,15 @@
                                     <h4 class="tattoo__meta-title">By Sarah Jenkins</h4>
 
                                     <div class="tattoo__meta-numbers">
-                                        <p class="tattoo__meta-date">Sept 26</p>
+                                        <p class="tattoo__meta-date date">Sept 26</p>
 
                                         <div class="tattoo__meta-comments">
-                                            <img class="tattoo__meta-comments__icon" src="img/dest/general/comment.svg" alt="comments" />
+                                            <svg class="tattoo__meta-comments__icon"><use xlink:href="#messages"></use></svg>
                                             <h3 class="tattoo__meta-comments__counter info">435</h3>
                                         </div> 
 
                                         <div class="tattoo__meta-likes">
-                                            <img class="tattoo__meta-likes__icon" src="img/dest/general/heart.svg" alt="heart" />
+                                            <svg class="tattoo__meta-likes__icon"><use xlink:href="#heart"></use></svg>  
                                             <h3 class="tattoo__meta-likes__counter info">435</h3>
                                         </div> 
 
@@ -228,12 +237,38 @@
                                     
                                 </div>
                             </div>
-                        </div>
-                        <div class="news__body-item"></div>
-                        <div class="news__body-item"></div>
-                        <div class="news__body-item"></div>
-                        <div class="news__body-item"></div>
-                        <div class="news__body-item"></div>
+                        </a>
+
+                        <a href="#" class="news__body-item cats">
+                            <div class="cats__img">
+                                <img src="img/dest/news/body/cat/cat.png" alt="cat">
+                            </div>
+                            <div class="cats__text">
+                                <h3 class="cats__text-title lg-card-title">200+ Doomed Cats Saved From Euthanization</h3>
+                            </div>
+                        </a>
+
+                        
+                        <a href="#" class="news__body-item article">
+                            <h3 class="article__title lg-card-title">Is Coffee Bad for Bones?</h3>
+                            <p class="article__info info">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</p>
+                            <p class="article__date date">Oct 15</p>
+                        </a>
+                        <a href="#" class="news__body-item article">
+                            <h3 class="article__title lg-card-title">What We Manufacture</h3>
+                            <p class="article__info info">A global history of the factory and the modern world that all should read</p>
+                            <p class="article__date date">Oct 14</p>
+                        </a>
+                        <a href="#" class="news__body-item article">
+                            <h3 class="article__title lg-card-title">It’s a Stressful World</h3>
+                            <p class="article__info info">Can a cruise skeptic enjoy four days on the seas with his family and a bunch of princesses?</p>
+                            <p class="article__date date">Oct 14</p>
+                        </a>
+                        <a href="#" class="news__body-item article">
+                            <h3 class="article__title lg-card-title">A Treat for Lemon Lovers</h3>
+                            <p class="article__info info">This tangerine, ginger and chocolate tart has verve, depth and a hint of spice</p>
+                            <p class="article__date date">Oct 13</p>
+                        </a>
                     </div>
                     <!-- /.news__body -->
                     <ul class="news__aside aside">
@@ -242,7 +277,7 @@
                             <h2 class="news__aside-title aside__hgroup-title">Columns</h2>
                         </li>
                         <ul class="aside__wrapper news__aside-wrapper">
-                                <li class="news__aside-item aside__item">
+                            <li class="news__aside-item aside__item">
                                 <h3 class="news__aside-item__title title">Architecture is the thoughtful making of space</h3>
                                 <div class="news__aside-meta">
                                     <div class="news__aside-meta__ava">
