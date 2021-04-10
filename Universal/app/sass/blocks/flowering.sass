@@ -1,0 +1,23 @@
+.flowering
+    min-height: 270px
+    background: url('../img/dest/flowering/flowering-bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    &__title
+        display: inline-block
+        width: 70%
+        color: $brand-white
+        text-align: center
+        margin-bottom: 25px
+
+@media screen and ( max-width: 576px )
+    .flowering
+        &__title
+            width: 100%
+    

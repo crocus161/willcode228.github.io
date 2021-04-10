@@ -1,0 +1,29 @@
+.articles
+    background: $brand-grey
+    &__aside
+        background: $brand-white
+        width: 265px
+        &-wrapper
+            flex-grow: 0
+            padding: 0px 10px
+        &-hgroup
+            border-color: $brand-grey 
+        &-item
+            flex-grow: 0
+            padding: 20px
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                border-color: $brand-grey 
+            &__img
+                min-width: 60px
+                height: 60px
+                margin-right: 10px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            &__title
+                @include sm-size
+                margin-bottom: 5px
+                font-weight: 700
