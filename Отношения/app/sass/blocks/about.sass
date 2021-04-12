@@ -1,0 +1,34 @@
+.about
+    overflow: hidden
+    .about__men,
+    .about__women
+        position: absolute
+        top: 50%
+        width: 250px
+        z-index: -1
+        transform-origin: center
+        transform: translateY(-50%)
+    .about__men
+        left: 0
+        transform: translateY(-50%) rotate(40deg)
+    .about__women
+        right: 0
+        transform: translateY(-50%) rotate(100deg)
+    &__title
+        margin-top: 100px
+
+@media screen and ( max-width: 576px )
+    .about
+        .about__men,
+        .about__women
+            width: 250px
+        &__subtitle
+            display: none
+        &__title
+            margin-top: 0
+@media screen and ( max-width: 360px )
+    .about
+        .about__men,
+        .about__women
+            display: none
+    

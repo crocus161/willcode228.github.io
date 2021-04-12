@@ -1,0 +1,54 @@
+.expert
+    &__wrapper
+    &__hgroup
+        background: url('../img/dest/general/gradient-right.png')
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 130px
+        padding: 50px
+        position: relative
+        z-index: 1
+        &-women
+            position: absolute
+            width: 200px
+            left: 10px
+            top: 5px
+            z-index: -1
+    &__body
+        display: flex
+        &-men
+            position: absolute
+            width: 250px
+            left: 50%
+            top: 50%
+            z-index: -1
+            transform: translate(-50%, -50%) rotate(-40deg)
+        &-img
+            min-width: 50%
+            img
+                width: 100%
+                object-fit: cover
+        &-text
+            overflow: hidden
+            padding-top: 50px
+            text-align: center
+            position: relative
+            z-index: 1
+            &__info
+                margin: 50px 0px 20px 0px
+        
+@media screen and ( max-width: 576px )
+    .expert
+        &__body
+            flex-direction: column
+            &-men
+                width: 100px
+            &-img
+                min-width: 80%
+        &__hgroup
+            flex-direction: column-reverse
+            .button
+                margin-top: 40px

@@ -1,0 +1,63 @@
+.readers
+    background: $brand-black
+    min-height: 690px
+    &__wrapper
+        display: flex
+        justify-content: center
+        gap: 20px
+    &__choice,
+    &__careers
+        flex: 0 0 45%
+        min-height: 570px
+        border-radius: $radius
+    &__choice
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: url('../img/dest/readers/bg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        padding: 50px
+        text-align: center
+        &-img
+            width: 45px
+            height: 45px
+            img
+                object-fit: cover
+                width: 100%
+                height: 100%
+        &-name
+            @include sm-size
+        &-job,
+        &-name
+            color: $brand-grey
+        &-meta
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 30px
+        &-title
+            color: $brand-white
+            margin-bottom: 45px
+        &-button
+            svg
+                margin-right: 10px
+            .counter
+                color: $brand-grey
+    &__careers
+        &-item
+            border-radius: $radius
+            &:nth-child(1)
+                width: 100%
+                min-height: 370px
+                background: $brand-blue
+            &__wrapper
+                display: flex
+                margin-top: 10px
+                gap: 10px
+                &-item
+                    width: 50%
+                    min-height: 200px
+                    border-radius: $radius
+                    background: $brand-white

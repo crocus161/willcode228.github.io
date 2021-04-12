@@ -1,0 +1,46 @@
+.magnet
+    position: relative
+    overflow: hidden
+    &__women,
+    &__men
+        position: absolute
+        width: 200px
+    &__women
+        top: 20px
+        left: 20px
+        transform: rotate(-20deg)
+    &__men
+        bottom: 30px
+        right: 30px
+        transform: rotate(-20deg)
+    &__info
+        display: flex
+        &:first-child
+            justify-content: flex-end
+        &:last-child
+            justify-content: flex-start
+        &-text
+            display: block
+            width: 60%
+            text-align: center
+            margin: 30px 0px
+            position: relative
+            z-index: 5
+    &__img
+        width: 100%
+        img
+            object-fit: cover
+            width: 100%
+@media screen and ( max-width: 992px )
+    .magnet
+        &__women,
+        &__men
+            width: 100px
+@media screen and ( max-width: 576px )
+    .magnet
+        &__info
+            &:first-child,
+            &:last-child
+                justify-content: center
+            &-text
+                width: 80%
