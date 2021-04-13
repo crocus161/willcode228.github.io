@@ -70,6 +70,13 @@
                 display: flex
                 justify-content: center
                 border-bottom: 1px solid $brand-white
+                &-close
+                    display: none
+                    position: absolute
+                    top: 20px
+                    right: 20px
+                    font-size: 30px
+                    color: $brand-black
                 &-item
                     display: inline-block
                     font-weight: 200
@@ -118,6 +125,25 @@
                 &__list
                     position: fixed
                     top: -100vh
+                    left: 0
+                    width: 100%
+                    min-height: 100vh
+                    background: $brand-white
+                    z-index: 9999
+                    border-bottom: 0px solid $brand-white
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    opacity: 0
+                    transition: $transition
+                    &-active
+                        opacity: 1
+                        top: 0vh
+                    &-item
+                        margin-right: 0px
+                    &-close
+                        display: block
+                    
                     
 @media screen and ( max-width: 768px )
     .header
