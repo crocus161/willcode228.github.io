@@ -1,11 +1,16 @@
 .header
     width: 100%
     margin: auto
-    background: url('../img/dest/header/bg.png')
-    background-size: cover
-    background-repeat: no-repeat
     background-position: center
     position: relative
+    &__bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        object-fit: cover
+        z-index: 1
     &__women,
     &__men
         width: 200px
@@ -13,6 +18,31 @@
         position: absolute
         top: 10%
         z-index: -1
+    &__laptop
+        &-women,
+        &-men
+            position: absolute
+            z-index: 1
+        &-women
+            top: 100px
+            left: 60px
+            animation: floating2 2s linear infinite alternate
+            opacity: 0.5
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                display: block
+                width: 100%
+                height: 100%
+                background: $brand-white
+                z-index: 3
+        &-men
+            top: 120px
+            right: 40px
+            z-index: 3
+            animation: floating 2s linear infinite alternate
     &__wrapper
         min-height: 100vh
         padding-top: 80px
@@ -20,6 +50,8 @@
         flex-direction: column
         align-items: flex-end
         justify-content: flex-end
+        position: relative
+        z-index: 3
     &__info
         width: 100%
         padding: 20px 50px
@@ -130,6 +162,10 @@
                     font-size: 40px
 @media screen and ( max-width: 1200px )
     .header
+        &__laptop
+            &-women,
+            &-men
+                display: none
         &__body
             .nav
                 margin-left: 0
@@ -168,6 +204,8 @@
     .header
         background: none
         overflow: hidden
+        &__bg
+            display: none
         &__women,
         &__men
             display: block
