@@ -100,6 +100,22 @@
             border-radius: 75px
             color: $brand-red
 
+@keyframes floating 
+  from 
+    transform: translate(0, 0px)
+  65% 
+    transform: translate(-5px, 10px)
+  to 
+    transform: translate(0, -0px)
+  
+@keyframes floating2 
+  from 
+    transform: translate(0, 0px)
+  65% 
+    transform: translate(5px, 10px)
+  to 
+    transform: translate(0, -0px)
+
 @media screen and ( max-width: 1400px )
     .header
         &__hgroup
@@ -155,8 +171,10 @@
             transform: rotate(-30deg)
         &__women
             left: 60px
+            animation: floating2 2s linear infinite alternate
         &__men
             right: 60px
+            animation: floating 2s linear infinite alternate
         &__wrapper
             padding-top: 0px
             align-items: center
