@@ -22,6 +22,19 @@
             display: flex
             align-items: center
             padding: 25px
+            transition: $transition
+            &:hover
+                background: $secondary-blue
+                .date
+                    color: $brand-white
+                svg
+                    fill: $brand-white
+                .articles
+                    &__meta
+                        &-likes,
+                        &-comments
+                            &__counter
+                                color: $brand-white
             &__img
                 width: 340px
                 height: 195px
@@ -64,16 +77,22 @@
             padding: 20px
             display: flex
             align-items: center
+            transition: $transition
+            &:hover
+                img
+                    transform: scale(1.2)
             &:not(:last-child)
                 border-color: $brand-grey 
             &__img
                 min-width: 60px
                 height: 60px
                 margin-right: 10px
+                overflow: hidden
                 img
                     width: 100%
                     height: 100%
                     object-fit: cover
+                    transition: $fst-transition
             &__title
                 display: inline-block
                 @include sm-size

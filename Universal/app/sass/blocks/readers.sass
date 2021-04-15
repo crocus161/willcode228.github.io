@@ -4,7 +4,7 @@
     &__wrapper
         display: flex
         justify-content: center
-        gap: 20px
+        gap: 10px
     &__choice,
     &__careers
         flex: 0 0 45%
@@ -47,11 +47,12 @@
                 color: $brand-grey
     &__careers
         &-item
+            display: flex
             border-radius: $radius
-            &:nth-child(1)
-                width: 100%
-                min-height: 370px
-                background: $brand-blue
+            padding: 35px
+            width: 100%
+            min-height: 370px
+            background: $secondary-blue
             &__wrapper
                 display: flex
                 margin-top: 10px
@@ -61,3 +62,46 @@
                     min-height: 200px
                     border-radius: $radius
                     background: $brand-white
+                    padding: 25px
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+        &-text
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            &__title
+                margin-top: 20px
+                margin-bottom: 15px
+            &__info
+                margin-bottom: 25px
+        &-img
+            margin-left: 20px
+            min-width: 50%
+            img 
+                width: 100%
+                object-fit: cover
+
+@media screen and ( max-width: 992px )
+    .readers
+        &__wrapper
+            flex-direction: column
+@media screen and ( max-width: 576px )
+    .readers
+        &__choice
+            padding: 25px
+        &__careers
+            &-item
+                flex-direction: column-reverse
+                &__wrapper
+                    flex-direction: column
+                    &-item
+                        width: 100%
+                        min-height: 150px
+            &-img
+                margin-bottom: 20px
+
+
+

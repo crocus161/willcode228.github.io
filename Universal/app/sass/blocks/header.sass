@@ -12,11 +12,11 @@
         z-index: -1
     &::before
         top: 0 
-        height: 75%
+        height: 65%
         background: $brand-black
     &::after
-        bottom: 0
-        height: 26%
+        bottom: 0px
+        height: 38%
         background: $brand-grey
     &__recommends
         margin-top: 20px
@@ -34,6 +34,9 @@
             &__item
                 padding: 20px 25px
                 border-bottom: 1px solid $brand-grey
+                transition: $fst-transition
+                &:hover
+                    background: $secondary-blue
             &__item:last-child
                 border-bottom: 0px  
             &__hgroup
@@ -118,6 +121,14 @@
         display: flex
         justify-content: center
         padding: 25px 0px
+        &:hover
+            .header__articles-link
+                opacity: .3
+                &:hover
+                    opacity: 1
+                    .header__articles-img
+                        img
+                            transform: scale(1.2)
         &-link
             flex: 0 1 300px
             min-height: 130px
@@ -125,6 +136,7 @@
             display: inline-flex
             align-items: center
             justify-content: center
+            transition: $fst-transition
         &-link:not(:last-child)
             border-right: 1px solid $secondary-grey
         &-title
@@ -134,10 +146,12 @@
             margin-left: 15px
             min-width: 65px
             height: 65px
+            overflow: hidden
             img
                 object-fit: cover
                 width: 100%
                 height: 100%
+                transition: $fst-transition
     &__menu
         width: 100%
         padding: 17px 0px
@@ -186,6 +200,10 @@
 
 @media screen and ( max-width: 768px )
     .header
+        &::before
+            height: 75%
+        &::after
+            height: 25%
         &__articles
             &-link
                 flex: 0 0 100%

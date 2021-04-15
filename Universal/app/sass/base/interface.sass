@@ -76,6 +76,13 @@ ul
     padding: 10px 25px
     border-radius: 30px
     background: $brand-accent
+    transition: $transition
+    &:hover
+        background: $brand-blue
+        svg
+            fill: $brand-black
+        img
+            transform: translateX(5px)
     span
         display: block
         margin-right: 10px
@@ -85,11 +92,32 @@ ul
         width: 19px
         height: 15px
         fill: $brand-white
+    img,
+    svg
+        transition: $fst-transition
 //*****MAIN LINK*****//
 .link
     display: inline-block
+    padding: 5px
     letter-spacing: 0.5px
     @include sm-size
+    transition: $transition
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 0
+        height: 100%
+        background: $brand-white
+        transition: $transition
+        z-index: -1
+    &:hover
+        color: $brand-black
+        &::before
+            width: 100%
+        
 //*****MAIN DATE*****//
 .date
     @include sm-size
