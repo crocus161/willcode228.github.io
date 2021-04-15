@@ -136,6 +136,7 @@
   -https://willcode228.github.io/Бухгалтерские%20услуги/
 
   Новые пректы
+  -https://willcode228.github.io/%D0%9E%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F/dist/
   -https://willcode228.github.io/Collibra/dist/
   -https://willcode228.github.io/New%20Providence/
   -https://willcode228.github.io/Headphone/dist/
@@ -149,7 +150,8 @@
   -https://willcode228.github.io/Blank/dist/
   -https://willcode228.github.io/Over%20Love/dist/
   -https://willcode228.github.io/Vpn/dist/
-        
+  -https://willcode228.github.io/Universal/dist/  
+   
  А здесь на JS проекты:
  
   -https://willcode228.github.io/Dino/
