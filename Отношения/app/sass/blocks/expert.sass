@@ -17,6 +17,19 @@
             left: 10px
             top: 5px
             z-index: -1
+    &__meta
+        position: relative
+        z-index: 10
+        display: none
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 50px 10px
+        .button
+            margin-bottom: 25px
+    &__hgroup
+        &-name
+            display: none
     &__body
         display: flex
         &-men
@@ -28,6 +41,8 @@
             transform: translate(-50%, -50%) rotate(-40deg)
         &-img
             min-width: 50%
+            position: relative
+            z-index: 10
             img
                 width: 100%
                 object-fit: cover
@@ -39,16 +54,35 @@
             z-index: 1
             &__info
                 margin: 50px 0px 20px 0px
-        
+
+@media screen and ( max-width: 992px )
+    .expert
+        &__hgroup
+            flex-direction: column
 @media screen and ( max-width: 576px )
     .expert
+        &__meta
+            display: flex
         &__body
             flex-direction: column
             &-men
                 width: 100px
             &-img
                 min-width: 80%
+            &-name
+                display: none
+            &-text
+                padding: 25px 0px
+                &__info
+                    margin: 0px 0px 0px 0px
+                .decoration-text
+                    display: none
         &__hgroup
-            flex-direction: column-reverse
+            width: 100%
             .button
-                margin-top: 40px
+                display: none
+            &-title
+                text-align: center
+            &-name
+                display: block
+        

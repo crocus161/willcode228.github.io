@@ -18,10 +18,16 @@
         display: block
         text-align: right
         margin-left: auto
+        position: relative
+        z-index: 10
 
 @media screen and ( max-width: 992px )
     .guarantee
         .guarantee__men,
         .guarantee__women
             width: 200px
+@media screen and ( max-width: 576px )
+    .guarantee
+        &__info
+            text-align: center
         

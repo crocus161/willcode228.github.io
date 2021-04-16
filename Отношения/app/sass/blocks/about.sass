@@ -18,15 +18,17 @@
     &__title
         margin-top: 100px
 
+@media screen and ( max-width: 768px )
+    .about
+        &__subtitle
+            display: none
+        &__title
+            margin: 50px 0px
 @media screen and ( max-width: 576px )
     .about
         .about__men,
         .about__women
             width: 30%
-        &__subtitle
-            display: none
-        &__title
-            margin-top: 0
 @media screen and ( max-width: 360px )
     .about
         .about__men,

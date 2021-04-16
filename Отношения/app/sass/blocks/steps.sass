@@ -32,10 +32,6 @@
             align-items: space-between
             span
                 text-transform: uppercase
-                &:first-child
-                    text-align: left
-                &:last-child
-                    text-align: right
     &__item
         &-secondary
             overflow-wrap: break-word
@@ -57,6 +53,9 @@
                 align-items: center
                 justify-content: center
                 flex-direction: column
+                .button
+                    margin: 30px 0px
+
     .second
         margin-left: 0
         min-height: 960px
@@ -75,10 +74,6 @@
                 display: flex
                 justify-content: flex-end
                 margin-left: auto
-            &__btn
-                position: absolute
-                bottom: 20px
-                right: 20px
     .third
         .steps__info
             width: 90%
