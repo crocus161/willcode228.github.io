@@ -77,6 +77,45 @@
     .third
         .steps__info
             width: 90%
+    .third-mobile
+        display: none
+        .steps
+            &__item-body
+                min-height: 100vw
+                background: url(../img/dest/places/mobile-third.png)
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                align-items: flex-start
+            &__info
+                display: block
+                margin: auto
+                text-align: center
+                padding: 10px 30px
+            &__place
+                margin-left: 28px
+    .second-mobile
+        display: none
+        margin-bottom: 50px
+        .steps
+            &__wrapper
+                display: flex
+                align-items: center
+            &__item
+                &-img
+                    min-width: 50%
+                    img
+                        width: 100%
+                        object-fit: cover
+                &-text
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+            &__info
+                margin-bottom: 22px
+                margin-top: 13px
     &__place
         font-size: 255px
         line-height: 378px
@@ -102,9 +141,13 @@
                 &:nth-child(even)
                     margin-left: 10px
         .second
-            .steps
-                &__wrapper
-                    background-position: 65% 50%
+            display: none
+        .third
+            display: none
+        .second-mobile
+            display: block
+        .third-mobile
+            display: block
         &__place
             font-size: 180px
             line-height: 230px
@@ -127,13 +170,14 @@
             .steps
                 &__item-meta
                     display: flex
+        .second-mobile
+            .steps
+                &__item
+                    &-text
+                        .decoration-text
+                            font-size: 15px
 @media screen and ( max-width: 576px )
     .steps
-        .second
-            min-height: 350px
-            .steps__wrapper
-                min-height: 350px
-                background-position: center center
         &__hgroup
             width: 100%
         &__place
