@@ -1,0 +1,98 @@
+.footer
+    background: url(../img/dest/footer/bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50%
+    position: relative
+    &__wrapper
+        min-height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
+    &__title
+        text-align: center
+    form
+        margin-top: 30px
+        width: 600px
+        min-height: 300px
+        background: rgba(83, 107, 124, 0.32)
+        border-radius: 58px
+        padding: 50px
+        transition: $transition
+        &:hover
+            background: rgba(83, 107, 124, 0.8)
+        input, 
+        select, 
+        option
+            width: 100%
+            height: 110px
+            margin-bottom: 30px
+            background: $brand-white
+            border-radius: 25px
+            border: 1px solid $brand-accent
+            text-align: center
+            outline: none
+            color: $secondary-black
+            text-align-last: center
+        .button
+            width: 100%
+    &__price
+        position: absolute
+        top: 50%
+        left: 50px
+        border-radius: 50%
+        width: 170px
+        height: 170px
+        background: $brand-white
+        padding: 10px
+        transform: translateY(-50%)
+        &-box
+            width: 100%
+            height: 100%
+            border: 1px solid $brand-accent
+            border-radius: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .previous
+                font-size: 23px
+                color: $secondary-black
+            .now
+                font-weight: 600
+                font-size: 30px
+                line-height: 44px
+                color: $secondary-accent
+
+@media screen and ( max-width: 992px )
+    .footer
+        background-position: 95%
+        &__wrapper
+            min-height: 100vh
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__price
+            display: none
+
+@media screen and ( max-width: 768px )
+    .footer
+        form
+            width: 500px
+@media screen and ( max-width: 576px )
+    .footer
+        form
+            padding: 25px
+            width: 300px
+            border-radius: 35px
+            input, 
+            select, 
+            option
+                height: 60px
+
+@media screen and ( max-width: 319px )
+    .footer
+        form
+            width: 270px

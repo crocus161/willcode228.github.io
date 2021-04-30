@@ -1,0 +1,21 @@
+.photo
+    padding: 50px 0px
+    background: rgba(157, 102, 102, 0.27)
+    .swiper-container 
+        width: 100%
+        padding-top: 50px
+        padding-bottom: 50px
+        .swiper-slide 
+            background-position: center
+            background-size: cover
+            width: 300px
+            img 
+                display: block
+                width: 100%
+                transition: 0.4s
+        .swiper-slide-active
+            img
+                filter: $shadow
+        .swiper-pagination-bullet.swiper-pagination-bullet-active
+            background: $brand-blue
+      

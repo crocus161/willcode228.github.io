@@ -1,0 +1,64 @@
+.comfortable
+    &__wrapper
+        display: flex
+    &__img,
+    &__info
+        flex: 0 0 50%
+        padding: 30px
+    &__img
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-button
+            border: 1px solid $brand-accent
+            transition: $transition
+            color: $brand-black
+            &:hover
+                color: $brand-white
+                background: $brand-accent
+        img
+            width: 100%
+            object-fit: cover
+    &-products
+        margin-bottom: 25px
+    &__info
+        &-title
+            text-align: right
+        &-info
+            margin-top: 30px
+            margin-bottom: 30px
+            text-align: center
+    &__colors
+        &-item
+            display: flex
+            align-items: center
+            color: $brand-accent
+            margin-bottom: 18px
+            margin-left: 20px
+            &::before
+                content: ''
+                display: inline-block
+                margin-right: 25px
+                border-radius: 50%
+                width: 25px
+                height: 25px
+                background: linear-gradient(150.64deg, #F0F0EA -3.19%, #FFFFFF 47.63%, #F4F4F0 96.67%)
+                box-shadow: 0px 4px 6px rgba(86, 28, 49, 0.52)
+
+
+@media screen and ( max-width: 1200px )
+    .comfortable
+        &__wrapper
+            flex-direction: column-reverse
+            align-items: center
+        &__info
+            &-title
+                text-align: center
+        &__img
+            width: 75%
+
+@media screen and ( max-width: 768px )
+    .comfortable
+        &__img
+            width: 100%
+    

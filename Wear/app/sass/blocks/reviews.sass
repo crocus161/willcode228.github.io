@@ -1,0 +1,80 @@
+.reviews
+    background: $brand-blue
+    &__box
+        display: flex
+        justify-content: space-around
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+        &-title
+            color: $brand-white
+    &__card
+        width: 550px
+        padding: 25px
+        border-radius: 57px
+        background: rgba(54, 73, 86, 0.44)
+        &-text
+            min-height: 300px
+            display: block
+            background: url(../img/dest/reviews/message.png)
+            backgrounds-size: cover
+            background-repeat: no-repeat
+            padding: 20px
+            margin-bottom: -5px
+        &-info
+            font-size: 20px
+            line-height: 30px
+        &-meta
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            img
+                margin-right: 10px
+            &__info
+                color: $brand-white
+                margin-right: 5px
+    &__button
+        margin: 50px auto
+        border: 1px solid rgb(54, 73, 86)
+        color: rgb(54, 73, 86)
+        transition: $transition
+        &:hover
+            background: rgb(54, 73, 86)
+            color: $brand-white
+
+@media screen and ( max-width: 1200px )
+    .reviews
+        &__box
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &__card
+            margin-bottom: 20px
+
+@media screen and ( max-width: 576px )
+    .reviews
+        &__card
+            width: 360px
+            margin-bottom: 20px
+            &-text
+                border-radius: 50px
+                overflow: hidden
+            &-info
+                font-size: 16px
+                line-height: 25px
+            &-points
+                margin-top: 10px
+
+@media screen and ( max-width: 370px )
+    .reviews
+        &__card
+            width: 300px
+            margin-bottom: 20px
+            img
+                margin-bottom: 10px
+            &-text
+                border-radius: 50px
+                overflow: hidden
+            &-info
+                font-size: 14px
+                line-height: 20px

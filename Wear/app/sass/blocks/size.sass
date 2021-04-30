@@ -1,0 +1,100 @@
+.size
+    background: rgba(157, 102, 102, 0.27)
+    overflow: hidden
+    &__wrapper
+        display: flex
+    &__call,
+    &__table
+        flex: 0 0 50%
+        padding: 30px
+    &__call
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        min-height: 800px
+        text-align: center
+        position: relative
+        z-index: 5
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 700px
+            height: 700px
+            background: $brand-blue
+            border-radius: 50%
+            z-index: -1
+            transform: translate(-50%, -50%)
+        &-title
+            text-shadow: none
+            color: $brand-white
+            position: relative
+
+        &-subtitle
+            font-size: 24px
+            line-height: 28px
+            color: $brand-white
+            margin: 20px 0px 20px 0px
+            font-weight: normal
+            position: relative
+    &__table
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        z-index: 9
+        .girl
+            position: absolute
+            width: 250px
+            top: 90px
+            left: -80px
+            filter: $shadow
+        table 
+            width: 300px
+            border-collapse: collapse
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+            th,
+            td
+                height: 50px
+                text-align: center
+                font-weight: normal
+            td
+                background: rgba(157, 102, 102, 0.27)
+                font-size: 16px
+                text-transform: uppercase
+                color: rgb(110, 80, 80)
+                transition: $transition
+                &:hover
+                    background: rgba(157, 102, 102, 0.57)
+                    
+            th
+                background: $secondary-blue
+                color: $brand-white
+                font-size: 25px
+            
+@media screen and ( max-width: 1200px )
+    .size
+        &__wrapper
+            flex-direction: column-reverse
+        &__table,
+        &__call
+            flex: 0 0 100%
+        &__table
+            .girl
+                width: 300px
+                left: 70px
+                top: 18px
+@media screen and ( max-width: 992px )
+    .size
+        &__table
+            .girl
+                display: none
+            
+@media screen and ( max-width: 576px )
+    .size
+        &__table
+            table
+                width: 100%

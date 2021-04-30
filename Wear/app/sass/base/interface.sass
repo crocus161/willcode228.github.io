@@ -1,0 +1,152 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-family: 'Montserrat', sans-serif
+button
+    all: unset
+a
+    text-decoration: none
+ul
+    list-style-type: none
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container
+    max-width: 1440px
+    margin: auto
+//*****CONTAINER OF BLOCK*****//
+.wrapper
+    width: 1140px 
+    margin: auto
+//*****MAIN BLOCK STYLES*****//
+.section
+    padding: 30px 0px
+//*****MAIN TITLE*****//
+.title
+    font-size: 64px
+    line-height: 78px
+    color: $secondary-accent
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.card-title
+    font-size: 35px
+    line-height: 45px
+//*****MAIN SUBTITLE*****//
+.subtitle
+    font-size: 48px
+    line-height: 58px
+//*****MAIN INFO*****//
+.info
+    font-size: 36px
+    line-height: 43px
+//*****MAIN BUTTON*****//
+.button
+    display: block
+    width: 300px
+    height: 85px
+    background: linear-gradient(180deg, #CD4777 0%, #A72755 48.75%, #CD4777 100%)
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25)
+    border-radius: 63px
+    line-height: 85px
+    text-align: center
+    font-size: 32px
+    letter-spacing: 0.025em
+    color: $brand-white
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transition: $transition
+    &:hover
+        background: linear-gradient(180deg, #860a35 0%, #680a2c 48.75%, #a5345c 100%)
+
+.secondary-button
+    display: block
+    width: 300px
+    height: 75px
+    border-radius: 63px
+    line-height: 75px
+    font-size: 24px
+    text-align: center
+
+//*****MEIDA QUERIES*****//
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 1140px
+    .title
+        font-size: 60px
+        line-height: 70px
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 960px
+    .title
+        font-size: 55px
+        line-height: 65px
+    .button
+        width: 250px
+        height: 65px
+        line-height: 65px
+        font-size: 30px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 730px
+    .title
+        font-size: 50px
+        line-height: 60px
+    .subtitle
+        font-size: 45px
+        line-height: 55px
+    .card-title
+        font-size: 30px
+        line-height: 40px
+    .info
+        font-size: 30px
+        line-height: 40px
+    .secondary-button
+        width: 250px
+        height: 60px
+        line-height: 60px
+        font-size: 20px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 540px
+    .title
+        font-size: 45px
+        line-height: 55px
+    .card-title
+        font-size: 25px
+        line-height: 35px
+    .subtitle
+        font-size: 40px
+        line-height: 50px
+    .info
+        font-size: 20px
+        line-height: 30px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 285px
+    .title
+        font-size: 35px
+        line-height: 45px
+    .subtitle
+        font-size: 30px
+        line-height: 40px
+    .card-title
+        font-size: 20px
+        line-height: 30px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 270px
+    .title
+        font-size: 25px
+        line-height: 35px
+    .subtitle
+        font-size: 20px
+        line-height: 30px
+    .info
+        font-size: 16px
+        line-height: 26px
