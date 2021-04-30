@@ -1,0 +1,73 @@
+.masterClass
+    &__box
+        min-height: 700px
+        background: url('../img/dest/master-class/bg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        &-img
+            margin-top: 200px
+            margin-bottom: -200px
+        &-info
+            display: inline-block
+            width: 50%
+            min-height: 700px
+            background: $brand-black
+            padding: 20px
+            color: $brand-white
+    &__text
+        display: block
+        width: 50%
+        padding: 20px
+        margin-top: 150px
+        z-index: 12
+        position: relative
+    &__hiddentext
+        display: none
+        margin: auto
+        width: 70%
+        text-align: center
+        margin-top: 50px
+        z-index: 12
+        position: relative
+
+@media screen and ( max-width: 992px )
+    .masterClass
+        &__box
+            min-height: 300px
+            &-img
+                width: 200px
+                margin-bottom: -100px
+                margin-top: 0
+                align-self: flex-end
+            &-info
+                min-height: 300px
+        &__text
+            margin-top: 50px
+@media screen and ( max-width: 768px )
+    .masterClass
+        &__box
+            &-info
+                width: 80%
+@media screen and ( max-width: 576px )
+    .masterClass
+        &__hiddentext
+            display: block
+
+@media screen and ( max-width: 400px )
+    .masterClass
+        &__box
+            background: none
+            flex-direction: column
+            &-info
+                width: 100%
+            &-img
+                margin-top: -100px
+                align-self: center
+        &__text
+            width: 90%
+            margin: auto
+            text-align: center
+            margin-top: 150px
+    
+        

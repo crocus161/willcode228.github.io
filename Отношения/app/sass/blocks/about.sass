@@ -1,0 +1,37 @@
+.about
+    overflow: hidden
+    .about__men,
+    .about__women
+        position: absolute
+        top: 50%
+        width: 30%
+        z-index: -1
+        transform-origin: center
+        transform: translateY(-50%)
+        filter: drop-shadow(0px 0px 20px rgba($brand-black, 0.3))
+    .about__men
+        left: 15%
+        transform: translateY(-50%) rotate(40deg)
+    .about__women
+        right: 15%
+        transform: translateY(-50%) rotate(140deg)
+    &__title
+        margin-top: 100px
+
+@media screen and ( max-width: 768px )
+    .about
+        &__subtitle
+            display: none
+        &__title
+            margin: 50px 0px
+@media screen and ( max-width: 576px )
+    .about
+        .about__men,
+        .about__women
+            width: 30%
+@media screen and ( max-width: 360px )
+    .about
+        .about__men,
+        .about__women
+            display: none
+    

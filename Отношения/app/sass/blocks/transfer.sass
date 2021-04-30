@@ -1,0 +1,60 @@
+.transfer
+    padding-bottom: 0px
+    &__wrapper
+        display: flex
+        align-items: center
+    &__img
+        min-width: 50%
+        img
+            object-fit: cover
+            width: 100%
+    &__body
+        text-align: center
+        &-info
+            text-align: center
+        &-decoration
+            margin: 20px 0px 40px 0px
+
+@media screen and ( max-width: 768px )
+    .transfer
+        padding-bottom: 65px
+        &__wrapper
+            flex-direction: column
+            justify-content: center
+        &__img
+            width: 80%
+
+.secondary-transfers
+    &__hgroup
+        text-align: center
+        &-title
+            color: $brand-grey
+        &-subtitle
+            margin-bottom: 20px
+            display: none
+            text-shadow: $text-shadow
+    &__body
+        min-height: 750px
+        background: url('../img/dest/transfer/secondary-bg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: bottom
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        .info
+            width: 50%
+            text-align: center
+            &:nth-child(1)
+                margin-right: auto
+                margin-bottom: 50px
+            &:nth-child(2)
+                margin-left: auto
+
+@media screen and ( max-width: 768px )
+    .secondary-transfers
+        &__body
+            min-height: 350px
+        &__hgroup
+            &-subtitle
+                display: block

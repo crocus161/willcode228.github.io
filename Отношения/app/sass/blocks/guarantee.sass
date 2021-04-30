@@ -1,0 +1,32 @@
+.guarantee
+    background: $brand-black
+    color: $brand-white
+    position: relative
+    z-index: 1
+    .guarantee__men,
+    .guarantee__women
+        position: absolute
+        z-index: -1
+    .guarantee__men
+        top: -100%
+        left: 10px
+    .guarantee__women
+        bottom: -100%
+        right: 10px
+    &__info
+        width: 90%
+        display: block
+        text-align: center
+        position: relative
+        z-index: 10
+
+@media screen and ( max-width: 992px )
+    .guarantee
+        .guarantee__men,
+        .guarantee__women
+            width: 200px
+@media screen and ( max-width: 576px )
+    .guarantee
+        &__info
+            text-align: center
+        
