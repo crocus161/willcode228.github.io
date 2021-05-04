@@ -1,0 +1,32 @@
+.advantages
+    width: 100%
+    background: $gradient
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+    &__card
+        padding: 20px 40px
+        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:hover
+            .advantages__card-title,
+            .advantages__card-img
+                transform: translateY(-15px)
+        &-img
+            height: 81px
+            margin-bottom: 10px
+        &-title
+            transition-delay: 0.1s
+            color: $brand-white
+        &-img,
+        &-title
+            transition: $transition
+
+@media screen and ( max-width: 576px )
+    .advantages
+        &__card
+            &-img
+                height: 64px

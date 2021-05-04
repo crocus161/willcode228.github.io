@@ -1,0 +1,59 @@
+.order
+    background: $black-bg
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        text-align: center
+        width: 350px
+        min-height: 350px
+        margin: 10px
+        padding: 10px
+        &:hover
+            .order__card-info
+                color: $secondary-accent
+        &-img
+            width: 100%
+            min-height: 305px
+            position: relative
+            z-index: 1
+            &::before
+                content: attr(data-counter)
+                position: absolute
+                top: -30px
+                left: 10px
+                display: block
+                width: 50px
+                height: 50px
+                text-align: center
+                line-height: 50px
+                font-size: 25px
+                background: linear-gradient(180deg, #7C6644 0%, #C9A878 48.23%, #6C5839 100%)
+                color: $brand-white
+                border-radius: 50%
+                z-index: -1
+            img
+                width: 100%
+                object-fit: cover
+        &-title
+            font-weight: 800
+            color: $brand-white
+            margin: 15px 0px 50px 0px
+        &-info
+            border-top: 2px solid rgba(0, 0, 0, 0.23)
+            padding-top: 10px
+            transition: $transition
+
+@media screen and ( max-width: 992px )
+    .order
+        &__card
+            margin-bottom: 80px
+            &-img
+                min-height: 200px
+            &-title
+                margin: 15px 0px 30px 0px
+

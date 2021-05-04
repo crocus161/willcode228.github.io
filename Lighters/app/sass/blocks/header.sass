@@ -1,0 +1,59 @@
+.header
+    background: url(../img/dest/header/bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &__wrapper
+        min-height: 100vh
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        flex-direction: column
+    &__hgroup
+        text-align: right
+        margin-bottom: 80px
+    &__text
+        text-align: center
+    &__subtitle
+        color: $brand-white
+    &__info
+        font-size: 27px
+        line-height: 33px
+        letter-spacing: 0.025em
+        font-weight: normal
+        color: $brand-grey
+        span
+            display: inline-block
+            padding: 12px 20px
+            border-radius: 50%
+            font-size: 36px
+            color: $brand-white
+            background-color: rgba($brand-accent, .25)
+    &__button
+        margin: 20px 0px 20px 0px
+
+@media screen and ( max-width: 576px )
+    .header
+        background-position: 35%
+        &__wrapper
+            align-items: center
+            text-align: center
+        &__hgroup
+            text-align: center
+            margin-bottom: 50px
+        &__info
+            font-size: 20px
+            line-height: 30px
+            color: $brand-white
+            span
+                padding: 8px 14px
+                font-size: 30px
+                background-color: rgba($brand-accent, .55)
+
+@media screen and ( max-width: 319px )
+    .header
+        &__info
+            font-size: 18px
+            span
+                padding: 8px 16px
+                font-size: 25px

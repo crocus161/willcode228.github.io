@@ -1,0 +1,19 @@
+.reason
+    &__wrapper
+        display: flex
+    &__text
+        &-title
+            margin-bottom: 30px
+    &__img
+        min-width: 180px
+        margin-left: 60px
+        img
+            width: 100%
+            object-fit: cover
+
+@media screen and ( max-width: 1200px )
+    .reason
+        &__wrapper
+            flex-direction: column
+        &__img
+            display: none

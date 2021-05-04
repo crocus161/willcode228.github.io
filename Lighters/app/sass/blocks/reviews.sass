@@ -1,0 +1,80 @@
+.reviews
+    background: $black-bg
+    &__hgroup
+        text-align: center
+        margin-bottom: 30px
+    &__wrapper
+        position: relative
+        .swiper-button-prev,
+        .swiper-button-next
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background: $secondary-black
+            &::after
+                display: none
+        .swiper-pagination
+            bottom: -15px
+            left: 50%
+            transform: translateX(-50%)
+            .swiper-pagination-bullet
+                width: 25px
+                height: 25px
+                background: rgba($brand-black, 0.84)
+                margin: 0% 5px
+                transition: $transition
+            .swiper-pagination-bullet-active
+                background: $brand-black
+    .swiper
+        &-container 
+            width: 550px 
+        &-slide
+            min-height: 360px
+            padding: 15px
+            background: $gradient
+            display: flex
+            flex-direction: column
+            &__body
+                display: flex
+                justify-content: center
+                align-items: flex-end
+            &__info
+                font-size: 16px
+                line-height: 25px
+                padding: 10px 10px 0px 10px
+                color: $brand-white
+            &__meta
+                margin-top: 20px
+                margin-left: 40px
+            &-name
+                color: $brand-white
+                margin-bottom: 10px
+
+                
+
+@media screen and ( max-width: 768px )
+    .reviews
+        &__wrapper
+            .swiper-button-prev,
+            .swiper-button-next
+                display: none
+    
+@media screen and ( max-width: 576px )
+    .reviews
+        .swiper
+            &-container
+                width: 100%
+            &-slide
+                width: 100%
+                min-height: 540px
+                &__body
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    flex-grow: 1
+                &__meta
+                    display: block
+                    text-align: center
+                    margin-left: 0px
+                    
