@@ -1,0 +1,57 @@
+.comfortable
+    &__hgroup
+        margin-bottom: 50px
+        text-align: center
+        &-title
+            color: $brand-accent
+    &__box
+        display: flex
+    &__img
+        flex-grow: 1
+        img
+            width: 100%
+            object-fit: cover
+    &__part
+        max-width: 530px
+        margin-bottom: 50px
+        text-align: center
+        &:nth-child(2)
+            margin-left: -40px
+        &:nth-child(3)
+            margin-left: -400px
+        &:nth-child(4)
+            margin-left: -550px
+        &-title
+            color: $brand-accent
+        &-wrapper
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+        &-pointer
+            text-align: left
+
+@media screen and ( max-width: 1200px )
+    .comfortable
+        &__box
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__img
+            width: 50%
+            margin-bottom: 50px
+        &__part
+            &:nth-child(2)
+                margin-left: 0px
+            &:nth-child(3)
+                margin-left: 0px
+            &:nth-child(4)
+                margin-left: 0px
+            &-pointer
+                display: none
+
+@media screen and ( max-width: 576px )
+    .comfortable
+        &__img
+            width: 75%
+    

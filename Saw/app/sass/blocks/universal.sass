@@ -1,0 +1,46 @@
+.universal
+    background: url(../img/dest/universal-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    &__hgroup
+        margin-bottom: 30px
+        &-title
+            color: $brand-white
+            &:first-child
+                margin-bottom: 200px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        width: 300px
+        min-height: 300px
+        padding: 20px
+        margin: 20px
+        background: rgba(252, 105, 21, 0.59)
+        box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.62)
+        border-radius: 30px
+        color: $brand-white
+        display: grid
+        place-items: center
+        text-align: center
+        position: relative
+        z-index: 1
+        &-star
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: -1
+            width: 80%
+            object-fit: cover
+
+@media screen and ( max-width: 576px )
+    .universal
+        &__hgroup
+            text-align: center
+            &-title
+                &:first-child
+                    margin-bottom: 100px
+        &__card
+            width: 100%

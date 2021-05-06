@@ -1,0 +1,28 @@
+.features
+    background: url(../img/dest/features-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    &__hgroup
+        text-align: center
+        color: $brand-white
+        margin-bottom: 50px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        max-width: 290px
+        margin: 50px 20px
+        text-align: center
+        color: $brand-white
+        img
+            margin-bottom: 10px
+
+@media screen and ( max-width: 768px )
+    .features
+        &__card
+            max-width: 200px
+@media screen and ( max-width: 576px )
+    .features
+        &__card
+            margin: 30px 20px

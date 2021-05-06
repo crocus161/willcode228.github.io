@@ -1,0 +1,55 @@
+.order
+    background: url(../img/dest/order-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    &__wrapper
+        min-height: 1100px
+    &__hgroup
+        margin-bottom: 150px
+        text-align: center
+        &-title
+            color: $brand-accent
+    &__box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__card
+        max-width: 260px
+        text-align: center
+        &:nth-child(1)
+            margin-right: 80%
+            margin-bottom: 100px
+        &-img
+            width: 170px
+            height: 170px
+            border-radius: 50%
+            background: linear-gradient(180deg, #9DCECB 0%, #0B5450 100%)
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25)
+            display: grid
+            place-items: center
+            margin: 10px auto
+
+        
+@media screen and ( max-width: 992px )
+    .order
+        background: none
+        &__hgroup
+            margin-bottom: 50px
+        &__box
+            justify-content: space-around
+        &__card
+            margin: 30px
+            &:nth-child(1)
+                margin-right: 30px
+                margin-bottom: 30px
+
+@media screen and ( max-width: 576px )
+    .order
+        &__card
+            &-img
+                width: 100px
+                height: 100px
+                img
+                    width: 70%
+                    object-fit: cover
+    

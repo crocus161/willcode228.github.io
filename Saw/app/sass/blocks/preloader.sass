@@ -1,0 +1,32 @@
+$spinkit-size: 4em !default
+$spinkit-spinner-color: $brand-accent !default
+
+
+.preloader
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 100vh
+    display: grid
+    place-items: center
+    background: $brand-white
+    z-index: 9999
+    transition: $transition
+
+.sk-rotating-plane 
+  width: $spinkit-size
+  height: $spinkit-size
+  margin: auto
+  background-color: $spinkit-spinner-color
+  animation: sk-rotating-plane 1.2s infinite ease-in-out
+
+
+@keyframes sk-rotating-plane 
+  0% 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  50% 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  100% 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+  

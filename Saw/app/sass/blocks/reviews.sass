@@ -1,0 +1,50 @@
+.reviews
+    &__hgroup
+        margin-bottom: 30px
+        text-align: center
+        &-title
+            color: $brand-accent
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 20px 10px
+        width: 350px
+        border-radius: 45px
+        overflow: hidden
+        position: relative
+        z-index: 1
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            height: 80%
+            position: absolute
+            bottom: 0
+            left: 0
+            background: linear-gradient(0deg, #2F726E 34.69%, #5F9A97 59.4%, rgba(196, 196, 196, 0) 94.3%)
+    &__img
+        width: 100%
+        img
+            width: 100%
+            object-fit: cover
+    &__text
+        width: 100%
+        padding: 10px
+        position: relative
+        z-index: 1
+        color: $brand-white
+        text-align: center
+
+@media screen and ( max-width: 992px )
+    .reviews
+        &__card
+            &::after
+                content: ''
+                display: block
+                width: 100%
+                height: 65%
+    
+
+    

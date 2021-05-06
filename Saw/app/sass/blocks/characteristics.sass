@@ -1,0 +1,35 @@
+.characteristics
+    &__hgroup
+        text-align: center
+        margin-bottom: 30px
+        &-title
+            color: $brand-accent
+    &__box
+        display: flex
+        justify-content: center
+        align-items: center
+    &__text
+        text-align: center
+        margin: 20px 10px
+    &__value
+        color: $brand-accent
+        margin-top: -10px
+        font-weight: 800
+    &__line
+        margin-bottom: 60px
+
+@media screen and ( max-width: 1200px )
+    .characteristics
+        &__box
+            flex-direction: column
+@media screen and ( max-width: 576px )
+    .characteristics
+        &__line
+            margin-bottom: 30px
+        &__value
+            margin-top: -2px
+        &__img
+            width: 100%
+            img
+                width: 100%
+                object-fit: cover

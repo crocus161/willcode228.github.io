@@ -1,0 +1,68 @@
+.header
+    background: url(../img/dest/header-bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    &__wrapper
+        min-height: 100vh
+        display: flex
+        align-items: center
+    &__box
+        width: 70%
+        text-align: center
+    &__subtitle
+        color: $brand-white
+    &__price
+        width: 590px
+        min-height: 120px
+        padding: 10px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background: #00847C
+        border-radius: 52px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        margin: 70px auto 60px auto
+        &-label
+            position: absolute
+            top: 0
+            left: -50px
+            width: 65%
+            height: 100%
+            object-fit: cover
+        &-prev,
+        &-new
+            text-align: center
+            position: relative
+        &-new
+            color: $brand-white
+
+@media screen and ( max-width: 992px )
+    .header
+        &__wrapper
+            justify-content: center
+        &__box
+            width: 100%
+        &__price
+            width: 400px
+            min-height: 100px
+            &-label
+                width: 70%
+                height: 100px
+
+@media screen and ( max-width: 576px )
+    .header
+        &__price
+            width: 100%
+            flex-direction: column
+            border-radius: 30px
+            &-label
+                display: none
+            &-prev
+                color: $brand-white
+                margin-bottom: 15px
+                padding-bottom: 15px
+                border-bottom: 1px solid $brand-white
+
+        
