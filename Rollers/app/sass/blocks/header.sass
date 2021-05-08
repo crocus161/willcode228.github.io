@@ -1,0 +1,111 @@
+.header
+    background: url(../img/dest/header/bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
+    overflow-x: hidden
+    &__wrapper
+        min-height: 100vh
+        display: flex
+        justify-content: center
+    &__img
+        position: relative
+        z-index: 5
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        text-align: center
+    &__hgroup
+        text-align: right
+        &-subtitle
+            font-size: 46px
+            color: $brand-white
+            font-weight: 400
+            text-shadow: $text-shadow
+    &__price
+        background: $brand-blue
+        display: flex
+        align-items: center
+        color: $brand-white
+        position: relative
+        z-index: 1
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: -100%
+            width: 1000vw
+            height: 190px
+            background: $brand-blue
+            transform: translateY(-50%)
+            z-index: -1
+        img
+            margin: 0px 60px
+        &-num
+            display: block
+            padding: 10px 20px
+            margin-top: 10px
+            background: $brand-white
+            color: $text-blue
+            border-radius: 40px
+        &-num.accent
+            font-weight: 800
+            text-shadow: $text-shadow
+            color: $brand-accent
+    &__timer
+        width: 400px
+        min-height: 72px
+        border-radius: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: rgba(#BC446F, .25)
+        margin: 0px auto 40px auto
+        &-title
+            font-size: 17px
+            color: #A72755
+            align-content: center
+            padding-left: 22px
+        &-time
+            display: block
+            width: 220px
+            height: 72px
+            background: rgba(#BC446F, .58)
+            border-radius: 50px
+            text-align: center
+            line-height: 72px
+            color: $brand-white
+            font-size: 24px
+    &__btn
+        margin-bottom: 20px
+@media screen and ( max-width: 992px )
+    .header
+        &__img
+            display: none
+        &__hgroup
+            text-align: center
+        &__price
+            margin: 100px 0px
+            img
+                width: 80px
+                margin: 0px 20px
+@media screen and ( max-width: 576px )
+    .header
+        &__timer
+            width: 250px
+            flex-direction: column
+            border-radius: 40px
+            &-time
+                width: 250px
+                z-index: 20
+            &-title
+                padding-left: 0
+                padding: 25px 10px
+        &__hgroup
+            &-subtitle
+                font-size: 25px
+        &__price
+            img
+                width: 50px

@@ -1,0 +1,46 @@
+.effective
+    margin-top: -10px
+    background: url(../img/dest/effective/bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    z-index: 12
+    &__hgroup
+        text-align: center
+        margin-bottom: 60px
+        &-title
+            color: $brand-white
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 50px 20px
+        width: 450px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        text-align: center
+        &-title
+            color: $brand-white
+            img
+                vertical-align: -6px
+        &-eyebrow
+            margin: 20px 0px 25px 0px
+        &-text
+            margin-top: 20px
+            color: $brand-white
+        &-result,
+        &-eyebrow
+            width: 100%
+            object-fit: cover
+
+@media screen and ( max-width: 576px )
+    .effective
+        &__card
+            width: 100%
+            &-title
+                img
+                    width: 25px
+                    vertical-align: -4px
