@@ -1,0 +1,70 @@
+.order
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-bottom: 100px
+    &__card
+        text-align: center
+        width: 350px
+        min-height: 350px
+        margin: 10px
+        padding: 10px
+        &:hover
+            .order__card-info
+                color: $brand-accent
+        &-img
+            width: 100%
+            min-height: 305px
+            img
+                width: 100%
+                object-fit: cover
+        &-title
+            color: $brand-black
+            margin: 25px 0px
+            text-transform: uppercase
+            font-weight: 800
+        &-info
+            color: $brand-black
+            transition: $transition
+        &-meta
+            margin: 20px 0px
+            position: relative
+            img
+                width: 100%
+                object-fit: cover
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: -1
+        &-counter
+            width: 80px
+            height: 80px
+            margin: auto
+            display: grid
+            border-radius: 50%
+            place-items: center
+            background: linear-gradient(180deg, #661A43 0%, #C06697 52.4%, #B03C7B 100%)
+            color: $brand-white
+            z-index: 1
+    &__btn
+        display: block
+        margin: auto
+
+@media screen and ( max-width: 992px )
+    .order
+        &__card
+            margin-bottom: 50px
+            &-img
+                min-height: 200px
+@media screen and ( max-width: 576px )
+    .order
+        &__card
+            width: 100%
+            &-counter
+                width: 50px
+                height: 50px

@@ -1,0 +1,54 @@
+.natural
+    background: $secondary-blue
+    overflow-x: hidden
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+        &-title
+            color: $brand-white
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 40px 20px
+        width: 330px
+        text-align: center
+        position: relative
+        z-index: 15
+        &:first-child
+            z-index: 20
+        &:nth-child(2)
+            &::after
+                content: ''
+                width: 1000vw
+                height: 190px
+                position: absolute
+                top: 163px
+                left: -100vw
+                background: $brand-blue
+                z-index: -3
+                transform: translateY(-50%)
+        &-title
+            color: $brand-blue
+            margin: 20px 0px 10px 0px
+        &-info
+            color: $brand-white
+            font-size: 20px
+        img
+            position: relative
+            z-index: 10
+
+
+@media screen and ( max-width: 576px )
+    .natural
+        &__card
+            width: 100%
+            &:nth-child(2)
+                &::after
+                    display: none
+            img
+                width: 100%
+                object-fit: cover
+            &-info
+                font-size: 16px

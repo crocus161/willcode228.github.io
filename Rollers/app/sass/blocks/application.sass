@@ -1,0 +1,38 @@
+.application
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 50px 20px
+        width: 340px
+        text-align: center
+        &-info
+            margin-top: 10px
+            padding-top: 10px
+            border-top: 2px solid $brand-blue
+        &-counter
+            width: 80px
+            height: 80px
+            margin: auto
+            display: grid
+            border-radius: 50%
+            place-items: center
+            transform: translateY(-30px)
+            background: linear-gradient(180deg, #661A43 0%, #C06697 52.4%, #B03C7B 100%)
+        &-num
+            color: $brand-white
+            
+@media screen and ( max-width: 576px )
+    .application
+        &__card
+            width: 100%
+            img
+                width: 100%
+                object-fit: cover
+            &-counter
+                width: 50px
+                height: 50px
