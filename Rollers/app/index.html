@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class='sk-cube-grid'>
           <div class='sk-cube sk-cube-1'></div>
           <div class='sk-cube sk-cube-2'></div>
@@ -23,7 +23,7 @@
           <div class='sk-cube sk-cube-8'></div>
           <div class='sk-cube sk-cube-9'></div>
         </div>
-    </div> -->
+    </div>
 
     <div class="container">
 
@@ -55,9 +55,9 @@
 
                     <a href="#footer" class="button header__btn">Заказать</a>
 
-                    <div class="header__timer">
-                        <h3 class="header__timer-title">До конца акции</h3>
-                        <p class="header__timer-time">
+                    <div class="timer">
+                        <h3 class="timer-title">До конца акции</h3>
+                        <p class="timer-time">
                             <span>00ч</span> :
                             <span>00м</span> :
                             <span>00с</span>
@@ -381,10 +381,60 @@
             </div>
             <!-- /.order -->
 
+            <div class="advantages">
+
+                <div class="advantages__wrapper section wrapper">
+
+                    <div class="advantages__card">
+                        <img src="img/dest/icons/humidification.svg" alt="humidification" class="advantages__card-img">
+                        <h4 class="advantages__card-title">Глубокое<br> увлажнение</h4>
+                    </div>
+
+                    <div class="advantages__card">
+                        <img src="img/dest/icons/light-weight.svg" alt="light" class="advantages__card-img">
+                        <h4 class="advantages__card-title">Легкость<br> в применении</h4>
+                    </div>
+
+                    <div class="advantages__card">
+                        <img src="img/dest/icons/natural.svg" alt="natural" class="advantages__card-img">
+                        <h4 class="advantages__card-title">Натуральный<br> состав</h4>
+                    </div>
+
+                </div>
+                <!-- /.advantages__wrapper section wrapper -->
+
+            </div>
+            <!-- /.advantages -->
+
         </main>
         <!-- /.main -->
 
-        <footer class="footer"></footer>
+        <footer class="footer" id="footer">
+
+            <div class="price">
+                <div class="price-box">
+                    <p class="previous secondary-title">АКЦИЯ!</p>
+                    <p class="now secondary-title">-53%</p>
+                </div>
+            </div>
+
+            <div class="footer__wrapper section wrapper">
+                <form>
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="tel" name="tel" placeholder="Номер телефона" required>
+                    <button class="button">Заказать</button>
+                </form>
+                <div class="timer">
+                    <h3 class="timer-title">До конца акции</h3>
+                    <p class="timer-time">
+                        <span>00ч</span> :
+                        <span>00м</span> :
+                        <span>00с</span>
+                    </p>
+                </div>
+            </div>
+
+        </footer>
         <!-- /.footer -->
 
     </div>

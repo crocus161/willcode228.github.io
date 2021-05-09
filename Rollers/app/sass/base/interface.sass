@@ -82,6 +82,55 @@ ul
     color: $brand-white
     text-transform: uppercase
     text-shadow: $text-shadow
+//*****MAIN TIMER*****//
+.timer
+    width: 400px
+    min-height: 72px
+    border-radius: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: rgba(#BC446F, .25)
+    margin: 0px 0px 40px 0px
+    &-title
+        font-size: 17px
+        color: #A72755
+        align-content: center
+        padding-left: 22px
+    &-time
+        display: block
+        width: 220px
+        height: 72px
+        background: rgba(#BC446F, .58)
+        border-radius: 50px
+        text-align: center
+        line-height: 72px
+        color: $brand-white
+        font-size: 24px
+
+//*****MAIN PRICE LABLE*****//
+.price
+    position: absolute
+    border-radius: 50%
+    width: 190px
+    height: 190px
+    background: rgba($brand-white,0.8)
+    padding: 10px
+    transform: translateY(-50%)
+    &-box
+        width: 100%
+        height: 100%
+        border: 1px solid $brand-accent
+        border-radius: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .previous
+            font-weight: 400
+            color: $brand-accent
+        .now
+            color: $brand-accent
 
 //*****MEIDA QUERIES*****//
 @media screen and ( max-width: 1400px )
