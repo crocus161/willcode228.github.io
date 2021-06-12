@@ -1,0 +1,13 @@
+=font-face($family, $path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}.ttf')
+    src: url('#{$path}.woff') format('woff'), url('#{$path}.woff2') format('woff2'), url('#{$path}.ttf') format('truetype')
+    font-weight: $weight
+    font-style: $style
+
++font-face('Gilroy', '../fonts/Gilroy-Bold/Gilroy-Bold', 700)
++font-face('Gilroy', '../fonts/Gilroy-Semibold/Gilroy-Semibold', 600)
++font-face('Gilroy', '../fonts/Gilroy-Medium/Gilroy-Medium', 500)
++font-face('Gilroy', '../fonts/Gilroy-Regular/Gilroy-Regular', 400)
+
