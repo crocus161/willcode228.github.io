@@ -1,0 +1,16 @@
+.outer{
+	min-width: 500px;
+	min-height: 70px;
+	padding: 8px;
+	border-radius: 5px;
+	font-size: 30px;
+	color: var(--main-black);
+	text-align: center;
+    line-height: 70px;
+	background: var(--main-white);
+	box-shadow: var(--main-shadow);
+}
+
+.outer__span-active{
+	color: greenyellow;
+}

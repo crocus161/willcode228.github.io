@@ -1,0 +1,27 @@
+.about
+    background: #fafafa
+    position: relative
+    z-index: 1
+    overflow: hidden
+    &__sin
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        transform: translateY(-50%)
+        z-index: -1
+    &__wrapper
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &__text
+        &-info
+            margin: 15px 0px 20px 0px
+
+@media screen and ( max-width: 992px )
+    .about
+        &__wrapper
+            flex-direction: column
+            align-items: flex-start
+        &__text
+            margin-bottom: 40px

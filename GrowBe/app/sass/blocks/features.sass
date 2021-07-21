@@ -1,0 +1,29 @@
+.features
+    &__wrapper
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &__card
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        width: 320px
+        min-height: 290px
+        margin: $card-gap
+        padding: $card-gap
+        border-radius: 15px
+        box-shadow: $card-shadow
+        &-icon
+            width: 70px
+            height: 70px
+        &-btn
+            font-size: 11px
+            line-height: 16px
+            font-weight: 700
+            color: $brand-black
+
+@media screen and ( max-width: 576px )
+    .features
+        &__card
+            width: 100%
+            margin: $card-gap 0px

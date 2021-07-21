@@ -1,0 +1,50 @@
+.numbers
+    &__box
+        margin: auto
+        width: 80%
+        min-height: 200px
+        padding: $card-gap
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-wrap: wrap
+        border: 2px solid $light-grey
+    &__card
+        text-align: center
+        color: $dark-grey
+        margin: 10px
+        position: relative
+        &:not(:last-child)::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: -50%
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            background: $brand-accent
+            transform: translateY(-50%)
+        &:nth-of-type(2)::after
+            background: #149211
+        &:nth-of-type(3)::after
+            background: #FFC700
+        &-subtitle
+            margin-top: -15px
+    
+@media screen and ( max-width: 1200px )
+    .numbers
+        &__card
+            &:not(:last-child)::after
+                display: none
+
+@media screen and ( max-width: 576px )
+    .numbers
+        &__card
+            &:not(:last-child)
+                margin-bottom: $card-gap
+            &:not(:last-child)::after
+                display: block
+                left: 50%
+                top: 130%
+                transform: translate(-50%, -50%)
+    

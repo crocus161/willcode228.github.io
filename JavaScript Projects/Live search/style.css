@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ input{
+    margin: 10px;
+}
+ ul{
+    list-style-type: none;
+}
+ ul li{
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+ ul li a{
+    text-decoration: none;
+}
+ ul li:hover:not(.header){
+    background: #e0e0e077;
+}
+ ul .header{
+    background: #e0e0e0;
+}

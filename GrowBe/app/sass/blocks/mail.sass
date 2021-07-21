@@ -1,0 +1,67 @@
+.mail
+    &__wrapper
+        display: flex
+        align-items: center
+    &__form
+        &-form
+            margin-top: 55px
+            display: flex
+            .button 
+                margin-left: $card-gap
+    &__url,
+    &__email
+        height: 50px
+        border-radius: 50px
+        background: #EEEEEE
+        border: none
+        line-height: 50px
+        color: $dark-grey
+        padding: 5px 20px
+        outline: none
+    &__url
+        border-top-right-radius: 0px
+        border-bottom-right-radius: 0px
+    &__email
+        border-top-left-radius: 0px
+        border-bottom-left-radius: 0px
+        border-left: 1px solid $light-grey
+        margin-left: -5px
+
+@media screen and ( max-width: 992px )
+    .mail
+        &__wrapper
+            flex-direction: column-reverse
+            align-items: flex-start
+
+
+@media screen and ( max-width: 768px )
+    .mail
+        &__form
+            &-form
+                display: block
+                .button 
+                    margin-left: 0
+                    margin-top: $card-gap
+        
+@media screen and ( max-width: 576px )
+    .mail
+        &__url,
+        &__email
+            width: 100%
+            height: 50px
+            border-radius: 50px
+            background: #EEEEEE
+            border: none
+            line-height: 50px
+            color: $dark-grey
+            padding: 5px 20px
+            outline: none
+        &__url
+            border-top-right-radius: 50px
+            border-bottom-right-radius: 50px
+        &__email
+            border-top-left-radius: 50px
+            border-bottom-left-radius: 50px
+            border-left: 0px solid $light-grey
+            margin-left: 0px
+            margin-top: 10px

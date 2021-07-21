@@ -1,0 +1,32 @@
+.occupation
+    &__wrapper
+        display: flex
+        align-items: center
+    &__hgroup
+        margin-bottom: 70px
+        &-title
+            margin-bottom: 20px
+    &__card
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        padding: 10px
+        box-shadow: $card-shadow
+        &-img
+            margin-right: $card-gap
+        &-text
+            &-title
+                margin-bottom: 10px
+
+@media screen and ( max-width: 992px )
+    .occupation
+        &__wrapper
+            flex-direction: column
+            align-items: flex-start
+@media screen and ( max-width: 576px )
+    .occupation
+        &__card
+            flex-direction: column
+            align-items: flex-start
+            &-img
+                margin-bottom: $card-gap

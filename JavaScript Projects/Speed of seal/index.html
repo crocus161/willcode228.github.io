@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KeyUpper</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="outer"></div>
+
+		<div class="result main__dialog">
+			<div class="result__wrap main__wrap">
+
+				<div class="result__item main__item">
+					<h3 class="result__item-title main__item-title">
+						Letters per minutes: 
+						<span class="result__item-speed"></span>
+					</h3>
+					<p class="result__item-info"></p>
+				</div>
+
+				<div class="result__item main__item">
+					<h3 class="result__item-title main__item-title">
+						Mistakes: 
+						<span class="result__item-mistakes">0</span>
+					</h3>
+					<p class="result__item-info"></p>
+				</div>
+
+				<button class="result__close main__close main__btn">&#10006;</button>
+
+			</div>
+		</div>
+
+		<button class="settings__open main__btn">&#9776;</button>
+
+		<!-- settings menu -->
+		<div class="settings main__dialog">
+			<div class="settings__wrap main__wrap">
+
+				<div class="settings__wrap-hgroup">
+					<h2 class="settings__hgroup-title">Settings</h2>
+				</div>
+
+				<div class="settings__wrap-box main__wrap-box">
+
+					<div class="settings__item main__item">
+						<h3 class="settings__item-title main__item-title">Background color</h3>
+						<input type="color" class="settings__input-background">
+					</div>
+
+					<div class="settings__item main__item">
+						<h3 class="settings__item-title main__item-title">Section background</h3>
+						<input type="color" class="settings__input-section">
+					</div>
+
+					<div class="settings__item main__item">
+						<h3 class="settings__item-title main__item-title">Font color</h3>
+						<input type="color" class="settings__input-font">
+					</div>
+
+					<div class="settings__item main__item">
+						<h3 class="settings__item-title main__item-title">Font size</h3>
+						<button class="settings__item-size plus__size main__btn">+</button>
+						<button class="settings__item-size minus__size main__btn">-</button>
+					</div>
+
+				</div>
+
+				<div class="settings__wrap-box main__wrap-box">
+
+					<div class="settings__item settings__item-lang main__item">
+
+						<h3 class="settings__item-title">Select language</h3>
+						<select class="settings__select">
+							<option value="English">English</option>
+							<option value="Rushian">Russian</option>
+						</select>
+						<button class="settings__item-btn setLang-btn">Submit</button>
+
+					</div>
+
+					<div class="settins__item settings__item-str main__item">
+						<h3 class="settings__item-title">Set the string length</h3>
+						<input type="number" class="settings__input-strLength">
+						<button class="settings__item-btn setLength-btn">Submit</button>
+					</div>
+
+				</div>
+
+				<button class="settings__close main__close main__btn">&#10006;</button>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="js/settings.js"></script>
+</body>
+</html>

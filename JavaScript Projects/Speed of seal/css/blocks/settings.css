@@ -1,0 +1,62 @@
+.settings__open{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+.settings__wrap-box{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.settings__wrap-hgroup{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 60px;
+}
+.settings__wrap-btngroup{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.settings__hgroup-title{
+	transition: var(--main-transition);
+}
+.settings__item-size{
+	width: 35px;
+	height: 35px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.minus__size{
+	line-height: -10px;
+}
+.settings__item-btn{
+	min-width: 120px;
+	min-height: 40px;
+	margin: 20px;
+	padding: 10px;
+	background: var(--main-white);
+	border: 1px solid var(--main-black);
+	transition: var(--main-transition);
+}
+.settings__item-btn:hover{
+	background: var(--main-black);
+	color: var(--main-white);
+}
+.settings__input-strLength,
+.settings__select{
+	width: 100%;
+	margin: 10px 0;
+}
+.settings__item-btn.setLength-btn,
+.settings__item-btn.setLang-btn{
+	min-height: 20px;
+	padding: 5px;
+	margin: 0;
+}
+.settings__item-str,
+.settings__item-lang{
+	width: 250px;
+	height: 125px;
+}

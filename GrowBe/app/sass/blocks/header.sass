@@ -1,1 +1,73 @@
 .header
+    &__wrapper
+        padding-top: 100px
+        min-height: 100vh
+        display: flex
+        align-items: center
+    &__text
+        &-title
+            font-size: 60px
+            line-height: 70px
+            margin: 0
+        &-info
+            display: inline-block
+            width: 65%
+            margin: 15px 0px 35px 0px
+        &-btngroup
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+        &-start
+            margin-right: 30px
+        &-play
+            display: flex
+            align-items: center
+            color: $light-grey
+            transition: $fast-transition
+            &:hover
+                color: $brand-accent
+                .play__wrapper
+                    border-color: $brand-accent
+            .play__wrapper
+                width: 30px
+                height: 30px
+                margin-right: 15px
+                display: grid
+                place-items: center
+                border: 3px solid $light-grey
+                border-radius: 50%
+                transition: $fast-transition
+
+
+@media screen and ( max-width: 1200px )
+    .header
+        &__text
+            &-title
+                font-size: 50px
+                line-height: 60px
+@media screen and ( max-width: 992px )
+    .header
+        &__text
+            &-title
+                font-size: 40px
+                line-height: 50px
+            &-info
+                width: 100%
+@media screen and ( max-width: 768px )
+    .header
+        &__wrapper
+            flex-direction: column-reverse
+        &__img
+            margin-bottom: 40px
+        &__text
+            &-title
+                font-size: 30px
+                line-height: 40px
+@media screen and ( max-width: 576px )
+    .header
+        &__text
+            &-btngroup
+                flex-direction: column
+                align-items: flex-start
+            &-play
+                margin-top: 20px

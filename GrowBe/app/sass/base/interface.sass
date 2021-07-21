@@ -28,6 +28,21 @@ ul
 //*****MAIN BLOCK STYLES*****//
 .section
     padding: 60px 0px
+//*****MAIN HGROUP STYLES*****//
+.hgroup
+    width: 70%
+    margin: auto
+    margin-bottom: 50px
+    text-align: center
+    .title
+        margin-bottom: 20px
+//*****MAIN IMG STYLES*****//
+.img-block
+    padding: 10px
+    width: 100%
+    img
+        object-fit: cover
+        width: 100%
 //*****MAIN TITLE*****//
 .title
     font-size: 45px
@@ -41,15 +56,16 @@ ul
 .info
     font-size: 16px
     font-weight: 400
-    line-height: 32px
+    line-height: 30px
     color: $dark-grey
 //*****LIGHT INFO*****//
 .light-info
     font-size: 15px
-    line-height: 30px
+    line-height: 22px
     color: $light-grey
 //*****MAIN BUTTON*****//
 .button
+    display: block
     width: 140px
     height: 50px
     font-size: 15px
@@ -79,6 +95,8 @@ ul
 @media screen and ( max-width: 768px )
     .wrapper
         width: 540px
+    .hgroup
+        width: 100%
     .title
         font-size: 35px
         line-height: 40px
