@@ -7,7 +7,7 @@ const concat = require('gulp-concat');
 //require uglify js
 const uglify = require('gulp-uglify-es').default;
 //require sass
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 //require autoprefixer
 const autoprefixer = require('gulp-autoprefixer');
 //require clean-css

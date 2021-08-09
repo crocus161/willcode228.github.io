@@ -1,0 +1,64 @@
+.compound
+    overflow: hidden
+    &__hgroup
+        margin-bottom: 50px
+    &__wrapper
+        width: 99%
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 40px 20px
+        width: 350px
+        text-align: center
+        &-title
+            display: block
+            height: 100px
+        img
+            margin: 50px 0px 40px 0px
+            width: 100%
+            object-fit: cover
+    &__label
+        display: flex
+        justify-content: flex-end
+        img
+            margin-right: -10px
+        &-wrap
+            min-width: 90%
+            height: 280px
+            background: $brown
+            border-radius: 200px
+            display: flex
+            align-items: center
+            margin-right: -30%
+            margin-top: 150px
+        &-info
+            display: block
+            width: 70%
+            color: $white
+            padding: 40px 0px 40px 80px
+            text-align: center
+
+@media screen and ( max-width: 1200px )
+    .compound   
+        &__label
+            img
+                display: none
+
+@media screen and ( max-width: 768px )
+    .compound   
+        &__label
+            &-wrap
+                height: 200px
+            img
+                display: none
+        &__card
+            &-title
+                height: 20px
+
+@media screen and ( max-width: 768px )
+    .compound   
+        &__card
+            width: 300px
+
