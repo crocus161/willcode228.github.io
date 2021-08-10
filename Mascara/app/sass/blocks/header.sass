@@ -1,0 +1,64 @@
+.header
+    width: 100%
+    background: rgba(0,0,0,.3) url('../img/dest/header/background.png')
+    background-position: left 
+    background-blend-mode: darken
+    padding-bottom: 150px
+    &__wrapper
+        min-height: 990px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        text-align: center
+    &__title
+        font-size: 90px
+        line-height: 100px
+        margin: 20px 0px 30px 0px
+    &__subtitle
+        font-size: 60px
+        line-height: 70px
+        font-weight: 400
+    &__title,
+    &__subtitle
+        color: $white
+    &__btn
+        margin-top: 190px
+
+@media screen and ( max-width: 1200px )
+    .header
+        &__title
+            font-size: 80px
+            line-height: 90px
+        &__subtitle
+            font-size: 50px
+            line-height: 60px
+@media screen and ( max-width: 992px )
+    .header
+        &__title
+            font-size: 60px
+            line-height: 70px
+        &__subtitle
+            font-size: 40px
+            line-height: 50px
+@media screen and ( max-width: 768px )
+    .header
+        &__wrapper
+            min-height: 100vh
+        &__title
+            font-size: 40px
+            line-height: 50px
+        &__subtitle
+            font-size: 30px
+            line-height: 40px
+        &__btn
+            margin-top: 130px
+@media screen and ( max-width: 576px )
+    .header
+        &__title
+            font-size: 30px
+            line-height: 40px
+        &__subtitle
+            font-size: 20px
+            line-height: 30px
+// @media screen and ( max-width: 319px )

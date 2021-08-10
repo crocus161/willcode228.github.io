@@ -1,0 +1,32 @@
+.problems
+    min-height: 1100px
+    background: rgba(0, 0, 0, .3) url('../img/dest/problems/background.png')
+    padding-top: 200px
+    &__wrapper
+        width: 99%
+        display: flex
+        justify-content: flex-end
+    &__container
+        width: 60%
+    &__box
+        margin-bottom: 50px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &__card
+        text-align: center
+        margin: 20px
+        &-info
+            margin-bottom: 15px
+
+@media screen and ( max-width: 992px )
+    .problems
+        background-blend-mode: darken
+        &__wrapper
+            width: 80%
+        &__container
+            width: 100%
+    
+@media screen and ( max-width: 768px )
+    .problems
+        background-position: right center

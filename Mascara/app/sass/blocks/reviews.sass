@@ -1,0 +1,32 @@
+.reviews
+    background: $black url('../img/dest/reviews/background.png')
+    padding-top: 150px
+    &__wrapper
+        width: 98%
+    &__box
+        justify-content: space-around
+        flex-wrap: wrap
+    &__card
+        margin: 30px 10px
+        width: 600px
+        display: flex
+        align-items: center
+        padding: 40px
+        background: linear-gradient(180deg, #000000 0%, #484848 52.4%, #000000 100%)
+        border-radius: 36px
+        &-meta,
+        &-text
+            text-align: center
+        &-meta
+            margin-right: 20px
+        &-stars
+            margin: 5px 0px 10px 0px
+
+@media screen and ( max-width: 576px )
+    .reviews
+        padding-top: 350px
+
+@media screen and ( max-width: 500px )
+    .reviews
+        &__card
+            flex-direction: column
