@@ -1,0 +1,23 @@
+.outer
+    position: relative
+    &-img
+        height: 100%
+        position: absolute
+        right: -30%
+        left: 0
+        top: 0
+        img
+            height: 100%
+            object-fit: cover
+@media screen and ( max-width: 1200px )
+    .outer
+        &-img
+            right: 0
+            img
+                width: 100%
+@media screen and ( max-width: 576px )
+    .outer
+        &-img
+            display: none
+                
+    

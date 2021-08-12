@@ -1,0 +1,53 @@
+.header
+    background: url('../img/dest/header/background.png')
+    position: relative
+    &__price
+        position: absolute
+        top: 38%
+        left: 44%
+    &__wrapper
+        min-height: 100vh
+        padding: 50px 0px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__title
+        font-size: 96px
+        line-height: 130%
+        color: $accent
+        margin: 0
+    &__info
+        color: $sec-black
+    img
+        width: 200px
+        margin: 40px 0px 20px 0px
+    &__btn
+        margin-bottom: 20px
+
+@media screen and ( max-width: 1200px )
+    .header
+        &__title
+            font-size: 90px
+            line-height: 100%
+@media screen and ( max-width: 992px )
+    .header
+        background-position: 60% center
+        &__title
+            font-size: 80px
+@media screen and ( max-width: 768px )
+    .header
+        &__title
+            font-size: 70px
+@media screen and ( max-width: 576px )
+    .header
+        background-position: left center
+        &__price
+            left: 55%
+        &__title
+            font-size: 45px
+        img
+            width: 150px
+@media screen and ( max-width: 319px )
+    .header
+        &__title
+            font-size: 40px

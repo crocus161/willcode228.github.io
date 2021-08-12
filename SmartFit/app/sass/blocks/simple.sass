@@ -1,0 +1,67 @@
+.simple
+    &__box
+        flex-wrap: wrap
+    &__row
+        flex-basis: 50%
+        &-text
+            margin-left: -20%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: $white
+            position: relative
+        &-cards
+            padding-left: 50px
+        .outer-img
+            left: -38%
+    &__card
+        margin-bottom: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:last-child
+            margin-bottom: 0
+        &-info
+            text-align: center
+            margin-right: 30px
+
+@media screen and ( max-width: 1400px )
+    .simple
+        &__card
+            margin-bottom: 20px
+        &__row
+            &-text
+                margin-left: 0
+                margin-right: 50px
+    
+@media screen and ( max-width: 1200px )
+    .simple
+        &__row
+            flex-basis: 100%
+            margin-bottom: 100px
+            &:last-child
+                margin-bottom: 0
+            &-text
+                min-height: 400px
+                margin-right: 0
+            &-cards
+                padding-left: 0
+            .outer-img
+                left: 0
+                right: 0
+
+@media screen and ( max-width: 576px )
+    .simple
+        &__title
+            color: $black
+        &__row
+            &-text
+                min-height: 0px
+        &__card
+            margin-bottom: 90px
+            flex-direction: column-reverse
+            &-info
+                margin-right: 0
+                margin-top: 20px

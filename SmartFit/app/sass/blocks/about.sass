@@ -1,0 +1,59 @@
+.about
+    overflow: hidden
+    &__box
+        display: flex
+        flex-wrap: wrap
+    &__row
+        flex-basis: 50%
+        &-cards,
+        &-text
+            display: flex
+            flex-direction: column
+            height: 100%
+        &-cards
+            padding: 10px
+            justify-content: space-around
+        &-text
+            position: relative
+            width: 70%
+            justify-content: center
+    &__info
+        color: $white
+        margin-left: 30px
+        &-name,
+        &-job
+            font-size: 18px
+            line-height: 23px
+        &-name
+            margin-top: 20px
+        &-job
+            color: $grey
+    &__card
+        margin: 20px 0px
+        display: flex
+        align-items: center
+        img
+            margin-right: 35px
+
+
+
+@media screen and ( max-width: 1200px )
+    .about
+        &__row
+            flex-basis: 100%
+            &-cards
+                align-items: center
+                margin-bottom: 30px
+            &-text
+                width: 70%
+                padding: 40px
+@media screen and ( max-width: 576px )
+    .about
+        &__row
+            &-text
+                width: 100%
+                padding: 0px
+                text-align: center
+        &__info
+            color: $black
+            margin-left: 0

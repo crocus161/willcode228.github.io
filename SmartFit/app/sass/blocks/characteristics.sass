@@ -1,0 +1,55 @@
+.characteristics
+    overflow: hidden
+    &__wrapper
+        display: flex
+    &__text
+        &-subtitle
+            margin-top: 50px
+            margin-bottom: 20px
+            font-weight: 700
+        &-info
+            color: $sec-black
+            margin-bottom: 30px
+        .line,
+        .dots
+            color: #C0BCBC
+        .dots
+            display: none
+        li
+            margin-left: 20px
+    &__img
+        margin-left: 50px
+        position: relative
+        .bac-img
+            position: absolute
+            right: 0
+            top: 10%
+
+@media screen and ( max-width: 992px )
+    .characteristics
+        &__text
+            .line
+                display: none
+            .dots
+                display: inline-block
+
+@media screen and ( max-width: 768px )
+    .characteristics
+        &__text
+            width: 100%
+        &__img
+            margin-left: 0
+            .front-img
+                display: none
+            .bac-img
+                top: -50px  
+                right: -20px
+
+@media screen and ( max-width: 576px )
+    .characteristics
+        &__wrapper
+            width: 90%
+            display: flex
+            justify-content: center
+        .bac-img
+            width: 400px
