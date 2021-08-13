@@ -1,0 +1,156 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&family=Playfair+Display&display=swap')
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-family: 'Playfair Display', serif
+
+::-webkit-input-placeholder 
+    color: $white
+
+:-moz-placeholder 
+    color: $white
+
+::-moz-placeholder  
+    color: $white
+
+:-ms-input-placeholder  
+    color: $white
+
+html
+    scroll-behavior: smooth
+
+button
+    all: unset
+a
+    text-decoration: none
+h1,h2,h3,h4,h5,h6
+    font-weight: 400
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container
+    max-width: 1920px
+    margin: auto
+//*****CONTAINER OF BLOCK*****//
+.wrapper
+    width: 1250px
+    margin: auto
+//*****MAIN BLOCK STYLES*****//
+.section
+    padding: 65px 0px
+//*****MAIN BOX*****//
+.box
+    display: flex
+//*****MAIN HGROUP*****//
+.hgroup
+    text-align: center
+    margin-bottom: 50px
+//*****MAIN TITLE*****//
+.title
+    font-size: 36px
+    line-height: 43px
+    font-weight: 400
+//*****MAIN INFO*****//
+.info
+    font-size: 24px
+    font-weight: 400
+    line-height: 33px
+//*****SECONDARY INFO*****//
+.min-info
+    font-size: 18px
+    line-height: 23px
+//*****MAIN BUTTON*****//
+.button
+    display: block
+    width: 340px
+    height: 90px
+    border-radius: 54px
+    background: linear-gradient(180deg, #A00711 0%, #7F0208 100%)
+    font-size: 40px
+    line-height: 90px
+    text-align: center
+    color: $white
+
+//*****BLOCK WITH BACKGROUND BUTTON*****//
+.back
+    background-size: cover !important
+    background-repeat: no-repeat !important
+
+.title-font
+    font-family: 'Oswald', sans-serif
+
+.accent-span
+    color: $accent
+    font-size: inherit
+    line-height: inherit
+    font-weight: inherit
+    font-family: inherit
+
+//*****MEIDA QUERIES*****//
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 1140px
+    .title
+        font-size: 35px
+        line-height: 45px
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 960px
+    .title
+        font-size: 30px
+        line-height: 40px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 730px
+    .title
+        font-size: 25px
+        line-height: 30px
+    .info
+        font-size: 20px
+        line-height: 30px
+    .button
+        width: 280px
+        height: 70px
+        font-size: 40px
+        line-height: 70px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 540px
+    .title
+        font-size: 20px
+        line-height: 30px
+    .info
+        font-size: 16px
+        line-height: 21px
+    .min-info
+        font-size: 14px
+        line-height: 23px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 285px
+    .title
+        font-size: 20px
+        line-height: 25px
+    .button
+        width: 250px
+        height: 70px
+        font-size: 35px
+        line-height: 70px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 270px
+    .title
+        font-size: 18px
+        line-height: 23px
+    .info
+        font-size: 15px
+        line-height: 20px
+
+
+

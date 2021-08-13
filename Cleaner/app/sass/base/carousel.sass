@@ -1,0 +1,39 @@
+.carousel
+	position: relative
+
+.carousel__btn
+	position: absolute
+	top: 50%
+	font-size: 30px
+	color: $grey
+	cursor: pointer
+	&:hover
+		color: $accent
+		
+	
+
+.prev__btn
+	left: 30px
+
+.next__btn
+	right: 30px
+
+.carousel__active.carousel__active
+	display: flex !important
+	animation: show-hide 0.3s linear
+
+@keyframes show-hide
+	from
+		opacity: 0
+	to
+		opacity: 1
+	
+
+@media screen and (max-width: 605px)
+	.prev__btn
+		left: 35%
+	.next__btn
+		right: 35%
+	.carousel__btn
+		top: 105%
+	

@@ -1,0 +1,46 @@
+.characteristics
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 40px 20px 
+        &-info
+            margin-bottom: 25px
+            .line,
+            .dots
+                color: $grey
+            .line
+                letter-spacing: -2px
+            .dots
+                display: none
+    &__title
+        text-align: center
+        margin-bottom: 80px
+    &__img
+        width: 50%
+        img
+            width: 100%
+            object-fit: cover
+
+@media screen and ( max-width: 1200px )
+    .characteristics
+        &__text
+            .line
+                display: none
+            .dots
+                display: inline-block
+        &__img
+            min-height: 100%
+            img
+                width: 100%
+                min-height: 100%
+
+@media screen and ( max-width: 576px )
+    .characteristics
+        &__img
+            display: none
+        &__text
+            width: 100%
+            padding: 50px
+            text-align: center
+    
