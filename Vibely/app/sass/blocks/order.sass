@@ -1,0 +1,50 @@
+.order
+    &__hgroup
+        text-align: center
+        margin-bottom: 50px
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-bottom: 100px
+    &__card
+        text-align: center
+        width: 350px
+        min-height: 350px
+        margin: 10px
+        padding: 10px
+        &-img
+            width: 100%
+            min-height: 305px
+            position: relative
+            &::before
+                content: attr(data-counter)
+                position: absolute
+                top: 0px
+                left: 10px
+                display: block
+                width: 50px
+                height: 50px
+                text-align: center
+                line-height: 50px
+                font-size: 25px
+                background: linear-gradient(180deg, #B83959 0%, #F1819D 50.31%, #B83959 100%)
+                color: $white
+                border-radius: 50%
+            img
+                width: 100%
+                object-fit: cover
+        &-title
+            margin: 15px 0px 50px 0px
+        &-info
+            border-top: 1px solid $black
+            padding-top: 10px
+    &__button
+        margin: auto
+
+@media screen and ( max-width: 992px )
+    .order
+        &__card
+            margin-bottom: 50px
+            &-img
+                min-height: 200px

@@ -1,0 +1,42 @@
+.reviews
+    &__box
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    .swiper
+        &-slide
+            margin: 30px 20px
+            width: 500px
+            padding: 40px
+            background: linear-gradient(180deg, #E17892 0%, #A63450 0.01%, #D56883 48.23%, #B93F5D 100%)
+            display: flex
+            flex-direction: column
+            border-radius: 24px
+            img
+                border-radius: 24px
+            &__body
+                display: flex
+                justify-content: center
+                align-items: center
+            &__info
+                font-size: 16px
+                line-height: 25px
+                padding: 10px 10px 0px 10px
+                color: $white
+            &__meta
+                margin-top: 20px
+                margin-left: 40px
+                text-align: center
+            &-name
+                color: $white
+                margin-bottom: 10px
+            &-points
+                color: $white
+
+@media screen and ( max-width: 576px )
+    .reviews
+        .swiper
+            &-slide 
+                padding: 20px
+                &__body
+                    flex-direction: column

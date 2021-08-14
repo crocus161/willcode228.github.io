@@ -1,0 +1,45 @@
+.header
+    width: 100%
+    background: url('../img/dest/header/background.jpg')
+    &__wrapper
+        min-height: 900px
+        padding: 50px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__box
+        width: 40%
+        flex-direction: column
+        text-align: start
+    &__title
+        margin-top: 100px
+        margin-bottom: 0
+        font-size: 72px
+    &__subtitle
+        margin-bottom: 50px
+
+@media screen and ( max-width: 1200px )
+    .header
+        background-color: rgba(0,0,0,0.3)
+        background-blend-mode: darken
+        &__wrapper
+            min-height: 100vh
+            padding: 0
+            justify-content: center
+            align-items: flex-start
+        &__box
+            color: $white
+        &__title
+            margin-top: 0
+            font-size: 60px
+@media screen and ( max-width: 992px )
+    .header
+        &__box
+            color: $white
+            width: 100%
+        &__title
+            font-size: 50px
+@media screen and ( max-width: 576px )
+    .header
+        background-position: right
+    

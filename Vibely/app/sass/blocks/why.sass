@@ -1,0 +1,66 @@
+.why
+    display: flex
+    justify-content: center  
+    align-items: center
+    &__img
+        width: 50%
+        img
+            width: 100%
+            object-fit: cover
+    &__text
+        width: 50%
+        padding: 40px 20px 40px 40px
+        &-buy
+            margin: 20px 0 20px 0
+        &-title
+            margin-bottom: 50px
+    &__timer
+        margin-top: 50px 
+        width: 500px    
+        background: linear-gradient(180deg, #D3BB91 0%, #F2D095 47.19%, #D3BB91 100%)
+        padding: 40px
+        color: $white
+        text-align: center
+        border-radius: 54px
+        padding-bottom: 50px
+        &-title
+            margin-bottom: 20px
+        &-time
+            display: inline-block
+            background-color: $white
+            padding: 20px
+            font-size: 90px
+            color: $black
+            border-radius: 24px
+        &-notes
+            display: flex
+            justify-content: space-around
+        &-dots
+            font-size: 90px
+            color: $white
+            display: inline-block
+            margin: 0px 10px
+
+@media screen and ( max-width: 1200px )
+    .why
+        &__img
+            display: none
+        &__text
+            padding: 20px 20px 20px 20px
+            width: 90%
+            text-align: center
+        &__timer
+            margin: 50px auto 
+
+@media screen and ( max-width: 576px )
+    .why
+        &__timer
+            width: 100%
+            &-time,
+            &-dots
+                font-size: 30px
+            &-dots
+                margin: 0% 5px
+            &-time
+                padding: 10px
+            

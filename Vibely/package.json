@@ -1,0 +1,36 @@
+{
+  "name": "gulppuck",
+  "version": "1.0.0",
+  "description": "gulp assembly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willcode228/Gulp.git"
+  },
+  "author": "Ilchenko Danial",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willcode228/Gulp/issues"
+  },
+  "homepage": "https://github.com/willcode228/Gulp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "normalize.css": "^8.0.1"
+  }
+}
