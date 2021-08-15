@@ -1,0 +1,86 @@
+.ideal
+    padding-top: 150px
+    background: url('../img/dest/ideal/background.jpg')
+    color: $white
+    align-items: flex-end
+    padding-bottom: 0
+    .text-buy
+        color: rgba($white, .75)
+    &__title
+        margin-bottom: 50px
+    &__list
+        margin-bottom: 40px
+        &-item
+            margin-bottom: 50px
+            &::before
+                content: ''
+                display: inline-block
+                width: 50px
+                height: 50px
+                margin-bottom: -18px
+                margin-right: 10px
+                background: linear-gradient(180deg, #EFD9D1 0%, #FDF6F4 48.23%, #EFD9D1 100%)
+                border-radius: 50%
+    &__img
+        width: 80%
+        min-height: 100%
+        margin-bottom: -10px
+        img
+            width: 100%
+            min-height: 100%
+            object-fit: cover
+    &__text
+        padding: 40px
+        .timer
+            margin-bottom: 50px 
+            width: 500px    
+            background: linear-gradient(180deg, #C99990 0%, #FCC2B7 48.22%, #FFC4B9 48.23%, #C99990 100%)
+            padding: 40px
+            color: $white
+            text-align: center
+            border-radius: 54px
+            padding-bottom: 50px
+            &-title
+                margin-bottom: 20px
+            &-time
+                display: inline-block
+                background-color: $white
+                padding: 20px
+                font-size: 90px
+                color: $black
+                border-radius: 24px
+            &-notes
+                display: flex
+                justify-content: space-around
+            &-dots
+                font-size: 90px
+                color: $white
+                display: inline-block
+                margin: 0px 10px
+
+@media screen and ( max-width: 1200px )
+    .ideal
+        &__img
+            display: none
+        &__text
+            width: 100%
+            text-align: center
+            .timer
+                margin: 0px auto 50px auto
+
+@media screen and ( max-width: 576px )
+    .ideal
+        &__list
+            &-item
+                &::before
+                    display: none
+        &__text
+            .timer
+                width: 100%
+                &-time,
+                &-dots
+                    font-size: 30px
+                &-dots
+                    margin: 0% 5px
+                &-time
+                    padding: 10px

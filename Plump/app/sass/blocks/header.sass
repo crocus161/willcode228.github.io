@@ -1,0 +1,79 @@
+.header
+    background: url('../img/dest/header/background.jpg')
+    background-position: right top
+    position: relative
+    &__price
+        top: 30%
+        left: 20%
+        display: none
+    &__wrapper
+        position: relative
+        padding-top: 20px
+        padding-bottom: 200px
+        min-height: 100vh
+        color: $white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &-price.price
+            display: none
+            position: relative 
+            margin-top: 40px
+    &__title
+        font-size: 144px
+        line-height: 100%
+        margin: 0
+    &__subtitle
+        font-size: 64px
+        line-height: 78px
+    &__title,
+    &__subtitle
+        font-weight: 400
+    img
+        width: 200px
+        margin: 20px 0px
+
+@media screen and ( max-width: 1200px )
+    .header
+        background-color: rgba(0, 0, 0, .3)
+        background-blend-mode: darken
+        &__title
+            font-size: 120px
+        &__subtitle
+            font-size: 60px
+            line-height: 70px
+@media screen and ( max-width: 992px )
+    .header
+        &__title
+            font-size: 100px
+        &__subtitle
+            font-size: 50px
+            line-height: 60px
+@media screen and ( max-width: 768px )
+    .header
+        &__price.price
+            display: none 
+        &__wrapper
+            align-items: center
+            &-price.price
+                display: flex
+        &__title
+            font-size: 80px
+        &__subtitle
+            font-size: 40px
+            line-height: 50px
+@media screen and ( max-width: 576px )
+    .header
+        background-position: left
+        &__title
+            font-size: 70px
+        &__subtitle
+            font-size: 30px
+            line-height: 40px
+@media screen and ( max-width: 319px )
+    .header
+        &__title
+            font-size: 50px
+        &__subtitle
+            font-size: 25px
+            line-height: 35px

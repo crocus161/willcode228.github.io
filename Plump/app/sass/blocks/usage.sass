@@ -1,0 +1,33 @@
+.usage
+    background: url('../img/dest/usage/background.jpg')
+    color: $white
+    &__card
+        display: flex
+        align-items: center
+        width: 600px
+        margin: 40px 0px
+        img
+            margin-right: 20px
+    &-info
+        padding-bottom: 10px
+        border-bottom: 1px solid rgba($white, 0.25)
+
+@media screen and ( max-width: 768px )
+    .usage
+        &__title
+            text-align: center
+        &__card
+            width: 100%
+            img
+                width: 150px
+
+@media screen and ( max-width: 576px )
+    .usage
+        &__card
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+            img
+                margin-right: 0
+                margin-bottom: 20px

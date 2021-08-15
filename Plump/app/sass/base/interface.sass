@@ -1,0 +1,125 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap')
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 16px
+    font-family: 'Montserrat', sans-serif
+html
+    scroll-behavior: smooth
+    scroll-padding-top: 30px
+button
+    all: unset
+a
+    text-decoration: none
+ul
+    list-style-type: none
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container
+    max-width: 1920px
+    margin: auto
+//*****CONTAINER OF BLOCK*****//
+.wrapper
+    width: 1250px
+    margin: auto
+//*****MAIN BLOCK STYLES*****//
+.section
+    padding: 65px 0px
+//*****MAIN BOX*****//
+.box
+    display: flex
+//*****MAIN HGROUP*****//
+.hgroup
+    text-align: center
+    margin-bottom: 50px
+//*****MAIN TITLE*****//
+.title
+    font-size: 36px
+    line-height: 43px
+    font-weight: 400
+//*****MAIN INFO*****//
+.info
+    font-size: 24px
+    line-height: 33px
+//*****MAIN BUTTON*****//
+.button
+    display: block
+    width: 340px
+    height: 90px
+    border-radius: 54px
+    background: linear-gradient(180deg, #E0D0B4 0%, #F8ECD7 46.15%, #DED6C7 100%)
+    font-size: 40px
+    line-height: 90px
+    text-align: center
+    color: $black
+    text-transform: uppercase
+//*****BLOCK WITH BACKGROUND BUTTON*****//
+.back
+    background-size: cover !important
+    background-repeat: no-repeat !important
+
+//*****MEIDA QUERIES*****//
+@media screen and ( max-width: 1400px )
+    .wrapper
+        width: 1140px
+    .title
+        font-size: 35px
+        line-height: 45px
+@media screen and ( max-width: 1200px )
+    .wrapper
+        width: 960px
+    .title
+        font-size: 30px
+        line-height: 40px
+@media screen and ( max-width: 992px )
+    .wrapper
+        width: 730px
+    .title
+        font-size: 25px
+        line-height: 30px
+    .info
+        font-size: 20px
+        line-height: 30px
+    .button
+        width: 280px
+        height: 80px
+        font-size: 40px
+        line-height: 80px
+@media screen and ( max-width: 768px )
+    .wrapper
+        width: 540px
+    .title
+        font-size: 20px
+        line-height: 30px
+    .info
+        font-size: 16px
+        line-height: 21px
+@media screen and ( max-width: 576px )
+    .wrapper
+        width: 285px
+    .title
+        font-size: 20px
+        line-height: 25px
+    .button
+        width: 250px
+        height: 70px
+        font-size: 30px
+        line-height: 70px
+@media screen and ( max-width: 319px )
+    .wrapper
+        width: 270px
+    .title
+        font-size: 18px
+        line-height: 23px
+    .info
+        font-size: 15px
+        line-height: 20px

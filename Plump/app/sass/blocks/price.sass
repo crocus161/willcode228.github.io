@@ -1,0 +1,33 @@
+.price
+    width: 300px
+    height: 300px
+    background: #935F5FBA
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    &__box
+        width: 90%
+        height: 90%
+        border-radius: 50%
+        border: 3px solid rgba(244, 233, 213, 0.48)
+        padding: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        text-align: center
+    &-price
+        font-weight: 600
+        color: $white 
+    &__note
+        font-weight: 400
+    &__title,
+    &__note
+        color: $black
+
+@media screen and ( max-width: 768px )
+    .price
+        width: 250px
+        height: 250px

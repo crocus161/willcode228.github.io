@@ -1,0 +1,45 @@
+.reviews
+    background: url('../img/dest/reviews/background.jpg')
+    position: relative
+    &__price
+        bottom: 33%
+        left: 30%
+    &__products
+        position: absolute
+        bottom: 5%
+        left: 20%
+    &__wrapper
+        min-height: 900px
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+    &__title
+        color: $white
+    &__card
+        width: 450px
+        padding: 20px
+        text-align: center
+        background: linear-gradient(86.17deg, #C99990 -19.57%, #FCC2B7 44.93%, #C99990 111.8%)
+        border-radius: 8px
+        margin-top: 50px
+        img
+            margin-bottom: 20px
+        &-info
+            margin-top: 40px
+
+@media screen and ( max-width: 1200px )
+    .reviews
+        &__price,
+        &__products
+            display: none
+
+@media screen and ( max-width: 576px )
+    .reviews
+        background-color: rgba(0, 0, 0, .3)
+        background-blend-mode: darken
+        &__wrapper
+            justify-content: center
+            align-items: center
+        &__card
+            width: 100%
+            padding: 40px 20px
