@@ -128,38 +128,66 @@
 Здесь я оставлю ссылочки на каждый лендинг:
 
   Древние проекты:
+  
   -https://willcode228.github.io/Air%20One%20Page/
+  
   -https://willcode228.github.io/B&W/
+  
   -https://willcode228.github.io/Creatives/
+  
   -https://willcode228.github.io/Jewelery/
+  
   -https://willcode228.github.io/Mogo/
+  
   -https://willcode228.github.io/Бухгалтерские%20услуги/
+  
 
   Новые пректы
-  -https://willcode228.github.io/%D0%9E%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F/dist/
-  -https://willcode228.github.io/Collibra/dist/
-  -https://willcode228.github.io/New%20Providence/
-  -https://willcode228.github.io/Headphone/dist/
-  -https://willcode228.github.io/Single%20Page/
-  -https://willcode228.github.io/Zen/
-  -https://willcode228.github.io/Thrive%20Talk/dist/
-  -https://willcode228.github.io/Next%20Generation/
-  -https://willcode228.github.io/Indicorp/dist/
-  -https://willcode228.github.io/Arka/dist/
-  -https://willcode228.github.io/Mad%20Hatters/
-  -https://willcode228.github.io/Blank/dist/
-  -https://willcode228.github.io/Over%20Love/dist/
-  -https://willcode228.github.io/Vpn/dist/
-  -https://willcode228.github.io/Universal/dist/  
+
+  -https://willcode228.github.io/Collibra/app/index.html
+  
+  -https://willcode228.github.io/New%20Providence/index.html
+  
+  -https://willcode228.github.io/Headphone/app/index.html
+  
+  -https://willcode228.github.io/Single%20Page/index.html
+  
+  -https://willcode228.github.io/Zen/index.html
+  
+  -https://willcode228.github.io/Thrive%20Talk/app/index.html
+  
+  -https://willcode228.github.io/Next%20Generation/index.html
+  
+  -https://willcode228.github.io/Indicorp/app/index.html
+  
+  -https://willcode228.github.io/Arka/app/index.html
+  
+  -https://willcode228.github.io/Mad%20Hatters/index.html
+  
+  -https://willcode228.github.io/Blank/app/index.html
+  
+  -https://willcode228.github.io/Over%20Love/app/index.html
+  
+  -https://willcode228.github.io/Vpn/app/index.html
+  
+  -https://willcode228.github.io/Universal/app/index.html
+  
    
  А здесь на JS проекты:
  
-  -https://willcode228.github.io/Dino/
-  -https://willcode228.github.io/HTML5%20Geolocation/
-  -https://willcode228.github.io/JavaScript%20Projects/Paint/
-  -https://willcode228.github.io/JavaScript%20Projects/Quize/
-  -https://willcode228.github.io/JavaScript%20Projects/To-do%20list/
-  -https://willcode228.github.io/JavaScript%20Projects/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0/
-  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/
-  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D0%BD%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8/
+  -https://willcode228.github.io/Dino/index.html
+  
+  -https://willcode228.github.io/HTML5%20Geolocation/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/Paint/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/Quize/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/To-do%20list/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/index.html
+  
+  -https://willcode228.github.io/JavaScript%20Projects/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%B8%D0%BA%D0%B8%20%D0%BD%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8/index.html
 
