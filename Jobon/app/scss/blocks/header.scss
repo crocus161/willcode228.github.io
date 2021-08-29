@@ -1,5 +1,5 @@
 .header{
-    @include backgroundImg('../../img/dest/header/background.jpg');
+    @include backgroundImg('../img/dest/header/background.jpg');
     .section{
         padding-top: 40px;
         padding-bottom: 40px;

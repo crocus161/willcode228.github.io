@@ -7,7 +7,7 @@
         flex: 0 0 50%;
     }
     &__img{
-        @include backgroundImg('../../img/dest/characteristics/product.jpg')
+        @include backgroundImg('../img/dest/characteristics/product.jpg')
     }
     &__text{
         padding: 60px 20px;

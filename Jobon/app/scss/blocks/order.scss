@@ -1,5 +1,5 @@
 .order{
-    @include backgroundImg('../../img/dest/order/background.jpg');
+    @include backgroundImg('../img/dest/order/background.jpg');
     .cards{
         @include cardWidth(270px);
         .card{

@@ -2,7 +2,7 @@
     background: $brand-black;
     &__wrapper{
         min-height: 100vh;
-        @include backgroundImg('../../img/dest/footer/background.jpg');
+        @include backgroundImg('../img/dest/footer/background.jpg');
     }
     form{
         display: flex;

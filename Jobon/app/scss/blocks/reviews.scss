@@ -1,6 +1,6 @@
 .reviews{
     &__img{
-        @include backgroundImg('../../img/dest/reviews/product.jpg');
+        @include backgroundImg('../img/dest/reviews/product.jpg');
         display: flex;
         justify-content: center;
         align-items: center;

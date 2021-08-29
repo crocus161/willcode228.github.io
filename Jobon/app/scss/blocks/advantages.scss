@@ -1,6 +1,6 @@
 .advantages{
     &__img{
-        @include backgroundImg('../../img/dest/advantages/product.jpg');
+        @include backgroundImg('../img/dest/advantages/product.jpg');
     }
     &__card{
         &:not(:last-child){
