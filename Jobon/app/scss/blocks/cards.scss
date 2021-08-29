@@ -1,0 +1,15 @@
+.cards{
+    display: grid;
+    grid-gap: 20px;
+    @include cardWidth(250px);
+    justify-content: center;
+    justify-items: center;
+    .card{
+        margin-bottom: 80px;
+        text-align: center;
+        img{
+            @include responseImg(80%);
+            margin-bottom: 20px;
+        }
+    }
+}

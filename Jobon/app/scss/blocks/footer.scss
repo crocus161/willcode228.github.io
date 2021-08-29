@@ -1,0 +1,67 @@
+.footer{
+    background: $brand-black;
+    &__wrapper{
+        min-height: 100vh;
+        @include backgroundImg('../../img/dest/footer/background.jpg');
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .input__wrapper{
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 510px;
+            height: 117px;
+            border: 4px solid $brand-white;
+            border-radius: 61px;
+            background: none;
+            @include adaptiveFont(36, 20);
+            text-align: center;
+            @include notLast{
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@include placeholder{
+    color: $brand-white
+}
+
+@include laptop{
+    .footer{
+        form{
+            input{
+                width: 300px;
+                height: 90px;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        form{
+            flex-direction: column;
+            .input__wrapper{
+                margin-right: 0;
+            }
+            button{
+                margin-right: 0;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@include phone{
+    .footer{
+        form input{
+            width: 100%;
+        }
+    }
+}

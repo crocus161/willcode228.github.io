@@ -1,0 +1,91 @@
+.characteristics{
+    &__wrapper{
+        margin-right: 0;
+        display: flex;
+    }
+    &__item{
+        flex: 0 0 50%;
+    }
+    &__img{
+        @include backgroundImg('../../img/dest/characteristics/product.jpg')
+    }
+    &__text{
+        padding: 60px 20px;
+    }
+    &__li{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 18px;
+        }
+    }
+    &__key,
+    &__value{
+        letter-spacing: 0.145em
+    }
+    &__key{
+        margin-right: 15px;
+        color: $brand-grey;
+    }
+    &__value{
+        margin-left: 8px;
+    }
+    &__line{
+        flex-grow: 1;
+        height: 0.5px;
+        background: $brand-grey;
+        align-self: flex-end;
+    }
+}
+
+@include laptop{
+    .characteristics{
+        &__wrapper{
+            margin: 0 auto;
+        }
+        &__text{
+            padding: 10px 20px;
+        }
+        &__key .producer{
+            display: none;
+        }
+    }
+}
+
+@include tablet{
+    .characteristics{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__text{
+            padding: 20px 20px 60px 20px;
+        }
+        &__img{
+            min-height: 400px;
+        }
+    }
+}
+
+@include phone{
+    .characteristics{
+        &__li{
+            text-align: center;
+            justify-content: center;
+        }
+        &__key,
+        &__value{
+            margin: 0;
+        }
+        &__key{
+            margin-right: 10px;
+        }
+        &__key .type{
+            display: none;
+        }
+        &__line{
+            display: none;
+        }
+        &__img{
+            min-height: 200px;
+        }
+    }
+}

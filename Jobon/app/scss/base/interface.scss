@@ -1,0 +1,126 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+    color: $brand-white
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 1;
+    background: $brand-black;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+//*****HGROUP*****//
+.hgroup{
+    text-align: center;
+    margin-bottom: 100px;
+    .block-title{
+        margin-bottom: 20px;
+    }
+}
+//*****TITLES*****//
+.block-title{
+    @include adaptiveFont(36, 20);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+}
+//*****INFO*****//
+.info{
+    @include adaptiveFont(24, 16);
+    font-weight: 400;
+}
+//*****BUTTON*****//
+.button{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid $brand-white;
+    text-align: center;
+    line-height: 140px;
+    @include adaptiveFont(30, 16);
+    margin-right: 30px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+@include tablet{
+    .button{
+        width: 100px;
+        height: 100px;
+        line-height: 90px;
+    }
+}

@@ -1,0 +1,89 @@
+.prepare{
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-item{
+            margin-bottom: 20px;
+        }
+    }
+    &__img{
+        min-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        &-img{
+            flex: 0 0 48%;
+            img{
+                @include responseImg;
+            }
+        }
+    }
+    &__img-img:nth-child(2){
+        overflow: hidden;
+        img{
+            margin-top: -50px;
+        }
+    }
+    &__img-img:nth-child(4){
+        margin-top: -50px;
+    }
+
+}
+
+@include desktop{
+    .prepare{
+        &__box{
+            flex-direction: column;
+        }
+        &__img{
+            min-width: 80%;
+            margin: auto;
+        }
+        &__text{
+            text-align: center;
+            list-style-type: none;
+        }
+    }
+}
+
+@include tablet{
+    .prepare{
+        &__img{
+            justify-content: center;
+            align-items: center;
+            &-img{
+                flex: 0 0 60%;
+            }
+            img{
+                min-height: 200px;
+            }
+        }
+        &__img-img:nth-child(2){
+            overflow: hidden;
+            img{
+                margin-top: 0px;
+            }
+        }
+        &__img-img:nth-child(4){
+            margin-top: 0px;
+        }
+    }
+}
+
+@include phone{
+    .prepare{
+        &__img{
+            min-width: 100%;
+            &-img{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+

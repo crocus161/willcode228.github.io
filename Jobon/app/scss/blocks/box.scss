@@ -1,0 +1,13 @@
+.box{
+    display: flex;
+    &__item{
+        flex: 0 0 50%;
+    }
+    &__text{
+        padding: 40px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

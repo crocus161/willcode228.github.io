@@ -1,0 +1,72 @@
+.reviews{
+    &__img{
+        @include backgroundImg('../../img/dest/reviews/product.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    &__title{
+        @include adaptiveFont(48, 24);
+    }
+    &__card{
+        &:not(:last-child){
+            margin-top: 70px;
+            margin-bottom: 200px;
+        }
+        width: 320px;
+        text-align: center;
+        &-info{
+            position: relative;
+            &::before{
+                @include pseudo(block, absolute, '"');
+                top: -60%;
+                left: 50%;
+                @include adaptiveFont(150, 50);
+                font-family: 'Oswald', sans-serif;
+                transform: translateX(-50%);
+            }
+        }
+        &-box{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img[alt='ava']{
+                margin-right: 30px;
+            }
+        }
+    }
+    
+}
+
+@include laptop{
+    .reviews{
+        &__text{
+            padding: 20px;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        &__box{
+            flex-direction: column;
+        }
+        &__card{
+            width: 280px;
+            &:not(:last-child){
+                margin-top: 70px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+@include sm-phone{
+    .reviews{
+        &__card{
+            width: 255px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.order{
+    @include backgroundImg('../../img/dest/order/background.jpg');
+    .cards{
+        @include cardWidth(270px);
+        .card{
+            img{
+                @include responseImg(100%);
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.header{
+    @include backgroundImg('../../img/dest/header/background.jpg');
+    .section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        font-weight: 700;
+        @include adaptiveFont(160, 60);
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__subtitle{
+        font-weight: 400;
+        @include adaptiveFont(24, 16);
+        color: $brand-grey;
+        letter-spacing: 0.145em;
+    }
+    &__img{
+        margin-top: 50px;
+        width: 500px;
+    }
+    &__meta{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__info span{
+        font-weight: 700;
+        letter-spacing: 0.115em;
+        @include adaptiveFont(36, 16);
+    }
+
+    
+}
+
+@include tablet{
+    .header{
+        background-position: left;
+        &__wrapper{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            text-align: center;
+        }
+        &__img{
+            @include responseImg(80%)
+        }
+        &__btn{
+            width: 100px;
+            height: 100px;
+            line-height: 90px;
+        }
+    }    
+}
