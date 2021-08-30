@@ -1,0 +1,73 @@
+:root{
+    --light: rgb(223, 170, 170);
+    --dark: rgb(173, 124, 124);
+    --dark-hover: rgb(145, 107, 107);
+
+    --card-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+    --card-hover-shadow: 0px 0px 15px rgba(0,0,0, 0.5);
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: auto;
+    background: var(--light);
+    display: grid;
+    place-items: center;
+}
+
+.wrapper{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    perspective: 500;
+}
+
+.card{
+    width: 170px;
+    height: 200px;
+    background: var(--dark);
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+
+    font-size: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 200px;
+    color: var(--dark);
+    user-select: none;
+}
+
+.card:hover{
+    color: var(--dark-hover);
+    background: var(--dark-hover);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.card-active{
+    color: var(--light);
+}
+
+.card-active:hover{
+    color: var(--light);
+    background: var(--dark);
+    
+}
+
