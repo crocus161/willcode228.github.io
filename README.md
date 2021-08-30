@@ -205,4 +205,4 @@
   
   -https://willcode228.github.io/JavaScript%20Projects/Testing%20exersice/
 
-  -https://willcode228.github.io/JavaScript Projects/Find the same/
+  -https://willcode228.github.io/JavaScript%Projects/Find%the%same/
