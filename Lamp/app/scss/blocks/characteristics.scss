@@ -1,0 +1,41 @@
+.characteristics{
+    padding: 100px 0px 80px 0px;
+    &__btn{
+        margin-top: 100px;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img{
+        width: 50%;
+        img{
+            @include responseImg;
+        }
+    }
+    &__text{
+        padding: 20px;
+        &-line{
+            font-size: 20px;
+            .key{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .characteristics{
+        &__box{
+            flex-direction: column;
+        }
+        &__text{
+            margin-bottom: 50px;
+        }
+        &__img{
+            width: 80%;
+        }
+    }
+}
+

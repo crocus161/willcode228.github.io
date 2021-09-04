@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- NORMALIZE CONNECTING (and maybe other libraries)-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- MAIN MINIMIZATION STYLES -->
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <nav class="nav">
+            <h2 class="nav__title">Меню</h2>
+            <button class="nav__btn">☰</button>
+            <ul class="nav__menu">
+                <li class="nav__menu-close"><a href="#">×</a></li>
+                <li><a href="#advantages">ПЕРЕВАГИ</a></li>
+                <li><a href="#description">ОПИС</a></li>
+                <li><a href="#characteristics">ХАРАКТЕРИСТИКИ</a></li>
+                <li><a href="#">ЯК ЗАМОВИТИ?</a></li>
+            </ul>
+        </nav>
+        <!-- /.nav -->
+
+        <header class="header">
+            <div class="overlay"></div>
+            <div class="header__wrapper wrapper">
+                <h1 class="header__title section-title">Світильник у підсклянник на сонячних батареях</h1>
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <main class="main">
+
+            <div class="form section">
+                <div class="form__wrapper wrapper">
+
+                    <div class="form__hgroup hgroup">
+                        <h2 class="form__hgroup-title section-title">Замовити набір світильників у підсклянники на сонячних батареях</h2>
+                        <div class="price">
+                            <div class="ordinary-price">
+                                <p class="ordinary-price-text">звичайна ціна:</p>
+                                <p class="ordinary-price-price"><del>550 грн</del></p>
+                            </div>
+                            <div class="share-price">
+                                <p class="share-price-text">ціна з акцією:</p>
+                                <p class="share-price-price">399 грн</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="form__line">
+                            <h3 class="form__line-title">Ваше ім'я</h3>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form__line">
+                            <h3 class="form__line-title">Ваш телефон</h3>
+                            <input type="tel" name="tel" required>
+                        </div>
+                        <button class="form__btn button" type="submit">Замовити</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="advantages section" id="advantages">
+                <div class="advantages__wrapper wrapper">
+
+                    <div class="advantages__line">
+                        <div class="advantages__box">
+                            <div class="advantages__text">
+                                <h2 class="advantages__box-title card-title">Універсальність</h2>
+                                <p class="advantages__box-text info">Світильники прикрасять салон Вашого авто, підійдуть до будь-якого розміру підсклянників! 7 режимів роботи, усіма кольрами веселки</p>
+                            </div>
+                            <div class="triangle-right"></div>
+                            <div class="advantages__img">
+                                <img src="img/dest/advantages/image(1).gif" alt="image">
+                            </div>
+                        </div>
+                        <div class="advantages__box">
+                            <div class="advantages__text">
+                                <h2 class="advantages__box-title card-title">Практичність</h2>
+                                <p class="advantages__box-text info">Завдяки сонячним
+                                    батареям пристрої працюють автономно без зайвих проводів та підключень</p>
+                            </div>
+                            <div class="advantages__img">
+                                <picture>
+                                    <source srcset="img/dest/advantages/image(2).webp" type="image/webp" alt="">
+                                    <img src="img/dest/advantages/image(2).jpg" type="image/jpg" alt="image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__line">
+                        <div class="advantages__box">
+                            <div class="advantages__img">
+                                <picture>
+                                    <source srcset="img/dest/advantages/image(3).webp" type="image/webp" alt="">
+                                    <img src="img/dest/advantages/image(3).jpg" type="image/jpg" alt="image">
+                                </picture>
+                            </div>
+                            <div class="triangle-left"></div>
+                            <div class="advantages__text">
+                                <h2 class="advantages__box-title card-title">Зручність</h2>
+                                <p class="advantages__box-text info">Вбудовані сенсори активують світлодіоди при затемненні або якщо поставити пляшку з водою</p>
+                            </div>
+                        </div>
+                        <div class="advantages__box">
+                            <div class="advantages__img">
+                                <picture>
+                                    <source srcset="img/dest/advantages/image(4).webp" type="image/webp" alt="">
+                                    <img src="img/dest/advantages/image(4).jpg" type="image/jpg" alt="image">
+                                </picture>
+                            </div>
+                            <div class="triangle-left"></div>
+                            <div class="advantages__text">
+                                <h2 class="advantages__box-title card-title">Якість</h2>
+                                <p class="advantages__box-text info">Світильники виконані з якісних матеріалів та прослужать Вам довгі роки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="description section" id="description">
+                <div class="description__wrapper wrapper">
+                    <div class="description__text">
+                        <p class="description__text-info info">Світильники додадуть унікальності Вашому авто і не залишать нікого байдужим. Світлодіодні лампочки, розташовані по колу на бічних гранях, підсвічують посудину ніби зсередини.</p>
+                        <p class="description__text-info info">Якщо покласти їх на приладову панель під промені сонця або підзарядити від кабелю, то ввечері можна буде насолодитися красивим підсвічуванням. Для економії енергії вони вимикаються приблизно через 15 секунд відсутності зовнішніх впливань.</p>
+                        <p class="description__text-info info">Світильники абсолютно водостійкі, тому можна не переживати через попадання вологи або конденсату на поверхню.</p>
+                        <p class="description__text-info info">В наборі йде 2-ві штуки, 7 режимів кольорів на вибір. Високоякісні матеріали забезпечать міцність і довговічність.</p>
+                    </div>
+                    <div class="description__img">
+                        <picture>
+                            <source srcset="img/dest/description/image(1).webp" type="image/webp" alt="">
+                            <img src="img/dest/description/image(1).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper section">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(1).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(1).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(2).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(2).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(3).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(3).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(4).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(4).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(5).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(5).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/dest/slider/image(6).webp" type="image/webp" alt="">
+                            <img src="img/dest/slider/image(6).jpg" type="image/jpg" alt="image">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="characteristics section" id="characteristics">
+                <div class="characteristics__wrapper wrapper">
+                    <div class="characteristics__hgroup hgroup">
+                        <h2 class="characteristics__title section-title">Характеристики</h2>
+                    </div>
+                    <div class="characteristics__box">
+                        <div class="characteristics__text">
+                            <h4 class="characteristics__text-line info"><span class="key">Матеріал:</span> оргскло</h4>
+                            <h4 class="characteristics__text-line info"><span class="key">Розмір:</span> 6,5 х 1 см</h4>
+                            <h4 class="characteristics__text-line info"><span class="key">Вага:</span> 25 гр.</h4>
+                            <h4 class="characteristics__text-line info"><span class="key">Колір:</span> різнокольорові, 7 режимів на вибір</h4>
+                            <h4 class="characteristics__text-line info"><span class="key">Заряд:</span> сонячні батареї / USB провід</h4>
+                            <h4 class="characteristics__text-line info"><span class="key">У наборі:</span> 2 свитильника в підстаканники</h4>
+                        </div>
+                        <div class="characteristics__img">
+                            <picture>
+                                <source srcset="img/dest/characteristics/image(1).webp" type="image/webp" alt="">
+                                <img src="img/dest/characteristics/image(1).jpg" type="image/jpg" alt="image">
+                            </picture>
+                        </div>
+                    </div>
+                    <a href="#form" class="characteristics__btn button" type="submit">Замовити</a>
+                </div>
+            </div>
+
+
+            <div class="order section">
+                <div class="order__wrapper wrapper">
+
+                    <div class="order__hgroup hgroup">
+                        <h2 class="order__hgroup-title section-title">Як замовити</h2>
+                    </div>
+
+                    <div class="order__row-phone">
+                        <div class="order__card">
+                            <h2 class="order__card-title card-title">Заявка</h2>
+                            <p class="order__card-info info">Залиште заявку на нашому сайті</p>
+                        </div>
+                        <div class="order__card">
+                            <h2 class="order__card-title card-title">Дзвінок</h2>
+                            <p class="order__card-info info">Наш менеджер зв'язується з вами і уточнить деталі замовлення</p>
+                        </div>
+                        <div class="order__card">
+                            <h2 class="order__card-title card-title">Доставка</h2>
+                            <p class="order__card-info info">Доставляємо ваше замовлення Новою Поштою протягом 1-3 днів по всій Україні.</p>
+                        </div>
+                        <div class="order__card ">
+                            <h2 class="order__card-title card-title">Отримання</h2>
+                            <p class="order__card-info info">Отримуєте посилку на відділенні Нової Пошти. Оплачуєте після огляду</p>
+                        </div>
+                    </div>
+
+                    <div class="order__box">
+
+
+                        <div class="order__row">
+                            <div class="order__card right">
+                                <h2 class="order__card-title card-title">Заявка</h2>
+                                <p class="order__card-info info">Залиште заявку на нашому сайті</p>
+                            </div>
+
+                            <div class="order__card right">
+                                <h2 class="order__card-title card-title">Доставка</h2>
+                                <p class="order__card-info info">Доставляємо ваше замовлення Новою Поштою протягом 1-3 днів по всій Україні.</p>
+                            </div>
+                        </div>
+                        <div class="order__row">
+                            <picture>
+                                <source srcset="img/dest/order/steps.webp" type="image/webp" alt="">
+                                <img src="img/dest/order/steps.png" type="image/png" alt="image">
+                            </picture>
+                        </div>
+                        <div class="order__row">
+                            <div class="order__card left">
+                                <h2 class="order__card-title card-title">Дзвінок</h2>
+                                <p class="order__card-info info">Наш менеджер зв'язується з вами і уточнить деталі замовлення</p>
+                            </div>
+
+                            <div class="order__card left">
+                                <h2 class="order__card-title card-title">Отримання</h2>
+                                <p class="order__card-info info">Отримуєте посилку на відділенні Нової Пошти. Оплачуєте після огляду</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form section" id="form">
+                <div class="form__wrapper wrapper">
+
+                    <div class="form__hgroup hgroup">
+                        <h2 class="form__hgroup-title section-title">Замовити світильники на сонячних батареях</h2>
+                        <div class="price">
+                            <div class="ordinary-price">
+                                <p class="ordinary-price-text">звичайна ціна:</p>
+                                <p class="ordinary-price-price"><del>550 грн</del></p>
+                            </div>
+                            <div class="share-price">
+                                <p class="share-price-text">ціна з акцією:</p>
+                                <p class="share-price-price">399 грн</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form>
+                        <div class="form__line">
+                            <h3 class="form__line-title">Ваше ім'я</h3>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form__line">
+                            <h3 class="form__line-title">Ваш телефон</h3>
+                            <input type="tel" name="tel" required>
+                        </div>
+                        <button class="form__btn button" type="submit">Замовити</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </main>
+        <!-- /.main -->
+
+        <footer class="footer section">
+            <div class="footer__wrapper wrapper">
+
+                <ul class="footer__menu">
+                    <li><a href="#advantages">Переваги</a></li>
+                    <li><a href="#description">Опис</a></li>
+                    <li><a href="#characteristics">Характеристики</a></li>
+                    <li><a href="#order">Як замовити?</a></li>
+                </ul>
+
+                <h2 class="footer__title">Світильники на сонячних батареях</h2>
+
+                <p class="footer__info info">ФОП Галлямов Кирило Сергійович</p>
+                <p class="footer__info info">ІПН: 3596506051</p>
+                <p class="footer__info info">Вулиця Чкалова 63, м. Нікополь</a>
+                <a href="policy.html" target="_blank" class="footer__info info accent">Політика конфіденційності</a>
+                <p class="footer__info info">2018-2021© All Rights Reserved.</a>
+
+            </div>
+        </footer>
+        <!-- /.footer -->
+
+    </div>
+    <!-- /.container -->
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- MAIN MINIMIZATION JAVASCRIPT -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>

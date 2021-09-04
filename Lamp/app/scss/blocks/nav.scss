@@ -1,0 +1,64 @@
+.nav{
+    width: 100%;
+    height: 50px;
+    background: $nav-bg;
+    position: relative;
+    color: $brand-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    &__btn{
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-weight: 300;
+    }
+    a{
+        color: $brand-white;
+    }
+    &__menu.active{
+        right: 0;
+    }
+    &__menu{
+        top: 0;
+        right: -100%;
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+        background: $nav-bg;
+        padding: 40px;
+        transition: 0.3s;
+        z-index: 9;
+        &-close{
+            position: absolute;
+            top: -10px;
+            right: 5px;
+            a{
+                font-size: 45px;
+
+            }
+        }
+        li{
+            &:not(.nav__menu-close){
+                font-size: 13px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+        }
+        a{
+            padding: 8px;
+        }
+    }
+}
+
+@include phone{
+    .nav{
+        z-index: 20;
+        &__menu{
+            width: 100%;
+        }
+    }
+}

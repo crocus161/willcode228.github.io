@@ -1,0 +1,38 @@
+.swiper {
+    width: 900px;
+    height: 800px;
+    &-pagination-bullet{
+        background: #c7c7c7;
+    }
+    &-pagination-bullet-active{
+        background: $brand-black;
+    }
+    &-button-prev,
+    &-button-next{
+        color: #c7c7c7
+    }
+    .swiper-slide{
+        img{
+            padding: 50px 80px;
+            height: 100%;
+            @include responseImg
+        }
+    }
+}
+
+@include laptop{
+    .swiper{
+        width: 100%;
+        &-slide{
+            img{
+                padding: 0 !important;
+                @include responseImg(100%)
+            }
+        }
+    }
+}
+@include tablet{
+    .swiper{
+        height: 400px;
+    }
+}

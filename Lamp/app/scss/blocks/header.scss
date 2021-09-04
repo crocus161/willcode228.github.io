@@ -1,0 +1,30 @@
+.header{
+    @include backgroundImg('../img/dest/header/header-bg.jpg');
+    width: 100%;
+    position: relative;
+    .overlay{
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        opacity: 0;
+        transition: 0.3s;
+    }
+    &__wrapper{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    &__title{
+        color: $brand-white;
+        text-align: center;
+    }
+}
+
+
+@include tablet{
+    .header{
+        background-position: right;
+    }
+}

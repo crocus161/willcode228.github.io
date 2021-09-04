@@ -1,0 +1,29 @@
+.footer{
+    background: #45474d;
+    color: $brand-white;
+    text-align: center;
+    a{
+        display: block;
+        color: $brand-white;
+        padding: 10px;
+    }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        li{
+            margin: 0px 10px;
+        }
+    }
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__info{
+        font-size: 14px;
+    }
+    .accent{
+        color: #ff8562
+    }
+}

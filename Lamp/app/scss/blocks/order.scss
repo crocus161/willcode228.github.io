@@ -1,0 +1,43 @@
+.order{
+    &__box{
+        display: flex;
+    }
+    &__row{
+        &:nth-child(3){
+            margin-top: 290px;
+        }
+    }
+    &__card.left{
+        text-align: start;
+    }
+    &__card.right{
+        text-align: end;
+    }
+    &__card{
+        @include notLast{
+            margin-bottom: 530px;
+        }
+    }
+    &__row-phone{
+        display: none;
+    }
+}
+
+
+@include phone{
+    .order{
+        &__card{
+            text-align: center;
+            @include notLast{
+                margin-bottom: 30px;
+            }
+        }
+        &__row-phone{
+            display: flex;
+            flex-direction: column;
+        }
+        &__row{
+            display: none;
+        }
+    }
+}

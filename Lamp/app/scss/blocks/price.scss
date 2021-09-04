@@ -1,0 +1,44 @@
+.price{
+    display: flex;
+    justify-content: center;
+    .ordinary-price{
+        padding-right: 50px;
+        border-right: 2px solid $section-title;
+    }
+    .share-price{
+        margin-left: 50px;
+    }
+    .share-price-price,
+    .ordinary-price-price{
+        @include adaptiveFont(60, 30);
+    }
+    .share-price-text,
+    .ordinary-price-text{
+        font-weight: 400;
+        @include adaptiveFont(24, 18);
+    }
+    .ordinary-price-price{
+        color: #bdbdbd;
+    }
+    .share-price-price{
+        color: #f32501;
+    }
+}
+
+@include phone{
+    .price{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .ordinary-price{
+            padding-right: 0px;
+            border-right: none;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $brand-black;
+        }
+        .share-price{
+            margin-left: 0px;
+        }
+    }
+}
