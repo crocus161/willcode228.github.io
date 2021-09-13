@@ -89,7 +89,7 @@
         &__title{
             margin-bottom: 80px;
         }
-        @include backgroundImg('../../img/dest/header/header-right-bg.jpg');
+        @include backgroundImg('../img/dest/header/header-right-bg.jpg');
         &__img{
             top: 39%;
             transform: translateY(-50%);
