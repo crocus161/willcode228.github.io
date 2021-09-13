@@ -51,6 +51,8 @@
     }
     &__btn{
         position: relative;
+        z-index: 10;
+        pointer-events:initial;
     }
 }
 
@@ -84,8 +86,12 @@
 
 @include tablet{
     .header{
+        &__title{
+            margin-bottom: 80px;
+        }
+        @include backgroundImg('../../img/dest/header/header-right-bg.jpg');
         &__img{
-            top: 50%;
+            top: 39%;
             transform: translateY(-50%);
             img{
                 width: 100px;
@@ -97,7 +103,7 @@
         }
         .leftSpan,
         .rightSpan{
-            color: $info-black !important;
+            color: $white !important;
         }
     }
 }
