@@ -55,7 +55,7 @@
     &__btn{
         position: relative;
         z-index: 10;
-        pointer-events:initial;
+        pointer-events: initial;
     }
 }
 
@@ -90,7 +90,7 @@
 @include tablet{
     .header{
         &__btn{
-            margin-bottom: 40px;
+            margin-top: 40px;
         }
         .price__info{
             display: block;

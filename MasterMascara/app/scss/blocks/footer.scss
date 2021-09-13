@@ -23,11 +23,9 @@
         text-align: center;
         .price__info{
             display: none;
-        }
-        .form__title{
             margin-bottom: 30px;
         }
-        .price__info{
+        .form__title{
             margin-bottom: 30px;
         }
         input{
@@ -60,6 +58,11 @@
 
 @include tablet{
     .footer{
+        form{
+            .price__info{
+                display: block;
+            }
+        }
         &__img{
             display: none;
         }
