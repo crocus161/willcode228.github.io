@@ -1,0 +1,35 @@
+.reviews{
+    &__box{
+        @include cardWidth(250px);
+        justify-content: space-around;
+        gap: 50px;
+    }
+    &__card{
+        text-align: center;
+        &-before{
+            font-family: $titleFont;
+            color: $purple;
+            @include adaptiveFont(100, 80);
+        }
+        &-stars{
+            color: $purple;
+        }
+        &-name{
+            color: $review-grey;
+        }
+        &-info{
+            min-height: 150px;
+        }
+        img{
+            margin: 20px 0px;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        &__card-info{
+            min-height: 10px;
+        }
+    }
+}

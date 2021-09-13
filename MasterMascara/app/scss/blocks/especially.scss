@@ -1,0 +1,42 @@
+.especially{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+    }
+    &__text{
+        padding-right: 30px;
+        img{
+            @include responseImg;
+        }
+        &-info{
+            margin: 25px 0px;
+        }
+    }
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+}
+
+
+@include tablet{
+    .especially{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__text{
+            flex: 0 0 100%;
+            margin-bottom: 50px;
+            padding-right: 0;
+        }
+        &__img{
+            flex: 0 0 80%;
+        }
+    }
+}

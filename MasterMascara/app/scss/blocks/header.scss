@@ -1,0 +1,103 @@
+.header{
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    &__left,
+    &__right{
+        height: 100vh;
+        flex: 0 0 50%;
+        img{
+            opacity: 0;
+            @include responseImg;
+            height: 100%;
+            transition: 0.3s;
+        }
+    }
+    &__img{
+        top: 20px;
+        position: absolute;
+        img{
+            width: 200px;
+        }
+    }
+    &__wrapper{
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        height: 100%;
+    }
+    &__title,
+    &__subtitle{
+        span{
+            transition: 0.2s;
+        }
+    }
+    &__title{
+        margin: 0;
+        margin-bottom: 60px;
+        @include adaptiveFont(200, 80);
+        display: flex;
+        position: relative;
+    }
+    &__subtitle{
+        @include adaptiveFont(100, 50);
+    }
+    &__btn{
+        position: relative;
+    }
+}
+
+.header.left{
+    .header__left{
+        img{
+            opacity: 1;
+        }
+    }
+    .rightSpan{
+        color: $info-black
+    }
+    .leftSpan{
+        color: $white
+    }
+}
+
+.header.right{
+    .header__right{
+        img{
+            opacity: 1;
+        }
+    }
+    .leftSpan{
+        color: $info-black;
+    }
+    .rightSpan{
+        color: $white;
+    }
+}
+
+@include tablet{
+    .header{
+        &__img{
+            top: 50%;
+            transform: translateY(-50%);
+            img{
+                width: 100px;
+            }
+        }
+        &__left,
+        &__right{
+            display: none;
+        }
+        .leftSpan,
+        .rightSpan{
+            color: $info-black !important;
+        }
+    }
+}

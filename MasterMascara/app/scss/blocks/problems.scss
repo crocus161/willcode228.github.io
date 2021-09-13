@@ -1,0 +1,25 @@
+.problems{
+    &__wrapper{
+        @include backgroundImg('../img/dest/problems/background.jpg');
+        color: $white;
+        padding: 50px;
+    }
+    &__box{
+        @include cardWidth;
+        justify-content: center;
+        margin-bottom: 80px;
+        gap: 50px;
+    }
+    &__card{
+        text-align: center;
+        &-info{
+            color: $problems-grey;
+        }
+        img{
+            @include responseImg;
+        }
+    }
+    &__subtitle{
+        text-align: center;
+    }
+}
