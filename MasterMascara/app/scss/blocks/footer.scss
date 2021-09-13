@@ -21,6 +21,9 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        .price__info{
+            display: none;
+        }
         .form__title{
             margin-bottom: 30px;
         }
