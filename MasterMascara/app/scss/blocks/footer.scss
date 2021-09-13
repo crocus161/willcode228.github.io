@@ -22,7 +22,10 @@
         align-items: center;
         text-align: center;
         .form__title{
-            margin-bottom: 60px;
+            margin-bottom: 30px;
+        }
+        .price__info{
+            margin-bottom: 30px;
         }
         input{
             width: 100%;
@@ -35,6 +38,7 @@
         }
         button{
             margin-top: 60px;
+            margin-bottom: 0;
         }
     }
 }

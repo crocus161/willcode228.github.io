@@ -2,6 +2,9 @@
     min-height: 100vh;
     display: flex;
     position: relative;
+    .price-info{
+        display: none;
+    }
     &__left,
     &__right{
         height: 100vh;
@@ -86,12 +89,24 @@
 
 @include tablet{
     .header{
+        &__btn{
+            margin-bottom: 40px;
+        }
+        .price__info{
+            display: block;
+            .info{
+                color: $white
+            }
+            h6{
+                color: $purple
+            }
+        }
         &__title{
             margin-bottom: 80px;
         }
         @include backgroundImg('../img/dest/header/header-right-bg.jpg');
         &__img{
-            top: 39%;
+            top: 30%;
             transform: translateY(-50%);
             img{
                 width: 100px;
