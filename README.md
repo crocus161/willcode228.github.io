@@ -129,48 +129,48 @@
 
   Древние проекты:
   
-  -https://willcode228.github.io/Air%20One%20Page/
+  -https://willcode228.github.io/Sites/Air%20One%20Page/
   
-  -https://willcode228.github.io/B&W/
+  -https://willcode228.github.io/Sites/B&W/
   
-  -https://willcode228.github.io/Creatives/
+  -https://willcode228.github.io/Sites/Creatives/
   
-  -https://willcode228.github.io/Jewelery/
+  -https://willcode228.github.io/Sites/Jewelery/
   
-  -https://willcode228.github.io/Mogo/
+  -https://willcode228.github.io/Sites/Mogo/
   
-  -https://willcode228.github.io/Бухгалтерские%20услуги/
+  -https://willcode228.github.io/Sites/Бухгалтерские%20услуги/
   
 
   Новые пректы
 
-  -https://willcode228.github.io/Collibra/app/index.html
+  -https://willcode228.github.io/Sites/Collibra/app/index.html
   
-  -https://willcode228.github.io/New%20Providence/index.html
+  -https://willcode228.github.io/Sites/New%20Providence/index.html
   
-  -https://willcode228.github.io/Headphone/app/index.html
+  -https://willcode228.github.io/Sites/Headphone/app/index.html
   
-  -https://willcode228.github.io/Single%20Page/index.html
+  -https://willcode228.github.io/Sites/Single%20Page/index.html
   
-  -https://willcode228.github.io/Zen/index.html
+  -https://willcode228.github.io/Sites/Zen/index.html
   
-  -https://willcode228.github.io/Thrive%20Talk/app/index.html
+  -https://willcode228.github.io/Sites/Thrive%20Talk/app/index.html
   
-  -https://willcode228.github.io/Next%20Generation/index.html
+  -https://willcode228.github.io/Sites/Next%20Generation/index.html
   
-  -https://willcode228.github.io/Indicorp/app/index.html
+  -https://willcode228.github.io/Sites/Indicorp/app/index.html
   
-  -https://willcode228.github.io/Arka/app/index.html
+  -https://willcode228.github.io/Sites/Arka/app/index.html
   
-  -https://willcode228.github.io/Mad%20Hatters/index.html
+  -https://willcode228.github.io/Sites/Mad%20Hatters/index.html
   
-  -https://willcode228.github.io/Blank/app/index.html
+  -https://willcode228.github.io/Sites/Blank/app/index.html
   
-  -https://willcode228.github.io/Over%20Love/app/index.html
+  -https://willcode228.github.io/Sites/Over%20Love/app/index.html
   
-  -https://willcode228.github.io/Vpn/app/index.html
+  -https://willcode228.github.io/Sites/Vpn/app/index.html
   
-  -https://willcode228.github.io/Universal/app/index.html
+  -https://willcode228.github.io/Sites/Universal/app/index.html
   
    
  А здесь на JS проекты:
