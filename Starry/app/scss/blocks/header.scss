@@ -20,8 +20,8 @@
 
     &__img{
         padding: 20px;
-        a{
-            display: none
+        .button{
+            display: none;
         }
         img{
             @include responseImg(90%);
@@ -57,7 +57,7 @@
         }
         &__img{
             padding-bottom: 60px;
-            a{
+            .button{
                 display: block;
                 margin-top: 20px;
             }
