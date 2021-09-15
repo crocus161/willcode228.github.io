@@ -1,0 +1,22 @@
+.order{
+    @include backgroundImg('../img/dest/order/background.jpg');
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    &__card{
+        margin: 30px 20px;
+        width: 340px;
+        text-align: center;
+        img{
+            margin: 50px 0px;
+        }
+    }
+    &__btn{
+        margin: auto;
+        @include btn($brand-black, $brand-black, $brand-white);
+    }
+
+}

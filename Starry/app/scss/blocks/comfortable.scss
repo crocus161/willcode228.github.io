@@ -1,0 +1,51 @@
+.reviews{
+    display: flex;
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+    }
+
+    &__text{
+        padding: 120px 40px;
+    }
+
+    &__img{
+        @include backgroundImg('../img/dest/reviews/background.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        color: $brand-white;
+    }
+
+    &__card{
+        text-align: center;
+        @include notLast{
+            margin-bottom: 100px;
+        }
+        &-info{
+            margin: 25px 0px;
+        }
+        &-star{
+            color: #841C44;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        flex-direction: column-reverse;
+        &__img{
+            padding: 140px 20px;
+        }
+        &__text{
+            padding: 60px 20px;
+        }
+        &__card{
+            @include notLast{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

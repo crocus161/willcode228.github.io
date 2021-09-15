@@ -1,0 +1,59 @@
+.header{
+    width: 100%;
+    @include backgroundImg('../img/dest/header/background.jpg');
+    &__wrapper{
+        min-height: 100vh;
+        color: $brand-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img,
+    &__text{
+        flex: 0 0 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        padding: 20px;
+        img{
+            @include responseImg(90%);
+        }
+    }
+
+    &__text{
+        &-subtitle{
+            letter-spacing: 0.11em;
+        }
+        .price{
+            margin-top: 50px;
+        }
+    }
+
+
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+        &__text,
+        &__img{
+            flex: 0 0 100%;
+        }
+        &__text{
+            padding: 60px 0px;
+        }
+        &__img{
+            padding: 60px 0px;
+            img{
+                @include responseImg(100%);
+            }
+        }
+    }
+}

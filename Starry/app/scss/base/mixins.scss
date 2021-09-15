@@ -1,0 +1,81 @@
+@mixin adaptiveFont($pcSize, $mobSize) {
+$addSize: $pcSize - $mobSize;
+$maxWidth: $maxWidth - 320;
+font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin responseImg($percent: 100%){
+    width: $percent;
+    object-fit: cover;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin backgroundImg($url, $size: cover, $top: center, $left: center){
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: no-repeat;
+    background-position: $top $left;
+}
+
+@mixin cardWidth($cardWidth: 200px){
+    display: grid;
+    justify-content: space-around;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax($cardWidth, $cardWidth + 50));
+}
+
+@mixin btn($border-color: #fff, $color: #fff, $hover-color: #000){
+    border: 2px solid $border-color;
+    color: $color;
+    &:hover{
+        background: $color;
+        color: $hover-color;
+    }
+}
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}
+
+@mixin notLast{
+    &:not(:last-child){
+        @content
+    }
+}
+
+@mixin desktop{
+    @media screen and (max-width: 1200px){
+        @content
+    }
+}
+@mixin laptop{
+    @media screen and (max-width: 992px){
+        @content
+    }
+}
+@mixin tablet{
+    @media screen and (max-width: 768px){
+        @content
+    }
+}
+@mixin phone{
+    @media screen and (max-width: 480px) {
+        @content
+    }
+}
+@mixin sm-phone{
+    @media screen and (max-width: 320px) {
+        @content
+    }
+}
+
+
+

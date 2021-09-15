@@ -1,0 +1,90 @@
+.footer{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img,
+    form{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        img{
+            @include responseImg(80%);
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .price__info-title{
+            display: none;
+            margin-bottom: 30px;
+        }
+        .form__title{
+            margin-bottom: 30px;
+        }
+        input{
+            width: 100%;
+            height: 100px;
+            @include adaptiveFont(60, 20);
+            margin-bottom: 30px;
+            text-align: center;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+        .price{
+            margin-top: 60px;
+            button{
+                @include btn($brand-black, $brand-black, $brand-white);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+@include laptop{
+    .footer{
+        form{
+            .form__title,
+            button{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        form{
+
+            .price{
+                margin-top: 0px;
+                &__info{
+                    display: none;
+                }
+            }
+
+            .price__info-title{
+                display: block;
+            }
+
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .footer{
+        form{
+            flex: 0 0 90%;
+        }
+    }
+}

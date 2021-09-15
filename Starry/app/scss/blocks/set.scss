@@ -1,0 +1,40 @@
+.set{
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 400px;
+        margin: 40px;
+        &-img{
+            margin: 20px 0px 40px 0px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include phone{
+    .set{
+        &__card{
+            width: 100%;
+            &-img{
+                img{
+                    @include responseImg;
+                }
+                .pomad{
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
