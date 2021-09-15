@@ -20,6 +20,9 @@
 
     &__img{
         padding: 20px;
+        a{
+            display: none
+        }
         img{
             @include responseImg(90%);
         }
@@ -47,10 +50,17 @@
             flex: 0 0 100%;
         }
         &__text{
-            padding: 60px 0px;
+            padding: 60px 0px 20px 0px;
+            .price a{
+                display: none;
+            }
         }
         &__img{
-            padding: 60px 0px;
+            padding-bottom: 60px;
+            a{
+                display: block;
+                margin-top: 20px;
+            }
             img{
                 @include responseImg(100%);
             }
