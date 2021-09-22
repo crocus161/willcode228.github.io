@@ -1,0 +1,21 @@
+.problems{
+    &__wrapper{
+        padding: 50px;
+        @include backgroundImg('../img/dest/problems/background.jpg');
+        color: $brand-white;
+    }
+    &__box{
+        margin-top: 80px;
+        margin-bottom: 60px;
+        @include cardWidth(200px);
+    }
+    &__card{
+        margin-bottom: 30px;
+        text-align: center;
+        img{
+            @include responseImg(90%);
+            margin-bottom: 20px;
+        }
+    }
+}
+

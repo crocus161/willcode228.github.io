@@ -1,0 +1,89 @@
+.header{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    &__img{
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 380px;
+        padding: 20px;
+        img{
+            @include responseImg(100%);
+        }
+    }
+    &__wrapper{
+        padding-left: 60px;
+        @include backgroundImg('../img/dest/header/background.jpg');
+        min-height: calc(100vh - 40px);
+        color: $brand-white;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text-img{
+        display: none;
+    }
+
+    &__text{
+        &-subtitle{
+            letter-spacing: 0.11em;
+        }
+        .price{
+            margin-top: 50px;
+        }
+    }
+
+
+}
+
+@include laptop{
+    .header{
+        padding-top: 0;
+        padding-bottom: 0;
+        &__wrapper{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            min-height: 100vh;
+        }
+        &__img{
+            width: 400px;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        padding-top: 0;
+        padding-bottom: 0;
+        &__wrapper{
+            min-height: 100vh;
+            justify-content: center;
+            text-align: center;
+        }
+        &__text-img{
+            display: block;
+            margin: 20px 0px;
+            width: 100%;
+            text-align: center;
+            img{
+                @include responseImg(50%);
+            }
+        }
+        .price{
+            margin: 10px 0px;
+        }
+        &__img{
+            display: none;
+        }
+    }
+}

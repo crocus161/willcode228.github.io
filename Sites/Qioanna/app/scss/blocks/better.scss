@@ -1,0 +1,36 @@
+.better{
+    overflow-y: hidden;
+    &__box{
+        margin-top: 60px;
+        @include cardWidth(250px);
+    }
+    &__img{
+        position: relative;
+    }
+    .card__img{
+        position: absolute;
+        bottom: -9%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+    }
+    &__card{
+        margin-bottom: 25px;
+        text-align: center;
+        img{
+            @include responseImg;
+            margin: 20px 0px;
+        }
+        &-info{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@include laptop{
+    .better{
+        &__img{
+            display: none;
+        }
+    }
+}

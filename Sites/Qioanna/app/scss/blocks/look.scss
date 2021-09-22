@@ -1,0 +1,87 @@
+.look{
+    &__box{
+        display: grid;
+        place-items: center;
+        margin-bottom: 100px;
+    }
+    &__img{
+        position: relative;
+        img{
+            @include responseImg;
+        }
+    }
+    .button{
+        margin: auto;
+    }
+    &__note{
+        position: absolute;
+        padding-bottom: 15px;
+        border-bottom: 2px solid $brand-black;
+    }
+    .leftTop{
+        top: 50px;
+        left: -80px
+    }
+    .rightTop{
+        top: 50px;
+        right: -80px
+    }
+    .leftBottom{
+        bottom: 50px;
+        left: -80px
+    }
+    .rightBottom{
+        bottom: 50px;
+        right: -80px;
+    }
+}
+
+@include tablet{
+    .look{
+        &__note{
+            color: $brand-white;
+            border-color: $brand-white;
+        }
+        .leftTop{
+            top: 80px;
+            left: 100px
+        }
+        .rightTop{
+            top: 80px;
+            right: 100px
+        }
+        .leftBottom{
+            bottom: 80px;
+            left: 100px
+        }
+        .rightBottom{
+            bottom: 80px;
+            right: 100px;
+        }
+    }
+}
+
+@include phone{
+    .look{
+        &__note{
+            padding-bottom: 0;
+            border-bottom:  none;
+        }
+        .leftTop{
+            top: 40px;
+            left: 18%
+        }
+        .rightTop{
+            top: 40px;
+            right: 18%;
+        }
+        .leftBottom{
+            bottom: 40px;
+            left: 18%;
+        }
+        .rightBottom{
+            bottom: 50px;
+            right: 22%;
+        }
+    }
+}
