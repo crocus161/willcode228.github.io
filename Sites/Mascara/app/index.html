@@ -17,7 +17,7 @@
             <div class="header__wrapper wrapper section">
 
                 <h2 class="header__subtitle">VIBELY</h2>
-                <h1 class="header__title">DIAMOND MASCARA</h1>
+                <h1 class="header__title">STARY MASCARA</h1>
                 <h2 class="header__subtitle">СЕКРЕТ ВЫРАЗИТЕЛЬНОГО ВЗГЛЯДА</h2>
                 <a href="#form" class="header__btn button">ЗАКАЗАТЬ</a>
 
@@ -317,9 +317,9 @@
 
                 <div class="footer__form" id="form">
                     <h2 class="footer__form-title title">УСПЕЙ ЗАКАЗАТЬ ТУШЬ DIAMOND MASCARA ПО АКЦИОННОЙ ЦЕНЕ</h2>
-                    <form>
-                        <input type="text" name="name" placeholder="Имя" required>
-                        <input type="tel" name="tel" placeholder="+38 (0__ )___ __ __" required>
+                    <form id="order_form" class="main-order-form m1-form" action="thankyou.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+                        <input class="field" type="text" name="name" placeholder="Имя" required>
+                        <input class="field" type="tel" name="phone" placeholder="+38 (0__ )___ __ __" required>
                         <button class="button">Заказать</button>
                         <p class="form__info">акционное предложение*</p>
                     </form>
