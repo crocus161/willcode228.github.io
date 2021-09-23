@@ -1,0 +1,9 @@
+.footer{
+    background: $brand-black;
+    text-align: center;
+    &__info,
+    &__info a{
+        margin-bottom: 5px;
+        color: $brand-white;
+    }
+}

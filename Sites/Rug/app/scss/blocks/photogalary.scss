@@ -1,0 +1,17 @@
+.photogalary{
+    background: #f7f7f7;
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__img{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        img{
+            flex-grow: 1;
+            flex-shrink: 1;
+            max-width: 300px;
+            height: 220px;
+        }
+    }
+}

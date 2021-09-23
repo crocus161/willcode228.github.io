@@ -1,0 +1,71 @@
+.meta{
+    background: #f7f7f7;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.accordion {
+    display: inline-block;
+    background: $brand-white;
+    cursor: pointer;
+    padding: 25px 30px;
+    max-width: 100%;
+    border-bottom: 1px solid #f7f7f7;
+    outline: none;
+    font-weight: 700;
+    transition: 0.5s;
+    @include adaptiveFont(24, 14);
+}
+
+.accordion.active{
+    border-bottom-color: $brand-white;
+}
+
+.accordion:after {
+    content: '＋';
+    transform-origin: center;
+    color: $brand-black;
+    font-size: 30px;
+    font-weight: 300;
+    float: right;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.accordion.active:after {
+    transform: rotate(45deg);
+}
+
+.panel {
+    display: block;
+    padding: 0 30px;
+    background: $brand-white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    img{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    .text-title{
+        margin-top: 30px;
+    }
+}
+
+.panel__wrapper{
+    padding: 20px 0px;
+}
+
+
+@include phone{
+    .panel{
+        img{
+            width: 100%;
+        }
+    }
+    .accordion::after{
+        display: none;
+    }
+}
