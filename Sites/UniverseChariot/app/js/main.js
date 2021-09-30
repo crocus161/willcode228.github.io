@@ -4,6 +4,11 @@ window.addEventListener('load', () => {
     const photoBar = $('.photo__bar'),
         photoActive = $('.photo__active-img');
 
+    const modalOpen = $('.header__play'),
+        modal = $('.modal'),
+        modalClose = modal.querySelector('button'),
+        video = modal.querySelector('video');
+
 
     photoBar.addEventListener('click', (e) => {
         let element = e.target;
@@ -11,4 +16,13 @@ window.addEventListener('load', () => {
         let activeBarImgSrc = element.getAttribute('src');
         photoActive.setAttribute('src', activeBarImgSrc)
     });
+
+    modalOpen.addEventListener('click', () => {
+        modal.classList.add('active');;
+    });
+
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
 });
