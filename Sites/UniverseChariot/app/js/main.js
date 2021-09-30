@@ -18,11 +18,13 @@ window.addEventListener('load', () => {
     });
 
     modalOpen.addEventListener('click', () => {
-        modal.classList.add('active');;
+        modal.classList.add('active');
+        video.play();
     });
 
     modalClose.addEventListener('click', () => {
         modal.classList.remove('active');
+        video.pause();
     });
 
 });
