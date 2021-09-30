@@ -1,0 +1,27 @@
+.photo{
+    &__bar{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        &-item{
+            cursor: pointer;
+        }
+    }
+    &__active{
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        img{
+            width: 50%;
+        }
+    }
+}
+
+@include laptop{
+    .photo{
+        &__active{
+            display: none;
+        }
+    }
+}

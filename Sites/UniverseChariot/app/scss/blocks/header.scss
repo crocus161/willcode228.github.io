@@ -1,0 +1,87 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+        padding: 30px;
+    }
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+    &__text-img{
+        display: none;
+    }
+    &__subtitle{
+        color: $grey;
+        font-weight: 400;
+    }
+    &__title{
+        color: $white;
+    }
+    &__note{
+        margin-top: 60px;
+        margin-bottom: 15px;
+        color: $white;
+    }
+
+    &__play{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        &-icon{
+            width: 80px;
+            height: 80px;
+        }
+        &-info{
+            color: $white;
+            margin-left: 30px;
+        }
+    }
+}
+
+
+@include laptop{
+    .header{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__text{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &-img{
+                max-width: 500px;
+                margin: 30px 0px;
+                @include responseImg;
+                display: block;
+            }
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .header{
+        &__play{
+            flex-direction: column;
+            justify-content: center;
+            &-info{
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}

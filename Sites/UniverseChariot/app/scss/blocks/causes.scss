@@ -1,0 +1,29 @@
+.causes{
+    &__wrapper{
+        min-height: 600px;
+        padding: 80px;
+        @include backgroundImg('../img/dest/causes/background.jpg');
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    &__card{
+        text-align: center;
+    }
+}
+
+@include tablet{
+    .causes{
+        &__wrapper{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@include phone{
+    .causes{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+    }
+}

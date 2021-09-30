@@ -1,0 +1,51 @@
+.set{
+    &__wrapper{
+        display: flex;
+    }
+
+    &__text{
+        flex: 0 0 30%;
+        padding: 20px;
+    }
+
+    &__img{
+        flex: 0 0 70%;
+    }
+
+    &__img{
+        img{
+            height: 100%;
+            @include responseImg;
+        }
+    }
+
+    &__text-title{
+        margin-bottom: 80px;
+    }
+    &__list-item{
+        margin-bottom: 50px;
+    }
+}
+
+@include laptop{
+    .set{
+        &__text-title{
+            margin-bottom: 40px;
+        }
+        &__list-item{
+            margin-bottom: 20px;
+        }
+        &__text,
+        &__img{
+            flex: 0 0 50%;
+        }
+    }
+}
+
+@include tablet{
+    .set{
+        &__wrapper{
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.order{
+    @include backgroundImg('../img/dest/order/background.jpg');
+    &__wrapper{
+        color: $white;
+    }
+    &__box{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__card{
+        margin: 30px 20px;
+        width: 340px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &-img{
+            min-height: 150px;
+            margin: 50px 0px;
+        }
+    }
+
+}

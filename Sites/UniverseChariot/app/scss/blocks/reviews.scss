@@ -1,0 +1,28 @@
+.reviews{
+    padding: 250px 0px;
+    @include backgroundImg('../img/dest/reviews/background.jpg');
+    &__wrapper{
+        @include cardWidth(280px);
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-ava{
+            margin-right: 20px;
+        }
+        &-meta{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include laptop{
+    .reviews{
+        padding: 100px 0px;
+    }
+}
