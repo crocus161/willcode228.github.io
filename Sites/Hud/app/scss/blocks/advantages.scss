@@ -1,0 +1,28 @@
+.advantages{
+    &__wrapper{
+        padding: 40px;
+        @include backgroundImg('../img/dest/advantages/background.jpg');
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__card{
+        margin: 50px 20px;
+        width: 300px;
+        text-align: center;
+        color: $white;
+        img{
+            width: 100px;
+        }
+
+    }
+}
+
+@include laptop{
+    .advantages{
+        &__card{
+            width: 150px;
+        }
+    }
+}

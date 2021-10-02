@@ -1,0 +1,28 @@
+.reviews{
+    &__wrapper{
+        @include backgroundImg('../img/dest/reviews/background.jpg');
+        @include cardWidth(300px);
+    }
+
+    &__card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .block-title{
+            @include adaptiveFont(200, 100);
+        }
+        &-info{
+            margin-bottom: 20px;
+        }
+
+        &-meta{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            picture{
+                margin-right: 20px;
+            }
+        }
+    }
+}

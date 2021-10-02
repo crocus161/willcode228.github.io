@@ -1,0 +1,37 @@
+.set{
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__card{
+        margin: 0px 30px 50px 30px;
+        width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &-img{
+            min-height: 400px;
+            display: grid;
+            place-items: center;
+        }
+        &-info{
+            flex-grow: 1;
+        }
+    }
+}
+
+@include phone{
+    .set{
+        &__card{
+            &-img{
+                margin-bottom: 20px;
+                min-height: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

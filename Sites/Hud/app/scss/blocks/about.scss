@@ -1,0 +1,92 @@
+.about{
+    &__wrapper{
+        min-height: 650px;
+        padding: 40px;
+        @include backgroundImg('../img/dest/about/background.jpg');
+        display: grid;
+        place-items: center;
+        color: $white;
+    }
+
+    &__img{
+        position: relative;
+        display: flex;
+    }
+
+    &__row{
+        p{
+            margin-bottom: 50px;
+            position: relative;
+            &::after{
+                @include pseudo;
+                bottom: -10px;
+                width: 300px;
+                height: 2px;
+                background: $white;
+            }
+        }
+    }
+
+    &__row:first-child{
+        text-align: end;
+        p{
+            &::after{
+                left: 0;
+
+            }
+        }
+    }
+    &__row:last-child{
+        text-align: start;
+        p{
+            &::after{
+                right: 0;
+            }
+        }
+    }
+
+}
+
+
+@include desktop{
+    .about{
+        &__img{
+            min-width: 500px;
+            align-items: center;
+            img{
+                @include responseImg;
+            }
+        }
+        &__row{
+            p{
+                &::after{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@include laptop{
+    .about{
+        &__wrapper{
+            padding: 20px;
+        }
+        &__img{
+            min-width: 100%;
+            flex-direction: column;
+        }
+        &__row:first-child,
+        &__row:last-child{
+            margin: 20px 0px;
+            text-align: center;
+            p{
+                &::after{
+                    width: 100%;
+                    background: rgba($white, 0.3);
+                }
+            }
+        }
+
+    }
+}

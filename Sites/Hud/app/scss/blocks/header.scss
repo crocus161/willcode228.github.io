@@ -1,0 +1,71 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    &__wrapper{
+        min-height: 100vh;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .price__info{
+        margin: 0px 40px;
+    }
+
+    &__play{
+        display: flex;
+        align-items: center;
+        &-icon{
+            width: 80px;
+            height: 80px;
+        }
+        &-info{
+            color: $white;
+            margin-left: 30px;
+        }
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        margin: 60px 0px;
+        width: 400px;
+    }
+
+    &__subtitle{
+        font-family: $mainFont;
+    }
+}
+
+@include laptop{
+    .header{
+        &__wrapper{
+            align-items: center;
+            text-align: center;
+        }
+        &__img{
+            width: 60%;
+        }
+        &__row{
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+    }
+}
+
+@include phone{
+    .header{
+        &__play{
+            flex-direction: column;
+            justify-content: center;
+            &-info{
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
