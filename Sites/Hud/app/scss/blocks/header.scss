@@ -59,7 +59,11 @@
 
 @include phone{
     .header{
+        &__row{
+            flex-direction: column;
+        }
         &__play{
+            margin-top: 20px;
             flex-direction: column;
             justify-content: center;
             &-info{
