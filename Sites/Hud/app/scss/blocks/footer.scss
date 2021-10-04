@@ -1,5 +1,5 @@
 .footer{
-    @include backgroundImg('../../img/dest/footer/background.png');
+    @include backgroundImg('../img/dest/footer/background.png');
     &__wrapper{
         display: flex;
         align-items: center;
