@@ -1,0 +1,36 @@
+.lines-left{
+    position: relative;
+    &::before{
+        @include pseudo;
+        bottom: -20px;
+        left: -20px;
+        width: 50%;
+        height: 100%;
+        border-left: $border;
+        border-bottom: $border;
+    }
+}
+
+@include sm-phone{
+    .lines-left{
+        &::before{
+            border-left: none;;
+            left: -10px;
+        }
+    }
+}
+
+.lines-right{
+    position: relative;
+    &::before{
+        @include pseudo;
+        top: 0px;
+        right: -0px;
+        width: 100%;
+        height: 100%;
+        border-right: $border;
+        border-bottom: $border;
+    }
+}
+
+

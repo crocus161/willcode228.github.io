@@ -1,0 +1,72 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    position: relative;
+    &__wrapper{
+        min-height: 100vh;
+    }
+
+    &__product{
+        position: absolute;
+        bottom: -40px;
+        right: 25%;
+    }
+
+    &__top-leaf{
+        top: 0;
+        left: 0;
+    }
+
+    &__bottom-leaf{
+        bottom: -80px;
+        right: 0;
+    }
+
+    &__wrapper{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__lines{
+        width: 50%;
+        position: relative;
+    }
+
+    &__lines.lines-left::before{
+        border-color: $brand-white;
+    }
+
+    &__title{
+        color: $brand-white;
+    }
+
+}
+
+@include laptop{
+    .header{
+        background-position: right;
+        &__lines{
+            width: 100%;
+        }
+
+        &__product img{
+            width: 80px;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            align-items: center;
+            justify-content: center;
+        }
+        &__product{
+            img{
+                width: 60px;
+            }
+            left: 45%;
+        }
+    }
+}

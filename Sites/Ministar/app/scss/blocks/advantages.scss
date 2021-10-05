@@ -1,0 +1,116 @@
+.advantages{
+    position: relative;
+    display: flex;
+    color: $brand-black;
+
+    &__decoration{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__text{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        flex: 0 0 50%
+    }
+
+    &__product{
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    &__img{
+        position: relative;
+        &-bg{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                height: 100%;
+                @include responseImg;
+            }
+        }
+    }
+
+    &__text{
+        padding: 0 30px;
+    }
+
+    &__title{
+        margin-bottom: 25px;
+    }
+
+    &__lines{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 5px;
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        img{
+            margin-right: 20px;
+            width: 80px;
+        }
+        &-title{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+@include laptop{
+    .advantages{
+        &__img{
+            display: none;
+        }
+        &__text{
+            flex: 0 0 100%;
+        }
+        &__lines{
+            padding: 30px 20px;
+        }
+    }
+}
+
+@include phone{
+    .advantages{
+        text-align: center;
+        &__card{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img{
+                margin-right: 0px;
+            }
+        }
+
+        &__title{
+            margin-bottom: 50px;
+        }
+
+        &__text{
+            padding: 0px 10px;
+        }
+
+        &__lines{
+            padding: 0;
+        }
+
+        &__lines::before{
+            border: none;
+        }
+    }
+}
