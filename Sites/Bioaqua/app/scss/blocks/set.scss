@@ -1,0 +1,26 @@
+.set{
+    &__wrapper{
+        display: grid;
+        gap: 50px;
+        @include cardWidth;
+        justify-content: space-around;
+    }
+    &__card{
+        text-align: center;
+        &-info{
+            margin-top: 20px;
+        }
+        &-portion{
+            margin-top: 10px;
+            color: $grey;
+        }
+    }
+}
+
+@include tablet{
+    .set{
+        &__card img{
+            height: 300px;
+        }
+    }
+}

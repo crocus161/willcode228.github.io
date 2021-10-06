@@ -1,0 +1,16 @@
+.simple{
+    padding-top: 100px;
+    &__wrapper{
+        display: grid;
+        justify-content: space-around;
+        @include cardWidth(300px);
+        gap: 50px
+    }
+
+    &__card{
+        text-align: center;
+        img{
+            margin: 10px 0px 20px 0px;
+        }
+    }
+}

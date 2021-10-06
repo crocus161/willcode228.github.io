@@ -1,0 +1,46 @@
+.reviews{
+    position: relative;
+    &__wave{
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        margin-bottom: 50px;
+    }
+
+    &__card{
+        width: 500px;
+        margin-bottom: 80px;
+        &-before{
+            text-align: center;
+            @include adaptiveFont(100, 80);
+        }
+    }
+
+    &__meta{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        background: rgba(0,0,0, 0.5);
+        color: $white;
+        &__card{
+            width: 100%;
+        }
+    }
+}

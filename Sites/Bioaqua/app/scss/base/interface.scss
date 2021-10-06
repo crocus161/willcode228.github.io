@@ -1,0 +1,171 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Playfair+Display&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $titleFont;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+//*****HGROUP*****//
+.hgroup{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+        margin-bottom: 25px;
+    }
+}
+//*****TITLES*****//
+.main-site-title{
+    font-family: $mainFont;
+    margin: 0;
+    letter-spacing: 0.11em;
+    @include adaptiveFont(96, 30);
+}
+
+.section-title,
+.block-title{
+    @include adaptiveFont(36, 22);
+}
+.section-title{
+    line-height: 130%;
+}
+.block-title{
+    line-height: 100%;
+}
+//*****INFO*****//
+.info{
+    font-family: $mainFont;
+    @include adaptiveFont(24, 16);
+}
+
+.grey{
+    color: $grey;
+}
+//*****BUTTON*****//
+.button{
+    display: block;
+    width: 260px;
+    height: 80px;
+    border-radius: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    font-family: $titleFont;
+    background: linear-gradient(180deg, #28A0AE 0%, #0C565F 100%);
+    transition: $transition;
+    color: $white;
+    @include adaptiveFont(30, 18);
+}
+
+.button.circle{
+    display: block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    @include btn;
+}
+
+.button.center{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+@include tablet{
+    .button{
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+}
+
+@include phone{
+    .button.circle{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.accent{
+    color: $accent;
+}
+
+.wave{
+    position: absolute;
+}
+

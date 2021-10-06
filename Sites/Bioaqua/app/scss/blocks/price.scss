@@ -1,0 +1,83 @@
+.price{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    &__btngroup{
+        margin: 0 50px;
+        position: relative;
+        display: grid;
+        place-items: center center;
+        &:hover{
+            .price__btngroup-overflow{
+                animation: rotate 8s linear infinite;
+            }
+        }
+        &-overflow{
+            position: absolute;
+            text-transform: uppercase;
+        }
+        &-text{
+            color: $grey;
+            transition: 0.3s;
+            letter-spacing: 3px;
+            span{
+                font-family: $titleFont;
+                font-size: 16px;
+                position: absolute;
+                top: -100px;
+                display: inline-block;
+                transform-origin: 0 100px;
+            }
+        }
+    }
+    &__btn.button{
+        background: transparent;
+        color: $black;
+        border: none;
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        h6{
+            margin-top: 8px;
+            color: $accent
+        }
+    }
+}
+
+
+@include tablet{
+    .price{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__btn{
+            margin-right: 0;
+            margin: 40px;
+        }
+    }
+}
+
+@include tablet{
+    .price{
+        &__btngroup-text span{
+            color: $white;
+            top: -80px;
+            transform-origin: 0 80px;
+        }
+        &__btn.button{
+            color: $white;
+        }
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}

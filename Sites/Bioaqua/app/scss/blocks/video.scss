@@ -1,0 +1,11 @@
+.video{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    video,img{
+        width: 100%;
+    }
+}

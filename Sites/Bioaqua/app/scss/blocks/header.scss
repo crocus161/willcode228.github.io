@@ -1,0 +1,88 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__wave{
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        img{
+            max-width: 70%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__wrapper{
+        margin: inherit;
+        width: 60%;
+        height: 100vh;
+        padding: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price{
+        margin-top: 80px;
+        text-align: end;
+    }
+
+    &__question{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        color: $black;
+        img{
+            margin-left: 20px;
+        }
+    }
+
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            background: rgba(0,0,0, 0.5);
+            color: $white;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        &__question,
+        .price{
+            margin-top: 30px;
+        }
+
+        &__question{
+            color: $white;
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@include phone{
+    .header{
+        &__wave{
+            min-height: 100vh;
+            img{
+                max-width: 100%;
+                min-height: 100%;
+            }
+        }
+        .price{
+            padding: 0;
+            text-align: center;
+        }
+    }
+}
+

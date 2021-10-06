@@ -1,0 +1,82 @@
+.steps{
+    position: relative;
+    padding-top: 150px;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__row{
+        flex: 0 0 50%;
+    }
+
+    &__text{
+        @include backgroundImg('../img/dest/steps/background.jpg');
+        padding: 20px;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        &-meta{
+            color: $grey;
+            margin-top: 50px;
+        }
+    }
+
+    &__cards{
+        padding: 50px;
+    }
+
+    &__card{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        &-info{
+            flex-grow: 1;
+            margin-left: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@include tablet{
+    .steps{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__row{
+            flex: 0 0 100%;
+        }
+
+        &__cards{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text{
+            padding: 50px 50px;
+        }
+
+        &__card{
+            width: 70%;
+        }
+    }
+}
+
+@include phone{
+    .steps{
+        &__card{
+            width: 95%;
+            img{
+                width: 50px;
+            }
+        }
+        &__text{
+            padding: 40px 20px;
+        }
+    }
+}
