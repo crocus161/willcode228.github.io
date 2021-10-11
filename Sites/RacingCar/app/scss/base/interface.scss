@@ -1,0 +1,196 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Oswald:wght@400;600&family=Playfair+Display&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $titleFont !important;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: $bg;
+    z-index: 1;
+    .side{
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+@include desktop{
+    .container {
+        .side{
+            width: 70%;
+        }
+    }
+}
+@include laptop{
+    .container {
+        .side{
+            width: 90%;
+        }
+    }
+}
+
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+//*****HGROUP*****//
+.hgroup{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+        margin-bottom: 10px;
+    }
+}
+//*****TITLES*****//
+.main-site-title{
+    font-family: 'Megrim', cursive !important;
+    margin: 0;
+    letter-spacing: 0.11em;
+    @include adaptiveFont(96, 40);
+}
+
+.section-title,
+.block-title{
+    @include adaptiveFont(36, 22);
+}
+.section-title{
+    text-align: center;
+    line-height: 130%;
+}
+.block-title{
+    line-height: 100%;
+}
+//*****INFO*****//
+.info{
+    font-family: $mainFont;
+    @include adaptiveFont(24, 16);
+}
+
+.grey{
+    color: $text-grey;
+}
+//*****BUTTON*****//
+.button{
+    display: block;
+    width: 260px;
+    height: 80px;
+    border-radius: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 80px;
+    font-family: $titleFont;
+    @include adaptiveFont(30, 18);
+    transition: $transition;
+    background: linear-gradient(146.29deg, #256AC1 17.2%, #001F66 64.96%);
+    color: $brand-white;
+}
+
+.button.circle{
+    display: block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+}
+
+
+.text-accent{
+    color: $brand-accent;
+}
+
+
+@include tablet{
+    .container{
+        .side{
+            display: none;
+        }
+    }
+    .button{
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+}
+
+@include phone{
+    .button.circle{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+

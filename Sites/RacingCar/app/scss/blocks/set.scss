@@ -1,0 +1,36 @@
+.set{
+    // @include backgroundImg('../img/dest/set/background.jpg');
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        flex: 0 0 30%;
+        margin-top: 60px;
+        text-align: center;
+    }
+}
+
+@include tablet {
+    .set{
+        background: $bg;
+        padding: 30px 0px;
+
+        &__card{
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@include phone {
+    .set{
+        &__card{
+            img{
+                @include responseImg;
+            }
+        }
+    }
+}
+

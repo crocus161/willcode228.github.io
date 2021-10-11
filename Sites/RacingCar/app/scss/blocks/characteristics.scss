@@ -1,0 +1,91 @@
+.characteristics{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title{
+        color: $brand-white;
+    }
+    &__row{
+        flex: 0 0 50%;
+        padding: 60px 20px;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__li{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 18px;
+        }
+    }
+    &__key,
+    &__value{
+        letter-spacing: 0.145em
+    }
+    &__key{
+        margin-right: 15px;
+        color: $brand-black;
+    }
+    &__value{
+        font-size: 18px;
+        margin-left: 8px;
+    }
+    &__line{
+        flex-grow: 1;
+        height: 0.5px;
+        background: rgba(0, 0, 0, 0.36);
+        align-self: flex-end;
+    }
+}
+
+@include laptop{
+    .characteristics{
+        &__wrapper{
+            flex-direction: column-reverse;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title{
+            color: $brand-black;
+        }
+        &__text{
+            padding: 10px 20px;
+        }
+        &__li{
+            justify-content: center;
+        }
+        &__line{
+            display: none;
+        }
+        &__li.title{
+            display: block;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@include tablet{
+    .characteristics{
+        &__text{
+            padding: 20px 20px 60px 20px;
+        }
+        &__value{
+            font-size: 14px;
+        }
+    }
+}
+
+@include phone{
+    .characteristics{
+        &__li{
+            flex-direction: column;
+        }
+        &__key,
+        &__value{
+            margin: 0;
+        }
+    }
+}

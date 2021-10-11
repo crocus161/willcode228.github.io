@@ -1,0 +1,47 @@
+.header{
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__subtitle{
+        color: $text-grey;
+        font-weight: 400;
+    }
+    &__note{
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+
+    &__play{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        &-icon{
+            width: 80px;
+            height: 80px;
+        }
+        &-info{
+            margin-left: 30px;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &__play{
+            flex-direction: column;
+            justify-content: center;
+            &-info{
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
