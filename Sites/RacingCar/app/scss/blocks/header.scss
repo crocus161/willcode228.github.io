@@ -1,5 +1,7 @@
 .header{
     &__wrapper{
+        padding-top: 50px;
+        padding-bottom: 50px;
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -14,10 +16,20 @@
         margin-bottom: 15px;
     }
 
+    &__img{
+        display: none;
+        margin-top: 40px;
+        width: 100%;
+        img{
+            @include responseImg;
+        }
+    }
+
     &__play{
         display: flex;
         align-items: center;
         margin-top: 50px;
+        color: $brand-black;
         &-icon{
             width: 80px;
             height: 80px;
@@ -34,6 +46,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+        &__img{
+            display: block;
+        }
+        &__note{
+            margin-top: 20px;
         }
         &__play{
             flex-direction: column;

@@ -1,0 +1,20 @@
+.types{
+    &__wrapper{
+        @include cardWidth(300px);
+        gap: 50px;
+    }
+
+    &__card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &-title{
+            display: block;
+            font-family: $titleFont;
+            flex-grow: 1;
+        }
+        img{
+            @include responseImg;
+        }
+    }
+}
