@@ -1,5 +1,8 @@
 .advantages{
     position: relative;
+    &__hgroup.hgroup{
+        width: 100%;
+    }
     &__decoration{
         top: -30%;
         left: 0;

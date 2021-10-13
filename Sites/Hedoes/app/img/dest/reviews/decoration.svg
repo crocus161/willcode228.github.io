@@ -1,1 +1,16 @@
-<svg width="376" height="1270" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><path d="M-776.715 497.361c-194.953-157.527 334.042 3.295 493.901-89 159.859-92.294 364.281-37.503 456.59 122.381 92.309 159.883 37.548 364.314-122.31 456.608-159.859 92.29-735.872-330.106-828.181-489.989z" fill="#30B53D" fill-opacity=".2"/></g><defs><filter id="filter0_d" x="-860" y="0" width="1235.92" height="1269.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="17.5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+<svg width="376" height="1270" viewBox="0 0 376 1270" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<path d="M-776.715 497.361C-971.668 339.834 -442.673 500.656 -282.814 408.361C-122.955 316.067 81.4671 370.858 173.776 530.742C266.085 690.625 211.324 895.056 51.4654 987.35C-108.393 1079.64 -684.406 657.244 -776.715 497.361Z" fill="#30B53D" fill-opacity="0.2"/>
+</g>
+<defs>
+<filter id="filter0_d" x="-860" y="0" width="1235.92" height="1269.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="17.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

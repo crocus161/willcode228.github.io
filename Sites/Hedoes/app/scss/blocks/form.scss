@@ -32,6 +32,9 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 5px;
+            img{
+                width: 200px;
+            }
         }
         &-counter{
             display: flex;
