@@ -1,0 +1,130 @@
+.form{
+    &__box{
+        margin-top: 100px;
+        display: flex;
+        &-img{
+            margin-top: -100px;
+            margin-left: 2px;
+        }
+        &-form{
+            width: 600px;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid $brand-black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            input{
+                width: 100%;
+                height: 80px;
+                margin-bottom: 50px;
+                padding: 20px;
+            }
+        }
+    }
+    &__form{
+        &-img{
+            width: 100%;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        &-counter{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: start;
+        }
+    }
+}
+
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+}
+.number input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+@include laptop{
+    .form{
+        &__box{
+            &-img{
+                display: none
+            }
+            &-form{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include phone{
+    .form{
+        &__form{
+            &-img{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            &-counter{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: 10px 0px;
+            }
+        }
+        &__counter-number{
+            margin: 10px 0px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.reviews{
+    &__wrapper{
+        max-width: 90% !important;
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 505px;
+        border-radius: 20px;
+        background: rgba($brand-accent, 0.5);
+        padding: 40px 25px;
+        &-meta{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+
+    &__meta{
+        &-row{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@include desktop{
+    .reviews{
+        &__wrapper{
+            gap: 20px
+        }
+        &__card{
+            width: 380px;
+        }
+    }
+}
+
+@include phone{
+    .reviews{
+        &__wrapper{
+            max-width: 100% !important;
+        }
+        &__card{
+            width: 100%;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+    }
+}

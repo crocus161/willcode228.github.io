@@ -1,0 +1,38 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    &__wrapper{
+        min-height: 100vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $brand-white;
+    }
+
+    &__row{
+        width: 50%;
+    }
+
+    &__info{
+        @include adaptiveFont(36, 18);
+        margin-bottom: 20px;
+    }
+}
+
+@include tablet{
+    .header{
+        background-position: right;
+        background-color: rgba(0,0,0, 0.5);
+        background-blend-mode: darken;
+        &__row{
+            width: 100%;
+            text-align: center;
+        }
+
+        &__btn{
+            margin: auto;
+        }
+
+    }
+}
