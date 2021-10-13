@@ -1,5 +1,4 @@
 .video{
-    // @include backgroundImg('../img/dest/video/background.jpg');
     padding: 30px 0px;
     &__wrapper{
         padding-top: 80px;
@@ -15,10 +14,3 @@
     }
 }
 
-@include tablet {
-    .video{
-        background: $bg;
-        padding: 30px 0px;
-
-    }
-}

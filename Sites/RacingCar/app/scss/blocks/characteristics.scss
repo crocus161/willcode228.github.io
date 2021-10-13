@@ -12,7 +12,12 @@
         padding: 60px 20px;
     }
     &__title{
-        text-align: center;
+        position: relative;
+        right: -10%;
+        text-align: end;
+        @media screen and (max-width: 1500px) {
+            right: -0%;
+        }
     }
     &__li{
         display: flex;
