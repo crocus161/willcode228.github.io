@@ -1,0 +1,125 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+//*****HGROUP*****//
+.hgroup{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+//*****TITLES*****//
+.main-site-title{
+    @include adaptiveFont(40, 25);
+    margin: 5px 0px 10px 0px;
+}
+
+.section-title{
+    @include adaptiveFont(32, 20);
+}
+
+.block-title{
+    @include adaptiveFont(26, 18);
+}
+
+//*****INFO*****//
+.lg-info{
+    @include adaptiveFont(24, 17);
+    color: $brand-grey;
+}
+.sm-info{
+    @include adaptiveFont(18, 16);
+}
+//*****LINK*****//
+.link{
+    font-weight: 13px;
+}
+//*****BUTTON*****//
+.button{
+    display: inline-block;
+    padding: 20px 30px;
+    background: #000;
+    border-radius: 5px;
+    color: $brand-white;
+    font-weight: 300;
+    @include adaptiveFont(20, 18);
+    text-transform: uppercase;
+    word-wrap:unset;
+}
+
+
+.accent-text{
+    color: $brand-accent;
+}
+.dark-bg{
+    background: $dark-bg;
+}

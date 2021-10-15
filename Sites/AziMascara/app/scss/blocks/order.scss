@@ -1,0 +1,66 @@
+.order{
+    color: $brand-white;
+
+    &__box{
+        @include cardWidth;
+    }
+    &__card{
+        &-title{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            svg{
+                width: 40px;
+                height: 40px;
+                fill: $brand-accent;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    &__warning{
+        position: relative;
+        margin: 150px auto 0px auto;
+        width: 80%;
+        background: $brand-white;
+        border-radius: 30px;
+        padding: 30px;
+        &-text{
+            width: 60%;
+        }
+        &-subtitle,
+        &-info{
+            color: $brand-black;
+            margin: 10px 0px;
+        }
+
+        &-img{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -60px;
+        }
+    }
+}
+
+@include tablet{
+    .order{
+        &__card{
+            text-align: center;
+            &-title{
+                justify-content: center;
+            }
+        }
+        &__warning{
+            margin-top: 50px;
+            padding: 20px 10px;
+            &-text{
+                width: 100%;
+                text-align: center;
+            }
+            &-img{
+                display: none;
+            }
+        }
+    }
+}

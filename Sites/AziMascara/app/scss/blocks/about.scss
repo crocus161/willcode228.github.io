@@ -1,0 +1,49 @@
+.about{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img{
+        flex: 0 0 40%;
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__text{
+        padding: 0px 10px;
+        flex: 0 0 60%;
+        text-align: end;
+        &-title{
+            margin-bottom: 10px;
+        }
+        &-subtitle{
+            margin: 10px 0px 25px 0px;
+        }
+
+        &-info{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@include tablet{
+    .about{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        &__text{
+            padding: 0;
+            text-align: center;
+        }
+    }
+}

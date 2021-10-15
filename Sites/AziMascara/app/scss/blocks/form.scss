@@ -1,0 +1,55 @@
+.form{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .price{
+            margin-bottom: 20px;
+        }
+        &-title{
+            margin: 20px 0px;
+        }
+        input{
+            margin-bottom: 30px;
+            width: 100%;
+            border: 1px solid rgba(204, 204, 204, 1);
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 4px;
+            color: rgba(0, 0, 0, 1);
+            height: 40px;
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+}
+
+@include tablet{
+    .form{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin-bottom: 20px;
+            width: 60%;
+        }
+    }
+}

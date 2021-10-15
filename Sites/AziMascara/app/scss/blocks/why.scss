@@ -1,0 +1,70 @@
+.why{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        position: relative;
+        flex: 0 0 40%;
+        &-decoration{
+            img{
+                height: 350px;
+            }
+            top: 0%;
+            right: 20px;
+            position: absolute;
+        }
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__text{
+        flex: 0 0 60%;
+        &-title{
+            margin-bottom: 20px;
+        }
+        &-line{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            svg{
+                max-width: 40px;
+                max-height: 40px;
+                fill: $brand-accent;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .why{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin-top: 30px;
+        }
+    }
+}
+
+@include phone{
+    .why{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin-top: 30px;
+            &-decoration{
+                img{
+                    height: 100%;
+                }
+                height: 100%;
+            }
+        }
+    }
+}

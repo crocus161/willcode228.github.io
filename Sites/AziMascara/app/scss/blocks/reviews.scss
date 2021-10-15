@@ -1,0 +1,27 @@
+.reviews__wrapper{
+    min-width: 0;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+.reviews__slider{
+    position: relative;
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+
+.reviews__slider div{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__slider div img,
+.reviews__slider div img{
+    height: 100%;
+    @include responseImg;
+    object-position: top;
+}

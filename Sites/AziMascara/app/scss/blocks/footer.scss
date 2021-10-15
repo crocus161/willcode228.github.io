@@ -1,0 +1,18 @@
+.footer{
+    color: $brand-white;
+    &__tel{
+        margin: 20px 0px 30px 0px;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        a{
+            color: $brand-white;
+            text-align: center;
+        }
+    }
+}

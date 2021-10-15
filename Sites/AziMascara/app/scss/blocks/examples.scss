@@ -1,0 +1,19 @@
+.examples{
+    text-align: center;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    &__btn{
+        margin-top: 50px;
+    }
+
+    img{
+        max-width: 260px;
+        min-width: 260px;
+    }
+}

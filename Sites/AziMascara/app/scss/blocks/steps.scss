@@ -1,0 +1,50 @@
+.steps{
+
+    &__title{
+        text-align: end;
+        margin-bottom: 40px;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+
+    &__text{
+        flex: 0 0 40%;
+        &-info{
+            margin-bottom: 30px;
+            color: $brand-black;
+        }
+    }
+
+    &__img{
+        padding-right: 30px;
+        flex: 0 0 60%;
+        img{
+            @include responseImg;
+        }
+    }
+}
+
+
+@include tablet{
+    .steps{
+
+        &__title{
+            text-align: center;
+        }
+
+        &__box{
+            flex-direction: column;
+        }
+
+        &__img{
+            padding-right: 0;
+        }
+
+        &__text{
+            text-align: center;
+        }
+    }
+}
