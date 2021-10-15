@@ -1,0 +1,21 @@
+.order{
+    color: $brand-black;
+    position: relative;
+    &__decoration{
+        bottom: -100px;
+        left: 0;
+    }
+    &__box{
+        @include cardWidth(300px);
+    }
+    &__card{
+        text-align: center;
+        img{
+            @include responseImg;
+        }
+        &-title{
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    }
+}

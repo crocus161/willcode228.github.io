@@ -1,0 +1,18 @@
+.about{
+    position: relative;
+    background: $brand-white;
+    &__decoration{
+        bottom: -90px;
+        left: 0;
+    }
+    &__box{
+        @include cardWidth(250px);
+    }
+
+    &__card{
+        text-align: center;
+        .lg-info{
+            margin: 5px 0px 10px 0px;
+        }
+    }
+}

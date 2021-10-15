@@ -1,0 +1,93 @@
+.footer__form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .form__decoration{
+        position: absolute;
+        right: -20px;
+        bottom: -50px;
+        img{
+            height: 300px;
+        }
+    }
+    &-decoration{
+        width: 2000px;
+        bottom: -120px;
+        left: -420px;
+    }
+    &-price{
+        text-align: right;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    form{
+        margin: 50px auto 0px auto;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 100px;
+        background: #343634;
+        border-radius: 50px;
+        position: relative;
+        input{
+            width: 100%;
+            border-radius: 30px;
+            border: none;
+            text-align: center;
+            height: 80px;
+            margin-bottom: 40px;
+        }
+        button{
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+@include desktop{
+    .footer__form{
+        .form__decoration{
+            margin: 20px 0px;
+            position: static;
+        }
+    }
+}
+@include laptop{
+    .footer__form{
+        form{
+            width: 100%;
+        }
+
+
+    }
+}
+
+@include tablet{
+    .footer__form{
+        form{
+            margin: 50px 0px;
+            width: 80%;
+            padding: 50px 20px;
+        }
+    }
+}
+
+@include phone{
+    .footer__form{
+        form{
+            width: 100%;
+        }
+        &-price{
+            margin-top: 50px;
+            position: static;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+    }
+}

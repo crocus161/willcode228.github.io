@@ -1,0 +1,68 @@
+.advantages{
+    background: $brand-white;
+    position: relative;
+    &__hgroup.hgroup{
+        width: 100%;
+    }
+    &__decoration{
+        left: 0;
+        bottom: -100px;
+        z-index: 1;
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 40px;
+    }
+    &__img{
+        img{
+            height: 100%;
+            @include responseImg;
+        }
+    }
+    &__card{
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        img{
+            flex-grow: 1;
+
+        }
+        &-text{
+            margin-left: 20px;
+        }
+    }
+}
+
+@include laptop{
+    .advantages{
+        &__img{
+            display: none;
+        }
+        &__text{
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}
+
+@include phone{
+    .advantages{
+        &__card{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            &-text{
+                margin-left: 0;
+            }
+        }
+    }
+}

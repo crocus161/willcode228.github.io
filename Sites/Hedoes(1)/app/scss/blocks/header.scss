@@ -1,0 +1,45 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    position: relative;
+    color: $brand-white;
+    &__img{
+        display: none;
+        margin: 20px 0px;
+        img{
+            height: 200px;
+        }
+    }
+    &__product{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+    }
+    &__wrapper{
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        position: relative;
+    }
+}
+
+@include phone{
+    .header{
+        text-align: center;
+        &__btn{
+            margin: auto;
+        }
+        &__product{
+            display: none;
+        }
+        &__img{
+            display: block;
+        }
+    }
+}
