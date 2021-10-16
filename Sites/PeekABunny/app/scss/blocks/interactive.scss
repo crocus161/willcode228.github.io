@@ -1,0 +1,67 @@
+.interactive{
+    padding-top: 50px;
+    &__title{
+        font-size: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text{
+        padding: 0px 20px;
+    }
+
+    &__card{
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+        display: flex;
+        align-items: center;
+        &-info{
+            font-size: 20px;
+        }
+        &-img{
+            max-width: 250px;
+            min-width: 250px;
+            img{
+                @include responseImg;
+            }
+        }
+    }
+
+    &__img{
+        min-width: 550px;
+        max-width: 550px;
+        img{
+            @include responseImg;
+        }
+    }
+}
+
+@include laptop{
+    .interactive{
+        &__title{
+            font-size: 20px;
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .interactive{
+        padding-bottom: 40px;
+        &__card{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            &-img{
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

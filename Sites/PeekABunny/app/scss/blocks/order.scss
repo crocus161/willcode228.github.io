@@ -1,0 +1,47 @@
+.order{
+    background: #efefef;
+    &__wrapper{
+        @include cardWidth(310px);
+    }
+    &__card{
+        text-align: center;
+        img{
+            margin-bottom: 20px;
+            @include responseImg;
+        }
+        &-info{
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        &-price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p{
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+        &-btn{
+            display: inline-block;
+            height: 45px;
+            padding: 0 35px;
+            color: $brand-white;
+            background: $brand-orange;
+            line-height: 45px;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Balsamiq Sans', cursive;
+            border-radius: 10px;
+        }
+    }
+}
+
+@include phone{
+    .order{
+        &__wrapper{
+            @include cardWidth(200px);
+        }
+    }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- NORMALIZE CONNECTING (and maybe other libraries)-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <!-- MAIN MINIMIZATION STYLES -->
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header" id="form">
+            <div class="header__wrapper wrapper">
+
+                <div class="header__img">
+
+                    <div class="header__img-description">
+                        <div class="decoration1 decor">
+                            <img src="img/dest/header/decoration(2).svg" alt="">
+                        </div>
+                        <div class="decoration2 decor">
+                            <img src="img/dest/header/decoration(3).svg" alt="">
+                        </div>
+                        <div class="product decor">
+                            <img src="img/dest/header/decoration(1).png" alt="">
+                        </div>
+                        <img src="img/dest/header/product.gif" alt="">
+                        <p>Увлекательная игрушка для вашего малыша - песни, танцы и игры в прятки, часами напролет</p>
+
+                    </div>
+                </div>
+
+                <div class="header__text">
+                    <div class="header__text-timer">
+
+                        <div class="header__timer-banner">
+                            <img src="img/dest/header/note.svg" alt="" class="note">
+                            <p>СКИДКА</p>
+                            <p>53%</p>
+                        </div>
+
+                        <div class="header__timer-timer">
+                            <p class="header__timer-title">До конца акции осталось:</p>
+                            <p class="header__timer-time">09:43:76</p>
+                        </div>
+
+                    </div>
+
+                    <form id="order_form" class="main-order-form m1-form" action="thankyou.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+
+                        <div class="form__decoration">
+
+                            <div class="form__decoration-title">
+                                <img src="img/dest/header/arrow.png" alt="">
+                                <h2>АКЦИЯ</h2>
+                            </div>
+
+                            <div class="form__decoration-price">
+                                <p class="prev"><del>1590 грн</del></p>
+                                <p class="current">490 грн</p>
+                            </div>
+                        </div>
+
+
+                        <p class="field-amount">Выберите количество</p>
+                        <select class="field" name="amount" placeholder="Количество" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                        </select>
+                        <input class="field" type="text" name="name" placeholder="Имя" required>
+                        <input class="field" type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="25" required>
+                        <button class="button">Успеть купить по скидке -53%</button>
+                        <p>осталось 7 штук по акционной цене</p>
+                    </form>
+
+                    <div class="header__delivery">
+                        <img src="img/dest/header/novaposhta.svg" alt="novaposhta">
+                        <p class="header__delivery-title header__delivery-info">Доставка по всей Украине за 1 день!</p>
+                        <p class="header__delivery-info">Бесплатная доставка от 3 единиц</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <main class="main">
+
+            <div class="interactive">
+                <div class="interactive__hgroup hgroup">
+                    <h2 class="interactive__title">Интерактивная игрушка</h2>
+                    <h2 class="interactive__title">Peekaboo Bunny</h2>
+                </div>
+                <div class="interactive__wrapper">
+                    <div class="interactive__img">
+                        <picture>
+                            <source srcset="img/dest/interactive/children.webp" type="image/webp">
+                            <img src="img/dest/interactive/children.png" alt="children">
+                        </picture>
+                    </div>
+                    <div class="interactive__text">
+                        <div class="interactive__card">
+                            <div class="interactive__card-img">
+                                <picture>
+                                    <source srcset="img/dest/interactive/image(1).webp" type="image/webp">
+                                    <img src="img/dest/interactive/image(1).png" alt="product">
+                                </picture>
+                            </div>
+                            <p class="interactive__card-info">Познакомьтесь с новым лучшим другом для вашего малыша - Зайчик "Peekaboo". Это самая приятная плюшевая игрушка в мире</p>
+                        </div>
+                        <div class="interactive__card">
+                            <div class="interactive__card-img">
+                                <picture>
+                                    <source srcset="img/dest/interactive/image(2).webp" type="image/webp">
+                                    <img src="img/dest/interactive/image(2).png" alt="product">
+                                </picture>
+                            </div>
+                            <p class="interactive__card-info">Поющий Зайчик, будет часами играть в прятки с вашим Малышом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="especially">
+                <div class="characteristics__hgroup hgroup">
+                    <div class="characteristics__title-wrapper">
+                        <h2 class="characteristics__title">Особенности</h2>
+                    </div>
+                </div>
+                <div class="especially__wrapper">
+
+                    <div class="especially__text">
+                        <div class="especially__card">
+                            <div class="especially__card-img">
+                                <picture>
+                                    <source srcset="img/dest/especially/image(1).webp" type="image/webp">
+                                    <img src="img/dest/especially/image(1).png" alt="product">
+                                </picture>
+                            </div>
+
+                            <div class="especially__card-text">
+                                <p class="especially__card-title">ИНТЕРАКТИВНОЕ УДОВОЛЬСТВИЕ - Peekaboo поет, танцует и даже играет в прятки своими мягкими ушками!</p>
+                            </div>
+
+                        </div>
+                        <div class="especially__card">
+                            <div class="especially__card-img">
+                                <picture>
+                                    <source srcset="img/dest/especially/image(2).webp" type="image/webp">
+                                    <img src="img/dest/especially/image(2).png" alt="product">
+                                </picture>
+                            </div>
+
+                            <div class="especially__card-text">
+                                <p class="especially__card-title">Нажав на левую лапку, Зайчик будет играть в Прятки с малышома если на правую, то Pekaboo начнёт петь песенку, которая успокаивает детей</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="especially__img">
+                        <picture>
+                            <source srcset="img/dest/especially/children.webp" type="image/webp">
+                            <img src="img/dest/especially/children.png" alt="children">
+                        </picture>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="characteristics section">
+
+                <div class="characteristics__hgroup hgroup">
+                    <div class="characteristics__title-wrapper">
+                        <h2 class="characteristics__title">Характеристики</h2>
+                    </div>
+                </div>
+
+                <div class="characteristics__wrapper wrapper">
+
+                    <div class="characteristics__img">
+                        <picture>
+                            <source srcset="img/dest/characteristics/image(1).webp" type="image/webp">
+                            <img src="img/dest/characteristics/image(1).png" alt="product">
+                        </picture>
+                    </div>
+
+                    <div class="characteristics__text">
+                        <div class="characteristics__line">
+
+                            <div class="characteristics__line-icon">
+                                <picture>
+                                    <!-- <source srcset="img/dest/characteristics/arrow.webp" type="image/webp"> -->
+                                    <img src="img/dest/characteristics/arrow.png" alt="arrow">
+                                </picture>
+                            </div>
+                            <p class="characteristics__line-info">Размер 30х30х30</p>
+                        </div>
+                        <div class="characteristics__line">
+
+                            <div class="characteristics__line-icon">
+                                <picture>
+                                    <!-- <source srcset="img/dest/characteristics/arrow.webp" type="image/webp"> -->
+                                    <img src="img/dest/characteristics/arrow.png" alt="arrow">
+                                </picture>
+                            </div>
+                            <p class="characteristics__line-info">Мягкая и приятная на ощупь ткань</p>
+                        </div>
+                        <div class="characteristics__line">
+
+                            <div class="characteristics__line-icon">
+                                <picture>
+                                    <!-- <source srcset="img/dest/characteristics/arrow.webp" type="image/webp"> -->
+                                    <img src="img/dest/characteristics/arrow.png" alt="arrow">
+                                </picture>
+                            </div>
+                            <p class="characteristics__line-info">Качественный материал</p>
+                        </div>
+                    </div>
+
+                    <div class="characteristics__note">
+                        <picture class="characteristics__note-icon">
+                            <source srcset="img/dest/characteristics/icon.webp" type="image/webp">
+                            <img src="img/dest/characteristics/icon.png" alt="icon">
+                        </picture>
+                        <p class="characteristics__line-info characteristics__note-title">ОСТЕРЕГАЙТЕСЬ ПОДДЕЛОК</p>
+                        <p class="characteristics__line-info">Мы являемся прямыми партнерами завода с европейскими стандартами качества. Покупая у нас, вы можете быть уверены в наивысшем качестве нашей продукции, что подтверждается десятками положительных отзывов наших клиентов.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="order section">
+                <div class="order__hgroup hgroup">
+                    <h2 class="order__title">Увлекательные игры и приятная музыка</h2>
+                    <h2 class="order__title">Закажите радость ребенку</h2>
+                </div>
+                <div class="order__wrapper wrapper">
+                    <div class="order__card">
+                        <picture>
+                            <source srcset="img/dest/order/image(1).webp" type="image/webp">
+                            <img src="img/dest/order/image(1).png" alt="product">
+                        </picture>
+                        <p class="order__card-info">Интерактивная игрушка</p>
+                        <p class="order__card-info">"Peekaboo Bunny" (1 шт)</p>
+                        <p class="order__card-info">-63%</p>
+                        <div class="order__card-price">
+                            <p class="order__price-curr order__card-info">490 грн.</p>
+                            <p class="order__price-prev order__card-info"><del>1080 грн.</del></p>
+                        </div>
+                        <a href="#form" class="order__card-btn">Заказать!</a>
+                    </div>
+                    <div class="order__card">
+                        <picture>
+                            <source srcset="img/dest/order/image(2).webp" type="image/webp">
+                            <img src="img/dest/order/image(2).png" alt="product">
+                        </picture>
+                        <p class="order__card-info">Интерактивная игрушка</p>
+                        <p class="order__card-info">"Peekaboo Bunny" (2 шт)</p>
+                        <p class="order__card-info">-67%</p>
+                        <div class="order__card-price">
+                            <p class="order__price-curr order__card-info">849 грн.</p>
+                            <p class="order__price-prev order__card-info"><del>2160 грн.</del></p>
+                        </div>
+                        <a href="#form" class="order__card-btn">Заказать!</a>
+                    </div>
+                    <div class="order__card">
+                        <picture>
+                            <source srcset="img/dest/order/image(3).webp" type="image/webp">
+                            <img src="img/dest/order/image(3).png" alt="product">
+                        </picture>
+                        <p class="order__card-info">Интерактивная игрушка</p>
+                        <p class="order__card-info">"Peekaboo Bunny" (3 шт)</p>
+                        <p class="order__card-info">-72%</p>
+                        <div class="order__card-price">
+                            <p class="order__price-curr order__card-info">1095 грн.</p>
+                            <p class="order__price-prev order__card-info"><del>3240 грн.</del></p>
+                        </div>
+                        <a href="#form" class="order__card-btn">Заказать!</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- /.main -->
+
+        <footer class="footer">
+            <div class="footer__wrapper wrapper"></div>
+        </footer>
+        <!-- /.footer -->
+
+    </div>
+    <!-- /.container -->
+
+
+    <!-- MAIN MINIMIZATION JAVASCRIPT -->
+    <script src="js/app.min.js"></script>
+</body>
+</html>
