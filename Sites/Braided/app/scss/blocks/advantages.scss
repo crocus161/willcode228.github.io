@@ -1,0 +1,54 @@
+.advantages{
+    position: relative;
+    z-index: 1;
+    background: $brand-accent;
+    color: $brand-white;
+    &-wave{
+        bottom: -110px;
+        left: 0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__title{
+        @include adaptiveFont(60, 35);
+        font-weight: 700;
+    }
+
+    &__card{
+        width: 45%;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        .circle{
+            margin-right: 20px;
+            min-width: 40px;
+            min-height: 40px;
+            border-radius: 50%;
+            border: 5px solid $brand-white;
+        }
+    }
+}
+
+
+@include laptop{
+    .advantages{
+        &__card{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .circle{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

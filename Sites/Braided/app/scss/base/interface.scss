@@ -1,0 +1,152 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    overflow: hidden;
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+//*****TITLES*****//
+.main-site-title,
+.section-title{
+    text-transform: uppercase;
+    @include adaptiveFont(68, 25);
+}
+
+.main-site-title{
+    font-weight: 600;
+}
+
+.section-title{
+    font-weight: 400;
+}
+
+.block-title{
+    @include adaptiveFont(36, 20);
+    line-height: 44px;
+    font-weight: 500;
+}
+
+//*****INFO*****//
+.lg-info{
+    @include adaptiveFont(32, 20);
+    font-weight: 500;
+}
+
+.sm-info{
+    @include adaptiveFont(24, 18);
+}
+//*****BUTTON*****//
+.button{
+    min-width: 160px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: $brand-accent;
+    border-radius: 25px;
+
+
+    @include adaptiveFont(30, 24);
+    font-weight: 600;
+    text-align: center;
+    color: $brand-white;
+}
+
+.button.center{
+    margin: 100px auto 0px auto;
+}
+//*****DIFFERENT*****//
+.accent-text{
+    color: $brand-accent;
+}
+
+.leaf{
+    position: absolute;
+    img{
+        width: 120px;
+    }
+}
+
+.hgroup{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.wave{
+    width: 100%;
+    min-height: 120px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+
+@include laptop{
+    .main-site-title,
+    .section-title{
+        line-height: 120%;
+    }
+}
+
+

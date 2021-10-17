@@ -1,0 +1,35 @@
+.worry{
+    padding: 200px 0px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &-wave{
+        bottom: -10px;
+        left: 0;
+    }
+    &__title{
+        @include adaptiveFont(80, 30);
+        font-weight: 700;
+        &::before,
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background: $brand-accent;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@include laptop{
+    .worry{
+        &__title{
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

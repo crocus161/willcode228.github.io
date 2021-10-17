@@ -1,0 +1,48 @@
+.about{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 200px;
+    &-wave{
+        left: 0;
+        bottom: 0px;
+    }
+    &__img{
+        margin-top: 35px;
+        width: 100%;
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        margin: 20px;
+        width: 100px;
+        text-align: center;
+        &-img{
+            margin: auto;
+            width: 93px;
+            height: 93px;
+            border-radius: 50%;
+            background: $brand-accent;
+            display: grid;
+            place-items: center;
+            img{
+                width: 47px;
+                height: 47px;
+
+            }
+        }
+        &-info{
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.header{
+    background: $bg;
+    position: relative;
+    z-index: 1;
+    &-wave{
+        bottom: -120px;
+        left: 0;
+    }
+    &__wrapper{
+        padding-top: 140px;
+        padding-bottom: 50px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        padding: 40px;
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__btn{
+        margin: 20px 0px 30px 0px;
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        &-item a{
+            display: inline-block;
+            margin-left: 15px;
+            color: $brand-black;
+            font-size: 12px;
+            font-weight: 700;
+            &::before{
+                margin-right: 7px;
+                display: inline-block;
+                content: '';
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background: $brand-accent;
+            }
+        }
+    }
+}
+
+@include desktop{
+    .header{
+        &__wrapper{
+            padding-top: 100px;
+        }
+    }
+}
+@include laptop{
+    .header{
+        &__wrapper{
+            padding-top: 80px;
+        }
+
+        &__menu{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            width: 70%;
+            margin-top: 40px;
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__menu{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@include phone{
+    .header{
+        &__img{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+
