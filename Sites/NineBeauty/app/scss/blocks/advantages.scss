@@ -1,0 +1,50 @@
+.advantages{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__text{
+        padding: 20px;
+    }
+
+    &__card{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            padding: 0px 20px;
+            display: block;
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+}
+
+@include tablet{
+    .advantages{
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .advantages{
+        &__card{
+            img{
+                width: 80px;
+            }
+        }
+        &__text{
+            padding: 0;
+        }
+    }
+}

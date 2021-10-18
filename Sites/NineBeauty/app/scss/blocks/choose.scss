@@ -1,0 +1,66 @@
+.choose{
+    &__wrapper{
+        display: flex;
+    }
+
+    &__img,
+    &__text{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        @include backgroundImg('../img/dest/choose/background.jpg');
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-text{
+            margin-bottom: 40px;
+        }
+        p{
+            color: $brand-white;
+        }
+    }
+
+    &__text{
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__card{
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        p{
+            display: block;
+            flex-grow: 1;
+        }
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+@include tablet{
+    .choose{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            padding: 80px 20px;
+        }
+
+        &__card{
+            img{
+                width: 60px;
+            }
+        }
+    }
+}
