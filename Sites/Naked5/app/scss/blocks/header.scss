@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper{
+        margin: 0;
+        min-height: 100vh;
+        @include backgroundImg('../img/dest/header/background.jpg');
+        padding: 40px 80px;
+        color: $brand-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__price{
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        background: #EFD8C4;
+        padding: 30px;
+        color: #59493B;
+        text-align: end;
+    }
+
+    &__text,
+    &__img{
+        flex: 0 0 50%;
+    }
+
+    &__img{
+        padding: 20px;
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__subtitle{
+        margin-bottom: 100px;
+    }
+
+    &__btn{
+        margin-bottom: 40px;
+    }
+
+    &__play{
+        display: flex;
+        align-items: center;
+        color: $brand-white;
+        img{
+            width: 80px;
+        }
+
+        &-info{
+            margin-left: 20px;
+        }
+    }
+}
+
+@include desktop{
+    .header{
+        justify-content: inherit;
+    }
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            padding-top: 50px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &__img{
+            display: none;
+        }
+
+        &__subtitle{
+            margin-bottom: 50px;
+        }
+
+        &__price{
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+            right: 50%;
+            transform: translate(50%);
+        }
+
+        &__text{
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+}

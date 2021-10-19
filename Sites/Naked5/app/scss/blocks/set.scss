@@ -1,0 +1,45 @@
+.set{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__text{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+}
+
+
+@include tablet{
+    .set{
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img{
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        &__text{
+            padding-left: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

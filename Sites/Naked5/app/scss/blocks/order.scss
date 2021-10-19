@@ -1,0 +1,33 @@
+.order{
+    @include backgroundImg('../img/dest/order/background.jpg');
+    &__box{
+        @include cardWidth(280px);
+        justify-content: space-around;
+        margin-bottom: 80px;
+        gap: 50px;
+    }
+    &__card{
+        text-align: center;
+        &-img{
+            min-height: 270px;
+            margin-bottom: 30px;
+        }
+        &-title{
+            margin-bottom: 25px;
+        }
+        img{
+            @include responseImg(80%);
+        }
+    }
+    &__btn{
+        margin: auto;
+    }
+}
+
+@include tablet{
+    .order{
+        &__card-img{
+            min-height: 100px;
+        }
+    }
+}

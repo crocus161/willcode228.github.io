@@ -1,0 +1,41 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper{
+        margin: 0;
+        // margin-left: auto;
+        padding: 150px 40px;
+        @include backgroundImg('../img/dest/about/background.jpg');
+        color: $brand-white;
+        text-align: center;
+    }
+
+    &__box{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+
+@include phone{
+    .about{
+        &__wrapper{
+            padding: 100px 15px;
+        }
+
+        &__card{
+            img{
+                width: 90px;
+            }
+        }
+    }
+}

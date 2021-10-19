@@ -1,0 +1,62 @@
+.advantages{
+    &__wrapper{
+        display: flex;
+    }
+
+    &__img{
+        flex: 0 0 50%;
+        @include backgroundImg('../img/dest/advantages/background.jpg');
+        padding: 40px 20px;
+        color: $brand-white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-info{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__text{
+        flex: 0 0 50%;
+        padding: 20px;
+    }
+
+    &__card{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            padding: 0px 20px;
+            display: block;
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+}
+
+@include tablet{
+    .advantages{
+        &__img{
+            display: none;
+        }
+        &__text{
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@include phone{
+    .advantages{
+        &__card{
+            img{
+                width: 60px;
+            }
+        }
+    }
+}
