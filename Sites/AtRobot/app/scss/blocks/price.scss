@@ -1,0 +1,28 @@
+.price{
+    display: flex;
+    align-items: center;
+    a,button{
+        margin-right: 50px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        h6{
+            margin-top: 5px;
+        }
+    }
+}
+
+
+@include tablet{
+    .price{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a,button{
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.advantages{
+    padding-top: 200px;
+    &__box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    &__card{
+        width: 300px;
+        margin: 20px 30px;
+        text-align: center;
+        img{
+            margin: 20px 0px;
+        }
+    }
+    &__img{
+        margin: auto;
+        width: 80%;
+        img{
+            @include responseImg;
+        }
+    }
+}

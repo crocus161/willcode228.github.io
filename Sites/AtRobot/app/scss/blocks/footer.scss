@@ -1,0 +1,99 @@
+.footer{
+    position: relative;
+    z-index: 1;
+    &__bg{
+        left: 0;
+        bottom: 0;
+        min-width: 100%;
+        height: 120%;
+        position: absolute;
+    }
+    &__img{
+        margin-left: 20px;
+        width: 480px;
+        padding: 20px;
+        img{
+            @include responseImg(100%);
+        }
+    }
+    &__wrapper{
+        position: relative;
+        z-index: 1;
+        color: $brand-white;
+        display: flex;
+        align-items: center;
+    }
+    form{
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .price__info-title{
+            margin-bottom: 20px;
+            display: none;
+        }
+        .form__title{
+            margin-bottom: 30px;
+        }
+        input{
+            width: 100%;
+            height: 100px;
+            @include adaptiveFont(60, 20);
+            margin-bottom: 30px;
+            text-align: center;
+            border: none;
+            border: 2px solid $brand-white;
+            background: transparent;
+            color: $brand-white;
+            border-radius: 50px;
+        }
+    }
+}
+
+@include placeholder{
+    color: #FFFFFF75;
+}
+
+
+
+@include laptop{
+    .footer{
+        &__img{
+            width: 380px;
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        padding-bottom: 0;
+        &__wrapper{
+            width: 100%;
+        }
+        form{
+            flex: 0 0 100%;
+            .price__info-title{
+                display: block;
+            }
+            .price__info{
+                display: none;
+            }
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .footer{
+        form{
+            input{
+                height: 60px;
+            }
+        }
+    }
+}
+
