@@ -1,0 +1,13 @@
+.video{
+    position: relative;
+    &__line{
+        position: absolute;
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    video{
+        width: 100%;
+    }
+}

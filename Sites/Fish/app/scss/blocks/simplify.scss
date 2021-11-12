@@ -1,0 +1,22 @@
+.simplify{
+    &__wrapper{
+        @include cardWidth(300px);
+    }
+    &__card{
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        h3{
+            margin: 10px 0px 15px 0px;
+        }
+    }
+}
+
+@include phone{
+    .simplify{
+        &__wrapper{
+            @include cardWidth(250px);
+        }
+    }
+}

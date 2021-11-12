@@ -1,0 +1,51 @@
+.advantages{
+    position: relative;
+    &__line{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__box,
+    &__img{
+        flex: 0 0 50%;
+        padding: 20px;
+    }
+
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__card{
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 50px;
+        }
+    }
+}
+
+@include laptop{
+    .advantages{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__card{
+            img{
+                width: 80px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

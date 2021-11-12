@@ -1,0 +1,53 @@
+.grow{
+    position: relative;
+    &__fish{
+        top: -100px;
+        right: 0;
+        position: absolute;
+    }
+    &__line{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__card{
+        flex: 0 0 40%;
+        text-align: center;
+        margin: 0px 20px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .grow{
+        &__fish{
+            z-index: -1;
+            top: -200px;
+            width: 200px;
+        }
+    }
+}
+
+@include laptop{
+    .grow{
+        &__fish{
+            top: 50%;
+            right: -50px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@include phone{
+    .grow{
+        &__fish{
+            display: none;
+        }
+    }
+}

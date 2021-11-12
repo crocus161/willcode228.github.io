@@ -1,0 +1,126 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    position: relative;
+    z-index: 1;
+    &__fish{
+        position: absolute;
+    }
+
+    &__fish1{
+        width: 800px;
+        top: 10px;
+        right: 0;
+    }
+
+    &__fish2{
+        left: 0;
+        top: 10px
+    }
+
+    &__fish3{
+        width: 500px;
+        top: 0;
+        left: 20px;
+    }
+
+    &__wrapper{
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: $brand-white;
+    }
+
+    &__text{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__info{
+        margin: 30px 0px;
+    }
+
+    &__btn{
+        margin-bottom: 40px;
+    }
+
+    &__play{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        color: $brand-white;
+        img{
+            width: 80px;
+        }
+
+        &-info{
+            margin-left: 20px;
+        }
+    }
+
+    &__bottom{
+        margin-top: -2px;
+        position: relative;
+        &-bg{
+            min-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .header{
+        &__fish1{
+            width: 500px;
+        }
+        &__fish2{
+            width: 400px;
+        }
+    }
+}
+
+@include desktop{
+    .header{
+        &__fish1{
+            width: 400px;
+        }
+        &__fish2{
+            width: 300px;
+        }
+    }
+}
+
+@include laptop{
+    .header{
+        &__fish1{
+            width: 300px;
+        }
+        &__fish2{
+            width: 200px;
+        }
+    }
+}
+
+@include phone{
+    .header{
+        &__text{
+            width: 100%;
+        }
+        &__fish2{
+            display: none;
+        }
+        &__fish3{
+            left: -20px;
+            width: 300px;
+        }
+    }
+}
+

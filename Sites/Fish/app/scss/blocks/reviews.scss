@@ -1,0 +1,12 @@
+.reviews{
+    &__wrapper{
+        @include cardWidth(300px);
+    }
+
+    &__card{
+        text-align: center;
+        img{
+            margin-top: 20px;
+        }
+    }
+}

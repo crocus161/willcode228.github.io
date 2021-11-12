@@ -1,0 +1,81 @@
+.footer{
+    padding-top: 500px;
+    @include backgroundImg('../img/dest/footer/background.png');
+    background-position: right;
+    &__wrapper{
+        min-height: 100vh;
+    }
+    &__wrapper{
+        position: relative;
+        z-index: 1;
+        color: $brand-white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    form{
+        padding-bottom: 50px;
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .price__info-title{
+            margin-bottom: 20px;
+            display: none;
+        }
+        .form__title{
+            margin-bottom: 30px;
+        }
+        input{
+            width: 100%;
+            height: 100px;
+            @include adaptiveFont(60, 20);
+            margin-bottom: 30px;
+            text-align: center;
+            border: none;
+            border: 2px solid $brand-white;
+            background: transparent;
+            color: $brand-white;
+            border-radius: 50px;
+        }
+    }
+}
+
+@include placeholder{
+    color: $brand-white;
+}
+
+@include tablet{
+    .footer{
+        padding-top: 300px;
+        padding-bottom: 0;
+        &__wrapper{
+            width: 100%;
+        }
+        form{
+            flex: 0 0 100%;
+            .price__info-title{
+                display: block;
+            }
+            .price__info{
+                display: none;
+            }
+        }
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .footer{
+        padding-top: 100px;
+        form{
+            input{
+                height: 60px;
+            }
+        }
+    }
+}

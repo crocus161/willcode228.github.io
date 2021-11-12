@@ -1,0 +1,47 @@
+.about{
+    position: relative;
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img,
+    &__box{
+        flex: 0 0 50%;
+        padding: 40px;
+    }
+
+    &__img{
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@include tablet{
+    .about{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin-bottom: 30px;
+        }
+
+        &__img,
+        &__box{
+            padding: 0;
+        }
+    }
+}
