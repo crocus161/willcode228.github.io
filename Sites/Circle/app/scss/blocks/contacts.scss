@@ -1,0 +1,33 @@
+.contacts{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__row{
+        margin: 40px;
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-bottom: 20px;
+        }
+        .button{
+            margin-top: 10px;
+        }
+    }
+    .viber{
+        background: #7e57c2;
+    }
+    .telegram{
+        background: #29b6f6;
+    }
+    .tel{
+        background: #12c024;
+    }
+}

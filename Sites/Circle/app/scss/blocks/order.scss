@@ -1,0 +1,65 @@
+.order{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__card{
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+        
+        border-radius: 12px;
+        box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 10%);
+        width: 400px;
+        img{
+            @include responseImg;
+        }
+        &-meta{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-stars{
+            color: rgb(255, 204, 0);
+        }
+        &-text{
+            padding: 40px 20px;
+            text-align: center;
+            a{
+                margin: auto;
+            }
+        }
+        .current-price{
+            color: #ff0000;
+            @include adaptiveFont(24, 18);
+            margin-bottom: 5px;
+        }
+        .prev-price{
+            margin-top: 10px;
+        }
+        .time{
+            margin-top: 30px;
+        }
+        &-title{
+            margin-bottom: 15px;
+            .accent-blue{
+                color: rgb(15, 60, 219);
+            }
+            .accent-red{
+                color: #ff0000;
+            }
+        }
+    }
+}
+
+
+@include phone{
+    .order{
+        &__card{
+            width: 100%;
+        }
+    }
+}

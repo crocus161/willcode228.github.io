@@ -1,0 +1,37 @@
+.footer{
+    background: #333;
+    p{
+        color: $white;
+        margin-bottom: 10px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__text{
+        margin-right: 20px;
+    }
+    &__links{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        a{
+            text-decoration: underline;
+            padding: 10px;
+            display: inline-block;
+            color: #ff8562;
+        }
+    }
+}
+
+@include phone{
+    .footer{
+        &__wrapper{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}

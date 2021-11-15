@@ -1,0 +1,86 @@
+.reviews{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__phone{
+        position: relative;
+        width: 425px;
+    }
+    &__slider{
+        position: absolute !important;
+        min-width: 0;
+    }
+    &__slider div{
+        width: 300px;
+        img{
+            @include responseImg;
+        }
+    }
+}
+
+.arrow-left.slick-arrow,
+.arrow-right.slick-arrow{
+    width: 45px;
+    height: 45px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    background: #bec5cf;
+    border-radius: 50%;
+}
+
+.arrow-left.slick-arrow{
+    left: 30%
+}
+
+.arrow-right.slick-arrow{
+    right: 30%
+}
+
+@include desktop{
+    .reviews{
+        &__fullphone{
+            width: 200px;
+        }
+    }
+}
+
+@include laptop{
+    .arrow-left.slick-arrow{
+        left: 10%
+    }
+
+    .arrow-right.slick-arrow{
+        right: 10%
+    }
+
+    .reviews{
+        &__fullphone{
+            display: none;
+        }
+    }
+}
+@include phone{
+    .reviews{
+        &__phone{
+            width: 300px;
+        }
+        &__slider div{
+            width: 200px;
+        }
+    }
+
+    .arrow-left.slick-arrow,
+    .arrow-right.slick-arrow{
+        display: none !important;
+    }
+}

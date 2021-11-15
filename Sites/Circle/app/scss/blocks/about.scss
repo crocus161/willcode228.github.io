@@ -1,0 +1,15 @@
+.about{
+    &__wrapper{
+        text-align: center;
+    }
+}
+
+@include laptop{
+    .about{
+        &__wrapper{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
