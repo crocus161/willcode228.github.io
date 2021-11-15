@@ -1,7 +1,7 @@
 .header{
     color: $white;
     display: none;
-    @include backgroundImg('../../img/dest/header/background.png');
+    @include backgroundImg('../img/dest/header/background.png');
     background-color: rgba(0,0,0,0.3);
     background-blend-mode: multiply;
     &__wrapper{
