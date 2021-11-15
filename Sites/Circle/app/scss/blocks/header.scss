@@ -1,0 +1,23 @@
+.header{
+    color: $white;
+    display: none;
+    @include backgroundImg('../../img/dest/header/background.png');
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+    &__wrapper{
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .button{
+        margin-top: 50px;
+    }
+}
+
+@include phone{
+    .header{
+        display: block;
+    }
+}

@@ -78,6 +78,10 @@ ul{
     padding-bottom: 80px;
 }
 //*****TITLES*****//
+.main-site-title{
+    @include adaptiveFont(65, 40);
+}
+
 .section-title{
     @include adaptiveFont(42, 20);
 }
