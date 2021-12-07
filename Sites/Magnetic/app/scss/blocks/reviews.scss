@@ -1,0 +1,40 @@
+.reviews{
+    position: relative;
+    z-index: 1;
+    background: $bg;
+    &-wave{
+        bottom: -120px;
+        left: 0;
+    }
+    &__box{
+        @include cardWidth(320px);
+    }
+
+    &__btn-wrapper{
+        text-align: center;
+    }
+    &__card{
+        background: $brand-white;
+        border-radius: 30px;
+        padding: 40px;
+        &-stars{
+            color: #FFC700;
+            margin-bottom: 10px;
+            word-spacing: 2px;
+        }
+        &-title{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        &-info{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        &-name{
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}

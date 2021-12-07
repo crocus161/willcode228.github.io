@@ -1,0 +1,41 @@
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    &__wrapper{
+        height: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    picture{
+        height: 100%;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@include desktop{
+    .nav{
+        &__wrapper{
+            max-height: 100px;
+        }
+    }
+}
+@include laptop{
+    .nav{
+        &__wrapper{
+            max-height: 80px;
+        }
+    }
+}
+@include phone{
+    .nav__btn{
+        display: none;
+    }
+}
+

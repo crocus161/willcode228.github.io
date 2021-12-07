@@ -1,0 +1,68 @@
+.form{
+    padding: 200px 0px;
+    position: relative;
+    &-wave{
+        bottom: -10px;
+        left: 0;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__row{
+        width: 320px;
+    }
+
+    &__form{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        input{
+            width: 300px;
+            padding: 10px;
+            height: 51px;
+            background: #ECEFF4;
+            border-radius: 20px;
+            margin-right: 20px;
+            border: none;
+            @include notLast{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include laptop{
+    .form{
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include tablet{
+    .form{
+        &__row{
+            width: 90%;
+            margin-bottom: 20px;
+        }
+        &__form{
+            margin-left: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
