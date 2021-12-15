@@ -1,0 +1,113 @@
+.billing{
+    padding-bottom: 50px;
+    &__header{
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+        &::after{
+            @include pseudo;
+            inset: 0;
+            background: cornflowerblue;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            z-index: -1;
+        }
+        &-title{
+            display: inline-block;
+            padding: 5px 15px;
+            font-size: 70px;
+            text-transform: uppercase;
+            background-color: $accent;
+            color: $white;
+            margin-bottom: 0;
+        }
+        &-subtitle{
+            display: inline-block;
+            padding: 5px 15px;
+            font-size: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $accent;
+            background-color: $white;
+            margin-bottom: 20px;
+        }
+        &-off{
+            font-size: 40px;
+            color: $accent;
+        }
+        &-btn{
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: $accent;
+            color: $white;
+        }
+    }
+
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 40px;
+        &-card{
+            width: 300px;
+            img{
+                width: 100%;
+                @include responseImg;
+            }
+        }
+    }
+
+    &__card{
+        &-title{
+            text-transform: uppercase;
+            font-size: 28px;
+            color: $accent
+        }
+        &-text{
+            font-size: 18px;
+            color: $accent;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        &-btngroup{
+            display: flex;
+            align-items: center;
+
+            span{
+                font-size: 30px;
+                color: $secondary-accent;
+                margin-right: 15px;
+                transform: translateY(3px);
+            }
+        }
+
+        &-btn{
+            padding: 5px 10px;
+            background-color: $secondary-accent;
+            color: $white;
+        }
+    }
+}
+
+@include tablet{
+    .billing{
+        &__header{
+            &-title{font-size: 50px;}
+            &-subtitle{font-size: 30px;}
+            &-off{font-size: 30px;}
+        }
+
+        &__card{
+            &-title{font-size: 28px;}
+            &-text{font-size: 18px;}
+        }
+    }
+}
