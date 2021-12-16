@@ -1,0 +1,20 @@
+.decor{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .circle{
+        position: absolute;
+    }
+
+    .circle1{
+        bottom: 10px;
+        left: -120px;
+    }
+
+    .circle2{
+        transform: scale(1.5);
+        top: 10px;
+        right: -120px;
+        z-index: -1;
+    }
+}

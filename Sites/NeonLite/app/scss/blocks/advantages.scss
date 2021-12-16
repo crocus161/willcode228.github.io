@@ -1,0 +1,31 @@
+.advantages{
+    &__title{
+        svg{
+            fill: $accent;
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 200px;
+        row-gap: 50px;
+    }
+    &__card{
+        width: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        &-title{
+            margin: 5px 0px 10px 0px;
+        }
+        &-info{
+            color: $grey;
+            font-weight: 500;
+        }
+    }
+}
+
+

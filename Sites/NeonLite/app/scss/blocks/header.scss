@@ -1,0 +1,61 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    &__wrapper{
+        min-height: 100vh;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__advantages{
+        max-width: 450px;
+        &-item{
+            color: $grey;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__title{
+        max-width: 700px;
+        color: $white;
+        &-accent{
+            color: $accent;
+        }
+    }
+
+    &__meta{
+        display: flex;
+        align-items: center;
+    }
+
+    .pricing{
+        margin-left: 50px;
+    }
+}
+
+
+@include laptop{
+    .header{
+        background-position: right;
+        background-color: rgba(0,0,0,0.6);
+        background-blend-mode: multiply;
+    }
+}
+
+@include phone{
+    .header{
+        &__box{
+            text-align: center;
+        }
+
+        &__meta{
+            flex-direction: column;
+            .pricing{
+                margin-top: 20px;
+                margin-left: 0;
+            }
+        }
+    }
+}

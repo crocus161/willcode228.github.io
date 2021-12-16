@@ -1,0 +1,33 @@
+.footer{
+    overflow: hidden;
+    &__wrapper{
+        border-top: 2px solid $grey;
+        margin-top: 50px;
+        position: relative;
+        &-decoration{
+            position: absolute;
+            bottom: -300%;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    &__footer{
+        text-align: center;
+        padding: 50px 20px;
+    }
+    &__info{
+        margin-bottom: 5px;
+        color: $black;
+    }
+}
+
+@include tablet{
+    .footer{
+        &__wrapper{
+            &-decoration{
+                width: 80%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+.about{
+    @include backgroundImg('../img/dest/about/background.jpg');
+    &__title{
+        color: $white;
+        svg{
+            fill: $grey;
+        }
+    }
+    &__list{
+        max-width: 650px;
+        &-item{
+            @include adaptiveFont(24, 16);
+            font-weight: 500;
+            margin-bottom: 25px;
+            color: $white;
+        }
+    }
+}
+
+
+@include phone{
+    .about{
+        text-align: center;
+    }
+}

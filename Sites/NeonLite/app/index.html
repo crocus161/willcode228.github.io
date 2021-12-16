@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- NORMALIZE CONNECTING (and maybe other libraries)-->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <!-- MAIN MINIMIZATION STYLES -->
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+
+    <svg class="sprites">
+        <symbol viewBox="0 0 110 38" id="title">
+            <ellipse cx="7" cy="6.82051" rx="7" ry="6.82051" />
+            <ellipse cx="31" cy="6.82051" rx="7" ry="6.82051" />
+            <ellipse cx="55" cy="6.82051" rx="7" ry="6.82051" />
+            <ellipse cx="79" cy="6.82051" rx="7" ry="6.82051" />
+            <ellipse cx="7" cy="31.1795" rx="7" ry="6.82051" />
+            <ellipse cx="31" cy="31.1795" rx="7" ry="6.82051" />
+            <ellipse cx="55" cy="31.1795" rx="7" ry="6.82051" />
+            <ellipse cx="79" cy="31.1795" rx="7" ry="6.82051" />
+            <ellipse cx="103" cy="31.1795" rx="7" ry="6.82051" />
+        </symbol>
+
+        <symbol viewBox="0 0 251 251" id="circle">
+            <circle cx="125.5" cy="125.5" r="125.5" fill="#75FF37" fill-opacity="0.2"/>
+        </symbol>
+    </svg>
+
+    <div class="container">
+
+        <nav class="nav">
+            <div class="nav__wrapper wrapper">
+                <div class="nav__logo">
+                    <h2 class="nav__logo-title">
+                        Neon <span class="nav__logo-span">LIGHT</span>
+                    </h2>
+                    <h3 class="nav__logo-subtitle">Неоновые ленты</h3>
+                </div>
+
+                <ul class="nav__menu">
+                    <li><a href="#home" class="nav__menu-item">Главная</a></li>
+                    <li><a href="#about" class="nav__menu-item">О нас</a></li>
+                    <li><a href="#reviews" class="nav__menu-item">Отзывы</a></li>
+                    <li><a href="#advantages" class="nav__menu-item">О товаре</a></li>
+                    <li><a href="#form" class="nav__menu-item">Обратная связь</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /.nav -->
+
+        <header class="header" id="home">
+            <div class="header__wrapper wrapper">
+                <div class="header__box">
+                    <h1 class="header__title main-page-title">
+                        <span class="header__title-accent">Яркая</span>
+                        неоновая лента, которая отлично впишется в любой интерьер
+                    </h1>
+                    <ul class="header__advantages custom-markers">
+                        <li class="header__advantages-item">Вы можете регулировать яркость и тепло света, как захотите</li>
+                        <li class="header__advantages-item">Достаточно вашего  телефона, чтобы управлять лентой через приложение</li>
+                        <li class="header__advantages-item">Неоновая лента идеально подойдёт как в вашу собственную комнату, так и для офисов</li>
+                    </ul>
+
+                    <div class="header__meta">
+                        <a href="#form" class="button">Заказать ленту</a>
+
+                        <div class="pricing">
+                            <h4 class="prev-price"><del>560 грн</del></h4>
+                            <h2 class="current-price">299 грн</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /.header -->
+
+        <main class="main">
+
+            <div class="advantages section decor" id="advantages">
+
+                <svg class="circle circle1"><use xlink:href="#circle"></use></svg>
+                <svg class="circle circle2"><use xlink:href="#circle"></use></svg>
+
+
+                <div class="advantages__wrapper wrapper">
+                    <div class="advantages__hgroup hgroup">
+                        <h2 class="section-title advantages__title">
+                            <svg><use xlink:href="#title"></use></svg>
+                            Почему именно мы?
+                        </h2>
+                    </div>
+
+                    <div class="advantages__box">
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(1).svg" alt="icon">
+                            <h3 class="advantages__card-title">Качество</h3>
+                            <p class="advantages__card-info">Лучшее качество, коротое можно найти в Украине</p>
+                        </div>
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(2).svg" alt="icon">
+                            <h3 class="advantages__card-title">Доставка</h3>
+                            <p class="advantages__card-info">Быстрая доставкановой почтой, по всей Украине</p>
+                        </div>
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(3).svg" alt="icon">
+                            <h3 class="advantages__card-title">Гарантия</h3>
+                            <p class="advantages__card-info">Дадим гарантию 1 год на весь товар</p>
+                        </div>
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(4).svg" alt="icon">
+                            <h3 class="advantages__card-title">Сертификат</h3>
+                            <p class="advantages__card-info">Весь товар сертификованный</p>
+                        </div>
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(5).svg" alt="icon">
+                            <h3 class="advantages__card-title">Доверие клиентов</h3>
+                            <p class="advantages__card-info">Проданно больше 500 торшеров</p>
+                        </div>
+                        <div class="advantages__card">
+                            <img src="img/dest/advantages/image(6).svg" alt="icon">
+                            <h3 class="advantages__card-title">Оплата</h3>
+                            <p class="advantages__card-info">Разные способы оплаты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gallery section">
+                <div class="gallery__wrapper wrapper">
+                    <div class="gallery__hgroup hgroup">
+                        <h2 class="section-title gallery__title">
+                            <svg><use xlink:href="#title"></use></svg>
+                            Как это выглядит
+                        </h2>
+                    </div>
+
+                    <div class="gallery__slider">
+                        <div>
+                            <picture>
+                                <source srcset="img/dest/gallery/image(1).webp" type="image/webp">
+                                <img src="img/dest/gallery/image(1).png" alt="product">
+                            </picture>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="img/dest/gallery/image(2).webp" type="image/webp">
+                                <img src="img/dest/gallery/image(2).png" alt="product">
+                            </picture>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="img/dest/gallery/image(3).webp" type="image/webp">
+                                <img src="img/dest/gallery/image(3).png" alt="product">
+                            </picture>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="img/dest/gallery/image(4).webp" type="image/webp">
+                                <img src="img/dest/gallery/image(4).png" alt="product">
+                            </picture>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="img/dest/gallery/image(5).webp" type="image/webp">
+                                <img src="img/dest/gallery/image(5).png" alt="product">
+                            </picture>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews section decor" id="reviews">
+
+                <svg class="circle circle1"><use xlink:href="#circle"></use></svg>
+                <svg class="circle circle2"><use xlink:href="#circle"></use></svg>
+
+                <div class="reviews__wrapper wrapper">
+                    <div class="reviews__hgroup hgroup">
+                        <h2 class="section-title reviews__title">
+                            <svg><use xlink:href="#title"></use></svg>
+                            Отзывы наших клиентов
+                        </h2>
+                    </div>
+
+                    <div class="reviews__slider">
+
+                        <div class="reviews__card">
+                            <div class="reviews__card-img">
+                                <picture>
+                                    <source srcset="img/dest/reviews/ava.webp" type="image/webp">
+                                    <img src="img/dest/reviews/ava.png" alt="ava">
+                                </picture>
+                            </div>
+
+                            <div class="reviews__card-text">
+                                <h3 class="reviews__card-title">Наталия Козак</h3>
+                                <p class="reviews__card-info">Очень довольна покупкой. Офис полностью изменил свой вид, стало намного уютней работать. Радует соотношение цены и качества.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__card">
+                            <div class="reviews__card-img">
+                                <picture>
+                                    <source srcset="img/dest/reviews/ava.webp" type="image/webp">
+                                    <img src="img/dest/reviews/ava.png" alt="ava">
+                                </picture>
+                            </div>
+
+                            <div class="reviews__card-text">
+                                <h3 class="reviews__card-title">Наталия Козак</h3>
+                                <p class="reviews__card-info">Очень довольна покупкой. Офис полностью изменил свой вид, стало намного уютней работать. Радует соотношение цены и качества.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__card">
+                            <div class="reviews__card-img">
+                                <picture>
+                                    <source srcset="img/dest/reviews/ava.webp" type="image/webp">
+                                    <img src="img/dest/reviews/ava.png" alt="ava">
+                                </picture>
+                            </div>
+
+                            <div class="reviews__card-text">
+                                <h3 class="reviews__card-title">Наталия Козак</h3>
+                                <p class="reviews__card-info">Очень довольна покупкой. Офис полностью изменил свой вид, стало намного уютней работать. Радует соотношение цены и качества.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__card">
+                            <div class="reviews__card-img">
+                                <picture>
+                                    <source srcset="img/dest/reviews/ava.webp" type="image/webp">
+                                    <img src="img/dest/reviews/ava.png" alt="ava">
+                                </picture>
+                            </div>
+
+                            <div class="reviews__card-text">
+                                <h3 class="reviews__card-title">Наталия Козак</h3>
+                                <p class="reviews__card-info">Очень довольна покупкой. Офис полностью изменил свой вид, стало намного уютней работать. Радует соотношение цены и качества.</p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__card">
+                            <div class="reviews__card-img">
+                                <picture>
+                                    <source srcset="img/dest/reviews/ava.webp" type="image/webp">
+                                    <img src="img/dest/reviews/ava.png" alt="ava">
+                                </picture>
+                            </div>
+
+                            <div class="reviews__card-text">
+                                <h3 class="reviews__card-title">Наталия Козак</h3>
+                                <p class="reviews__card-info">Очень довольна покупкой. Офис полностью изменил свой вид, стало намного уютней работать. Радует соотношение цены и качества.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="about section" id="about">
+                <div class="about__wrapper wrapper">
+                    <div class="about__hgroup hgroup">
+                        <h2 class="section-title about__title">
+                            <svg><use xlink:href="#title"></use></svg>
+                            Больше о лентах
+                        </h2>
+                    </div>
+                    <ul class="about__list custom-markers">
+                        <li class="about__list-item">Большое количество режимов и цветов</li>
+                        <li class="about__list-item">Регулируемая яркость и скорость (адресная или как называют, Smart RGB лента)</li>
+                        <li class="about__list-item">Возможность управления через приложение в смартфоне, или же с помощью пульта управления</li>
+                        <li class="about__list-item">Обратная сторона ленты покрыта двухсторонним скотчем, при помощи которого она легко монтируется практически на любые виды поверхностей</li>
+                        <li class="about__list-item">Так же с помощью нашей неоновой ленты можно сделать красивые фото или съемку видео.</li>
+                    </ul>
+                    <a href="#form" class="button">Заказать</a>
+                </div>
+            </div>
+
+            <div class="form section decor" id="form">
+
+                <svg class="circle circle1"><use xlink:href="#circle"></use></svg>
+                <svg class="circle circle2"><use xlink:href="#circle"></use></svg>
+
+                <div class="form__wrapper wrapper">
+                    <div class="form__hgroup hgroup">
+                        <h2 class="form__title section-title">
+                            <svg><use xlink:href="#title"></use></svg>
+                            Успей заказать ленту по скидке!
+                        </h2>
+                    </div>
+
+                    <div class="form__box">
+                        <div class="form__img">
+                            <picture>
+                                <source srcset="img/dest/form/product.webp" type="image/webp">
+                                <img src="img/dest/form/product.png" alt="product">
+                            </picture>
+
+                            <div class="pricing">
+                                <h4 class="prev-price"><del>560 грн</del></h4>
+                                <h2 class="current-price">299 грн</h2>
+                            </div>
+                        </div>
+
+                        <form id="order_form" class="main-order-form m1-form form__form" action="thankyou.php" method="post" onsubmit="if(this.name.value==''){alert('Введите Ваше имя!');return false}if(this.phone.value==''){alert('Введите Ваш номер телефона!');return false}return true;">
+                            <h2>Хотите заказать?</h2>
+                            <h3>Или остались какие-то вопросы? </h3>
+                            <input class="field" type="text" name="name" placeholder="Введите ваше имя" required>
+                            <input class="field" type="tel" name="phone" placeholder="+(380) ** **** ***" minlength="10" maxlength="25" required>
+                            <button class="button">Замовити по акції</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- /.main -->
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__footer wrapper">
+                    <p class="sm-info footer__info">ФОП Юрченко Миколай Петрович</p>
+                    <p class="sm-info footer__info">ІПН 29721136073</p>
+                    <p class="sm-info footer__info">ЄДРПО 2 2321 000 213211 1112311</p>
+                    <p class="sm-info footer__info">вулиця Кибальчича, 3, с. Грімне , 79019</p>
+                    <p class="sm-info footer__info"><a href="politics" target="_blank">Політика конфіденційності</a></p>
+                    <p class="sm-info footer__info"><a href="agreement" target="_blank">Угода користувача</a></p>
+                    <p class="sm-info footer__info"><a href="guarantee" target="_blank">Умови гарантії та повернення</a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- /.footer -->
+
+    </div>
+    <!-- /.container -->
+
+    <script src="js/scripts.min.js"></script>
+    <!-- MAIN MINIMIZATION JAVASCRIPT -->
+    <script src="js/app.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+
+    <script>
+        $('input[type=tel]').inputmask("+(380) 99-9999-999");
+
+        $('.gallery__slider').slick({
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            pagination: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+
+        $('.reviews__slider').slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            pagination: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>

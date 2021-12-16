@@ -1,0 +1,55 @@
+.gallery{
+    @include backgroundImg('../img/dest/gallery/background.png', );
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: $black;
+    &__title{
+        color: $white;
+        svg{
+            fill: $grey;
+        }
+    }
+
+}
+.gallery__wrapper{
+    min-width: 0;
+}
+.slick-list{
+    min-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.slick-track{
+    display: flex;
+}
+.gallery__slider{
+    position: relative;
+    min-width: 100%;
+}
+
+.gallery__slider div{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__slider div img,
+.gallery__slider div img{
+    height: 100%;
+    @include responseImg;
+}
+
+@include tablet{
+    .gallery{
+        background-image: none;
+    }
+}
+
+@include phone{
+    .gallery__slider div{
+        width: 100%;
+        height: unset;
+        aspect-ratio: 1.8;
+    }
+}
