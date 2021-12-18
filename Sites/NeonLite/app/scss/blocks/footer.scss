@@ -1,8 +1,8 @@
 .footer{
     overflow: hidden;
+    background: linear-gradient(131.6deg, #242625 22.09%, #001412 83.76%);
+    margin-top: 50px;
     &__wrapper{
-        border-top: 2px solid $grey;
-        margin-top: 50px;
         position: relative;
         &-decoration{
             position: absolute;
@@ -17,7 +17,7 @@
     }
     &__info{
         margin-bottom: 5px;
-        color: $black;
+        color: $white;
     }
 }
 
