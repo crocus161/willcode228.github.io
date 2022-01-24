@@ -1,0 +1,72 @@
+.reviews{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        width: 30%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info{
+        margin-right: 30px;
+    }
+
+    &__card{
+        margin-bottom: 30px;
+        max-width: 700px;
+        padding: 45px;
+        border-radius: 35px;
+        background: linear-gradient(90deg, #FEFEFE 0%, #FDFBFB 100%);
+        display: flex;
+        align-items: center;
+        &-img{
+            margin-right: 30px;
+        }
+        &-rate{
+            margin-bottom: 10px;
+            img{
+                width: 15px;
+            }
+        }
+    }
+}
+
+
+@include laptop{
+    .reviews{
+        &__img{
+            display: none;
+        }
+
+        &__info{
+            margin-right: 0px;
+        }
+
+        &__card{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        &__card{
+            background: none;
+            padding: 0px;
+            flex-direction: column;
+            &-img{
+                margin-right: 0;
+                text-align: center;
+            }
+            &-text{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+
+
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+//*****TITLES*****//
+.section-title{
+    @include adaptiveFont(36, 22);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.block-title{
+    @include adaptiveFont(24, 19);
+    font-weight: 500;
+}
+//*****INFO*****//
+.info{
+    @include adaptiveFont(18, 16);
+    font-weight: 500;
+}
+
+.info-sm{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+//*****BUTTONS*****//
+.button{
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    @include adaptiveFont(24, 18);
+    letter-spacing: 2px;
+    transition: $transition;
+    &__full{
+        background: $brand-btn-accent;
+        color: $brand-black;
+        &:hover{
+            background: darken($color: $brand-btn-accent, $amount: 10%);
+            color: $brand-white
+        }
+    }
+
+    &__empty{
+        background: transparent;
+        color: $brand-white;
+        border: 2px solid $brand-btn-accent;
+        &:hover{
+            background: $brand-btn-accent;
+        }
+    }
+}
+//*****OTHERS*****//
+.spacing{
+    letter-spacing: 2px;
+}
+.accent-text{
+    color: $brand-accent;
+}
+.hgroup{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+@include tablet{
+    .button{
+        width: 150px;
+    }
+}

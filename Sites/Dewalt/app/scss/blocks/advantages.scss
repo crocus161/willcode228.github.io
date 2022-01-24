@@ -1,0 +1,45 @@
+.advantages{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        width: 50%;
+        img{
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+
+@include laptop{
+    .advantages{
+        &__img{
+            display: none;
+        }
+    }
+}
+
+
+@include phone{
+    .advantages{
+        &__card{
+            flex-direction: column;
+            text-align: center;
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

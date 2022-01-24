@@ -1,0 +1,63 @@
+.form{
+    @include backgroundImg('../img/dest/form/background.jpg');
+    &__wrapper{
+        min-height: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form{
+        .field{
+            min-width: 400px;
+            width: 100%;
+            border-radius: 30px;
+            text-align: center;
+            height: 80px;
+            margin-bottom: 40px;
+            background: transparent;
+            border: 1px solid $brand-white;
+            font-size: 25px;
+            color: $brand-white;
+        }
+        button{
+            margin: auto;
+        }
+    }
+
+    &__title{
+        text-align: center;
+        margin-right: 50px;
+        &-title{
+            color: $brand-white
+        }
+        &-price{
+            @include adaptiveFont(90, 30);
+            color: $brand-accent;
+        }
+    }
+}
+
+@include placeholder{
+    color: $brand-white;
+}
+
+
+@include tablet{
+    .form{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__form{
+            .field{
+                min-width: 100%;
+            }
+        }
+
+        &__title{
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.set{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__info{
+        flex-grow: 1;
+        &-title{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list{
+        li{
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__img{
+        width: 50%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+
+@include tablet{
+    .set{
+        &__wrapper{
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        &__img{
+            width: 90%;
+            margin-bottom: 30px;
+        }
+    }
+}

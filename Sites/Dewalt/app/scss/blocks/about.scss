@@ -1,0 +1,22 @@
+.about{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        text-align: center;
+        &-img{
+            width: 280px;
+            margin-bottom: 15px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

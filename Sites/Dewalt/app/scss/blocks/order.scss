@@ -1,0 +1,36 @@
+.order{
+    &__box{
+        @include cardWidth(280px);
+        justify-content: space-around;
+        margin-bottom: 80px;
+        gap: 50px;
+    }
+    &__card{
+        text-align: center;
+        &-img{
+            min-height: 200px;
+            margin-bottom: 30px;
+        }
+        &-title{
+            font-weight: 400;
+        }
+        &-info{
+            font-weight: 400;
+            color: #000000A8;
+        }
+        img{
+            @include responseImg(80%);
+        }
+    }
+    &__btn{
+        margin: auto;
+    }
+}
+
+@include tablet{
+    .order{
+        &__card-img{
+            min-height: 100px;
+        }
+    }
+}

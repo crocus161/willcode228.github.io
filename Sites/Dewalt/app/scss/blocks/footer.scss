@@ -1,0 +1,52 @@
+.footer{
+    background: $brand-black;
+    position: relative;
+    overflow-y: hidden;
+
+    .section-title{
+        color: $brand-white;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__wrapper.wrapper{
+        margin: unset;
+        margin-left: auto;
+    }
+
+    &__wrapper-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__form.form__form{
+        margin-right: 30px;
+        max-width: 300px;
+
+        .field{
+            min-width: 300px !important;
+            max-width: 300px;
+        }
+    }
+
+    &__img{
+        width: 40%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        &__img{
+            display: none;
+        }
+
+        &__form.form__form{
+            margin-right: 0;
+        }
+    }
+}
