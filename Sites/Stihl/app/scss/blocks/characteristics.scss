@@ -1,0 +1,86 @@
+.characteristics{
+    &__price.price{
+        margin-top: 60px;
+        justify-content: center;
+
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    &__hgroup{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    &__img{
+        width: 40%;
+        @include backgroundImg('../img/dest/characteristics/product.png');
+    }
+
+    &__text{
+        padding: 30px 50px;
+        flex-grow: 1;
+    }
+    &__li{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 18px;
+        }
+    }
+    &__key{
+        margin-right: 15px;
+        color: $brand-black;
+    }
+    &__value{
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    &__line{
+        flex-grow: 1;
+        height: 0.5px;
+        background: rgba(0, 0, 0, 0.36);
+        align-self: flex-end;
+    }
+}
+
+@include laptop{
+    .characteristics{
+        &__wrapper{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text{
+            margin: 0;
+            margin-top: 20px;
+            padding: 0;
+        }
+        &__li{justify-content: center;}
+        &__line{display: none;}
+    }
+}
+
+@include tablet{
+    .characteristics{
+        &__img{
+            width: 70%;
+        }
+        &__value{
+            font-size: 14px;
+        }
+    }
+}
+
+@include phone{
+    .characteristics{
+        &__li{
+            flex-direction: column;
+        }
+        &__key,
+        &__value{
+            margin: 0;
+        }
+    }
+}

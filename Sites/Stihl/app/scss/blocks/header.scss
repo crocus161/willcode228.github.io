@@ -1,0 +1,133 @@
+$header-grey: #FFFFFF61;
+
+
+.header{
+    position: relative;
+
+
+    &__decoration{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        width: 80%;
+        height: 80%;
+    }
+
+    &__img{
+        width: 80%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__wrapper{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__subtitle{
+        margin-bottom: 20px;
+    }
+
+    &__title{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: #2c2929;
+        font-weight: 900;
+        @include adaptiveFont(120, 30);
+        margin: 0;
+    }
+
+    &__meta{
+        display: flex;
+        align-items: center;
+    }
+
+    &__product{
+        margin-bottom: 30px;
+        margin-top: -50px;
+        width: 40%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__about{
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+        &-icon{
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            font-size: 44px;
+            font-weight: 500;
+            line-height: 66px;
+            text-align: center;
+            border: 1px solid $brand-black;
+            color: $brand-black;
+        }
+        &-text{
+            color: $brand-black
+        }
+    }
+}
+
+
+@include tablet{
+    .header{
+        &__meta{
+            flex-direction: column;
+        }
+
+        &__about{
+            margin-top: 20px;
+            &-icon{
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                line-height: 46px;
+            }
+        }
+
+    }
+}
+
+@include phone{
+    .header{
+        &__wrapper{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &__decoration{
+            display: none;
+        }
+
+
+        &__product{
+            margin-top: -25px;
+            width: 60%;
+        }
+
+        &__price.price{
+            flex-direction: column;
+            a,button{
+                margin-bottom: 10px;
+            }
+        }
+        &__price-info.price__info{
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.reviews{
+    display: flex;
+
+    &__img{
+        flex: 0 0 40%;
+        @include backgroundImg('../img/dest/reviews/background.jpg');
+    }
+
+    &__text{
+        flex-grow: 1;
+        padding: 50px 30px;
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+
+    &__card{
+        max-width: 400px;
+        min-width: 330px;
+        text-align: center;
+
+        &-before{
+            @include adaptiveFont(150, 50);
+            line-height: 100%;
+        }
+        &-meta{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-info{
+            margin-left: 20px;
+            h4{
+                text-align: start;
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        &__img{
+            display: none;
+        }
+
+        &__text{
+            padding: 0px 20px;
+        }
+
+        &__card{
+            min-width: unset;
+            width: 100%;
+            &-rate{
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

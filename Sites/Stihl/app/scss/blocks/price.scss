@@ -1,0 +1,13 @@
+.price{
+    display: flex;
+    align-items: center;
+    &__info{
+        margin-left: 20px;
+        color: $brand-black;
+    }
+    .accent-text{
+        font-size: 20px;
+    }
+}
+
+

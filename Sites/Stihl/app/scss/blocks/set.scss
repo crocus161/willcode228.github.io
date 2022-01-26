@@ -1,0 +1,42 @@
+.set{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        margin-right: 30px;
+        width: 60%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__list{
+        &-item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+@include tablet{
+    .set{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

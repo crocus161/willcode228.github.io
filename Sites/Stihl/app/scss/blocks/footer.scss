@@ -1,0 +1,68 @@
+.footer{
+    overflow: hidden;
+
+    &__form-title{
+        text-align: center;
+    }
+
+    &__form-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .field{
+            width: 100%;
+            height: 70px;
+            margin-top: 30px;
+            border-radius: 30px;
+            border: 1px solid $brand-black;
+            text-align: center;
+            @include adaptiveFont(35, 20);
+        }
+        button{
+            margin-top: 30px;
+        }
+        @include placeholder{
+            color: $brand-black;
+
+        }
+    }
+
+    &__wrapper{
+        display: flex;
+    }
+
+    &__img{
+        width: 60%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &-decoration{
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+@include tablet{
+    .footer{
+        &__img{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &__wrapper{
+            flex-direction: column;
+        }
+    }
+}

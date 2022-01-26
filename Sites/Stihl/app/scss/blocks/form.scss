@@ -1,0 +1,30 @@
+.form{
+    @include backgroundImg('../img/dest/form/background.jpg');
+    color: $brand-white;
+    &__hgroup-price{
+        margin-top: 10px;
+        @include adaptiveFont(90, 40);
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .field{
+            width: 90%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba($brand-white, 0.5);
+            text-align: center;
+            height: 70px;
+            margin-bottom: 30px;
+            color: $brand-white;
+            @include adaptiveFont(35, 20);
+        }
+        @include placeholder{
+            color: $brand-white;
+        }
+    }
+}
+
+
