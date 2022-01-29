@@ -1,0 +1,25 @@
+.advantages{
+    @include backgroundImg('../img/dest/advantages/background.png', contain, center, right);
+
+    &__box{
+        width: 70%;
+    }
+
+    &__card{
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+@include tablet{
+    .advantages{
+        background-image: none;
+        &__box{
+            width: 100%;
+        }
+    }
+}

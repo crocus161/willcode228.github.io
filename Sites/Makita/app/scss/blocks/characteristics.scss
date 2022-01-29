@@ -1,0 +1,66 @@
+.characteristics{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn{
+        margin: 40px auto;
+    }
+
+    &__img{
+        width: 40%;
+        margin-left: 40px;
+        img{@include responseImg;}
+    }
+    &__li{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 18px;
+        }
+    }
+    &__key{
+        margin-right: 15px;
+        color: $brand-black;
+    }
+    &__value{
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    &__line{
+        flex-grow: 1;
+        height: 0.5px;
+        background: rgba(0, 0, 0, 0.36);
+        align-self: flex-end;
+    }
+}
+
+@include tablet{
+    .characteristics{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__img{
+            width: 70%;
+        }
+        &__value{font-size: 14px;}
+    }
+}
+
+@include phone{
+    .characteristics{
+        &__list{
+            text-align: center;
+        }
+        &__li{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__line{display: none;}
+        &__key,
+        &__value{
+            margin: 0;
+        }
+    }
+}

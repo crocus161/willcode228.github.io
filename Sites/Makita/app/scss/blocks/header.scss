@@ -1,0 +1,63 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.png');
+    &__wrapper{
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        width: 40%;
+        img{
+            @include responseImg;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        margin-right: 50px;
+    }
+
+    &__title{
+        line-height: 100%;
+        margin: 0;
+        &-after{
+            margin-bottom: 40px;
+        }
+    }
+
+    &__btn{
+        margin: 30px auto;
+    }
+
+    &__about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $brand-black;
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
+@include tablet{
+    .header{
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__text{
+            margin-right: 0;
+        }
+
+        &__img{
+            width: 70%;
+            margin-top: 40px;
+        }
+    }
+}

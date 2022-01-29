@@ -1,0 +1,62 @@
+.parts{
+    @include backgroundImg('../../img/dest/parts/background.png', contain, left);
+    overflow: hidden;
+    &__wrapper{
+        display: flex;
+    }
+
+    &__img{
+        width: 60%;
+        img{@include responseImg;}
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__list-item{
+        position: relative;
+        &::after{
+            content: '';
+            width: 300%;
+            height: 1px;
+            background: $brand-black;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img{
+            display: none;
+        }
+    }
+}
+
+
+@include tablet{
+    .parts{
+        background-image: none;
+        &__list-item{
+            &::after{display: none;}
+        }
+        &__img{
+            width: 80%;
+        }
+    }
+}
+
+@include phone{
+    .parts{
+        &__wrapper{
+            padding: 0px;
+        }
+        &__img{
+            width: 70%;
+        }
+        &__list-item{
+            font-size: 10px;
+        }
+    }
+}

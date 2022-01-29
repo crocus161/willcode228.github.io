@@ -1,0 +1,57 @@
+.reviews{
+    @include backgroundImg('../img/dest/reviews/background.png', contain, left);
+
+    &__box{
+        width: 700px;
+        margin-left: auto;
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #FEFEFE 0%, #FDFBFB 100%);
+        margin-bottom: 40px;
+        &-ava{
+            margin-right: 30px;
+        }
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        &-rate img{
+            width: 20px;
+        }
+    }
+}
+
+
+@include laptop{
+    .reviews{
+        background-image: none;
+        &__box{
+            margin-left: unset;
+            width: 100%;
+        }
+    }
+}
+
+@include tablet{
+    .reviews{
+        &__card{
+            padding: 0;
+            background: none;
+            &-ava{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &__card{
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+}
