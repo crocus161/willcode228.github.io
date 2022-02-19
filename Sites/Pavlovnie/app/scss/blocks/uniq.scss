@@ -1,0 +1,70 @@
+.uniq{
+    &__wrapper.wrapper{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text{
+        width: 640px;
+    }
+
+    &__card{
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .uniq{
+        &__wrapper.wrapper{
+            margin: unset;
+            margin-left: auto !important;
+        }
+    }
+}
+
+
+@include laptop{
+    .uniq{
+        &__wrapper.wrapper{
+            margin-left: unset;
+            margin: auto;
+        }
+
+        &__img{
+            display: none;
+        }
+
+        &__text{
+            width: 100%;
+        }
+    }
+}
+
+
+@include phone{
+    .uniq{
+        &__card{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            img{
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

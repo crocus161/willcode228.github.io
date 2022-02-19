@@ -1,0 +1,14 @@
+.how{
+    &__wrapper{
+        @include cardWidth(300px);
+    }
+
+    &__card{
+        text-align: center;
+        img{
+            margin-bottom: 30px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

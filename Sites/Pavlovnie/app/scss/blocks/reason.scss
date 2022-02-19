@@ -1,0 +1,13 @@
+.reason{
+    &__wrapper{
+        @include cardWidth(320px);
+    }
+    &__card{
+        text-align: center;
+        img{
+            width: 100%;
+            object-fit: cover;
+            margin: 25px 0px;
+        }
+    }
+}

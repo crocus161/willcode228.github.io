@@ -1,0 +1,53 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.png');
+    background-position: 50% 10%;
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__box{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 450px;
+        text-align: center;
+        color: $brand-white;
+        position: relative;
+        z-index: 1;
+        &-bg{
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            width: 170%;
+
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__btn{
+        margin: auto;
+        margin-top: 23px;
+    }
+
+    &__price{
+        margin-top: 60px;
+    }
+
+    &__qwestion{
+        margin-top: 23px;
+        display: flex;
+        align-items: center;
+        color: $brand-white;
+        gap: 40px;
+    }
+}
+
+@include tablet{
+    .header__wrapper{
+        overflow: hidden;
+    }
+}
+

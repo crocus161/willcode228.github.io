@@ -1,0 +1,51 @@
+.reviews{
+    &__wrapper{
+        width: 100%;
+        margin: unset;
+        display: flex;
+        align-items: center;
+    }
+
+    &__card{
+        max-width: 800px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(90deg, #FEFEFE 0%, #FDFBFB 100%);
+        border-radius: 35px;
+        padding: 20px;
+    }
+}
+
+@include desktop{
+    .reviews{
+        &__img{
+            width: 50%;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+@include tablet{
+    .reviews{
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@include phone{
+    .reviews{
+        &__card{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

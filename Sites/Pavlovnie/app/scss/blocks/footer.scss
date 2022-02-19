@@ -1,0 +1,15 @@
+.footer{
+    @include backgroundImg('../img/dest/footer/background.png');
+
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__box{
+        max-width: 475px;
+        color: $brand-white;
+    }
+}

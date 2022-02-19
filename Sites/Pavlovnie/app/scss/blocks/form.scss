@@ -1,0 +1,65 @@
+.form{
+    @include backgroundImg('../img/dest/form/background.png');
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    &__text{
+        text-align: center;
+        color: $brand-white;
+        h3{
+            @include adaptiveFont(80, 40);
+        }
+    }
+
+    &__form{
+        min-width: 500px;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .field{
+        background: transparent;
+        width: 100%;
+        height: 70px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: 1px solid $brand-white;
+        text-align: center;
+        @include adaptiveFont(35, 20);
+        color: $brand-white;
+    }
+    button{
+        margin-top: 30px;
+    }
+    @include placeholder{
+        color: $brand-white;
+    }
+}
+
+
+@include laptop{
+    .form{
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@include tablet{
+    .form{
+        &__form{
+            min-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+//*****MAIN INTERFACE STYLES*****//
+
+//*****FONTS CONNECTING*****//
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+//*****RESET UNUSABLE DEFAULT STYLES*****//
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+button{
+    all: unset;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+//*****MAIN CLASSES*****//
+
+//*****CONTAINER OF ALL CONTENT*****//
+.container{
+    max-width: $maxWidth + px;
+    min-width: $minWidth;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+//*****CONTAINER OF BLOCK*****//
+.wrapper{
+    max-width: $maxWidthContainer;
+    margin: auto;
+    @include desktop{
+        max-width: 970px;
+    }
+    @include laptop{
+        max-width: 750px;
+    }
+    @include tablet{
+        max-width: none;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @include phone{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm-phone{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+//*****MAIN BLOCK STYLES*****//
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+//*****HGROUP*****//
+.hgroup{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    h2{
+        display: inline-block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #84386A;
+    }
+}
+//*****TITLES*****//
+.main-site-title{
+    margin: 0;
+    letter-spacing: 0.11em;
+    @include adaptiveFont(64, 28);
+}
+
+.section-title,
+.block-title{
+    @include adaptiveFont(38, 22);
+}
+.section-title{
+    text-align: center;
+    line-height: 130%;
+}
+.block-title{
+    line-height: 100%;
+}
+//*****INFO*****//
+.bg-info{
+    font-family: $mainFont;
+    font-weight: 400;
+    @include adaptiveFont(20, 18);
+}
+.sm-info{
+    font-family: $mainFont;
+    font-weight: 300;
+    @include adaptiveFont(18, 16);
+}
+
+.grey{
+    color: $text-grey;
+}
+//*****BUTTON*****//
+.button{
+    display: block;
+    width: 320px;
+    height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    @include adaptiveFont(34, 18);
+    @include btn;
+    transition: $transition;
+    position: relative;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+.button.button-gradient{
+    background: linear-gradient(90deg, #7028E4 0%, #E5B2CA 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.button.black{
+    @include btn($brand-black, $brand-black, $brand-white);
+}
+
+.accent-text{
+    color: $brand-accent;
+}
+
+@include tablet{
+    .button{
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .decoration-title{
+        display: none;
+    }
+
+}
+
+@include phone{
+    .button.circle{
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+.decoration-title{
+    @include adaptiveFont(100, 20);
+    font-weight: 300;
+    // word-spacing: 2px;
+    writing-mode: tb;
+}
+
