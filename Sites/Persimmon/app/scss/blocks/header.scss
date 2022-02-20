@@ -1,0 +1,110 @@
+.header{
+    @include backgroundImg('../img/dest/header/background.jpg');
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: multiply;
+    &__wrapper{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__logo{
+        width: 200px;
+        margin-bottom: 40px;
+    }
+
+    &__hgroup{
+        margin-bottom: 40px;
+        &-title{
+            color: #f5c675;
+            margin-bottom: 0;
+            @include adaptiveFont(40, 24);
+        }
+
+        &-subtitle{
+            font-weight: 300;
+            color: white;
+            @include adaptiveFont(30, 18);
+        }
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    &__text{
+        text-align: start;
+        p{
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+        &-title{
+            font-size: 16px;
+            color: #f5c675;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+        &-action{
+            margin-bottom: 40px;
+            width: 100%;
+            border: 5px solid #1ac687;
+            padding: 10px 30px;
+            text-align: center;
+            color: white;
+            h3{
+                font-size: 20px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            h4{
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__img{
+        &-title{
+            color: #f5c675;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__btn{
+        display: block;
+        width: 100%;
+        background: #1ac687;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 15px;
+    }
+
+}
+
+
+@include laptop{
+    .header{
+        &__box{
+            flex-direction: column;
+        }
+
+        &__text{
+            text-align: center;
+        }
+    }
+}

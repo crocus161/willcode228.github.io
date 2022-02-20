@@ -1,0 +1,34 @@
+.characteristics{
+    @include backgroundImg('../img/dest/characteristics/background.jpg');
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: multiply;
+    color: white;
+
+    &__title{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    table,
+    tbody{
+        width: 100%;
+        border-collapse: collapse;
+
+    }
+
+    tr{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    td{
+        width: 50%;
+        text-align: center;
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
