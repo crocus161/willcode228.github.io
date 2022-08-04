@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Double Range</title>
+</head>
+<body>
+
+<style>
+	*, *::after, *::before {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+		height: 100vh;
+		background: #e0e0e0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.range {
+		width: 500px;
+		height: 60px;
+		position: relative;
+	}
+
+	input[type="range"]::-webkit-slider-runnable-track {
+		display: flex;
+		align-items: center;
+		height: 20px;
+		border-radius: 10px;
+		box-shadow: inset -2px -2px 8px white, inset 2px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+
+	input[type="range"]::-moz-range-track {
+		display: flex;
+		align-items: center;
+		height: 20px;
+		border-radius: 10px;
+		box-shadow: inset -2px -2px 8px white, inset 2px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+
+	input[type="range"]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		pointer-events: all;
+		border-radius: 50%;
+		cursor: pointer;
+
+		position: relative;
+		top: -50%;
+		width: 40px;
+		height: 40px;
+		background-color: #e0e0e0;
+		box-shadow: -1px -1px 2px white, 1px 1px 2px rgba(0, 0, 0, 0.3);
+		background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.8), transparent);
+	}
+
+	input[type="range"]::-moz-range-thumb {
+		-webkit-appearance: none;
+		pointer-events: all;
+		border-radius: 50%;
+		cursor: pointer;
+
+		position: relative;
+		top: -50%;
+		width: 40px;
+		height: 40px;
+		background-color: #e0e0e0;
+		box-shadow: -1px -1px 2px white, 1px 1px 2px rgba(0, 0, 0, 0.3);
+		background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.8), transparent);
+	}
+
+	input[type="range"] {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+		pointer-events: none;
+		width: 100%;
+		height: 60px;
+		padding: 20px;
+		background: #e0e0e0;
+		border-radius: 10px;
+		box-shadow: -2px -2px 8px white, 2px 2px 8px rgba(0, 0, 0, 0.5);
+	}
+
+	#fromRange {
+		z-index: 1;
+		background: transparent;
+		border-radius: 10px;
+		box-shadow: none;
+	}
+
+	#fromRange::-webkit-slider-runnable-track {
+		box-shadow: none;
+	}
+
+	#fromRange::-moz-range-track {
+		box-shadow: none;
+	}
+
+</style>
+
+<div class="wrapper">
+	<div class="range">
+		<input id="fromRange" type="range" value="0" max="10000"/>
+		<input id="toRange" type="range" value="10000" max="10000"/>
+	</div>
+
+	<div class="range">
+		<input id="fromRange2" type="range" value="0" max="10000"/>
+	</div>
+</div>
+
+<script>
+	window.addEventListener('load', () => {
+		const fromRange = document.querySelector('#fromRange'),
+			toRange = document.querySelector('#toRange');
+
+		fromRange.addEventListener('input', () => {
+			const upperBorder = toRange.value - (fromRange.max / 100 * 15);
+			fromRange.value = (fromRange.value > upperBorder ? upperBorder : fromRange.value);
+		});
+
+		toRange.addEventListener('input', () => {
+			const lowerBorder = +fromRange.value + (toRange.max / 100 * 15);
+			toRange.value = (toRange.value < lowerBorder ? lowerBorder : toRange.value);
+		});
+	});
+</script>
+</body>
+</html>
