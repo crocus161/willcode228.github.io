@@ -1,208 +1,147 @@
-# willcode228.github.io
-Всем привет, здесь, в основном, будут храниться проекты по верстке. 
-И некоторые проекты на JavaScript (Документация к ним будет написана в самих проектах).
-Представленные в этом репозитории проекты по верстке - лендинги.
+# crocus161.github.io
 
+Hello everyone, this repository mainly contains my layout projects. Additionally, some projects in JavaScript are included (documentation for them is written within the projects). The layout projects presented in this repository are landing pages.
 
-                                Документация к проектам по верстке
-                                
-Данные лендинги представленные в троих различных файловых структурах, о которых я сейчас расскажу.
+## Documentation for Layout Projects
 
-Первая структура(самая легкая) - использовал я ее для простеньких однодневных проектов.
+These landing pages are presented in three different file structures, which I will describe now.
 
-        index.html
-        js/
-          main.js or script.js
-        css/
-          style.css
-          blocks/
-            Отдельные файлы с css кодом
-        img/
-        libs/
-          Здесь я ложил все библиотеки, которые использовал
-  
-  
-  
-Вторая структура - использовал я ее для средних по размерам проектах.
+### First Structure (the simplest) - used for small, single-day projects
 
-        index.html
-        js/
-          main.js or script.js
-        css/
-          style.css
-          style.map.css
-        sass/
-          style.sass
-          blocks/
-            Отдельные файлы с sass кодом
-        img/
-        libs/
-          Здесь я ложил все библиотеки, которые использовал
-          
-Компиляция sass в таких проектах происходила с помощью расширения редактора кода Live Sass Compiller
+```
+index.html
+js/
+  main.js or script.js
+css/
+  style.css
+  blocks/
+    Separate files with CSS code
+img/
+libs/
+  Here I placed all the libraries I used
+```
 
+### Second Structure - used for medium-sized projects
 
-Третья структура - использовал я ее в основном для больших или средних проектов.
+```
+index.html
+js/
+  main.js or script.js
+css/
+  style.css
+  style.map.css
+sass/
+  style.sass
+  blocks/
+    Separate files with SASS code
+img/
+libs/
+  Here I placed all the libraries I used
+```
 
-    app/(исходный код)
-     index.html
-          js/
-            app.min.js
-            main.js or script.js
-          css/
-            style.min.css
-          sass/
-            style.sass
-            blocks
-              Отдельные файлы с sass кодом
-          img/
-            dist/
-              Сюда складывались уже минифицированные картинки
-            src/
-              Исходные картинки
-          libs/
-            Здесь я ложил все библиотеки, которые использовал
-      dist
-        Сдесь ложились только минифицированные и оптимизированный файлы с таким же расположением как и в app
-        
-        
-        
-Здесь я расскажу об общих чертах своих проектов.
+Compilation of SASS in these projects was done using the Live Sass Compiler extension for the code editor.
 
+### Third Structure - used mainly for large or medium-sized projects
 
-  -Во всех проектах используется BEM методология;
-  
+```
+app/ (source code)
+  index.html
+  js/
+    app.min.js
+    main.js or script.js
+  css/
+    style.min.css
+  sass/
+    style.sass
+    blocks/
+      Separate files with SASS code
+  img/
+    dist/
+      Minified images were stored here
+    src/
+      Original images
+  libs/
+    Here I placed all the libraries I used
+dist/
+  Only minified and optimized files were stored here with the same structure as in app
+```
 
-  -Все главные стили находятся в файлах variables.(sass,css) и interface.(sass,css);
-  
+## Common Features of My Projects
 
-  -Именование переменных css происходит с помощью разделения значений на главную(main) ветку и второстепенную(secondary),
-  или к главной ветке не добавляется определяющий префикс, а к второстепенной добавляется;
-  
-  Например:
-  
-      //******** COLOURS *********//
+- All projects use the BEM methodology.
+- All main styles are located in variables.(sass,css) and interface.(sass,css) files.
+- Naming of CSS variables is done by dividing values into main and secondary branches, or the main branch doesn't get a prefix while the secondary does.
 
-      //main
-      $white: #FFFFFF
-      $black: #002B40
-      $grey: #5E7177
-      $accent: #00755F
+For example:
 
-      //secondary
-      $secondary-black: #032736
-      $secondary-grey: #EFF2F3
-      $secondary-accent: #72BF00
+```scss
+//******** COLOURS *********//
 
-      //******** COLOURS *********//
+//main
+$white: #FFFFFF;
+$black: #002B40;
+$grey: #5E7177;
+$accent: #00755F;
 
-      //******** TRANSITIONS *********//
-      $fast-transition: 0.3s
-      $medium-transition: 0.5s
-      $low-transition: 0.7s
-      //******** TRANSITIONS *********//
+//secondary
+$secondary-black: #032736;
+$secondary-grey: #EFF2F3;
+$secondary-accent: #72BF00;
 
-      //******** SHADOWS *********//
-      $shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-      $secondary-shadow: 3px 3px 20px $black
-      //******** SHADOWS *********//
+//******** COLOURS *********//
 
-  -Одинаково именовались некоторые html элементы проектов:
-  
-    - p добавлялся класс с префиксом -info or __info, и главный класс main__info or info
-    
-    - h2,h3,h4,h5,h6 получали класс с префиксом -titke or __title, и главный класс main__title or title
-      или если это были припеси к главным заголовкам блоков -subtitle or __subtitle и главный класс main__subtitle or subtitle
-    
-    - button получали класс с префиксом -btn or __btn, и главный класс main__btn or btn
-    
-    - a получали класс с префиксом -link or __link, и главный класс main__link or link
-    
-    - названия главных классов, как видно, тоже могли разделятся на главные и побочные с разными префиксами
-    
-    - названия файлов с картинками определялись по их смысловому значению 
-      или просто разделялись по папкам(на отдельный блок) и назывались одинаковым именем с нумерацией
+//******** TRANSITIONS *********//
+$fast-transition: 0.3s;
+$medium-transition: 0.5s;
+$low-transition: 0.7s;
+//******** TRANSITIONS *********//
 
- 
+//******** SHADOWS *********//
+$shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$secondary-shadow: 3px 3px 20px $black;
+//******** SHADOWS *********//
+```
 
-Здесь я оставлю ссылочки на каждый лендинг:
+- Certain HTML elements are named consistently across projects:
 
-  Древние проекты:
-  
-  -https://willcode228.github.io/Sites/Air%20One%20Page/
-  
-  -https://willcode228.github.io/Sites/B&W/
-  
-  -https://willcode228.github.io/Sites/Creatives/
-  
-  -https://willcode228.github.io/Sites/Jewelery/
-  
-  -https://willcode228.github.io/Sites/Mogo/
-  
-  -https://willcode228.github.io/Sites/Бухгалтерские%20услуги/
-  
+  - `p` tags are given a class with the prefix `-info` or `__info`, and the main class `main__info` or `info`.
+  - `h2`, `h3`, `h4`, `h5`, `h6` tags receive a class with the prefix `-title` or `__title`, and the main class `main__title` or `title`, or if they are subtitles for main block titles, `-subtitle` or `__subtitle` and the main class `main__subtitle` or `subtitle`.
+  - `button` tags are given a class with the prefix `-btn` or `__btn`, and the main class `main__btn` or `btn`.
+  - `a` tags are given a class with the prefix `-link` or `__link`, and the main class `main__link` or `link`.
+  - Main class names can also be divided into main and secondary with different prefixes.
+  - File names for images are determined by their semantic meaning or simply divided by folders (for a specific block) and named consistently with numbering.
 
-  Новые пректы
+## Here are the links to each landing page:
 
-  -https://willcode228.github.io/Sites/Collibra/app/index.html
-  
-  -https://willcode228.github.io/Sites/New%20Providence/index.html
-  
-  -https://willcode228.github.io/Sites/Headphone/app/index.html
-  
-  -https://willcode228.github.io/Sites/Single%20Page/index.html
-  
-  -https://willcode228.github.io/Sites/Zen/index.html
-  
-  -https://willcode228.github.io/Sites/Thrive%20Talk/app/index.html
-  
-  -https://willcode228.github.io/Sites/Next%20Generation/index.html
-  
-  -https://willcode228.github.io/Sites/Indicorp/app/index.html
-  
-  -https://willcode228.github.io/Sites/Arka/app/index.html
-  
-  -https://willcode228.github.io/Sites/Mad%20Hatters/index.html
-  
-  -https://willcode228.github.io/Sites/Blank/app/index.html
-  
-  -https://willcode228.github.io/Sites/Over%20Love/app/index.html
-  
-  -https://willcode228.github.io/Sites/Vpn/app/index.html
-  
-  -https://willcode228.github.io/Sites/Universal/app/index.html
-  
-   
- А здесь на JS проекты:
- 
-  -https://willcode228.github.io/JavaScript%20Projects/After-before-slider/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Calculator/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Dino/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Faster%20game/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/HTML5%20Geolocation/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Live%20search/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Paint/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Ping%20pong/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Quize/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Snake/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Speed%20of%20seal/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Stop%20watch/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Tic-Tac-Toe/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/To-do/
-  
-  -https://willcode228.github.io/JavaScript%20Projects/Testing%20exersice/
+### Older Projects:
 
-  -https://willcode228.github.io/JavaScript%20Projects/Find%20the%20same/
+- [Air One Page](https://crocus161.github.io/Sites/Air%20One%20Page/)
+- [B&W](https://crocus161.github.io/Sites/B&W/)
+- [Creatives](https://crocus161.github.io/Sites/Creatives/)
+- [Jewelry](https://crocus161.github.io/Sites/Jewelery/)
+- [Mogo](https://crocus161.github.io/Sites/Mogo/)
+- [Accounting Services](https://crocus161.github.io/Sites/Бухгалтерские%20услуги/)
+
+### Newer Projects:
+
+- [Collibra](https://crocus161.github.io/Sites/Collibra/app/index.html)
+- [New Providence](https://crocus161.github.io/Sites/New%20Providence/index.html)
+- [Headphone](https://crocus161.github.io/Sites/Headphone/app/index.html)
+- [Single Page](https://crocus161.github.io/Sites/Single%20Page/index.html)
+- [Zen](https://crocus161.github.io/Sites/Zen/index.html)
+- [Thrive Talk](https://crocus161.github.io/Sites/Thrive%20Talk/app/index.html)
+- [Next Generation](https://crocus161.github.io/Sites/Next%20Generation/index.html)
+- [Indicorp](https://crocus161.github.io/Sites/Indicorp/app/index.html)
+- [Arka](https://crocus161.github.io/Sites/Arka/app/index.html)
+- [Mad Hatters](https://crocus161.github.io/Sites/Mad%20Hatters/index.html)
+- [Blank](https://crocus161.github.io/Sites/Blank/app/index.html)
+- [Over Love](https://crocus161.github.io/Sites/Over%20Love/app/index.html)
+- [Vpn](https://crocus161.github.io/Sites/Vpn/app/index.html)
+- [Universal](https://crocus161.github.io/Sites/Universal/app/index.html)
+
+## JavaScript Projects:
+
+- [After-before Slider](https://crocus161.github.io/JavaScript%20Projects/After-before-slider/)
+- [Calculator](https://crocus161.github.io/JavaScript%20Projects/Calculator/)
+- [Dino](https://crocus161.github.io/JavaScript%20Projects/Dino/)
+- [Faster Game](https://crocus161.github.io/JavaScript%20Projects/Faster%20game/)
